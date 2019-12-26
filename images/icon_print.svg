@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_易大单</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="74 0.0004 74 74 0.0002 74 0.0002 0.0004 74 0.0004"></polygon>
+    </defs>
+    <g id="PC优化-视觉" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12-Copy">
+            <g id="Page-1-Copy-2">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M37.0002,0.0004 C16.5652,0.0004 0.0002,16.5654 0.0002,37.0004 C0.0002,57.4354 16.5652,74.0004 37.0002,74.0004 C57.4342,74.0004 74.0002,57.4354 74.0002,37.0004 C74.0002,16.5654 57.4342,0.0004 37.0002,0.0004 M37.0002,1.3994 C56.6302,1.3994 72.6002,17.3704 72.6002,37.0004 C72.6002,56.6304 56.6302,72.6004 37.0002,72.6004 C17.3702,72.6004 1.3992,56.6304 1.3992,37.0004 C1.3992,17.3704 17.3702,1.3994 37.0002,1.3994" id="Fill-1" fill="#EC5466" mask="url(#mask-2)"></path>
+                </g>
+                <path d="M69,37 C69,54.673 54.673,69 37,69 C19.326,69 5,54.673 5,37 C5,19.326 19.326,5 37,5 C54.673,5 69,19.326 69,37" id="Fill-4" fill="#FCD4DD"></path>
+            </g>
+            <g id="打印-(3)" transform="translate(19.000000, 19.000000)" fill="#EC5466" fill-rule="nonzero">
+                <polygon id="Shape" points="9 0 27 0 27 7 9 7"></polygon>
+                <polygon id="Shape" points="7.08840002 27 0 27 0 9 36 9 36 27 28.8558 27 28.8558 18 7.14419999 18"></polygon>
+                <path d="M9,20 L9,36 L27,36 L27,20 L9,20 Z M23.5348838,32.5330286 L12.8014312,32.5330286 L12.8014312,30.6294857 L23.5348838,30.6294857 L23.5348838,32.5330286 Z M23.5348838,28.896 L12.8014312,28.896 L12.8014312,26.9924571 L23.5348838,26.9924571 L23.5348838,28.896 Z M23.5348838,25.2571429 L12.8014312,25.2571429 L12.8014312,23.3536 L23.5348838,23.3536 L23.5348838,25.2571429 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
