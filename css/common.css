@@ -1,12 +1,12 @@
-/* 公共样式 */
+﻿/* 公共样式 */
 /* 版心 */
 .mwrap {
-	min-width: 1200px;
+	min-width: 1326px;
 	margin-left: auto;
 	margin-right: auto;
 }
 .wrap {
-	width: 1200px;
+	width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -115,6 +115,13 @@
 /* 头部样式结束 */
 
 /* banner开始 */
+.banner {
+	width: 1362px;
+	margin: 0 auto;
+}
+.banner img {
+	width: 100%;
+}
 /* banner结束 */
 
 /* 底部样式开始 */
