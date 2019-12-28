@@ -1,36 +1,274 @@
+body {
+    font-size  : 13px;
+    font-family: "Source Han Sans", "微软雅黑", "microsoft yahei", "HanHei SC", PingHei, "PingFang SC", sans-serif;
+}
 
- body {
-    font-size: 13px;
-    font-family: "Source Han Sans","微软雅黑","microsoft yahei","HanHei SC",PingHei,"PingFang SC",sans-serif;
- }
+input {
+    outline   : none;
+    box-shadow: none !important;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+/* 二级导航栏样式 */
 .quick_header_nav {
     height         : 71px;
     display        : flex;
     align-items    : center;
     justify-content: center;
     background     : #333;
-    min-width      : 1280px
+    min-width      : 1280px;
+
 }
+
 .quick_header_nav a {
-    padding: 12px 50px;
-    color:#999;
-    margin: 0 2px;
-    position: relative;
+    padding      : 12px 50px;
+    color        : #999;
+    margin       : 0 2px;
+    position     : relative;
+    border-bottom: 2px solid #333;
+    transition   : border-bottom 1s;
 }
+
+.quick_header_nav a.current {
+    color        : #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.quick_header_nav a:hover {
+    color        : #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* 内容区大盒子 */
 .quick_content_wrapper {
-    min-width: 1280px;
-    padding-bottom: 71px;
+    min-width       : 1280px;
+    padding-bottom  : 71px;
     background-color: #f2f2f2;
 }
+
+/* 内容区内容盒子 */
 .quick_content_wrapper .content {
-    width: 960px;
-    padding:0px 80px 50px ;
-    box-sizing: border-box;
+    width           : 960px;
+    padding         : 0px 80px 50px;
+    box-sizing      : border-box;
     background-color: #fff;
-    margin: 0px auto;
+    margin          : 0px auto;
+
+
 }
+
+/* 内容区导航栏 */
+/* 内容区导航a链接 */
+.content_nav {
+    font-size    : 22px;
+    height       : 71px;
+    line-height  : 71px;
+    border-bottom: 2px solid #ccc;
+    margin       : 0 -81px;
+    padding      : 0 81px;
+}
+
 .content_nav a {
-    color: #333;
-    padding:0 50px ;
-    
+    color      : #333;
+    padding    : 0 30px;
+    font-size  : 22px;
+    display    : inline-block;
+    height     : 71px;
+    line-height: 71px;
+}
+
+/* 内容区tab栏切换当前类 */
+.content_nav a.liactive {
+    color           : #fff;
+    background-color: #dc1e32;
+}
+
+/* tab栏经过时颜色字体变红 */
+.content_nav a.checked:hover {
+    color: #dc1e32;
+}
+
+/*内容区tab栏切换*/
+/* 当前类 */
+.content_wrapper section,
+.content_wrapper section.conactive {
+    display: none;
+    width  : 100%;
+    height : 100%;
+}
+
+.content_wrapper section.conactive {
+    display: block;
+}
+
+
+/* 寄件人信息 */
+
+
+/* 我要寄件的内容区步骤样式 */
+
+.bulkShipping .step ul {
+    width     : 100%;
+    margin-top: 20px;
+}
+
+.bulkShipping .step li {
+    vertical-align    : bottom;
+    float             : left;
+    margin-top        : 16.6px;
+    min-width         : 120px;
+    margin-right      : 5px;
+    color             : #ccc;
+    transition        : all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+.bulkShipping .step strong {
+    transform-origin        : left bottom;
+    -webkit-transform-origin: left bottom;
+    font-weight             : 400;
+    color                   : #ccc;
+    font-size               : 38px;
+    display                 : inline-block;
+    position                : relative;
+    top                     : 13px;
+}
+
+.bulkShipping .step li p {
+    margin-top: 3px;
+    color     : #ccc;
+}
+
+.bulkShipping .step i {
+    display          : inline-block;
+    width            : 100%;
+    height           : 3px;
+    background       : #ccc;
+    transform        : skewX(45deg);
+    -webkit-transform: scaleY(45deg);
+}
+
+/* 我要寄件的内容区步骤当前类样式 */
+.bulkShipping .step li.active {
+    color         : #dc1e32;
+    /* vertical-align: bottom; */
+    margin-top: 0;
+}
+
+.bulkShipping .step li.active strong {
+    font-size: 50px;
+    color    : #dc1e32;
+
+}
+
+.bulkShipping .step li.active i {
+    background-color: #dc1e32;
+}
+
+.bulkShipping .step li.active p {
+    color: #dc1e32;
+}
+
+/* 寄件人步骤下的表单区域 */
+.bulkShipping .item {
+    width: 1300px;
+}
+
+.bulkShipping .item .page {
+    width      : 800px;
+    padding-top: 25px;
+}
+
+/* 设置表单里面的样式 */
+div[class^="col-xl-"] {
+    float: left;
+}
+
+.container {
+    width: 800px;
+}
+
+.sftitle {
+    font-size    : 17px;
+    margin-bottom: 20px;
+}
+
+.sftitle .small {
+    color       : #ccc;
+    padding-left: 8px;
+    font-size   : 13px;
+}
+
+.sftitle a {
+    float       : right;
+    padding-left: 25px;
+    margin-top  : 2px;
+    margin-left : 45px;
+    font-size   : 14px;
+    color       : #333;
+    position    : relative;
+}
+.sftitle a{
+    text-decoration: none;
+}
+.control-label {
+    font-size  : 12px;
+    color      : #999;
+    text-align : left;
+    font-weight: 400;
+}
+
+label {
+    display: inline-block;
+}
+
+.control-label {
+    margin-top   : 0;
+    margin-bottom: 0;
+    padding-top  : 7px;
+}
+
+.control-label.required:before {
+    content: "* ";
+    color  : #eb1d21;
+}
+
+.form-group {
+    margin-top   : 20px;
+    margin-bottom: 15px;
+}
+
+.form-group .form-control {
+    border       : 1px solid transparent !important;
+    border-bottom: 1px solid #ccc !important;
+    padding      : 6px 0 !important;
+}
+
+
+.btn-primary {
+    color: #fff!important;
+    background-color:#eb1d21 ;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 16px;
+    min-width: 150px;
+    height: 32px;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+.btn-primary:hover{
+   background-color: #f74b53 !important; 
+}
+.btn-primary.big {
+    height: 48px;
+    border-radius: 24px;
+    min-width: 229px;
 }
