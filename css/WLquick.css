@@ -117,7 +117,8 @@ a {
 .bulkShipping .step li {
     vertical-align    : bottom;
     float             : left;
-    margin-top        : 16.6px;
+    height: 75px;
+    margin-top        : 13.6px;
     min-width         : 120px;
     margin-right      : 5px;
     color             : #ccc;
@@ -155,6 +156,7 @@ a {
     color         : #dc1e32;
     /* vertical-align: bottom; */
     margin-top: 0;
+    height: 88.6px;
 }
 
 .bulkShipping .step li.active strong {
