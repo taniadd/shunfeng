@@ -6,7 +6,7 @@
 	margin-right: auto;
 }
 .wrap {
-	width: 1300px;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -173,7 +173,7 @@
 
 /* banner开始 */
 .banner {
-	width: 1362px;
+	width: 100%;
 	margin: 0 auto;
 }
 .banner img {
@@ -309,6 +309,4 @@
 
 
 /* 底部样式结束 */
-
-
 
