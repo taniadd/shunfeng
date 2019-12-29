@@ -69,13 +69,18 @@
     display: none;
     position: absolute;
     border-top: 2px solid #F1F1F1;
-    width: 150%;
+    width: 135%;
     text-align: left;
     background: #ffffff;
     left: 50%;
-    margin-left: -75%;
-    padding: 20px 0 20px 35%;
+    margin-left: -50%;
     box-sizing: border-box;
+	padding: 0 20px;
+	z-index: 9999;
+}	
+.header .nav_l .nav_two_bg{
+	padding: 0;
+	background: #F1F1F1;
 }
 .header .nav_l .nav_two li{
 	padding: 0;
@@ -84,6 +89,58 @@
 }
 .header .nav_l >li:hover .nav_two{
 	display: block;
+}
+.header .nav_l .nav_two .nav_two_child {
+	float: left;
+	margin-right: 30px;
+}
+.header .nav_l .nav_two .nav_two_child:nth-child(2){
+	padding-left: 20px;
+	border-left: 1px solid #E1E1E0;
+}
+/* 物流下拉 */
+.header .nav_l .nav_two  .nav_two_wul {
+	float: left;
+	padding: 20px 0 20px 32px;
+	background-color: #ffffff;
+}
+.header .nav_two_wul .wuliu_serv {
+	/* display: flex; */
+}
+.header .nav_two_wul .wuliu_serv .wuliu_kuaidi {
+	float: left;
+	/* width: 30%; */
+}
+.header .nav_two_wul .wuliu_serv .wuliu_kuaidi h2{
+	font-size: 18px;
+}
+.header .nav_two_wul .wuliu_serv .wuliu_kuaidi h3{
+	font-size: 14px;
+}
+.header .nav_two_wul .wuliu_serv .iconfont {
+	font-size: 24px;
+	/* width: 30%; */
+}
+
+.header .nav_l .nav_two  .nav_two_r {
+	float: left;
+	padding: 20px 0 0 32px;
+}
+.header .nav_l .nav_two_r button {
+	background-color: #E13D4E;
+    color: #ffffff;
+    width: 101px;
+    line-height: 40px;
+    border-radius: 5px;
+	margin-top: 10px;
+}
+.header .nav_l .nav_two .nav_two_wuliu {
+	float: left;
+	margin-right: 16px;
+}
+.header .nav_l .nav_two .nav_two_wuliu:nth-child(2){
+	padding-left: 35px;
+	border-left: 1px solid #E1E1E0;
 }
 .header .nav_r {
 	float: right;
