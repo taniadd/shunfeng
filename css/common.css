@@ -6,7 +6,7 @@
 	margin-right: auto;
 }
 .wrap {
-	width: 1300px;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -85,7 +85,7 @@
 .header .nav_l .nav_two li{
 	padding: 0;
 	float: none;
-	line-height: 30px;
+	line-height: 30px !important;
 }
 .header .nav_l >li:hover .nav_two{
 	display: block;
@@ -173,7 +173,7 @@
 
 /* banner开始 */
 .banner {
-	width: 1362px;
+	width: 100%;
 	margin: 0 auto;
 }
 .banner img {
@@ -309,6 +309,4 @@
 
 
 /* 底部样式结束 */
-
-
 
