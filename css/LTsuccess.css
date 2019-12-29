@@ -1,0 +1,222 @@
+/* industry 开始 */
+.TLindustry{
+    background-color: #F1F1F1;
+    height: 90px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.TLindustry .TLind{
+    position: relative;
+    width: 256px;
+    display: flex;
+    height: 100%;
+}
+.TLindustry .TLind p{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 90px;
+    cursor: pointer;
+    width: 100%;
+}
+.TLindustry .TLind .ele{
+    color: black;
+}
+.TLindustry .TLind p:hover .ele{
+    color: #DA1D35 ;
+    /* text-decoration:underline; */
+}
+.TLindustry .TLind:hover .TLlist{
+    display: block;
+}
+.TLindustry .TLind .TLlist li:hover a{
+    background: #DA1D35;
+    color: white;
+}
+.TLindustry .TLind .TLlist{
+    background: white;
+    border: 1px solid #9c9c9c;
+    width: 256px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    border-top: none;
+    display: none;
+}
+.TLindustry .TLind .TLlist li{
+    width: 100%;
+    font: 14px/40px "微软雅黑";
+    height: 40px;
+}
+.TLindustry .TLind .TLlist a{
+    columns: #333333;
+    display: block;
+}
+/* .TLindustry .TLlist li a{
+
+} */
+/* industry 结束 */
+
+ /* LTmodule 开始 */
+ .LTmodule{
+     overflow: hidden;
+ }
+ .LTmodule ul{
+     margin-left:-30px;
+     overflow: hidden;
+ }
+ .LTmodule li{
+     float: left;
+     width: 392px;
+     background-color: #F1F1F1;
+     margin: 50px 0 0 80px;
+ }
+ .LTmodule .LTmg{
+    overflow: hidden;
+    /* width: 100%; */
+    height: 204px;
+ }
+ .LTmodule .LTmg img{
+     width: 100%;
+ }
+ .LTmodule .LTmo{
+    width: 100%;
+    padding-top: 44px;
+    padding-bottom: 43px;
+    position: relative;
+    height: 260px;
+}
+.LTmodule .LTmo .LTzi{
+    font: 21px/36px "微软雅黑";
+    padding: 18px;
+    color: rgba(0,0,0,.8);
+    text-align: center;
+}
+.LTmodule .LTmo p{
+    font: 15px/30px "微软雅黑";
+    color: rgba(0,0,0,.7);
+    padding: 0 18px;
+}
+.LTmodule .LTmo .LTcircle{
+    FONT-WEIGHT: 100;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -52px;
+    left: 150px;
+}
+.LTmodule .LTmo .LTcircle P{
+    color: #DA1D35;
+}
+.LTmodule .LTmo .LTcircle img{
+    width: 34px;
+    margin-left: 32px;
+    margin-top: 18px;
+}
+.LTmodule .LTmo .LTbox{
+    height: 44px;
+    width: 231px;
+    /* background: white; */
+    border: 1px solid #000;
+    display: block;
+    font: 18px/46px "微软雅黑";
+    text-indent: 3em;
+    margin: auto;
+    margin-top: 30px;
+    color: rgba(0,0,0,.7);
+    overflow: hidden;
+    position: absolute;
+    top: 236px;
+    left: 82px;
+}
+.LTmodule .LTmo .LTbox span{
+    height: 50px;
+    width: 50px;
+    background: url(../images/a_rlink_gray.png) no-repeat;
+    float: right;
+    margin-top: 5px;
+}
+.LTmodule .LTnum{
+    height: 150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.LTmodule .LTnum a{
+    margin-right: 10px;
+}
+.LTmodule .LTnum .num2:hover{
+    color: #DA1D35;
+}
+.LTmodule .LTnum .num3:hover{
+    background: url(../images/btn-prev-red.png) no-repeat -11px 5px;
+}
+.LTmodule .LTnum .num1{
+    color: #DA1D35;
+}
+.LTmodule .LTnum a:hover{
+    /* 加下划线 */
+    text-decoration:underline;
+} 
+
+.LTmodule .LTnum .num3{
+    background: url(../images/btn-prev.png) no-repeat -11px 5px;
+    display: block;
+    height: 18px;
+    width: 13px;
+}
+.LTmodule .LTmo .LTcircle .telephone{
+    width: 18%;
+    margin-left: 40px;
+}
+.LTmodule .LTmo .LTcircle .LTelectronic{
+    font-size: 15px;
+    width: 77px;
+    padding-left: 12px;
+}
+
+
+
+/* 为啥经过图片的时候没有效果过渡 */
+.LTmodule li :hover .LTcircle p{
+    color:white;
+    transition:all 0.3s; 
+}
+.LTmodule li :hover .LTcircle{
+    background: #DA1D35;
+    transition:all 0.3s;
+}
+.LTmodule li :hover .LTcircle img{
+    /* 换图片 */
+   content:url("../images/white-t-img-5.png");
+   transition:all 0.3s;
+}
+.LTmodule li :hover .LTcircle .LThei{
+    content:url("../images/tr_imgs_white3.png");
+    transition:all 0.3s;
+ }
+ .LTmodule li :hover .LTcircle .telephone{
+    content:url("../images/white-t-img-1.png");
+    transition:all 0.3s;
+ }
+.LTmodule li :hover .LTbox{
+    border-color:#F1F1F1;
+    background: #DA1D35;
+    color:white;
+    transition:all 0.3s; 
+}
+.LTmodule li :hover .LTbox span{
+    /* 换背景图 */
+    background: url(../images/a_rlink_red.png) no-repeat;
+    transition:all 0.3s; 
+}
+
+ /* LTmodule 结束  */
+
