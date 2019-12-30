@@ -1,0 +1,162 @@
+.banner {
+    position: relative;
+}
+.banner .bill_number {
+    position: absolute;
+    z-index: 222;
+    bottom: 0;
+    left: 3%;
+    width: 350px;
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 20px 20px;
+}
+.banner .bill_number .bill_search {
+    position: relative;
+
+}
+.banner .bill_number .search_icon {
+    position: absolute;
+    position: absolute;
+    top: 0px;
+    width: 41px;
+    height: 42px;
+    background: url(../images/smallHeader-searchIcon.png) no-repeat center -18px;
+    /* display: none; */
+    border: 1px solid #e1e1e0;
+    border-left: none;
+}
+.banner .bill_number input {
+    width: 300px;
+    line-height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #E1E1E0;
+    box-shadow:inset 0px 0px 5px 1px #E1E1E0;
+}
+.banner .bill_number .search_bill_number {
+    line-height: 30px;
+    width: 341px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #DC1E32;
+    color: #ffffff;
+    border-radius: 5px;
+}
+/* content开始 */
+.content {
+    width: 100%;
+}
+/* content_nav开始 */
+.content .content_nav {
+    background-color: #DC1E32;
+    padding-left: 100px;
+}
+.content .content_nav ul li{
+    float: left;
+    width: 213px;
+    height: 100%;
+    text-align: center;
+    line-height: 98px;
+}
+.content .content_nav li a {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 40px;
+}
+.content .content_nav li a:hover{
+    background-color: #ffffff;
+    color: #DC1E32;
+}
+.content .content_nav li .content_icon{
+    display: inline-table;
+    margin-top: 35px;
+    text-align: center;
+    height: 31px;
+    width: 31px;
+    background: url(../images/smallBanner-icon.png) no-repeat;
+}
+.content .content_nav li .content_sender {
+    background-position: 0 -38px;
+
+}
+.content .content_nav li .content_money {
+    background-position: 0 -77px;
+}
+.content .content_nav li .content_address {
+    background-position: 0 -115px;
+}
+.content .content_nav li .content_sope {
+    background-position: 0 -152px;
+}
+.content .content_nav li:hover .content_icon{
+    display: inline-table;
+    margin-top: 35px;
+    text-align: center;
+    height: 31px;
+    width: 31px;
+    background: url(../images/smallBanner-icon-red.png) no-repeat;
+}
+.content .content_nav li:hover .content_sender {
+    background-position: 0 -38px;
+
+}
+.content .content_nav li:hover .content_money {
+    background-position: 0 -77px;
+}
+.content .content_nav li:hover .content_address {
+    background-position: 0 -115px;
+}
+.content .content_nav li:hover .content_sope {
+    background-position: 0 -152px;
+}
+
+/* content_nav结束 */
+
+/* 物流和金融的轮播图开始 */
+.content .content_banner h2 {
+    font-size: 30px;
+    text-align: center;
+    height: 120px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+.content .content_banner_tit {
+    display: flex;
+}
+.content .content_banner_tit li {
+    width: 50%;
+    line-height: 36px;
+    border-bottom: 2px solid #949494;
+}
+.content .content_banner_tit .current {
+    border-bottom: 2px solid #DC1E32;
+}
+.content .content_banner_tit li a {
+    color: #949494;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+}
+.content .content_banenr_img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .content_banenr_img li{
+    width: 49.5%;
+}
+.content .content_banenr_img li img {
+    width: 100%;
+}
+{
+    content_img_tit
+}
+
+/* 物流和金融的轮播图开始 */
+/* content结束 */

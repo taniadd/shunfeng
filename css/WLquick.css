@@ -1,16 +1,21 @@
 body {
     font-size  : 13px;
+    line-height: 1.4287;
     font-family: "Source Han Sans", "微软雅黑", "microsoft yahei", "HanHei SC", PingHei, "PingFang SC", sans-serif;
 }
-
+.text-center {
+    text-align: center;
+}
 input {
     outline   : none;
     box-shadow: none !important;
 }
+
 a {
-    color: #000000;
-    text-decoration: none;
+    color          : #000000;
+    text-decoration: none !important;
 }
+
 /* 二级导航栏样式 */
 .quick_header_nav {
     height         : 71px;
@@ -109,18 +114,18 @@ a {
 
 /* 我要寄件的内容区步骤样式 */
 
-.bulkShipping .step ul {
+.bulkShipping ul.step {
     width     : 100%;
-    margin-top: 20px;
+margin-top: 20px;
+    position: relative;
 }
 
 .bulkShipping .step li {
     vertical-align    : bottom;
     float             : left;
-    height: 75px;
-    margin-top        : 13.6px;
     min-width         : 120px;
     margin-right      : 5px;
+    height: 75px;
     color             : #ccc;
     transition        : all .2s linear;
     -webkit-transition: all .2s linear;
@@ -134,7 +139,9 @@ a {
     font-size               : 38px;
     display                 : inline-block;
     position                : relative;
-    top                     : 13px;
+    top: 12px;
+    margin-bottom: 12px;
+    line-height: 1 !important;
 }
 
 .bulkShipping .step li p {
@@ -153,16 +160,17 @@ a {
 
 /* 我要寄件的内容区步骤当前类样式 */
 .bulkShipping .step li.active {
-    color         : #dc1e32;
+    color            : #dc1e32;
     /* vertical-align: bottom; */
-    margin-top: 0;
-    height: 88.6px;
+
+    height           : 88.6px;
 }
 
 .bulkShipping .step li.active strong {
     font-size: 50px;
+    top: 0px;
+    margin-bottom: 0px;
     color    : #dc1e32;
-
 }
 
 .bulkShipping .step li.active i {
@@ -184,14 +192,20 @@ a {
 }
 
 /* 设置表单里面的样式 */
+
+
 div[class^="col-xl-"] {
     float: left;
 }
-
+form {
+    width: 800px;
+    margin-left: -15px;
+    padding-top: 25px ;
+}
 .container {
     width: 800px;
 }
-
+/* 寄方信息行 */
 .sftitle {
     font-size    : 17px;
     margin-bottom: 20px;
@@ -211,9 +225,26 @@ div[class^="col-xl-"] {
     font-size   : 14px;
     color       : #333;
     position    : relative;
-}
-.sftitle a{
     text-decoration: none;
+}
+
+
+/* 寄方信息里面链接 */
+
+span[class^="icon-"]{
+    font-size: 23px;
+    position: absolute;
+    left: 0;
+    top: -6px;
+    font-weight: 700;
+}
+
+
+.sftitle a:hover {
+    color: #dc1e32 ;
+}
+.sftitle a:hover span{
+    color: #dc1e32 ;
 }
 .control-label {
     font-size  : 12px;
@@ -236,10 +267,13 @@ label {
     content: "* ";
     color  : #eb1d21;
 }
-
+/* 表单里面的内容行 */
 .form-group {
     margin-top   : 20px;
     margin-bottom: 15px;
+    margin-left : -15px;
+    margin-right: -15px;
+    position: relative;
 }
 
 .form-group .form-control {
@@ -248,29 +282,71 @@ label {
     padding      : 6px 0 !important;
 }
 
+.form-group  .icon-fuwufanwei {
+    position: absolute;
+    right: 24px;
+    bottom: 0px;
+    font-size: 23px;
+}
+.form-group  .icon-fuwufanwei:hover {
+     color: #dc1e32;
+}
 
+/* 下一页按钮 */
+.btn_nav {
+    margin-top: 50px;
+}
 .btn-primary {
-    color: #fff!important;
-    background-color:#eb1d21 ;
-    font-size: 14px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    letter-spacing: 1px;
-    border-radius: 16px;
-    min-width: 150px;
-    height: 32px;
-    padding: 0 25px;
-    cursor: pointer;
-    transition: all .2s linear;
+    position: relative;
+    color             : #fff !important;
+    background-color  : #eb1d21;
+    font-size         : 14px;
+    display           : inline-flex;
+    justify-content   : center;
+    align-items       : center;
+    border            : none;
+    letter-spacing    : 1px;
+    border-radius     : 16px;
+    min-width         : 150px;
+    height            : 32px;
+    padding           : 0 25px;
+    cursor            : pointer;
+    transition        : all .2s linear;
     -webkit-transition: all .2s linear;
 }
-.btn-primary:hover{
-   background-color: #f74b53 !important; 
+
+.btn-primary:hover {
+    background-color: #f74b53 !important;
 }
+
 .btn-primary.big {
-    height: 48px;
+    height       : 48px;
     border-radius: 24px;
-    min-width: 229px;
+    min-width    : 229px;
+}
+.btn-primary .icon-duanjiantou {
+    font-size: 14px;
+    position: absolute;
+    right: 25px;
+    color: #fff;
+}
+
+/* 寄大件的样式 */
+/* 寄大件的提交按钮 */
+.submit-order {
+    background-color: #999 !important;
+    margin-top: 20px;
+}
+.checked {
+    color: #dc1e32;
+}
+.checked span {
+    color: #dc1e32;
+}
+/* 重货保价 */
+.support_value {
+    padding-top: 18px;
+}
+.support_value a {
+    color: #dc1e32;
 }

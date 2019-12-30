@@ -85,7 +85,7 @@
 .header .nav_l .nav_two li{
 	padding: 0;
 	float: none;
-	line-height: 30px;
+	line-height: 30px !important;
 }
 .header .nav_l >li:hover .nav_two{
 	display: block;

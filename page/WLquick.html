@@ -9,14 +9,14 @@
     <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../css/base.css">
     <link type="text/css" rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_qeuu7nku34o.css">
     <link type="text/css" rel="stylesheet" href="../css/WLquick.css">
 
 </head>
 
 <body>
     <div class="mwrap">
-        <!-- 头部开始 -->
+        
         <!-- 头部开始 -->
         <div class="header">
             <div class="wrap clearfix">
@@ -227,7 +227,7 @@
             </div>
         </div>
         <!-- 头部结束 -->
-        <!-- 头部结束 -->
+       
 
         <!-- 内容区开始 -->
         <!--二级导航栏-->
@@ -296,14 +296,19 @@
                                         <div class="sender container">
                                             <!-- 表单 -->
                                             <form action="" method="POST">
+                                                <!-- 寄方信息 -->
                                                 <div class="sftitle">
                                                     寄方信息
                                                     <span class="small">
                                                         标 * 为必填项
                                                     </span>
-                                                    <a class="address-book" href="javascript:;">使用地址簿</a>
-                                                    <a class="address-intellect" href="javascript:;">智能地址填写</a>
+                                                    <!-- 智能地址填写链接 需补充 -->
+                                                    <a class="address-intellect" href="javascript:;"><span class="iconfont icon-edit"></span> 智能地址填写</a>
+                                                   <!-- 使用地址簿 需补充 -->
+                                                    <a class="address-book" href="javascript:;"><span class=" iconfont icon-dizhibu"></span>使用地址簿</a>
+                                                   
                                                 </div>
+                                                <!-- 姓名行 -->
                                                 <div class="form-group row">
                                                     <div class="col-xs-5">
                                                         <label class="control-label required" for="">姓名</label>
@@ -315,6 +320,7 @@
                                                     </div>
 
                                                 </div>
+                                                <!-- 手机号码行 -->
                                                 <div class="form-group row">
                                                     <div class="col-xs-5">
                                                         <label class="control-label " for="">手机号码</label>
@@ -326,39 +332,241 @@
                                                     </div>
 
                                                 </div>
-
+                                                <!-- 省市区 -->
                                                 <div class="form-group row">
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">省市区</label>
                                                         <input class="form-control" type="text"
                                                             placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区">
+                                                            <span class="iconfont icon-fuwufanwei"></span>
                                                     </div>
 
 
                                                 </div>
+                                                <!-- 详细地址 -->
                                                 <div class="form-group row">
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">详细地址</label>
                                                         <input class="form-control" type="text"
                                                             placeholder="请选择所在街道以及详细地址">
+                                                            
+                                                    </div>
+
+
+                                                </div>
+                                              
+                          
+
+                                            </form>
+                                        </div>
+
+                                        <!-- 下一步按钮 -->
+                                        <div class="btn_nav  clearfix">
+                                            <button class="btn-primary big fr">下一步
+                                                <span class="iconfont icon-duanjiantou"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                   <!-- 寄大件的内容 -->
+                    <section>
+                        <div class="bulkShipping-big">
+                  
+                            <!-- 步骤下面的内容 -->
+                            <div class="item clearfix">
+                                <!-- 当前翻页盒子 -->
+                                <div class="page ">
+                                    <!-- 盒子容器 -->
+                                    <div class="page-wrapper">
+                                        <!-- 寄件人信息 -->
+                                        <!-- 寄大件上的banner图 未补充 -->
+                                        <div class="heavyCargo_sc">
+                                            <a href="">
+                                                <img src="../images/heavyCargo_sc.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="sender container">
+                                            <!-- 表单 -->
+                                            <form action="" method="POST">
+                                                <!-- 寄方信息 -->
+                                                <div class="sftitle">
+                                                    寄方信息
+                                                    <span class="small">
+                                                        标 * 为必填项
+                                                    </span>
+                                                    <!-- 智能地址填写链接 需补充 -->
+                                                    <a class="address-intellect" href="javascript:;"><span class="iconfont icon-edit"></span> 智能地址填写</a>
+                                                   <!-- 使用地址簿 需补充 -->
+                                                    <a class="address-book" href="javascript:;"><span class=" iconfont icon-dizhibu"></span>使用地址簿</a>
+                                                     <!-- 价格计算 -->
+                                                     <a class="price" href="javascript:;"><span class=" iconfont icon-jisuanqi"></span>价格计算</a>
+                                                   
+                                                </div>
+                                                <!-- 姓名行 -->
+                                                <div class="form-group row">
+                                                    <div class="col-xs-5">
+                                                        <label class="control-label required" for="">姓名</label>
+                                                        <input class="form-control" type="text" placeholder="请填写联系人姓名">
+                                                    </div>
+                                                    <div class="col-xs-5 col-xs-offset-2">
+                                                        <label for="" class="control-label">公司名称</label>
+                                                        <input class="form-control" type="text" placeholder="请填写公司名称">
+                                                    </div>
+
+                                                </div>
+                                                <!-- 手机号码行 -->
+                                                <div class="form-group row">
+                                                    <div class="col-xs-5">
+                                                        <label class="control-label " for="">手机号码</label>
+                                                        <input class="form-control" type="text" placeholder="请填写手机号码">
+                                                    </div>
+                                                    <div class="col-xs-5 col-xs-offset-2">
+                                                        <label for="" class="control-label">固话</label>
+                                                        <input class="form-control" type="text" placeholder="请填写固话号码">
+                                                    </div>
+
+                                                </div>
+                                                <!-- 省市区 -->
+                                                <div class="form-group row">
+                                                    <div class="col-xs-10">
+                                                        <label class="control-label required" for="">省市区</label>
+                                                        <input class="form-control" type="text"
+                                                            placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区">
+                                                            <span class="iconfont icon-fuwufanwei"></span>
+                                                    </div>
+
+
+                                                </div>
+                                                <!-- 详细地址 -->
+                                                <div class="form-group row">
+                                                    <div class="col-xs-10">
+                                                        <label class="control-label required" for="">详细地址</label>
+                                                        <input class="form-control" type="text"
+                                                            placeholder="请选择所在街道以及详细地址">
+                                                            
                                                     </div>
 
 
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="btn_nav  clearfix">
-                                            <button class="btn-primary big fr">下一步</button>
+
+                                        <!-- 收方信息 -->
+                                        <div class="sender container receiver ">
+                                            <!-- 表单 -->
+                                            <form action="" method="POST">
+                                                <!-- 寄方信息 -->
+                                                <div class="sftitle">
+                                                    收方信息
+                                                    <span class="small">
+                                                        标 * 为必填项
+                                                    </span>
+
+                                                   
+                                                    <!-- 智能地址填写链接 需补充 -->
+                                                    <a class="address-intellect" href="javascript:;"><span class="iconfont icon-edit"></span> 智能地址填写</a>
+                                                   <!-- 使用地址簿 需补充 -->
+                                                    <a class="address-book" href="javascript:;"><span class=" iconfont icon-dizhibu"></span>使用地址簿</a>
+                                                   
+                                                </div>
+                                                <!-- 姓名行 -->
+                                                <div class="form-group row">
+                                                    <div class="col-xs-5">
+                                                        <label class="control-label required" for="">姓名</label>
+                                                        <input class="form-control" type="text" placeholder="请填写联系人姓名">
+                                                    </div>
+                                                    <div class="col-xs-5 col-xs-offset-2">
+                                                        <label for="" class="control-label">公司名称</label>
+                                                        <input class="form-control" type="text" placeholder="请填写公司名称">
+                                                    </div>
+
+                                                </div>
+                                                <!-- 手机号码行 -->
+                                                <div class="form-group row">
+                                                    <div class="col-xs-5">
+                                                        <label class="control-label " for="">手机号码</label>
+                                                        <input class="form-control" type="text" placeholder="请填写手机号码">
+                                                    </div>
+                                                    <div class="col-xs-5 col-xs-offset-2">
+                                                        <label for="" class="control-label">固话</label>
+                                                        <input class="form-control" type="text" placeholder="请填写固话号码">
+                                                    </div>
+
+                                                </div>
+                                                <!-- 省市区 -->
+                                                <div class="form-group row">
+                                                    <div class="col-xs-10">
+                                                        <label class="control-label required" for="">省市区</label>
+                                                        <input class="form-control" type="text"
+                                                            placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区">
+                                                            
+                                                    </div>
+
+
+                                                </div>
+                                                <!-- 详细地址 -->
+                                                <div class="form-group row">
+                                                    <div class="col-xs-10">
+                                                        <label class="control-label required" for="">详细地址</label>
+                                                        <input class="form-control" type="text"
+                                                            placeholder="请选择所在街道以及详细地址">
+                                                            
+                                                    </div>
+
+
+                                                </div>
+
+                                                <div class="form-group ">
+                                                    <div class="clearfix">
+                                                        <a href="" class="save-address-check fr checked">
+                                                            <span class="iconfont icon-iconfontxuanzhong4"></span>
+                                                            保存到地址簿
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+
+                                                    <!-- 我同意 -->
+                                                    <a href="" class="save-address-check  checked">
+                                                        <span class="iconfont icon-iconfontxuanzhong4"></span>
+                                                        我同意
+                                                    </a>
+                                                    <!-- 电子运单契约条款 -->
+                                                    <a href="">《电子运单契约条款》</a>
+                                                </div>
+                                            </form>
                                         </div>
+                                        <!-- 下一页按钮 -->
+                                        <div class="text-center  clearfix">
+                                            <button id="orders" class="btn-primary submit-order big ">下单
+                                           
+                                            </button>
+                                        </div>
+                                        <div class="support_value">
+                                            <a  href="javascript:;">重货包裹均需保价,点击了解</a>
+                                            
+                                        </div>
+
+
+                                        
+                                  
+
+
+
+
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-
                     </section>
-                    <section>2</section>
+
+                    <!-- 二维码寄件 -->
                     <section>3</section>
                 </div>
             </div>
@@ -512,7 +720,7 @@
                 <ul class="footer_ver_r">
                     <li>
                         <a
-                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
+                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</aclass="btn>
 
                     </li>
                 </ul>
