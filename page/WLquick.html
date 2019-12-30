@@ -11,223 +11,297 @@
     <link type="text/css" rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_qeuu7nku34o.css">
     <link type="text/css" rel="stylesheet" href="../css/WLquick.css">
-
+    <link type="text/css"  rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/WL_quick.js"></script>
 </head>
 
 <body>
     <div class="mwrap">
-        
-        <!-- 头部开始 -->
-        <div class="header">
-            <div class="wrap clearfix">
-                <img src="../images/sf.png">
-                <ul class="nav_l clearfix">
-                    <li>
-                        <a href="javascript:;" class="current">首页</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">物流</a>
-                        <ul class="nav_two nav_two_bg clearfix"
-                            style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
-                            <li class="nav_two_wul">
-                                <ul class="wuliu_serv clearfix">
-                                    <!-- 快递服务 -->
-                                    <li class="wuliu_kuaidi">
-                                        <h2><i class="iconfont icon-truck"></i>快递服务</h2>
-                                        <ul class="nav_two_wuliu clearfix">
-                                            <li>
-                                                <h3>同城</h3>
-                                            </li>
-                                            <li><a href="javascript:;">顺丰同城急送</a></li>
-                                        </ul>
-                                        <ul class="nav_two_wuliu clearfix">
-                                            <li>
-                                                <h3>内地及港澳台</h3>
-                                            </li>
-                                            <li><a href="javascript:;">顺丰即日</a></li>
-                                            <li><a href="javascript:;">顺丰次晨</a></li>
-                                            <li><a href="javascript:;">顺丰标快</a></li>
-                                            <li><a href="javascript:;">顺丰特惠</a></li>
-                                            <li><a href="javascript:;">E顺递</a></li>
-                                            <li><a href="javascript:;">重货快运</a></li>
-                                            <li><a href="javascript:;">重货专运</a></li>
-                                            <li><a href="javascript:;">重货包裹</a></li>
-                                            <li><a href="javascript:;">小票零担</a></li>
-                                            <li><a href="javascript:;">物流普运（港澳地区）</a></li>
-                                        </ul>
-                                        <ul class="nav_two_wuliu clearfix">
-                                            <li>
-                                                <h3>国际</h3>
-                                            </li>
-                                            <li><a href="javascript:;">国际标快</a></li>
-                                            <li><a href="javascript:;">国际特惠</a></li>
-                                            <li><a href="javascript:;">国际小包</a></li>
-                                            <li><a href="javascript:;">国际重货</a></li>
-                                            <li><a href="javascript:;">国际电商专递</a></li>
-                                            <li><a href="javascript:;">海购丰运</a></li>
-                                            <li><a href="javascript:;">签收确认服务</a></li>
-                                            <li><a href="javascript:;">海外仓</a></li>
-                                            <li><a href="javascript:;">前往国际网站</a></li>
-                                        </ul>
-                                        <ul class="nav_two_wuliu clearfix">
-                                            <li>
-                                                <h3>增值服务</h3>
-                                            </li>
-                                            <li><a href="javascript:;">保价</a></li>
-                                            <li><a href="javascript:;">委托件</a></li>
-                                            <li><a href="javascript:;">特安服务</a></li>
-                                            <li><a href="javascript:;">包装服务</a></li>
-                                            <li><a href="javascript:;">代收货款</a></li>
-                                            <li><a href="javascript:;">保鲜服务</a></li>
-                                            <li><a href="javascript:;">签单返还</a></li>
-                                            <li><a href="javascript:;">送货上楼</a></li>
-                                            <li><a href="javascript:;">口令签收</a></li>
-                                            <li><a href="javascript:;">验货服务</a></li>
-                                        </ul>
-                                        <ul class="nav_two_wuliu clearfix">
-                                            <li>&nbsp;</li>
-                                            <li><a href="javascript:;">电子验收</a></li>
-                                            <li><a href="javascript:;">定时派送</a></li>
-                                            <li><a href="javascript:;">保单配送</a></li>
-                                            <li><a href="javascript:;">大件入户</a></li>
-                                            <li><a href="javascript:;">特殊入仓</a></li>
-                                            <li><a href="javascript:;">送货服务</a></li>
-                                            <li><a href="javascript:;">提货服务</a></li>
-                                            <li><a href="javascript:;">装卸服务</a></li>
-                                            <li><a href="javascript:;">安装服务</a></li>
-                                            <li><a href="javascript:;">货物保管</a></li>
-                                        </ul>
-                                        <ul class="nav_two_wuliu clearfix">
-                                            <li>&nbsp;</li>
-                                            <li><a href="javascript:;">春节服务</a></li>
-                                            <li><a href="javascript:;">超长超重</a></li>
-                                            <li><a href="javascript:;">住宅附加费</a></li>
-                                            <li><a href="javascript:;">燃油附加费</a></li>
-                                            <li><a href="javascript:;">原单转寄退回</a></li>
-                                            <li><a href="javascript:;">国际偏远附加费</a></li>
-                                            <li><a href="javascript:;">顺丰国际直邮认证服务</a></li>
-                                        </ul>
-                                    </li>
+     
+     <!-- 头部开始 -->
+     <div class="header">
+        <div class="wrap clearfix">
+            <img src="../images/sf.png">
+            <ul class="nav_l clearfix">
+                <li>
+                    <a href="javascript:;" class="current">首页</a>
+                </li>
+                <li>
+                    <a href="javascript:;">物流</a>
+                    <ul class="nav_two nav_two_bg clearfix" style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
+                        <li class="nav_two_wul">
+                            <ul class="wuliu_serv clearfix">
+                                <!-- 快递服务 -->
+                                <li class="wuliu_kuaidi">
+                                    <h2><i class="iconfont icon-truck"></i>快递服务</h2>
+                                    <ul class="nav_two_wuliu clearfix">
+                                        <li>
+                                            <h3>同城</h3>
+                                        </li>
+                                        <li><a href="javascript:;">顺丰同城急送</a></li>
+                                    </ul>
+                                    <ul class="nav_two_wuliu clearfix">
+                                        <li>
+                                            <h3>内地及港澳台</h3>
+                                        </li>
+                                        <li><a href="javascript:;">顺丰即日</a></li>
+                                        <li><a href="javascript:;">顺丰次晨</a></li>
+                                        <li><a href="javascript:;">顺丰标快</a></li>
+                                        <li><a href="javascript:;">顺丰特惠</a></li>
+                                        <li><a href="javascript:;">E顺递</a></li>
+                                        <li><a href="javascript:;">重货快运</a></li>
+                                        <li><a href="javascript:;">重货专运</a></li>
+                                        <li><a href="javascript:;">重货包裹</a></li>
+                                        <li><a href="javascript:;">小票零担</a></li>
+                                        <li><a href="javascript:;">物流普运（港澳地区）</a></li>
+                                    </ul>
+                                    <ul class="nav_two_wuliu clearfix">
+                                        <li>
+                                            <h3>国际</h3>
+                                        </li>
+                                        <li><a href="javascript:;">国际标快</a></li>
+                                        <li><a href="javascript:;">国际特惠</a></li>
+                                        <li><a href="javascript:;">国际小包</a></li>
+                                        <li><a href="javascript:;">国际重货</a></li>
+                                        <li><a href="javascript:;">国际电商专递</a></li>
+                                        <li><a href="javascript:;">海购丰运</a></li>
+                                        <li><a href="javascript:;">签收确认服务</a></li>
+                                        <li><a href="javascript:;">海外仓</a></li>
+                                        <li><a href="javascript:;">前往国际网站</a></li>
+                                    </ul>
+                                    <ul class="nav_two_wuliu clearfix">
+                                        <li>
+                                            <h3>增值服务</h3>
+                                        </li>
+                                        <li><a href="javascript:;">保价</a></li>
+                                        <li><a href="javascript:;">委托件</a></li>
+                                        <li><a href="javascript:;">特安服务</a></li>
+                                        <li><a href="javascript:;">包装服务</a></li>
+                                        <li><a href="javascript:;">代收货款</a></li>
+                                        <li><a href="javascript:;">保鲜服务</a></li>
+                                        <li><a href="javascript:;">签单返还</a></li>
+                                        <li><a href="javascript:;">送货上楼</a></li>
+                                        <li><a href="javascript:;">口令签收</a></li>
+                                        <li><a href="javascript:;">验货服务</a></li>
+                                    </ul>
+                                    <ul class="nav_two_wuliu clearfix">
+                                        <li>&nbsp;</li>
+                                        <li><a href="javascript:;">电子验收</a></li>
+                                        <li><a href="javascript:;">定时派送</a></li>
+                                        <li><a href="javascript:;">保单配送</a></li>
+                                        <li><a href="javascript:;">大件入户</a></li>
+                                        <li><a href="javascript:;">特殊入仓</a></li>
+                                        <li><a href="javascript:;">送货服务</a></li>
+                                        <li><a href="javascript:;">提货服务</a></li>
+                                        <li><a href="javascript:;">装卸服务</a></li>
+                                        <li><a href="javascript:;">安装服务</a></li>
+                                        <li><a href="javascript:;">货物保管</a></li>
+                                    </ul>
+                                    <ul class="nav_two_wuliu clearfix">
+                                        <li>&nbsp;</li>
+                                        <li><a href="javascript:;">春节服务</a></li>
+                                        <li><a href="javascript:;">超长超重</a></li>
+                                        <li><a href="javascript:;">住宅附加费</a></li>
+                                        <li><a href="javascript:;">燃油附加费</a></li>
+                                        <li><a href="javascript:;">原单转寄退回</a></li>
+                                        <li><a href="javascript:;">国际偏远附加费</a></li>
+                                        <li><a href="javascript:;">顺丰国际直邮认证服务</a></li>
+                                    </ul>
+                                </li>
 
-                                    <!-- 冷运 -->
-                                    <li class="wuliu_kuaidi">
-                                        <h2><i class="iconfont icon-truck"></i>冷运服务</h2>
-                                        <ul class="nav_two_wuliu clearfix">
-                                            <li>
-                                                <h3>食品服务</h3>
-                                            </li>
-                                            <li><a href="javascript:;">生鲜速配</a></li>
-                                            <li><a href="javascript:;">冷运速配</a></li>
-                                            <li><a href="javascript:;">大闸蟹专递</a></li>
-                                            <li><a href="javascript:;">冷运到店</a></li>
-                                            <li><a href="javascript:;">顺丰冷运零担</a></li>
-                                            <li><a href="javascript:;">冷运专车</a></li>
-                                            <li><a href="javascript:;">冷运仓储</a></li>
-                                        </ul>
-                                        <ul class="nav_two_wuliu clearfix">
-                                            <li>
-                                                <h3>医药服务</h3>
-                                            </li>
-                                            <li><a href="javascript:;">医药安心递</a></li>
-                                            <li><a href="javascript:;">医药专递</a></li>
-                                            <li><a href="javascript:;">精温定达</a></li>
-                                            <li><a href="javascript:;">精温定航</a></li>
-                                            <li><a href="javascript:;">医药专车</a></li>
-                                            <li><a href="javascript:;">医药仓储</a></li>
-                                        </ul>
-                                    </li>
-                                    <!-- 仓储 -->
-                                    <li class="wuliu_kuaidi">
-                                        <h2><i class="iconfont icon-cangchu"></i>仓储服务</h2>
-                                        <ul class="nav_two_wuliu clearfix">
-                                            <li>
-                                                <h3>仓储服务</h3>
-                                            </li>
-                                            <li><a href="javascript:;">标准化仓储管理</a></li>
-                                            <li><a href="javascript:;">仓储核心能力</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav_two_r">
-                                <ul class="clearfix">
-                                    <li><button type="button">我要寄件</button></li>
-                                    <li><a href="javascript:;">收寄范围查询</a></li>
-                                    <li><a href="javascript:;">收寄标准查询</a></li>
-                                    <li><a href="javascript:;">运费时效查询</a></li>
-                                    <li><a href="javascript:;">其他寄件方式</a></li>
-                                    <li><button>合作咨询</button></li>
-                                    <li><button>月结服务平台</button></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:;">金融</a></li>
-                    <li>
-                        <a href="javascript:;">成功案例</a>
-                        <ul class="nav_two">
-                            <li><a href="javascript:;">3C电子行业</a></li>
-                            <li><a href="javascript:;">医疗行业</a></li>
-                            <li><a href="javascript:;">生鲜行业</a></li>
-                            <li><a href="javascript:;">快消行业</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">服务支持</a>
-                        <ul class="nav_two clearfix" style="width: 305%;">
-                            <li class="nav_two_child">
-                                <ul>
-                                    <li><a href="javascript:;">我要寄件</a></li>
-                                    <li><a href="javascript:;">运单追踪</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav_two_child">
-                                <ul>
-                                    <li><a href="javascript:;">运费时效查询</a></li>
-                                    <li><a href="javascript:;">收寄范围查询</a></li>
-                                    <li><a href="javascript:;">服务网点查询</a></li>
-                                    <li><a href="javascript:;">收寄标准查询</a></li>
-                                    <li><a href="javascript:;">更多内容查询</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">顺丰控股投资者关系</a>
-                        <ul class="nav_two" style="width: 100%;">
-                            <li><a href="javascript:;">公司治理</a></li>
-                            <li><a href="javascript:;">公司公告</a></li>
-                            <li><a href="javascript:;">定期报告</a></li>
-                            <li><a href="javascript:;">投资者联络</a></li>
-                            <li><a href="javascript:;">投资者关系日历</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">关于我们</a>
-                        <ul class="nav_two">
-                            <li><a href="javascript:;">关于顺丰</a></li>
-                            <li><a href="javascript:;">新闻资讯</a></li>
-                            <li><a href="javascript:;">服务公告</a></li>
-                            <li><a href="javascript:;">推广专区</a></li>
-                            <li><a href="javascript:;">会员权益</a></li>
-                            <li><a href="javascript:;">人才招聘</a></li>
-                            <li><a href="javascript:;">集团采购</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav_r clearfix">
-                    <li class="login">
-                        <span class="icon member"></span>
-                        <a href="javascript:;">快速登录/注册</a>
-                        <!-- <span class="icon country"></span> -->
-                    </li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+                                <!-- 冷运 -->
+                                <li class="wuliu_kuaidi">
+                                    <h2><i class="iconfont icon-truck"></i>冷运服务</h2>
+                                    <ul class="nav_two_wuliu clearfix">
+                                        <li>
+                                            <h3>食品服务</h3>
+                                        </li>
+                                        <li><a href="javascript:;">生鲜速配</a></li>
+                                        <li><a href="javascript:;">冷运速配</a></li>
+                                        <li><a href="javascript:;">大闸蟹专递</a></li>
+                                        <li><a href="javascript:;">冷运到店</a></li>
+                                        <li><a href="javascript:;">顺丰冷运零担</a></li>
+                                        <li><a href="javascript:;">冷运专车</a></li>
+                                        <li><a href="javascript:;">冷运仓储</a></li>
+                                    </ul>
+                                    <ul class="nav_two_wuliu clearfix">
+                                        <li>
+                                            <h3>医药服务</h3>
+                                        </li>
+                                        <li><a href="javascript:;">医药安心递</a></li>
+                                        <li><a href="javascript:;">医药专递</a></li>
+                                        <li><a href="javascript:;">精温定达</a></li>
+                                        <li><a href="javascript:;">精温定航</a></li>
+                                        <li><a href="javascript:;">医药专车</a></li>
+                                        <li><a href="javascript:;">医药仓储</a></li>
+                                    </ul>
+                                </li>
+                                <!-- 仓储 -->
+                                <li class="wuliu_kuaidi">
+                                    <h2><i class="iconfont icon-cangchu"></i>仓储服务</h2>
+                                    <ul class="nav_two_wuliu clearfix">
+                                        <li>
+                                            <h3>仓储服务</h3>
+                                        </li>
+                                        <li><a href="javascript:;">标准化仓储管理</a></li>
+                                        <li><a href="javascript:;">仓储核心能力</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_two_r">
+                            <ul class="clearfix">
+                                <li><button type="button">我要寄件</button></li>
+                                <li><a href="javascript:;">收寄范围查询</a></li>
+                                <li><a href="javascript:;">收寄标准查询</a></li>
+                                <li><a href="javascript:;">运费时效查询</a></li>
+                                <li><a href="javascript:;">其他寄件方式</a></li>
+                                <li><button>合作咨询</button></li>
+                                <li><button>月结服务平台</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">金融</a></li>
+                <li>
+                    <a href="javascript:;">成功案例</a>
+                    <ul class="nav_two">
+                        <li><a href="javascript:;">3C电子行业</a></li>
+                        <li><a href="javascript:;">医疗行业</a></li>
+                        <li><a href="javascript:;">生鲜行业</a></li>
+                        <li><a href="javascript:;">快消行业</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">服务支持</a>
+                    <ul class="nav_two clearfix" style="width: 305%;">
+                        <li class="nav_two_child">
+                            <ul>
+                                <li><a href="javascript:;">我要寄件</a></li>
+                                <li><a href="javascript:;">运单追踪</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_two_child">
+                            <ul>
+                                <li><a href="javascript:;">运费时效查询</a></li>
+                                <li><a href="javascript:;">收寄范围查询</a></li>
+                                <li><a href="javascript:;">服务网点查询</a></li>
+                                <li><a href="javascript:;">收寄标准查询</a></li>
+                                <li><a href="javascript:;">更多内容查询</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">顺丰控股投资者关系</a>
+                    <ul class="nav_two" style="width: 100%;">
+                        <li><a href="javascript:;">公司治理</a></li>
+                        <li><a href="javascript:;">公司公告</a></li>
+                        <li><a href="javascript:;">定期报告</a></li>
+                        <li><a href="javascript:;">投资者联络</a></li>
+                        <li><a href="javascript:;">投资者关系日历</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">关于我们</a>
+                    <ul class="nav_two">
+                        <li><a href="javascript:;">关于顺丰</a></li>
+                        <li><a href="javascript:;">新闻资讯</a></li>
+                        <li><a href="javascript:;">服务公告</a></li>
+                        <li><a href="javascript:;">推广专区</a></li>
+                        <li><a href="javascript:;">会员权益</a></li>
+                        <li><a href="javascript:;">人才招聘</a></li>
+                        <li><a href="javascript:;">集团采购</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav_r clearfix">
+                <!-- 原先类名为login,由于类名冲突已经更名为celerity_login -->
+                <li class="celerity_login">
+                    <span class="icon member"></span>
+                    <a href="javascript:;" class="Thelogin_button">快速登录/注册</a>
+                    <!-- <span class="icon country"></span> -->
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
-        <!-- 头部结束 -->
-       
+    </div>
+    <!-- 登录界面 -->
+    <div class="keep"></div>
+    <div class="login">
+        <div class="login_title">
+            <ul>
+                <li class="login_scan">
+                    <a href="javascript:;" class="creent">扫码登录</a>
+                </li>
+                <li class="login_bank">
+                    <a href="javascript:;">账号登录</a>
+                </li>
+            </ul>
+            <span class="close">
+          <a href="javascrpit:;">×</a>
+      </span>
+        </div>
+        <div class="login_content">
+            <p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
+            <h5>登录后即可免验证快速下单与查件</h5>
+            <div class="img">
+                <img src="../images/erweima.png" alt="">
+            </div>
+            <h4>请使用微信扫描二维码</h4>
+            <h5 class="self"></h5>
+            <div class="aotulog">
+                <input type="checkbox" checked>
+                <span class="self">自动登录</span>
+            </div>
+            <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
+        </div>
+        <div class="login_denglu">
+            <form action="" id="reset" autocomplete="off" class="reset">
+                <div class="login_denglu_box ">
+                    <p class="login_denglu_p">登录后即可免验证快速下单与查件</p>
+                    <div class="login_tel">
+                        <div class="selected">
+                            <span class="selected_diqu">+86</span>
+                            <i></i>
+                            <ul>
+                                <li>中国内地<span>+86</span>
+                                </li>
+                                <li>中国香港<span>+852</span>
+                                </li>
+                                <li>中国澳门<span>+853</span></li>
+                                <li>中国台湾<span>+886</span></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="login_denglu_tel" placeholder="请输入手机号" name="tel">
+                    </div>
+                    <div class="login_yan">
+                        <div class="login_input">
+                            <input type="text" class="login_input_yan" placeholder="请输入验证码" name="auth">
+                            <p class="mistake">验证码错误</p>
+                        </div>
+                        <button>获取验证码</button>
+                    </div>
+                    <p class="login_denglu_p1">未注册用户登录默认注册顺丰会员</p>
+                    <div class="aotulog">
+                        <input type="checkbox" checked>
+                        <span class="self">自动登录</span>
+                    </div>
+                    <div class="login_denglu_quick">
+                        <button class="quick">快速登录</button>
+                        <button class="enterprise"><a href="javascript:;">我是月结企业用户</a></button>
+                    </div>
+                    <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 登录界面结束 -->
+    <!-- 头部结束 -->
 
         <!-- 内容区开始 -->
         <!--二级导航栏-->
@@ -295,7 +369,7 @@
                                         <!-- 寄件人信息 -->
                                         <div class="sender container">
                                             <!-- 表单 -->
-                                            <form action="" method="POST">
+                                            <form action="" class="" method="POST">
                                                 <!-- 寄方信息 -->
                                                 <div class="sftitle">
                                                     寄方信息
@@ -303,20 +377,25 @@
                                                         标 * 为必填项
                                                     </span>
                                                     <!-- 智能地址填写链接 需补充 -->
-                                                    <a class="address-intellect" href="javascript:;"><span class="iconfont icon-edit"></span> 智能地址填写</a>
-                                                   <!-- 使用地址簿 需补充 -->
-                                                    <a class="address-book" href="javascript:;"><span class=" iconfont icon-dizhibu"></span>使用地址簿</a>
-                                                   
+                                                    <a class="address-intellect" href="javascript:;"><span
+                                                            class="iconfont icon-edit"></span> 智能地址填写</a>
+                                                    <!-- 使用地址簿 需补充 -->
+                                                    <a class="address-book" href="javascript:;"><span
+                                                            class=" iconfont icon-dizhibu"></span>使用地址簿</a>
+
                                                 </div>
                                                 <!-- 姓名行 -->
                                                 <div class="form-group row">
                                                     <div class="col-xs-5">
                                                         <label class="control-label required" for="">姓名</label>
-                                                        <input class="form-control" type="text" placeholder="请填写联系人姓名">
+                                                        <input 
+                                                    class="senderName
+                                                    form-control input_red
+                                                        " type="text" placeholder="请填写联系人姓名"><span class="spa spa1"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
-                                                        <label for="" class="control-label">公司名称</label>
-                                                        <input class="form-control" type="text" placeholder="请填写公司名称">
+                                                        <label for="" class="  control-label">公司名称</label>
+                                                        <input class="form-control company input_red" type="text" placeholder="请填写公司名称"><span class="spa   spa4"></span>
                                                     </div>
 
                                                 </div>
@@ -324,11 +403,12 @@
                                                 <div class="form-group row">
                                                     <div class="col-xs-5">
                                                         <label class="control-label " for="">手机号码</label>
-                                                        <input class="form-control" type="text" placeholder="请填写手机号码">
+                                                        <input class="form-control telephoneNumber
+                                                        input_red" type="text" placeholder="请填写手机号码"><span class="spa   spa2"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
-                                                        <label for="" class="control-label">固话</label>
-                                                        <input class="form-control" type="text" placeholder="请填写固话号码">
+                                                        <label for="" class=" control-label">固话</label>
+                                                        <input class="form-control lineTelephone  input_red" type="text" placeholder="请填写固话号码"><span class="spa   spa5"></span>
                                                     </div>
 
                                                 </div>
@@ -336,9 +416,9 @@
                                                 <div class="form-group row">
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">省市区</label>
-                                                        <input class="form-control" type="text"
-                                                            placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区">
-                                                            <span class="iconfont icon-fuwufanwei"></span>
+                                                        <input class="form-control bigAddress input_red" type="text"
+                                                            placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区"><span class="spa spa3"></span>
+                                                        <span class="iconfont icon-fuwufanwei"></span>
                                                     </div>
 
 
@@ -346,23 +426,24 @@
                                                 <!-- 详细地址 -->
                                                 <div class="form-group row">
                                                     <div class="col-xs-10">
-                                                        <label class="control-label required" for="">详细地址</label>
-                                                        <input class="form-control" type="text"
-                                                            placeholder="请选择所在街道以及详细地址">
-                                                            
+                                                        <label class="
+                                                        control-label required" for="">详细地址</label>
+                                                        <input class="form-control smallAddress input_red" type="text"
+                                                            placeholder="请选择所在街道以及详细地址"><span class="spa  spa6"></span>
+
                                                     </div>
 
 
                                                 </div>
-                                              
-                          
+
+
 
                                             </form>
                                         </div>
 
                                         <!-- 下一步按钮 -->
                                         <div class="btn_nav  clearfix">
-                                            <button class="btn-primary big fr">下一步
+                                            <button  class="nextButton btn-primary big fr">下一步
                                                 <span class="iconfont icon-duanjiantou"></span>
                                             </button>
                                         </div>
@@ -372,10 +453,15 @@
                         </div>
                     </section>
 
-                   <!-- 寄大件的内容 -->
+
+
+        
+
+
+                    <!-- 寄大件的内容 -->
                     <section>
                         <div class="bulkShipping-big">
-                  
+
                             <!-- 步骤下面的内容 -->
                             <div class="item clearfix">
                                 <!-- 当前翻页盒子 -->
@@ -399,22 +485,25 @@
                                                         标 * 为必填项
                                                     </span>
                                                     <!-- 智能地址填写链接 需补充 -->
-                                                    <a class="address-intellect" href="javascript:;"><span class="iconfont icon-edit"></span> 智能地址填写</a>
-                                                   <!-- 使用地址簿 需补充 -->
-                                                    <a class="address-book" href="javascript:;"><span class=" iconfont icon-dizhibu"></span>使用地址簿</a>
-                                                     <!-- 价格计算 -->
-                                                     <a class="price" href="javascript:;"><span class=" iconfont icon-jisuanqi"></span>价格计算</a>
-                                                   
+                                                    <a class="address-intellect" href="javascript:;"><span
+                                                            class="iconfont icon-edit"></span> 智能地址填写</a>
+                                                    <!-- 使用地址簿 需补充 -->
+                                                    <a class="address-book" href="javascript:;"><span
+                                                            class=" iconfont icon-dizhibu"></span>使用地址簿</a>
+                                                    <!-- 价格计算 -->
+                                                    <a class="price" href="javascript:;"><span
+                                                            class=" iconfont icon-jisuanqi"></span>价格计算</a>
+
                                                 </div>
                                                 <!-- 姓名行 -->
                                                 <div class="form-group row">
                                                     <div class="col-xs-5">
                                                         <label class="control-label required" for="">姓名</label>
-                                                        <input class="form-control" type="text" placeholder="请填写联系人姓名">
+                                                        <input class="senderName input form-control input_red" type="text" placeholder="请填写联系人姓名"><span class="spa  spa1"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
                                                         <label for="" class="control-label">公司名称</label>
-                                                        <input class="form-control" type="text" placeholder="请填写公司名称">
+                                                        <input class="company input form-control input_red" type="text" placeholder="请填写公司名称"><span class="spa  spa4"></span>
                                                     </div>
 
                                                 </div>
@@ -422,11 +511,11 @@
                                                 <div class="form-group row">
                                                     <div class="col-xs-5">
                                                         <label class="control-label " for="">手机号码</label>
-                                                        <input class="form-control" type="text" placeholder="请填写手机号码">
+                                                        <input class="telephoneNumber form-control input_red input" type="text" placeholder="请填写手机号码"><span class="spa  spa2"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
                                                         <label for="" class="control-label">固话</label>
-                                                        <input class="form-control" type="text" placeholder="请填写固话号码">
+                                                        <input class="lineTelephone form-control input_red input" type="text" placeholder="请填写固话号码"><span class="spa  spa5"></span>
                                                     </div>
 
                                                 </div>
@@ -434,9 +523,9 @@
                                                 <div class="form-group row">
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">省市区</label>
-                                                        <input class="form-control" type="text"
+                                                        <input class="bigAddress form-control input_red input" type="text"
                                                             placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区">
-                                                            <span class="iconfont icon-fuwufanwei"></span>
+                                                        <span class="iconfont icon-fuwufanwei"></span><span class="spa  spa3"></span>
                                                     </div>
 
 
@@ -445,9 +534,9 @@
                                                 <div class="form-group row">
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">详细地址</label>
-                                                        <input class="form-control" type="text"
-                                                            placeholder="请选择所在街道以及详细地址">
-                                                            
+                                                        <input class="smallAddress form-control input_red input" type="text"
+                                                            placeholder="请选择所在街道以及详细地址"><span class="spa  spa6"></span>
+
                                                     </div>
 
 
@@ -466,22 +555,24 @@
                                                         标 * 为必填项
                                                     </span>
 
-                                                   
+
                                                     <!-- 智能地址填写链接 需补充 -->
-                                                    <a class="address-intellect" href="javascript:;"><span class="iconfont icon-edit"></span> 智能地址填写</a>
-                                                   <!-- 使用地址簿 需补充 -->
-                                                    <a class="address-book" href="javascript:;"><span class=" iconfont icon-dizhibu"></span>使用地址簿</a>
-                                                   
+                                                    <a class="address-intellect" href="javascript:;"><span
+                                                            class="iconfont icon-edit"></span> 智能地址填写</a>
+                                                    <!-- 使用地址簿 需补充 -->
+                                                    <a class="address-book" href="javascript:;"><span
+                                                            class=" iconfont icon-dizhibu"></span>使用地址簿</a>
+
                                                 </div>
                                                 <!-- 姓名行 -->
                                                 <div class="form-group row">
                                                     <div class="col-xs-5">
                                                         <label class="control-label required" for="">姓名</label>
-                                                        <input class="form-control" type="text" placeholder="请填写联系人姓名">
+                                                        <input class="senderName form-control input_red input" type="text" placeholder="请填写联系人姓名"><span class="spa  spa1"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
                                                         <label for="" class="control-label">公司名称</label>
-                                                        <input class="form-control" type="text" placeholder="请填写公司名称">
+                                                        <input class="company form-control input_red input" type="text" placeholder="请填写公司名称"><span class="spa  spa4"></span>
                                                     </div>
 
                                                 </div>
@@ -489,11 +580,11 @@
                                                 <div class="form-group row">
                                                     <div class="col-xs-5">
                                                         <label class="control-label " for="">手机号码</label>
-                                                        <input class="form-control" type="text" placeholder="请填写手机号码">
+                                                        <input class="telephoneNumber input_red form-control input" type="text" placeholder="请填写手机号码"><span class="spa  spa2"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
                                                         <label for="" class="control-label">固话</label>
-                                                        <input class="form-control" type="text" placeholder="请填写固话号码">
+                                                        <input class="lineTelephone  input_red form-control input" type="text" placeholder="请填写固话号码"><span class="spa  spa5"></span>
                                                     </div>
 
                                                 </div>
@@ -501,9 +592,9 @@
                                                 <div class="form-group row">
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">省市区</label>
-                                                        <input class="form-control" type="text"
-                                                            placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区">
-                                                            
+                                                        <input class="bigAddress input_red form-control input" type="text"
+                                                            placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区"><span class="spa  spa3"></span>
+
                                                     </div>
 
 
@@ -512,9 +603,9 @@
                                                 <div class="form-group row">
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">详细地址</label>
-                                                        <input class="form-control" type="text"
-                                                            placeholder="请选择所在街道以及详细地址">
-                                                            
+                                                        <input class="smallAddress input_red form-control input" type="text"
+                                                            placeholder="请选择所在街道以及详细地址"><span class="spa  spa6"></span>
+
                                                     </div>
 
 
@@ -536,38 +627,311 @@
                                                         我同意
                                                     </a>
                                                     <!-- 电子运单契约条款 -->
-                                                    <a href="">《电子运单契约条款》</a>
+                                                    <a class="electronicTerms" href="">《电子运单契约条款》</a>
                                                 </div>
                                             </form>
                                         </div>
-                                        <!-- 下一页按钮 -->
+                                        <!-- 下单按钮 -->
                                         <div class="text-center  clearfix">
                                             <button id="orders" class="btn-primary submit-order big ">下单
-                                           
                                             </button>
                                         </div>
+                                        <!-- 重货包裹均需保价 -->
                                         <div class="support_value">
-                                            <a  href="javascript:;">重货包裹均需保价,点击了解</a>
-                                            
+                                            <a data-toggle="modal" data-target="#myModal"
+                                            data-backdrop="false"
+                                                rel="noopener noreferrer">重货包裹均需保价,点击了解</a>
+
+
+
+                                            <!-- 重货保价 模态框（Modal） -->
+                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                                aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-hidden="true">
+                                                                &times;
+                                                            </button>
+                                                            <div class="modal-title" id="myModalLabel">
+                                                                重货包裹服务保价说明
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h3>*下单需保价,最低收费1元</h3>
+                                                            <div class="support_value_model_content">
+                                                                <p>a.声明价值500元及以下:1元人民币/票;</p>
+                                                                <p>b.声明价值501-1000元:2元人民币/票;</p>
+                                                                <p>c.声明价值1000元及以下:保费=声明价值*标准服务率(5%),四舍五入取整;</p>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="text-center padding20">
+                                                            <button type="button" class="btn big btn-primary"
+                                                                data-dismiss="modal">我知道了
+                                                            </button>
+
+                                                        </div>
+                                                    </div><!-- /.modal-content -->
+                                                </div><!-- /.modal -->
+                                            </div>
+
+
+
+
+
                                         </div>
-
-
-                                        
-                                  
-
-
-
-
-
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
 
+
+
+                    <!-- 表单验证 -->
+                    <script type="text/javascript">
+                       
+                        /************************  失焦判断  **********************************/
+                            $("input").blur(function(){
+                                $(".spa").css("color","#BD362F")
+                                if($(this).is(".senderName")){             //姓名判断
+                                    const na=/^[\u4E00-\u9FA5]{2,4}$/
+                                    if($(".senderName").val()!=""){
+                                        if(!(na.test($(".senderName").val()))){
+                                            $(".spa1").text("请输入2-4个汉字");
+                                           
+                                            return false;
+                                        }else if(na){
+                                            $(".spa1").text("");
+                                            return true;
+                                        }
+                                    }else{
+                                        $(".spa1").text("");
+                                    }
+                                }
+    
+                                if($(this).is(".company")){             //公司判断
+                                    const con=/^[\u4E00-\u9FA5]{2,18}$/
+                                    if($(".company").val()!=""){
+                                        if(!(con.test($(".senderName").val()))){
+                                            $(".spa4").text("请输入公司名(2-18个汉字)");
+                                           
+                                            return false;
+                                        }else if(con){
+                                            $(".spa4").text("");
+                                            return true;
+                                        }
+                                    }else{
+                                        $(".spa4").text("");
+                                    }
+                                }
+                                if($(this).is(".telephoneNumber")){            //手机号判断
+                                    const ph=/^1[3|5|7|8|][0-9]{9}$/
+                                    if($(".telephoneNumber").val()!=""){
+                                    if(!(ph.test($(".telephoneNumber").val()))){
+                                        $(".spa2").text("请输入正确手机号");
+                                     
+                                    }else if(ph){
+                                        $(".spa2").text("");
+                                        return true;
+                                    }
+                                    }else{
+                                        $(".spa2").text("");
+                                    }
+                                }
+                                if($(this).is(".lineTelephone")){            //固话判断
+                                    const lt=/^[0-9]{7,8}$/
+                                    if($(".lineTelephone").val()!=""){
+                                    if(!(lt.test($(".lineTelephone").val()))){
+                                        $(".spa5").text("请输入正确电话号码(7-8位数字)");
+                                     
+                                    }else if(lt){
+                                        $(".spa5").text("");
+                                        return true;
+                                    }
+                                    }else{
+                                        $(".spa5").text("");
+                                    }
+                                }
+                                if($(this).is(".bigAddress")){            //省市地址判断
+                                    var ad=/^(?=.*?[\u4E00-\u9FA5])[\dA-Za-z\u4E00-\u9FA5]{4,32}/;
+                                    if($(".bigAddress").val()!=""){
+                                    if(!(ad.test($(".bigAddress").val()))){
+                                        $(".spa3").text("请输入省市地址");
+                                     
+                                    }else if(ad){
+                                        $(".spa3").text("");
+                                        return true;
+                                    }
+                                    }else{
+                                        $(".spa3").text("");
+                                    }
+                                }
+    
+                                if($(this).is(".smallAddress")){            //详细地址判断
+                                    const ad=/^(?=.*?[\u4E00-\u9FA5])[\dA-Za-z\u4E00-\u9FA5]{4,32}/;
+                                    if($(".smallAddress").val()!=""){
+                                    if(!(ad.test($(".smallAddress").val()))){
+                                        $(".spa6").text("请输入详细地址");
+                                     
+                                    }else if(ad){
+                                        $(".spa6").text("");
+                                        return true;
+                                    }
+                                    }else{
+                                        $(".spa6").text("");
+                                    }
+                                }
+    
+                            })
+                        /********************** 聚焦提示 ************************/	
+                            $("input").focus(function(){
+                                if($(this).is(".senderName")){
+                                   
+                                    $(".spa1").text("2-4个汉字").css("color","#aaa")
+                                }
+                                if($(this).is(".telephoneNumber")){
+                                    $(".spa2").text("11位手机号码").css("color","#aaa")
+                                
+                                }
+                                if($(this).is(".bigAddress")){
+                                    $(".spa3").text("例如湖南省长沙市岳麓区").css("color","#aaa")
+                                    
+                                }
+                                if($(this).is(".company")){
+                                    $(".spa4").text("请输入公司名(2-18个汉字)").css("color","#aaa")
+                                    
+                                }
+                                if($(this).is(".lineTelephone")){
+                                    $(".spa5").text("7-8位数字").css("color","#aaa")
+                                    
+                                }
+                                if($(this).is(".smallAddress")){
+                                    $(".spa6").text("请输入详细地址").css("color","#aaa")
+                                    
+                                }
+    
+    
+                            })
+                        /*********************** 提交验证 ***************************/
+                            $(".nextButton").click(function(){
+                                const na=/^[\u4E00-\u9FA5]{2,4}$/;   //姓名正则
+                                const ph=/^1[3|5|7|8|][0-9]{9}$/;    //手机号正则
+                                const ad=/^(?=.*?[\u4E00-\u9FA5])[\dA-Za-z\u4E00-\u9FA5]{8,32}/;     //地址正则
+                                const smad=/^(?=.*?[\u4E00-\u9FA5])[\dA-Za-z\u4E00-\u9FA5]{4,32}/;  //详细地址正则
+                                const lt=/^[0-9]{7,8}$/  //固定电话正则
+                                const con=/^[\u4E00-\u9FA5]{2,18}$/  //公司名正则
+                                if(na.test($(".senderName").val())&&ph.test($(".telephoneNumber").val())&&ad.test($(".bigAddress").val())&&smad.test($(".smallAddress"))&&lt.test($(".lineTelephone"))&&con.test($(".company"))){
+                                    return true;
+                                }else{
+                                    if($(".senderName").val()==""){
+                                        $(".spa1").text('请你填写用户名')
+                                    } 
+                                    if($(".telephoneNumber").val()==""){
+                                        $(".spa2").text('请你填写手机号')
+                                    } 
+                                    if($(".bigAddress").val()==""){
+                                        $(".spa3").text('请你填写地址')
+                                    }
+                                    if($(".company").val()==""){
+                                        $(".spa4").text('请输入公司名(2-18个汉字)')
+                                    }
+                                    if($(".lineTelephone").val()==""){
+                                        $(".spa5").text('请输入正确电话号码')
+                                    }
+                                    if($(".smallAddress").val()==""){
+                                        $(".spa6").text('请输入详细地址')
+                                    }
+                                    return false;
+                                }
+                            })
+                         
+                            if($('.senderName').val()==''||$('.telephoneNumber').val()==''||$('.lineTelephone').val()==''||$('.company').val()==''||$('.bigAddress').val()==''||$('.smallAddress').val()=='') {
+                               $( '.submit-order').attr({
+                                    "disabled": "disabled"
+                                }) .css('background-color', '#999').css('cursor', 'not-allowed');
+                            }else {
+                                $( '.submit-order').css('background-color', '#dc1e32').css('cursor', 'pointer')
+                                .removeAttr("disabled");
+                            }
+                      
+                      </script>
+    
+
                     <!-- 二维码寄件 -->
-                    <section>3</section>
+                    <section class="ewm">
+                        <!-- 二维码寄件下面的内容 -->
+                        <div class="item clearfix">
+                            <!-- 当前翻页盒子 -->
+                            <div class="page ">
+                                <!-- 盒子容器 -->
+                                <div class="page-wrapper">
+                                    <div class="ewm-content">
+                                        <!-- 纸质运单 -->
+                                        <h3 class="title">
+                                            有扫码寄件<a  data-toggle="modal" data-target="#paperBill"
+                                            rel="noopener noreferrer" class="paperBill ">纸质运单</a>
+                                              <!-- 纸质运单 模态框（Modal） -->
+                                              <div class="modal fade" id="paperBill" tabindex="-1" role="dialog"
+                                              aria-labelledby="myModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                      <div class="modal-header">
+                                                          <button type="button" class="close" data-dismiss="modal"
+                                                              aria-hidden="true">
+                                                              &times;
+                                                          </button>
+                                                          <div class="modal-title" id="paperBillLabel">
+                                                             
+                                                          </div>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                           <img src="../images/qr-paper-bill.png" alt="">
+
+
+                                                      </div>
+                                                     
+                                                  </div><!-- /.modal-content -->
+                                              </div><!-- /.modal -->
+                                          </div>
+                                        </h3>
+                                        <ul class="step clearfix">
+                                            <li>
+                                                <span>
+                                                    01
+                                                </span>
+                                                <p>输入纸质二维码上的运单号</p>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    02
+                                                </span>
+                                                <p>填写寄件信息</p>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    03
+                                                </span>
+                                                <p>将包裹与二维码交给收派员</p>
+                                            </li>
+                                        </ul>
+
+                                        <!-- 运单号查询 需补充 -->
+                                        <form class="clearfix" action="">
+                                            <input class="fl " type="text" name="billNumber" placeholder="请输入运单号以开始">
+                                            <button class="fl btn-primary big square" type="submit">下一步</button>
+                                        </form>
+                                        <p class="tips">温馨提示:此方式下单不会通知快递员上门取件,如需快递员及时上门收件,请使用"寄快递"下单或联系快递员。</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
                 </div>
             </div>
         </div>
@@ -575,10 +939,19 @@
 
 
 
-
+        <script>
+            $(function () {
+                $('#identifier').modal({
+                    keyboard: false
+                })
+            })
+        </script>
 
         <!-- tab栏切换JavaScript代码 -->
         <script>
+
+
+
             class Tab {
                 constructor(id) {
                     this.main = document.querySelector(id);
@@ -720,8 +1093,7 @@
                 <ul class="footer_ver_r">
                     <li>
                         <a
-                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</aclass="btn>
-
+                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
                     </li>
                 </ul>
             </div>
@@ -754,3 +1126,5 @@
 </body>
 
 </html>
+
+

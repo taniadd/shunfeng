@@ -1,8 +1,4 @@
-body {
-    font-size  : 13px;
-    line-height: 1.4287;
-    font-family: "Source Han Sans", "微软雅黑", "microsoft yahei", "HanHei SC", PingHei, "PingFang SC", sans-serif;
-}
+
 .text-center {
     text-align: center;
 }
@@ -16,6 +12,30 @@ a {
     text-decoration: none !important;
 }
 
+
+
+
+/* 登录框冲突  */ 
+.login,
+.login .login_content,
+.login .login_title,
+.login .login_denglu {
+    box-sizing: content-box !important;
+}
+.login_input {
+    box-sizing: border-box !important;
+}
+.reset .login_denglu_box,
+.reset .login_tel,
+.reset .login_yan 
+.reset .login_denglu_quick{
+    box-sizing: content-box !important;
+
+}
+ 
+.login :before,.login :after {
+    box-sizing: content-box !important;
+}
 /* 二级导航栏样式 */
 .quick_header_nav {
     height         : 71px;
@@ -192,12 +212,16 @@ margin-top: 20px;
 }
 
 /* 设置表单里面的样式 */
-
+.sender form {
+    width: 100%;
+}
 
 div[class^="col-xl-"] {
     float: left;
 }
-form {
+
+.bulkShipping form ,
+.bulkShipping-big form {
     width: 800px;
     margin-left: -15px;
     padding-top: 25px ;
@@ -207,6 +231,7 @@ form {
 }
 /* 寄方信息行 */
 .sftitle {
+    margin-top: 20px;
     font-size    : 17px;
     margin-bottom: 20px;
 }
@@ -267,6 +292,17 @@ label {
     content: "* ";
     color  : #eb1d21;
 }
+.spa{
+    height: 36px;
+    line-height: 36px;
+    width: 204px;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    color: #BD362F;
+    text-indent: 10px;
+    margin-top: 10px;
+    }
 /* 表单里面的内容行 */
 .form-group {
     margin-top   : 20px;
@@ -277,9 +313,10 @@ label {
 }
 
 .form-group .form-control {
-    border       : 1px solid transparent !important;
-    border-bottom: 1px solid #ccc !important;
+    border       : 1px solid transparent ;
+    border-bottom: 1px solid #ccc ;
     padding      : 6px 0 !important;
+    border-radius: 0px;
 }
 
 .form-group  .icon-fuwufanwei {
@@ -315,7 +352,7 @@ label {
     -webkit-transition: all .2s linear;
 }
 
-.btn-primary:hover {
+.btn-primary.nextButton:hover {
     background-color: #f74b53 !important;
 }
 
@@ -332,6 +369,18 @@ label {
 }
 
 /* 寄大件的样式 */
+ .heavyCargo_sc img{
+     width: 800px;
+ }
+
+ /* 寄大件保存地址 */
+ .save-address-check.checked:hover,
+ .electronicTerms:hover{
+     color: #dc1e32;
+ }
+ .electronicTerms {
+     color: #dc1e32;
+ }
 /* 寄大件的提交按钮 */
 .submit-order {
     background-color: #999 !important;
@@ -343,10 +392,100 @@ label {
 .checked span {
     color: #dc1e32;
 }
+
+
 /* 重货保价 */
 .support_value {
     padding-top: 18px;
 }
 .support_value a {
     color: #dc1e32;
+}
+#myModal .modal-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.padding20 {
+    padding: 20px 0;
+}
+h3 {
+    font-size: 15px;
+    margin-top: 18px;
+    margin-bottom: 9px;
+}
+.support_value_model_content {
+    padding: 20px 15px ;
+}
+.support_value_model_content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.modal-content {
+    border-radius: 0px !important;
+    border-top: 6px solid #dc1e32 !important;
+}
+
+
+
+/* 二维码寄件 */
+.ewm-content {
+    padding: 50px;
+}
+.ewm-content .title {
+    margin-bottom: 35px;
+    font-size: 23px;
+    font-weight: normal;
+}
+.ewm-content .step li {
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+    height: 162.6px;
+    padding: 15px;
+    box-shadow: 0 11px 33px 11px #f2f2f2;
+}
+.ewm-content .step li:first-child {
+    margin-left: 0px;
+}
+.ewm-content .step span{
+    color: #dc1e32;
+    font-size: 43px;
+}
+.ewm-content .step li p {
+    margin-top: 35px;
+}
+.ewm-content .tips {
+    color: #dc1e32;
+    width: 545px;
+}
+
+.btn-primary.square {
+    border-radius: 2px !important;
+}
+.ewm-content form {
+    margin:40px 0 ;
+}
+.ewm-content form input {
+    
+    height: 48px;
+    padding-left: 15px;
+    background: #f2f2f2;
+    width: 372px;
+}
+.ewm-content form button {
+    min-width: auto !important;
+    width: 172px;
+    background: #333;
+}
+
+/* 二维码中纸质运单模态框 */
+.ewm-content .paperBill {
+    color: #dc1e32 !important;
+}
+#paperBill .modal-header {
+    border-bottom: none !important;
+
+}
+#paperBill .modal-body img {
+    width: 100%;
 }
