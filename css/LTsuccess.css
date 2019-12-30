@@ -155,10 +155,19 @@
 .LTmodule .LTnum .num2:hover{
     color: #DA1D35;
 }
+.LTmodule .LTnum .num5:hover{
+    color: #DA1D35;
+}
 .LTmodule .LTnum .num3:hover{
     background: url(../images/btn-prev-red.png) no-repeat -11px 5px;
 }
+.LTmodule .LTnum .num4:hover{
+    background: url(../images/btn-prev-red.png) no-repeat 3px 5px;
+}
 .LTmodule .LTnum .num1{
+    color: #DA1D35;
+}
+.LTmodule .LTnum .num6{
     color: #DA1D35;
 }
 .LTmodule .LTnum a:hover{
@@ -172,6 +181,15 @@
     height: 18px;
     width: 13px;
 }
+.LTmodule .LTnum .num4{
+    background: url(../images/btn-prev.png) no-repeat 3px 5px;
+    display: block;
+    height: 18px;
+    width: 13px;
+}
+
+
+
 .LTmodule .LTmo .LTcircle .telephone{
     width: 18%;
     margin-left: 40px;
@@ -180,6 +198,11 @@
     font-size: 15px;
     width: 77px;
     padding-left: 12px;
+}
+
+.LTmodule .kong{
+    height: 70px;
+    display: block;
 }
 
 
@@ -204,6 +227,10 @@
  }
  .LTmodule li :hover .LTcircle .telephone{
     content:url("../images/white-t-img-1.png");
+    transition:all 0.3s;
+ }
+ .LTmodule li :hover .LTcircle .fresh{
+    content:url("../images/white-t-img-3.png");
     transition:all 0.3s;
  }
 .LTmodule li :hover .LTbox{
