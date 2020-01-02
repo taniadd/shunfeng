@@ -15,7 +15,7 @@
 
 .warehouse_service_tab {
     position: relative;
-    z-index: 999;
+    z-index: 5;
     width: 100%;
     left: 0;
     top: 0;
