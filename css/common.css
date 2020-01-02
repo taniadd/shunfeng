@@ -386,5 +386,46 @@
     color: #ffffff;
 }
 
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/font_t99d9cklc6/iconfont.eot');
+    src: url('../font//font_t99d9cklc6/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/font_t99d9cklc6/iconfont.woff2') format('woff2'), url('../font/font_t99d9cklc6/iconfont.woff') format('woff'), url('../font/font_t99d9cklc6/iconfont.ttf') format('truetype'), url('../font/font_t99d9cklc6/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont_ding {
+    font-family: "iconfont" !important;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.return_to {
+    display: none;
+    color: #dc1e32;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #dc1e32;
+    border-radius: 50%;
+    position: fixed;
+    top: 100%;
+    right: 50%;
+    margin-top: -50px;
+    margin-right: -640px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer {
+    position: relative;
+}
+
+.return_to:hover {
+    border: 3px solid #000;
+    color: #000;
+}
+
 
 /* 底部样式结束 */

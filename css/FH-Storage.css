@@ -1,0 +1,243 @@
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 22px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.warehouse_service {}
+
+.warehouse_service img {
+    width: 100%;
+    height: 100%;
+}
+
+.warehouse_service_tab {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 90px;
+    background-color: #f1f1f1;
+}
+
+.warehouse_service_tab_a {
+    position: absolute;
+    display: none;
+    width: 250px;
+    height: 90px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90px;
+}
+
+.warehouse_service_tab_a a {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #dc1e32;
+    padding: 15px 0;
+}
+
+.warehouse_service_tab_a a:nth-child(1) {
+    color: #000;
+}
+
+.warehouse_service_tab_a a:hover {
+    background-color: #dc1e32;
+    color: #fff;
+}
+
+.service_tab {
+    width: 250px;
+    height: 180px;
+    margin: auto;
+}
+
+.service_tab:hover .warehouse_service_tab_a {
+    display: block;
+}
+
+.warehouse_service_tab h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #dc1e32;
+    border-bottom: 2px solid #dc1e32;
+    width: 75px;
+    padding-bottom: 5px;
+    margin: auto;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.standardization h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.standardization {
+    height: 1000px;
+    overflow: hidden;
+}
+
+.standardization ul {
+    width: 850px;
+    margin: auto;
+}
+
+.standardization ul li {
+    position: relative;
+    border: 4px solid #f1f1f1;
+    width: 38%;
+    float: left;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 120px;
+    height: 250px;
+}
+
+.standardization ul li:nth-child(2n-1) {
+    margin-right: 60px;
+}
+
+.standardization ul li h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.standardization ul li p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.standardization ul li img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -55px;
+}
+
+.cooperation {
+    position: relative;
+    background-color: #f1f1f1;
+    height: 120px;
+    width: 100%;
+    padding-top: 1px;
+    margin: 60px 0;
+}
+
+.consult {
+    display: block;
+    width: 143px;
+    height: 55px;
+    background-color: #dc1e32;
+    font-size: 18px;
+    line-height: 55px;
+    margin-left: 250px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.consult img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ppp {
+    border: 1px solid #3e3e40;
+    border-radius: 50%;
+    color: #3e3e40;
+    background-color: transparent!important;
+    font-size: 22px;
+    padding: 1px;
+}
+
+.cooperation_share {
+    position: absolute;
+    right: 200px;
+    top: 50px;
+}
+
+.cooperation_share ul li {
+    float: left;
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+}
+
+.cooperation_share ul li a {
+    display: block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #3e3e40;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.cooperation_share ul li a:hover {
+    color: #dc1e32;
+    border: 1px solid #dc1e32;
+}
+
+.cooperation_share span {
+    position: absolute;
+    left: -60px;
+    top: 10px;
+    font-size: 16px;
+}
+
+.weixin_code img {
+    position: absolute;
+    display: none;
+    top: -140px;
+    left: 22px;
+    width: 120px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.cooperation_share ul li:nth-child(2):hover .weixin_code img {
+    display: block;
+}
+
+.header .nav_l .current {
+    color: #333333;
+}
+
+
+/* 在线客服样式 */
+
+.index-online-service {
+    position: fixed;
+    top: 70%;
+    right: 10px;
+    width: 66px;
+    background-color: #dc1e32;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 7px;
+    z-index: 10;
+}
+
+.index-online-service p {
+    color: #fff;
+}
+
+.index-online-service:before {
+    content: '';
+    display: block;
+    height: 45px;
+    /* background: url('../images/smallBanner-icon-red.png') no-repeat 17px -183px; */
+    background: url(../images/smallBanner-icon.png) no-repeat 17px -183px #dc1e32;
+}
