@@ -1,0 +1,137 @@
+/* tab导航栏 */
+.tabs_nav_fa {
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    padding: 0 160px;
+    background-color: #F1F1F1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.tabs_nav_fa li {
+    float: left;
+}
+.tabs_nav_fa a {
+    font-size: 18px;
+    font-weight: 700;
+    border-right: 1px solid #000;
+    padding: 0 76px;
+}
+.tabs_nav_fa_a{
+    border-right: 0!important;
+}
+
+/* 内容区域 */
+.tab_content {
+    margin: 60px 126px;
+}
+.tab_content h1{
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0px;
+}
+#nav {
+    display: none;
+}
+.year:hover #nav{
+    display: block;
+}
+.year:hover .trilateral, .month:hover .trilateral {
+    transition: all .2s;
+    transform: rotate(-180deg);
+}
+.month:hover #nav{
+    display: block; 
+}
+.trilateral {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    float: right;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #ccc transparent transparent transparent;
+}
+.head_memu {
+    padding-bottom: 50px;
+}
+.month, .year {
+    position: relative;
+    float: right;
+    height: 45px;
+    width: 140px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 20px;
+    margin-right: 160px;
+    background-color: #f1f1f1;
+    /* overflow: hidden; */
+}
+.year {
+    margin-right: 10px;
+}
+#nav {
+    width: 100%;
+    background-color: #fff;
+}
+#nav a{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+#nav a:hover {
+    color: #fff;
+    background-color: red;
+}
+#nav ul, #nav li {
+    width: 100%;
+}
+.red {
+    color: red;
+}
+
+.download {
+    margin: 0 320px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.download ul {
+    display: block;
+}
+.download ul li {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.download ul li span,
+.download ul li a,
+.download ul li p {
+    display: inline-block;
+    padding: 5px 0;
+}
+.download ul li a {
+    float: right;
+    font-size: 16px;
+}
+
+.flip_over {
+    display: inline-block;  
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 80px;
+}
+.flip_over a {
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+    margin: 0 3px;
+}
+.flip_over .fanye {
+    width: 10px;
+    height: 10px;
+    background: url(../images/btn-prev.png) no-repeat -10px 0;
+    position: relative;
+    top: -1px;
+}

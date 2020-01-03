@@ -1,7 +1,7 @@
-
 .text-center {
     text-align: center;
 }
+
 input {
     outline   : none;
     box-shadow: none !important;
@@ -15,27 +15,30 @@ a {
 
 
 
-/* 登录框冲突  */ 
+/* 登录框冲突  */
 .login,
 .login .login_content,
 .login .login_title,
 .login .login_denglu {
     box-sizing: content-box !important;
 }
+
 .login_input {
     box-sizing: border-box !important;
 }
+
 .reset .login_denglu_box,
 .reset .login_tel,
-.reset .login_yan 
-.reset .login_denglu_quick{
+.reset .login_yan .reset .login_denglu_quick {
     box-sizing: content-box !important;
 
 }
- 
-.login :before,.login :after {
+
+.login :before,
+.login :after {
     box-sizing: content-box !important;
 }
+
 /* 二级导航栏样式 */
 .quick_header_nav {
     height         : 71px;
@@ -115,6 +118,15 @@ a {
     color: #dc1e32;
 }
 
+/* 三级tab栏当前类 */
+section .three_tab.current {
+    display: block;
+}
+
+section .three_tab {
+    display: none;
+}
+
 /*内容区tab栏切换*/
 /* 当前类 */
 .content_wrapper section,
@@ -136,8 +148,8 @@ a {
 
 .bulkShipping ul.step {
     width     : 100%;
-margin-top: 20px;
-    position: relative;
+    margin-top: 20px;
+    position  : relative;
 }
 
 .bulkShipping .step li {
@@ -145,7 +157,7 @@ margin-top: 20px;
     float             : left;
     min-width         : 120px;
     margin-right      : 5px;
-    height: 75px;
+    height            : 75px;
     color             : #ccc;
     transition        : all .2s linear;
     -webkit-transition: all .2s linear;
@@ -159,9 +171,9 @@ margin-top: 20px;
     font-size               : 38px;
     display                 : inline-block;
     position                : relative;
-    top: 12px;
-    margin-bottom: 12px;
-    line-height: 1 !important;
+    top                     : 12px;
+    margin-bottom           : 12px;
+    line-height             : 1 !important;
 }
 
 .bulkShipping .step li p {
@@ -183,14 +195,14 @@ margin-top: 20px;
     color            : #dc1e32;
     /* vertical-align: bottom; */
 
-    height           : 88.6px;
+    height: 88.6px;
 }
 
 .bulkShipping .step li.active strong {
-    font-size: 50px;
-    top: 0px;
+    font-size    : 50px;
+    top          : 0px;
     margin-bottom: 0px;
-    color    : #dc1e32;
+    color        : #dc1e32;
 }
 
 .bulkShipping .step li.active i {
@@ -220,18 +232,20 @@ div[class^="col-xl-"] {
     float: left;
 }
 
-.bulkShipping form ,
+.bulkShipping form,
 .bulkShipping-big form {
-    width: 800px;
+    width      : 800px;
     margin-left: -15px;
-    padding-top: 25px ;
+    padding-top: 25px;
 }
+
 .container {
     width: 800px;
 }
+
 /* 寄方信息行 */
 .sftitle {
-    margin-top: 20px;
+    margin-top   : 20px;
     font-size    : 17px;
     margin-bottom: 20px;
 }
@@ -243,34 +257,36 @@ div[class^="col-xl-"] {
 }
 
 .sftitle a {
-    float       : right;
-    padding-left: 25px;
-    margin-top  : 2px;
-    margin-left : 45px;
-    font-size   : 14px;
-    color       : #333;
-    position    : relative;
+    float          : right;
+    padding-left   : 25px;
+    margin-top     : 2px;
+    margin-left    : 45px;
+    font-size      : 14px;
+    color          : #333;
+    position       : relative;
     text-decoration: none;
 }
 
 
 /* 寄方信息里面链接 */
 
-span[class^="icon-"]{
-    font-size: 23px;
-    position: absolute;
-    left: 0;
-    top: -6px;
+span[class^="icon-"] {
+    font-size  : 23px;
+    position   : absolute;
+    left       : 0;
+    top        : -6px;
     font-weight: 700;
 }
 
 
 .sftitle a:hover {
-    color: #dc1e32 ;
+    color: #dc1e32;
 }
-.sftitle a:hover span{
-    color: #dc1e32 ;
+
+.sftitle a:hover span {
+    color: #dc1e32;
 }
+
 .control-label {
     font-size  : 12px;
     color      : #999;
@@ -292,49 +308,53 @@ label {
     content: "* ";
     color  : #eb1d21;
 }
-.spa{
-    height: 36px;
+
+.spa {
+    height     : 36px;
     line-height: 36px;
-    width: 204px;
-    display: inline-block;
-    float: left;
-    font-size: 12px;
-    color: #BD362F;
+    width      : 204px;
+    display    : inline-block;
+    /* float   :  left; */
+    font-size  : 12px;
+    color      : #BD362F;
     text-indent: 10px;
-    margin-top: 10px;
-    }
+    margin-top : 10px;
+}
+
 /* 表单里面的内容行 */
 .form-group {
     margin-top   : 20px;
     margin-bottom: 15px;
-    margin-left : -15px;
-    margin-right: -15px;
-    position: relative;
+    margin-left  : -15px;
+    margin-right : -15px;
+    position     : relative;
 }
 
 .form-group .form-control {
-    border       : 1px solid transparent ;
-    border-bottom: 1px solid #ccc ;
+    border       : 1px solid transparent;
+    border-bottom: 1px solid #ccc;
     padding      : 6px 0 !important;
     border-radius: 0px;
 }
 
-.form-group  .icon-fuwufanwei {
-    position: absolute;
-    right: 24px;
-    bottom: 0px;
+.form-group .icon-fuwufanwei {
+    position : absolute;
+    right    : 24px;
+    top      : 30px;
     font-size: 23px;
 }
-.form-group  .icon-fuwufanwei:hover {
-     color: #dc1e32;
+
+.form-group .icon-fuwufanwei:hover {
+    color: #dc1e32;
 }
 
 /* 下一页按钮 */
 .btn_nav {
     margin-top: 50px;
 }
+
 .btn-primary {
-    position: relative;
+    position          : relative;
     color             : #fff !important;
     background-color  : #eb1d21;
     font-size         : 14px;
@@ -356,73 +376,97 @@ label {
     background-color: #f74b53 !important;
 }
 
+.btn-primary.backButton {
+    background-color: #fff;
+    color           : #333 !important;
+    border          : 1px solid #f1f1f1;
+}
+
+.btn-primary.backButton:hover {
+    background-color: #f1f1f1;
+}
+
 .btn-primary.big {
     height       : 48px;
     border-radius: 24px;
     min-width    : 229px;
 }
+
 .btn-primary .icon-duanjiantou {
     font-size: 14px;
-    position: absolute;
-    right: 25px;
-    color: #fff;
+    position : absolute;
+    right    : 25px;
+    color    : #fff;
 }
 
 /* 寄大件的样式 */
- .heavyCargo_sc img{
-     width: 800px;
- }
-
- /* 寄大件保存地址 */
- .save-address-check.checked:hover,
- .electronicTerms:hover{
-     color: #dc1e32;
- }
- .electronicTerms {
-     color: #dc1e32;
- }
-/* 寄大件的提交按钮 */
-.submit-order {
-    background-color: #999 !important;
-    margin-top: 20px;
+.heavyCargo_sc img {
+    width: 800px;
 }
+
+/* 寄大件保存地址 */
+.save-address-check.checked:hover,
+.electronicTerms:hover {
+    color: #dc1e32;
+}
+
+.electronicTerms {
+    color: #dc1e32;
+}
+
+/* 寄大件的提交按钮 */
+.btn-primary.submit-order {
+    background-color: #999;
+    margin-top      : 20px;
+}
+
 .checked {
     color: #dc1e32;
 }
+
 .checked span {
     color: #dc1e32;
 }
+
+
 
 
 /* 重货保价 */
 .support_value {
     padding-top: 18px;
 }
+
 .support_value a {
     color: #dc1e32;
 }
+
 #myModal .modal-title {
-    font-size: 18px;
+    font-size  : 18px;
     font-weight: 700;
 }
+
 .padding20 {
     padding: 20px 0;
 }
+
 h3 {
-    font-size: 15px;
-    margin-top: 18px;
+    font-size    : 15px;
+    margin-top   : 18px;
     margin-bottom: 9px;
 }
+
 .support_value_model_content {
-    padding: 20px 15px ;
+    padding: 20px 15px;
 }
+
 .support_value_model_content p {
-    font-size: 14px;
+    font-size    : 14px;
     margin-bottom: 20px;
 }
+
 .modal-content {
     border-radius: 0px !important;
-    border-top: 6px solid #dc1e32 !important;
+    border-top   : 6px solid #dc1e32 !important;
 }
 
 
@@ -431,29 +475,35 @@ h3 {
 .ewm-content {
     padding: 50px;
 }
+
 .ewm-content .title {
     margin-bottom: 35px;
-    font-size: 23px;
-    font-weight: normal;
+    font-size    : 23px;
+    font-weight  : normal;
 }
+
 .ewm-content .step li {
-    float: left;
-    width: 23%;
-    margin: 0 1%;
-    height: 162.6px;
-    padding: 15px;
+    float     : left;
+    width     : 23%;
+    margin    : 0 1%;
+    height    : 162.6px;
+    padding   : 15px;
     box-shadow: 0 11px 33px 11px #f2f2f2;
 }
+
 .ewm-content .step li:first-child {
     margin-left: 0px;
 }
-.ewm-content .step span{
-    color: #dc1e32;
+
+.ewm-content .step span {
+    color    : #dc1e32;
     font-size: 43px;
 }
+
 .ewm-content .step li p {
     margin-top: 35px;
 }
+
 .ewm-content .tips {
     color: #dc1e32;
     width: 545px;
@@ -462,19 +512,22 @@ h3 {
 .btn-primary.square {
     border-radius: 2px !important;
 }
+
 .ewm-content form {
-    margin:40px 0 ;
+    margin: 40px 0;
 }
+
 .ewm-content form input {
-    
-    height: 48px;
+
+    height      : 48px;
     padding-left: 15px;
-    background: #f2f2f2;
-    width: 372px;
+    background  : #f2f2f2;
+    width       : 372px;
 }
+
 .ewm-content form button {
-    min-width: auto !important;
-    width: 172px;
+    min-width : auto !important;
+    width     : 172px;
     background: #333;
 }
 
@@ -482,10 +535,70 @@ h3 {
 .ewm-content .paperBill {
     color: #dc1e32 !important;
 }
+
 #paperBill .modal-header {
     border-bottom: none !important;
 
 }
+
 #paperBill .modal-body img {
     width: 100%;
+}
+
+
+
+
+
+/* 预约信息 */
+
+
+/* 预约信息title行 */
+.appointmentInformation .appointmenttitle  {
+    padding: 20px 0;
+}
+.appointmentInformation .appointmenttitle h3 {
+    font-size: 23px;
+    margin: 0px;
+}
+ .appointmenttitle p a {
+    color: #333;
+    margin-left: 25px;
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    height: 25px;
+    line-height: 25px;
+}
+.red {
+    color: #dc1e32;
+}
+.appointment .oneself {
+    display: none;
+}
+.bg-red{
+    background-color:rgba(255,192,203,.25);
+    color: #dc1e32;
+    padding: 8px;
+}
+/* 返回顶部 */
+.index-online-service {
+    position: fixed;
+    top: 70%;
+    right: 10px;
+    width: 66px;
+    background-color: #dc1e32;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 7px;
+    z-index: 10;
+}
+.index-online-service p {
+    color: #fff;
+}
+.index-online-service:before {
+    content: '';
+    display: block;
+    height: 45px;
+    /* background: url(../images/smallBanner-icon-red.png) no-repeat 17px -183px; */
+    background: url(../images/smallBanner-icon.png) no-repeat 17px -183px #dc1e32;
 }
