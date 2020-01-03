@@ -10,7 +10,7 @@ $(() => {
             $('.tabs_nav').css('marginTop', '0')
             $('.return_to').fadeOut();
         }
-        let botton = $('.footer').offset().top - 650
+        let botton = $('.footer').offset().top - 680
         if ($(document).scrollTop() > botton) {
             console.log(12);
 
