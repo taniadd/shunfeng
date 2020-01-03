@@ -1,10 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>首页</title>
-
     <link href="css/base.css" type="text/css" rel="stylesheet" />
     <link href="css/common.css" type="text/css" rel="stylesheet" />
     <link href="css/dlindex.css" type="text/css" rel="stylesheet" />
@@ -14,7 +12,13 @@
     <script src="./js/login.js"></script>
 </head>
 
-<body>
+<body class="shouye_index">
+    <!-- 在线客服开始 -->
+    <div  class="online_servic">
+       <a href="javascript:;"></a>
+       <p>在线客服</p>
+    </div>
+        <!-- 在线客服结束 -->
     <div class="mwrap">
         <!-- 头部开始 -->
         <div class="header">
@@ -314,6 +318,9 @@
             </div>
         </div>
         <!-- banner结束 -->
+
+   
+
         <!-- content开始 -->
         <div class="content">
             <!-- 内容导航 -->
@@ -352,7 +359,7 @@
                 <h2>顺丰全业务介绍</h2>
                 <div class="content_banner_list">
                     <ul class="content_banner_tit">
-                        <li class="current"><a href="javascript:;">物流</a></li>
+                        <li class="content_current"><a href="javascript:;">物流</a></li>
                         <li><a href="javascript:;">金融</a></li>
                     </ul>
                     <ul class="content_banenr_img">
@@ -360,21 +367,138 @@
                             <a href="javascript:;">
                                 <img src="images/lengyunbusiness-img2.jpg" />
                                 <div class="content_img_tit">
-                                    <span></span>
-                                    <p></p>
+                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
+                                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:;">
                                 <img src="images/lengyunbusiness-img2.jpg" />
-
+                                <div class="content_img_tit">
+                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>冷运服务</h3>
+                                    <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
+                                </div>
                             </a>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
             <!-- 物流和金融的轮播图结束 -->
+
+            <!-- 成功案例开始 -->
+            <div class="content_success">
+                <div class="content_su_tit">
+                    <h2>成功案例</h2>
+                    <span>每一时刻，都有无数的客户托付与期待被成功交付，顺丰与前瞻者同行，与成就者共成就</span>
+                    <a href="javascript:;">查看全部> </a>
+                </div>
+                <ul class="content_su_nav">
+                    <li>
+                        <a href="javascript:;">
+                            <div class="su_nav_img">
+                                <img src="images/red-t-img-1.png" class="red"/>
+                                <img src="images/white-t-img-1.png" class="white"/>
+                            </div>
+                            <p>3C电子行业</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="su_nav_img">
+                                <img src="images/red-t-img-5.png" class="red"/>
+                                <img src="images/white-t-img-5.png" class="white"/>
+                            </div>
+                            <p>医疗行业</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="su_nav_img">
+                                <img src="images/red-t-img-3.png" class="red"/>
+                                <img src="images/white-t-img-3.png" class="white"/>
+                            </div>
+                            <p>生鲜行业</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="su_nav_img">
+                                <img src="images/red-t-img-4.png" class="red"/>
+                                <img src="images/white-t-img-4.png" class="white"/>
+                            </div>
+                            <p>快消行业</p>
+                        </a>
+                    </li>
+                </ul class="content_su_nav">
+              
+            </div>
+            <!-- 成功案例结束 -->
+
+            <!-- 新闻资讯开始 -->
+            <div class="content_new">
+                <div class="content_new_tit">
+                    <h2>新闻资讯</h2>
+                    <span>新闻资讯抢先知晓</span>
+                    <a href="javascript:;"> 查看全部> </a>
+                </div>
+                <ul class="content_new_nav wrap">
+                    <li>
+                        <a href="javascript:;">
+                            <div class="content_new_img">
+                                <img src="images/0923-1.jpg"/>
+                            </div>
+                            <div class="content_new_de">
+                                <h3> 顺丰“空中皇后”B747洲际航线首航入欧，打造全球 ...</h3>
+                                <p> 2019年9月15日凌晨，顺丰第二架B747首航成功。从无锡 ...<b>[详情]</b></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="content_new_img">
+                                <img src="images/ISO29151.jpg"/>
+                            </div>
+                            <div class="content_new_de">
+                                <h3>  顺丰科技获颁ISO/IEC 27701:2019隐 ...</h3>
+                                <p>  2019年11月8日，国际认证机构DNV GL正式向顺丰科技 ...<b>[详情]</b></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="content_new_img">
+                                <img src="images/227360051142573262.png"/>
+                            </div>
+                            <div class="content_new_de">
+                                <h3> 确认过眼神，你就是要寻找的“最美”！</h3>
+                                <p> <b>[详情]</b></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="content_new_img">
+                                <img src="images/picture.jpg"/>
+                            </div>
+                            <div class="content_new_de">
+                                <h3>  深入科学探讨 激发科研新动力——顺丰加入“未来科学 ...</h3>
+                                <p>  顺丰首次参与高峰论坛，与全球杰出科学家分享交流科学发展的前沿 ...<b>[详情]</b></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 新闻资讯结束 -->
+
+            <!-- 返回顶部按钮开始 -->
+            <div class="back_top">
+                <div class="wrap">
+                    <div class="back_top_img wrap"></div>
+                </div>        
+            </div>
+            <!-- 返回顶部按钮结束 -->
 
         </div>
         <!-- content结束 -->
@@ -506,7 +630,7 @@
             <!-- 底部网站安全部分结束 -->
         </div>
         <!-- 尾部结束 -->
-    </div>
+    </divc>
 </body>
 
 </html>
