@@ -1,0 +1,336 @@
+
+button {
+    outline: none;
+}
+/* 预约上门按钮 */
+.order-button-wrapper {
+    text-align: center;
+    padding: 15px 0;
+}
+.order-button {
+    display: inline-block;
+    height: 72px;
+    line-height: 64px;
+    border: solid 4px #dc1e32;
+    border-radius: 3px;
+    background: url(../images/order-button-background.png);
+    font-size: 16px;
+    color: #dc1e32;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.order-button .icon {
+    height: 28px;
+    width: 25px;
+    position: absolute;
+    top: 16px;
+    left: 14px;
+}
+.order-button .text {
+    display: inline-block;
+}
+.order-button .arrow {
+    position: absolute;
+    height: 9px;
+    width: 14px;
+    background: url(../images/order-button-arrow.png);
+    opacity: 0;
+    top: 28px;
+    right: 3px;
+}
+
+.order-button .order-button-inner {
+    position: relative;
+    padding: 0 35px 0 47px;
+}
+.order-button .flash {
+    display: none;
+    position: absolute;
+    background: url(../images/order-button-flash.png);
+    height: 100%;
+    width: 101px;
+    left: -101px;
+    top: 0;
+}
+/* 二级导航栏样式 */
+.quick_header_nav {
+    height         : 71px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    background     : #333;
+    min-width      : 1280px;
+
+}
+
+.quick_header_nav a {
+    padding      : 12px 50px;
+    color        : #999;
+    margin       : 0 2px;
+    position     : relative;
+    border-bottom: 2px solid #333;
+    transition   : border-bottom 1s;
+}
+
+.quick_header_nav a.current {
+    color        : #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.quick_header_nav a:hover {
+    color        : #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* 内容区 */
+.content-wrapper {
+        background: #f2f2f2;
+        padding-bottom: 71px;
+        min-width: 1280px;
+}
+.content-wrapper .content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* 我的包裹内容区 */
+.package-content {
+    background-color: #fff;
+}
+.package-search {
+    position: relative;
+    padding: 24px 141px 0;
+   
+}
+.package-search .input-group {
+    margin: 6px 0;
+    background: #fafafa;
+}
+
+.input-group .form-control {
+    width: 100%;
+    margin-bottom: 0;
+}
+.input-group .package-number-input {
+    min-height: 39px;
+    box-shadow: none;
+    border: none;
+    background-color: #f2f2f2;
+    position: relative;
+    box-sizing: border-box;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.package-number-input input {
+    min-width: 90px;
+    width: 541px;
+    background: 0 0;
+    border: none!important;
+    line-height: 24px;
+    font-size: 13px;
+    box-shadow: none;
+    height: 27px;
+    padding: 0;
+   
+}
+ 
+.search-button   {
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: -64px;
+    width: 72px;
+    height: 39px;
+    min-width: 72px;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #dc1e32;
+}
+
+/* 我的包裹 */
+.package-view {
+    background: #fff;
+}
+.my-packages {
+    margin-top: 24px;
+}
+/* 标题 */
+.my-packages .package-title {
+    padding: 0 80px;
+    font-size: 24px;
+}
+/* 内容区 */
+.my-packages .package-tab {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 17px 0 0 80px;
+    color: #606060;
+    font-size: 16px;
+}
+ .my-packages .package-tab span {
+    display: inline-block;
+    padding-bottom: 7px;
+    border-bottom: 2px solid transparent;
+    padding-right: 25px;
+    margin: 0 30px -1px 0;
+    color: #606060;
+    font-size: 16px
+}
+.my-packages .package-tab span.active {
+    color: #dc1e32;
+    border-bottom: 2px solid  #dc1e32;
+}
+/* tab栏内容 */
+.tab-list {
+    padding: 0 80px;
+}
+
+
+
+
+.empty-list-wrap {
+    text-align: center;
+    padding: 40px 0;
+}
+.empty-list-wrap img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+   
+}
+.tab-list p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.tab-list  .btn-primary {
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 20px;
+    min-width: auto;
+    padding: 0 45px;
+    color: #fff!important;
+    background-color: #dc1e32;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+
+/* 运单详细 */
+.tab-list .item {
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.tab-list .item:hover,
+.tab-list .item:hover button  {
+    background-color: #f2f2f2;
+}
+
+ 
+.tab-list .item .flow {
+    margin-top: 15px;
+}
+.tab-list .item .city {
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+}
+.gray {
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    color: #999;
+}
+.center-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress {
+    background-position-y: -50px;
+    width: 94px;
+    height: 4px;
+    display: inline-block;
+    background-image: url(../images/progress.png);
+    background-size: cover;
+}
+.tab-list .item .sender {
+    width: 140px;
+}
+.tab-list .item .receiver {
+    width: 140px;
+    text-align: right;
+}
+.tab-list .text {
+    text-align: center;
+    color: #dc1e32;
+}
+.tab-list button {
+    background-color: #fff;
+}
+.tab-list {
+    padding-bottom: 70px;
+}
+
+
+
+
+
+
+/* 返回顶部 */
+.index-online-service {
+    position: fixed;
+    top: 70%;
+    right: 10px;
+    width: 66px;
+    background-color: #dc1e32;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 7px;
+    z-index: 10;
+}
+.index-online-service p {
+    color: #fff;
+}
+.index-online-service:before {
+    content: '';
+    display: block;
+    height: 45px;
+    /* background: url(../images/smallBanner-icon-red.png) no-repeat 17px -183px; */
+    background: url(../images/smallBanner-icon.png) no-repeat 17px -183px #dc1e32;
+}

@@ -1,0 +1,167 @@
+/* 二级导航栏样式 */
+.sfexpress_header_nav {
+    height         : 240px;
+    display        : flex;
+    justify-content: center;
+   position: relative;
+    min-width      : 1280px;
+   background: url(../images/dynamic_nav_bar_bg.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+.sfexpress_header_nav a {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    margin: 0 2px;
+    color: #fff;
+    position: relative;
+    opacity: .7;
+}
+
+.sfexpress_header_nav a.current {
+    color        : #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.sfexpress_header_nav a:hover {
+    color        : #fff;
+    border-bottom: 2px solid #fff;
+}
+.sfexpress_header_nav .big-title {
+    position: absolute;
+    margin-top: 110px;
+    text-align: center;
+    color: #fff;
+}
+.sfexpress_header_nav .big-title .bold {
+    font-size: 24px;
+    color: #fff;
+}
+.sfexpress_header_nav .big-title .normal {
+    margin-top: 7px;
+    font-size: 16px;
+    color: #fff;
+}
+/* 内容区 */
+.express-content-wrapper
+{
+    background: #f2f2f2;
+    padding-bottom: 71px;
+    min-width: 1280px;
+}
+.express-content {
+    width: 960px;
+    margin: 0 auto;
+}
+.sf-care {
+    padding-top: 30px;
+    min-height: 215px;
+}
+/* 常用功能 */
+
+.sf-care .often-support {
+    padding: 10px 0 20px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+    border-radius: 4px;
+}
+.sf-care .often-support .often-use {
+    display: inline-block;
+    width: 76px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: url(../images/often_use_bg.png) no-repeat center left;
+}
+.sf-care .often-support .often-use-container {
+    padding: 24px 80px;
+    text-align: center;
+}
+.sf-care .often-support .often-use-container .often-use-item {
+    margin-right: 23px;
+    width: 117px;
+    height: 60px;
+}
+.sf-care .often-support .often-use-container .often-use-item a {
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    color: #333;
+}
+.sf-care .often-support .often-use-container span {
+    font-size: 24px;
+    height: 32px;
+    line-height: 32px;
+}
+.sf-care .often-support .often-use-container .often-use-item .desc-text {
+    font-size: 14px;
+}
+.sf-care .toggle-more {
+    font-size: 14px;
+    text-align: center;
+}
+.sf-care .toggle-more .toggle-service-list {
+    color: #999;
+}
+.sf-care .toggle-more .toggle-service-list .iconfont {
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+.display {
+    display: none;
+}
+
+/*隐藏功能*/
+.sf-care .more-support {
+  
+    padding: 30px 40px 10px 80px;
+    text-align: center;
+    background: #fafafa;
+    border-radius: 4px;
+}
+.sf-care .more-support .more-support-item {
+    width: 117px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-right: 23px;
+}
+.sf-care .more-support .more-support-item a.wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+.sf-care .more-support .aicon {
+    font-size: 24px;
+}
+.sf-care .more-support .more-support-item .desc-text {
+    font-size: 14px;
+}
+/* 返回顶部 */
+.index-online-service {
+    position: fixed;
+    top: 70%;
+    right: 10px;
+    width: 66px;
+    background-color: #dc1e32;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 7px;
+    z-index: 10;
+}
+.index-online-service p {
+    color: #fff;
+}
+.index-online-service:before {
+    content: '';
+    display: block;
+    height: 45px;
+    /* background: url(../images/smallBanner-icon-red.png) no-repeat 17px -183px; */
+    background: url(../images/smallBanner-icon.png) no-repeat 17px -183px #dc1e32;
+}
