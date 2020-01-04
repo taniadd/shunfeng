@@ -32,6 +32,8 @@ window.addEventListener('load',function(){
     var bannerWidt = document.querySelector('.bannerWidt');
     var bannerWidth = bannerWidt.offsetWidth;
     var bannerImg = document.querySelector('.banner_img');
+    console.log(bannerImg);
+    
     var banenr_splot = document.querySelector('.banner_splot'); 
     var bannerRight = document.querySelector('.banner_left')
     for( var i = 0; i < bannerImg.children.length; i++){
@@ -51,7 +53,7 @@ window.addEventListener('load',function(){
             this.className = 'banner_splot_curr';
             //切换小圆点的时候，图片自动切换
             var dataIndex = this.getAttribute('data-index');
-            // console.log(dataIndex); 
+            console.log(dataIndex); 
             num = dataIndex;  
             circle = dataIndex;           
             animate(bannerImg, -dataIndex * bannerWidth);
@@ -101,10 +103,42 @@ window.addEventListener('load',function(){
     var timer = setInterval(function(){
         bannerRight.click();
         
-    },5000);
-    
+    },5000); 
     // banner轮播图结束
 
+    // banner图上面的温馨提醒和意见反馈动画
+    var warmTips = document.querySelector('.warm_tips');
+    var banner = document.querySelector('.banner');
+    var warmImg = document.querySelector('.warm_tips_img');
+    var warmTitle = document.querySelector('.warm_tips_tit');
+    var advices = document.querySelector('.addvices');
+    var warmImgWidth = warmImg.offsetWidth;
+    var warmTitleWidth = warmTitle.offsetWidth
+    var bannerWidth = banner.offsetWidth;
+    var targetWidth = bannerWidth - (warmImgWidth + warmTitleWidth);
+    warmTips.addEventListener('mouseenter',function(){
+        animate(warmTips,targetWidth);
+    });
+     warmTips.addEventListener('mouseleave',function(){
+        animate(warmTips,bannerWidth-warmImgWidth);
+    });
+    advices.addEventListener('mouseenter',function(){
+        animate(advices,targetWidth);
+    });
+    advices.addEventListener('mouseleave',function(){
+        animate(advices,bannerWidth-warmImgWidth);
+    });
 
+
+    // 运单查询开始
+    // var bill = document.querySelector('.bill_search');
+    // var billInput = bill.querySelector('input');
+    // // console.log(billInput);
+    // billInput.addEventListener('click',function(){
+    //     billInput.type = 'te'
+    // })
+    
+    // 运单查询结束
+ 
 
 })
