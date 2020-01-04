@@ -71,11 +71,24 @@
     position: relative;
 }
 
-.header .nav_l .current {
+/* .header .nav_l .current {
+    color: #e13d4e;
+} */
+.header .nav_l > li a:hover {
     color: #e13d4e;
 }
-
-.header .nav_l .current::after {
+/* .header .nav_l .current::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background: #e13d4e;
+    right: 50%;
+    margin-right: -50%;
+    width: 100%;
+    bottom: 0;
+} */
+.header .nav_l>li>a:hover::after {
+    color: #e13d4e;
     position: absolute;
     content: "";
     height: 2px;

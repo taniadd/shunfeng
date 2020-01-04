@@ -137,11 +137,24 @@
     height: 100%;
     color: #333;
 }
-.sf-care .more-support .aicon {
+.sf-care .more-support .iconfont {
     font-size: 24px;
 }
 .sf-care .more-support .more-support-item .desc-text {
+    margin-top: 8px;
     font-size: 14px;
+}
+
+
+/* 经过变红 */
+
+
+.sf-care a:hover *{
+    color: #dc1e32;
+
+}
+.hot-problem .problem-click:hover .problem-title {
+    color: #dc1e32;
 }
 /* 返回顶部 */
 .index-online-service {
@@ -164,4 +177,80 @@
     height: 45px;
     /* background: url(../images/smallBanner-icon-red.png) no-repeat 17px -183px; */
     background: url(../images/smallBanner-icon.png) no-repeat 17px -183px #dc1e32;
+}
+
+/* 热门问题 */
+.hot-problem
+{
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 32px 80px 20px;
+    border-radius: 4px;
+}
+.hot-problem h3
+{
+    font-size: 24px;
+    margin: 0;
+}
+.hot-problem .hot-problem-item 
+{
+    width: 380px;
+    height: 84px;
+    padding: 10px 20px;
+    margin-top: 24px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    position: relative;
+    box-sizing: border-box;
+}
+.hot-problem .hot-problem-item:nth-child(2n+1)
+{
+    margin-right: 40px;
+}
+
+.hot-problem  .problem-click
+{
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.hot-problem .problem-title
+{
+    width: 235px;
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.hot-problem .problem-subtitle
+{
+    color: #999;
+    width: 235px;
+    margin-top: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.hot-problem .shade-pic
+{
+    position: absolute;
+    top: 0;
+    right: 96px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-color: transparent #fafafa;
+    border-width: 0 0 90px 26px;
+    border-style: solid;
+    z-index: 100;
+}
+.hot-problem .problem-pic
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 84px;
+    border-radius: 0 5px 5px 0;
 }

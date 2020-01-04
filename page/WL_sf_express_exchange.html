@@ -1,37 +1,148 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>首页</title>
-    <link href="css/base.css" type="text/css" rel="stylesheet" />
-    <link href="css/common.css" type="text/css" rel="stylesheet" />
-    <link href="css/dlindex.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/dlindex.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>汇率查询</title>
+    <link type="text/css" rel="stylesheet" href="../css/base.css">
+    <link type="text/css" rel="stylesheet" href="../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_v7fe8bgq07n.css">
+    <link rel="stylesheet" href="../css/WL_sf_express_price.css">
+    <link rel="stylesheet" href="../css/WL_sf_express_range.css">
+    <link rel="stylesheet" href="../css/WL_sf_express_exchange.css">
+    <link rel="stylesheet" href="../css/WLdcalendar.picker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/WL_button.js"></script>
+    <script src="../js/dcalendar.picker.js"></script>
+    <script src="../js/WL_comboTreePlugin.js" type="text/javascript"></script>
+    <script src="../js/WL_icontains.js" type="text/javascript"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/wl_sf_express.js"></script>
+    <style>
+        .comboTreeWrapper {
+            position: relative;
+            text-align: left !important;
+        }
+
+        .comboTreeInputWrapper {
+            position: relative;
+        }
+
+        .comboTreeArrowBtn {
+            position: absolute;
+            right: 1px;
+            bottom: 1px;
+            top: 1px;
+            box-sizing: border-box;
+            border: none;
+            border-left: 1px solid #c7c7c7;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .comboTreeDropDownContainer {
+            display: none;
+            background: #fff;
+            border: 1px solid #aaa;
+            max-height: 250px;
+            overflow-y: auto;
+            position: absolute;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 999;
+        }
+
+        .comboTreeDropDownContainer ul {
+            padding: 0px;
+            margin: 0;
+        }
+
+        .comboTreeDropDownContainer li {
+            list-style-type: none;
+            padding-left: 15px;
+            cursor: pointer;
+        }
+
+        .comboTreeDropDownContainer li:hover {
+            background-color: #ddd;
+        }
+
+        .comboTreeDropDownContainer li:hover ul {
+            background-color: #fff;
+        }
+
+        .comboTreeDropDownContainer li span.comboTreeItemTitle.comboTreeItemHover {
+            background-color: #418EFF;
+            color: #fff;
+        }
+
+        span.comboTreeItemTitle {
+            display: block;
+            padding: 2px 4px;
+        }
+
+        .comboTreeDropDownContainer label {
+            cursor: pointer;
+            width: 100%;
+            display: block;
+        }
+
+        .comboTreeDropDownContainer .comboTreeItemTitle input {
+            position: relative;
+            top: 2px;
+            margin: 0px 4px 0px 0px;
+        }
+
+        .comboTreeParentPlus {
+            position: relative;
+            left: -12px;
+            top: 4px;
+            width: 4px;
+            float: left;
+        }
+
+
+        .comboTreeInputBox {
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #999;
+            width: 100%;
+            box-sizing: border-box;
+            padding-right: 24px;
+        }
+
+        .comboTreeArrowBtnImg {
+            font-size: 10px;
+        }
+
+        .multiplesFilter {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #999;
+        }
+    </style>
 </head>
 
-<body class="shouye_index">
-    <!-- 在线客服开始 -->
-    <div  class="online_servic">
-       <a href="javascript:;"></a>
-       <p>在线客服</p>
-    </div>
-        <!-- 在线客服结束 -->
+<body>
     <div class="mwrap">
         <!-- 头部开始 -->
         <div class="header">
             <div class="wrap clearfix">
-                <img src="images/sf.png">
+                <img src="../images/sf.png">
                 <ul class="nav_l clearfix">
                     <li>
                         <a href="javascript:;" class="current">首页</a>
                     </li>
                     <li>
                         <a href="javascript:;">物流</a>
-                        <ul class="nav_two nav_two_bg clearfix" style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
+                        <ul class="nav_two nav_two_bg clearfix"
+                            style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
                             <li class="nav_two_wul">
                                 <ul class="wuliu_serv clearfix">
                                     <!-- 快递服务 -->
@@ -243,14 +354,14 @@
                     </li>
                 </ul>
                 <span class="close">
-              <a href="javascrpit:;">×</a>
-          </span>
+                    <a href="javascrpit:;">×</a>
+                </span>
             </div>
             <div class="login_content">
                 <p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
                 <h5>登录后即可免验证快速下单与查件</h5>
                 <div class="img">
-                    <img src="./images/erweima.png" alt="">
+                    <img src="../images/erweima.png" alt="">
                 </div>
                 <h4>请使用微信扫描二维码</h4>
                 <h5 class="self"></h5>
@@ -261,8 +372,8 @@
                 <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
             </div>
             <div class="login_denglu">
-                <form action="" id="reset" autocomplete="off">
-                    <div class="login_denglu_box">
+                <form action="" id="reset" autocomplete="off" class="reset">
+                    <div class="login_denglu_box ">
                         <p class="login_denglu_p">登录后即可免验证快速下单与查件</p>
                         <div class="login_tel">
                             <div class="selected">
@@ -302,309 +413,171 @@
         </div>
         <!-- 登录界面结束 -->
         <!-- 头部结束 -->
-        <!-- banner开始 -->
-        <div class="banner">
-            <!-- 轮播图 -->
-            <div class="bannerWidt">
-                <a href="javascript:;" class="banner_left" style="display: none;"></a>
-                <ul class="banner_img clearfix">
-                    <li><img src="images/IMG20190905_170942.jpg" /></li>
-                    <li><img src="images/IMG20190905_171924.jpg" /></li>
-                </ul>
-                <ul class="banner_splot clearfix">
-                    <!-- <li class="banner_splot_curr"><a href="javascript:;"></a></li>
-                    <li><a href="javascript:;"></a></li> -->
-                </ul>
-            </div>
-            <!-- 运货单查询 -->
-            <!-- <div class="bill_number">
-                <div class="bill_search">
-                    <input type="search" placeholder="您可以输运单号进行查询" />
-                    <button class="search_icon"></button>
-                </div>
-                <button class="search_bill_number">马上查单</button>
-            </div> -->
-            <!-- 温馨提醒 -->
-            <div class="warm_tips clearfix">
-                <div class="warm_tips_img">
-                    <div class="img"></div>
-                    <p>温馨提醒</p>
-                </div>
-                <div class="warm_tips_tit">
-                    <a href="javascript::">关于防范“冒充顺丰员工加微信好友骚扰或诈骗”的温馨提示</a>                
-                </div>
-            </div>
-            <!-- 意见反馈 -->
-            <div class="warm_tips addvices clearfix">
-                <div class="warm_tips_img">
-                    <div class="img"></div>
-                    <p>意见反馈</p>
-                </div>
-                <div class="warm_tips_tit">
-                    <a href="javascript::">如您对顺丰官网有任何建议和反馈，可留言给我们</a>                
-                </div>
-            </div>
 
-        </div>
-        <!-- banner结束 -->
-
-   
-
-        <!-- content开始 -->
-        <div class="content">
-            <!-- 内容导航 -->
-            <div class="content_nav">
-                <ul class="clearfix">
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_search"></i> 运单追踪
-                            <!-- 运货单查询 -->
-                            <div class="bill_number">
-                                <div class="bill_search">
-                                    <input type="search" placeholder="您可以输运单号进行查询" />
-                                    <button class="search_icon"></button>
-                                </div>
-                                <!-- <div class="bill_search_hidden">
-                                    <textarea type="search" placeholder="请输入需要查询的运单号" ></textarea>
-                                    最多可查询20条，以逗号、空格或回车键隔开
-                                   
-                                </div> -->
-                                <button class="search_bill_number">马上查单</button>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_sender"></i> 我要寄件
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_money"></i> 运费时效查询
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_address"></i> 服务网点查询
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_sope"></i> 收寄范围查询
-                        </a>
-                    </li>
-                </ul>
+        <!-- 内容区开始 -->
+        <!--二级导航栏-->
+        <nav class="sfexpress_header_nav clearfix">
+            <!-- 我要寄件的链接 -->
+            <a href="./WLquick.html">我要寄件</a>
+            <!--运单追踪的链接-->
+            <a href="./WL_waybill.html">运单追踪</a>
+            <!--服务支持的链接-->
+            <a class="current" href="./WL_sf_express.html">服务支持</a>
+            <div class="big-title">
+                <p class="bold">
+                    SF支持,你要的这里都有
+                </p>
+                <p class="normal">
+                    我们期待为你带来更加优质的线上服务体验
+                </p>
             </div>
-            <!-- 内容导航 -->
-            <!-- 物流和金融的轮播图开始 -->
-            <div class="content_banner wrap">
-                <h2>顺丰全业务介绍</h2>
-                <div class="content_banner_list">
-                    <ul class="content_banner_tit">
-                        <li class="content_current"><a href="javascript:;">物流</a></li>
-                        <li><a href="javascript:;">金融</a></li>
+            <!-- 三级导航栏 -->
+            <div class="service-nav">
+                <div class="nav-bg">
+                    <ul class="navs">
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-jinqian"></span>
+                                <span>运费时效</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-fuwufanwei"></span>
+                                <span>服务范围</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-location"></span>
+                                <span>网点查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-gantanhao-xianxingsanjiaokuang"></span>
+                                <span>收寄标准</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-huishuai"></span>
+                                <span>汇率查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-statement"></span>
+                                <span>代收货款账单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-zhangdan"></span>
+                                <span>代收货款对账</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-zhexiantu"></span>
+                                <span>常用表格</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-lipei"></span>
+                                <span>理赔</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-qingguanfuwu"></span>
+                                <span>清关服务</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-gongshi"></span>
+                                <span>无着件公示</span>
+                            </a>
+                        </li>
+
                     </ul>
-                        <!-- 轮播图 -->
-                    <div class="banner">
-                        <div class="bannerWidt">
-                            <a href="javascript:;" class="banner_left" style="display: none;"></a>
-                            <ul class="banner_img  clearfix">                          
-                                <li>
-                                    <ul class="content_banenr_img clearfix">
-                                        <li>
-                                            <a href="javascript:;"> 
-                                                <img class="contimg" src="images/PCkuaidifuwu-0213.jpg" />
-                                                <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
-                                                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
-                                                <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>冷运服务</h3>
-                                                    <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
-                                                </div>
-                                            </a>
-                                        </li>   
-                                    </ul>                                 
-                                </li>
-                                <li>
-                                    <ul class="content_banenr_img clearfix">
-                                        <li>
-                                            <a href="javascript:;">
-                                                <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
-                                                <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
-                                                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <img class="contimg" src="images/cangku.jpg" />
-                                                <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>仓储服务</h3>
-                                                    <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
-                                                </div>
-                                            </a>
-                                        </li>   
-                                    </ul>  
-                                </li>
-                                                   
-                            </ul>
-                            <ul class="banner_splot content_banenr_splot  clearfix">
-                                <li class="banner_splot_curr"><a href="javascript:;"></a></li>
-                                <li><a href="javascript:;"></a></li>
-                            </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="big-background">
+            <div class="content">
+                <div class="container">
+                    <div class="main-content">
+                        <div class="function">
+                            <div class="main-content-row-1">
+                                <div class="row-title">
+                                    汇率查询
+                                </div>
+                                <div class="row-content">
+                                    <div class="form-group clearfix">
+                                        <label for="">请选择日期</label>
+                                        <div class="form-group-input">
+                                            <input type="text" id="mydatepicker2" placeholder="请选择">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label for="">选择币种兑换</label>
+                                        <div class="form-group-input">
+                                            <input style="width: 92px;" id="justAnotherInputBox1" type="text"
+                                                placeholder="请选择">
+                                            <div
+                                                style="width: 30px;text-align: center;font-size: 13px;height: 32px;line-height: 32px;">
+                                                ></div>
+                                            <input style=" width: 92px;" id="justAnotherInputBox2" type="text"
+                                                placeholder="请选择">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label for="">币种金额</label>
+                                        <div class="form-group-input">
+                                            <input type="text" placeholder="请选择">
+
+                                        </div>
+                                    </div>
+                                    <div style="display: none;" class="form-group clearfix money">
+                                        <label for="">换算金额</label>
+                                        <div class="form-group-input  conversion-money">
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- 免费预约上门取件 -->
+                        <div class="order-button-wrapper">
+                            <div class="order-button go-dynamic accessible-click">
+                                <div class="order-button-inner">
+
+                                    <img class="icon" src="../images/order-button-icon.gif" alt="预约上门取件">
+                                    <div class="text">
+                                        免费预约上门取件
+                                    </div>
+                                    <div class="arrow"></div>
+                                    <div class="flash"></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <!-- <ul class="content_banenr_img">
-                        <li>
-                            <a href="javascript:;">
-                                <img src="images/lengyunbusiness-img2.jpg" />
-                                <div class="content_img_tit">
-                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
-                                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="images/lengyunbusiness-img2.jpg" />
-                                <div class="content_img_tit">
-                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>冷运服务</h3>
-                                    <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
-                                </div>
-                            </a>
-                        </li>
-                        
-                    </ul> -->
                 </div>
             </div>
-            <!-- 物流和金融的轮播图结束 -->
-
-            <!-- 成功案例开始 -->
-            <div class="content_success">
-                <div class="content_su_tit">
-                    <h2>成功案例</h2>
-                    <span>每一时刻，都有无数的客户托付与期待被成功交付，顺丰与前瞻者同行，与成就者共成就</span>
-                    <a href="javascript:;">查看全部> </a>
-                </div>
-                <ul class="content_su_nav">
-                    <li>
-                        <a href="javascript:;">
-                            <div class="su_nav_img">
-                                <img src="images/red-t-img-1.png" class="red"/>
-                                <img src="images/white-t-img-1.png" class="white"/>
-                            </div>
-                            <p>3C电子行业</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="su_nav_img">
-                                <img src="images/red-t-img-5.png" class="red"/>
-                                <img src="images/white-t-img-5.png" class="white"/>
-                            </div>
-                            <p>医疗行业</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="su_nav_img">
-                                <img src="images/red-t-img-3.png" class="red"/>
-                                <img src="images/white-t-img-3.png" class="white"/>
-                            </div>
-                            <p>生鲜行业</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="su_nav_img">
-                                <img src="images/red-t-img-4.png" class="red"/>
-                                <img src="images/white-t-img-4.png" class="white"/>
-                            </div>
-                            <p>快消行业</p>
-                        </a>
-                    </li>
-                </ul class="content_su_nav">
-              
-            </div>
-            <!-- 成功案例结束 -->
-
-            <!-- 新闻资讯开始 -->
-            <div class="content_new">
-                <div class="content_new_tit">
-                    <h2>新闻资讯</h2>
-                    <span>新闻资讯抢先知晓</span>
-                    <a href="javascript:;"> 查看全部> </a>
-                </div>
-                <ul class="content_new_nav wrap">
-                    <li>
-                        <a href="javascript:;">
-                            <div class="content_new_img">
-                                <img src="images/0923-1.jpg"/>
-                            </div>
-                            <div class="content_new_de">
-                                <h3> 顺丰“空中皇后”B747洲际航线首航入欧，打造全球 ...</h3>
-                                <p> 2019年9月15日凌晨，顺丰第二架B747首航成功。从无锡 ...<b>[详情]</b></p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="content_new_img">
-                                <img src="images/ISO29151.jpg"/>
-                            </div>
-                            <div class="content_new_de">
-                                <h3>  顺丰科技获颁ISO/IEC 27701:2019隐 ...</h3>
-                                <p>  2019年11月8日，国际认证机构DNV GL正式向顺丰科技 ...<b>[详情]</b></p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="content_new_img">
-                                <img src="images/227360051142573262.png"/>
-                            </div>
-                            <div class="content_new_de">
-                                <h3> 确认过眼神，你就是要寻找的“最美”！</h3>
-                                <p> <b>[详情]</b></p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="content_new_img">
-                                <img src="images/picture.jpg"/>
-                            </div>
-                            <div class="content_new_de">
-                                <h3>  深入科学探讨 激发科研新动力——顺丰加入“未来科学 ...</h3>
-                                <p>  顺丰首次参与高峰论坛，与全球杰出科学家分享交流科学发展的前沿 ...<b>[详情]</b></p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- 新闻资讯结束 -->
-
-            <!-- 返回顶部按钮开始 -->
-            <div class="back_top">
-                <div class="wrap">
-                    <div class="back_top_img wrap"></div>
-                </div>        
-            </div>
-            <!-- 返回顶部按钮结束 -->
-
         </div>
-        <!-- content结束 -->
 
 
-        <!-- 尾部开始 -->
+
+        <!-- 尾部头部开始 -->
         <div class="footer">
+            <div class="return_to iconfont_ding">
+                &#xe609;
+            </div>
             <!-- 尾部头部开始 -->
             <div class="footer_top wrap clearfix">
                 <div class="footer_top_l">
@@ -699,7 +672,8 @@
                 </ul>
                 <ul class="footer_ver_r">
                     <li>
-                        <a href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
+                        <a
+                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
 
                     </li>
                 </ul>
@@ -709,27 +683,109 @@
             <div class="footer_safe wrap clearfix">
                 <ul class="clearfix">
                     <li>
-                        <a href="javascript:;"><img src="http://webcert.cnmstl.net/images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157" alt="安全网址认证书"></a>
+                        <a href="javascript:;"><img
+                                src="http://webcert.cnmstl.net/images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157"
+                                alt="安全网址认证书"></a>
                     </li>
                     <li>
-                        <a href="javascript:;"><img src="images/security_site_1.png" alt="安全认证"></a>
+                        <a href="javascript:;"><img src="../images/security_site_1.png" alt="安全认证"></a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="images/security_site_2.png" alt="公安网认证"> 深圳市市场监督管理局企业主体身份公示
+                            <img src="../images/security_site_2.png" alt="公安网认证"> 深圳市市场监督管理局企业主体身份公示
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="images/security_site_3.png"> 粤公网安备 44030502003091号
+                            <img src="../images/security_site_3.png"> 粤公网安备 44030502003091号
                         </a>
                     </li>
                 </ul>
             </div>
             <!-- 底部网站安全部分结束 -->
         </div>
-        <!-- 尾部结束 -->
-    </divc>
+        <a href="" class="index-online-service">
+            <p>在线客服</p>
+        </a>
+    </div>
+
 </body>
 
 </html>
+<script type="text/javascript">
+    $(() => {
+        $('#mydatepicker').dcalendarpicker();
+        $('#mydatepicker2').dcalendarpicker({
+            format: 'yyyy-mm-dd'
+        });
+        $('#mycalendar').dcalendar();
+
+        $('input').blur(function(){
+            $('input').each(function (index,dom) {
+                if($(dom).val()==''){
+                    console.log(1);
+                    
+                    $('.money').css('display','none')
+                }else{
+                    $('.money').css('display','block')
+                }
+              })
+        })
+    })
+
+</script>
+<script type="text/javascript">
+
+    var SampleJSONData = [
+        {
+            id: 0,
+            title: '蒙古币  '
+        }, {
+            id: 1,
+            title: '人民币',
+
+        }, {
+            id: 2,
+            title: '美元'
+        }, {
+            id: 3,
+            title: '卢布'
+        }, {
+            id: 4,
+            title: '韩元'
+        }, {
+            id: 5,
+            title: '日元',
+
+        }, {
+            id: 6,
+            title: '欧元'
+        }, {
+            id: 7,
+            title: '泰铢'
+        }, {
+            id: 8,
+            title: '港币'
+        }, {
+            id: 9,
+            title: '越南盾'
+        }
+
+    ];
+    var comboTree1, comboTree2;
+
+    jQuery(document).ready(function ($) {
+
+
+        comboTree2 = $('#justAnotherInputBox1').comboTree({
+            source: SampleJSONData,
+            isMultiple: false
+        });
+        comboTree2 = $('#justAnotherInputBox2').comboTree({
+            source: SampleJSONData,
+            isMultiple: false
+        });
+    });
+
+
+</script>

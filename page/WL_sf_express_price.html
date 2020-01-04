@@ -1,37 +1,74 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>首页</title>
-    <link href="css/base.css" type="text/css" rel="stylesheet" />
-    <link href="css/common.css" type="text/css" rel="stylesheet" />
-    <link href="css/dlindex.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/dlindex.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>顺丰运费及时效查询</title>
+    <link type="text/css" rel="stylesheet" href="../css/base.css">
+    <link type="text/css" rel="stylesheet" href="../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_v7fe8bgq07n.css">
+    <link rel="stylesheet" href="../css/WL_sf_express_price.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/dcalendar.picker.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/wl_sf_express.js"></script>
+    <style>
+        
+        td.selected span{
+           color: red !important;
+           
+        }
+        td.selected {
+            padding: 0px !important;
+            background: #ccc;
+        }
+        .calendar {
+            box-sizing: border-box;
+            width: 225px !important;
+            left: 124px !important;
+            z-index: 1 !important;
+            background-color: #ccc;
+        }
+        .calendar * {
+            text-align: center;
+        }
+        .calendar thead tr:nth-child(1) th {
+            width: 14.28%;
+        }
+        .calendar thead tr:nth-child(1) th:nth-child(2) {
+            width: 60% !important;
+            text-align: center;
+        }
+       
+        .calendar tbody tr td{
+            width: 14.28% ;
+        }
+        
+        .calendar tbody td span {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
-<body class="shouye_index">
-    <!-- 在线客服开始 -->
-    <div  class="online_servic">
-       <a href="javascript:;"></a>
-       <p>在线客服</p>
-    </div>
-        <!-- 在线客服结束 -->
+<body>
     <div class="mwrap">
         <!-- 头部开始 -->
         <div class="header">
             <div class="wrap clearfix">
-                <img src="images/sf.png">
+                <img src="../images/sf.png">
                 <ul class="nav_l clearfix">
                     <li>
                         <a href="javascript:;" class="current">首页</a>
                     </li>
                     <li>
                         <a href="javascript:;">物流</a>
-                        <ul class="nav_two nav_two_bg clearfix" style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
+                        <ul class="nav_two nav_two_bg clearfix"
+                            style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
                             <li class="nav_two_wul">
                                 <ul class="wuliu_serv clearfix">
                                     <!-- 快递服务 -->
@@ -243,14 +280,14 @@
                     </li>
                 </ul>
                 <span class="close">
-              <a href="javascrpit:;">×</a>
-          </span>
+                    <a href="javascrpit:;">×</a>
+                </span>
             </div>
             <div class="login_content">
                 <p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
                 <h5>登录后即可免验证快速下单与查件</h5>
                 <div class="img">
-                    <img src="./images/erweima.png" alt="">
+                    <img src="../images/erweima.png" alt="">
                 </div>
                 <h4>请使用微信扫描二维码</h4>
                 <h5 class="self"></h5>
@@ -261,8 +298,8 @@
                 <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
             </div>
             <div class="login_denglu">
-                <form action="" id="reset" autocomplete="off">
-                    <div class="login_denglu_box">
+                <form action="" id="reset" autocomplete="off" class="reset">
+                    <div class="login_denglu_box ">
                         <p class="login_denglu_p">登录后即可免验证快速下单与查件</p>
                         <div class="login_tel">
                             <div class="selected">
@@ -302,309 +339,262 @@
         </div>
         <!-- 登录界面结束 -->
         <!-- 头部结束 -->
-        <!-- banner开始 -->
-        <div class="banner">
-            <!-- 轮播图 -->
-            <div class="bannerWidt">
-                <a href="javascript:;" class="banner_left" style="display: none;"></a>
-                <ul class="banner_img clearfix">
-                    <li><img src="images/IMG20190905_170942.jpg" /></li>
-                    <li><img src="images/IMG20190905_171924.jpg" /></li>
-                </ul>
-                <ul class="banner_splot clearfix">
-                    <!-- <li class="banner_splot_curr"><a href="javascript:;"></a></li>
-                    <li><a href="javascript:;"></a></li> -->
-                </ul>
-            </div>
-            <!-- 运货单查询 -->
-            <!-- <div class="bill_number">
-                <div class="bill_search">
-                    <input type="search" placeholder="您可以输运单号进行查询" />
-                    <button class="search_icon"></button>
-                </div>
-                <button class="search_bill_number">马上查单</button>
-            </div> -->
-            <!-- 温馨提醒 -->
-            <div class="warm_tips clearfix">
-                <div class="warm_tips_img">
-                    <div class="img"></div>
-                    <p>温馨提醒</p>
-                </div>
-                <div class="warm_tips_tit">
-                    <a href="javascript::">关于防范“冒充顺丰员工加微信好友骚扰或诈骗”的温馨提示</a>                
-                </div>
-            </div>
-            <!-- 意见反馈 -->
-            <div class="warm_tips addvices clearfix">
-                <div class="warm_tips_img">
-                    <div class="img"></div>
-                    <p>意见反馈</p>
-                </div>
-                <div class="warm_tips_tit">
-                    <a href="javascript::">如您对顺丰官网有任何建议和反馈，可留言给我们</a>                
-                </div>
-            </div>
 
-        </div>
-        <!-- banner结束 -->
-
-   
-
-        <!-- content开始 -->
-        <div class="content">
-            <!-- 内容导航 -->
-            <div class="content_nav">
-                <ul class="clearfix">
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_search"></i> 运单追踪
-                            <!-- 运货单查询 -->
-                            <div class="bill_number">
-                                <div class="bill_search">
-                                    <input type="search" placeholder="您可以输运单号进行查询" />
-                                    <button class="search_icon"></button>
-                                </div>
-                                <!-- <div class="bill_search_hidden">
-                                    <textarea type="search" placeholder="请输入需要查询的运单号" ></textarea>
-                                    最多可查询20条，以逗号、空格或回车键隔开
-                                   
-                                </div> -->
-                                <button class="search_bill_number">马上查单</button>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_sender"></i> 我要寄件
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_money"></i> 运费时效查询
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_address"></i> 服务网点查询
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="content_icon content_sope"></i> 收寄范围查询
-                        </a>
-                    </li>
-                </ul>
+        <!-- 内容区开始 -->
+        <!--二级导航栏-->
+        <nav class="sfexpress_header_nav clearfix">
+            <!-- 我要寄件的链接 -->
+            <a href="./WLquick.html">我要寄件</a>
+            <!--运单追踪的链接-->
+            <a href="./WL_waybill.html">运单追踪</a>
+            <!--服务支持的链接-->
+            <a class="current" href="./WL_sf_express.html">服务支持</a>
+            <div class="big-title">
+                <p class="bold">
+                    SF支持,你要的这里都有
+                </p>
+                <p class="normal">
+                    我们期待为你带来更加优质的线上服务体验
+                </p>
             </div>
-            <!-- 内容导航 -->
-            <!-- 物流和金融的轮播图开始 -->
-            <div class="content_banner wrap">
-                <h2>顺丰全业务介绍</h2>
-                <div class="content_banner_list">
-                    <ul class="content_banner_tit">
-                        <li class="content_current"><a href="javascript:;">物流</a></li>
-                        <li><a href="javascript:;">金融</a></li>
+            <!-- 三级导航栏 -->
+            <div class="service-nav">
+                <div class="nav-bg">
+                    <ul class="navs">
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-jinqian"></span>
+                                <span>运费时效</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-fuwufanwei"></span>
+                                <span>服务范围</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-location"></span>
+                                <span>网点查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-gantanhao-xianxingsanjiaokuang"></span>
+                                <span>收寄标准</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-huishuai"></span>
+                                <span>汇率查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-statement"></span>
+                                <span>代收货款账单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-zhangdan"></span>
+                                <span>代收货款对账</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-zhexiantu"></span>
+                                <span>常用表格</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-lipei"></span>
+                                <span>理赔</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-qingguanfuwu"></span>
+                                <span>清关服务</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-gongshi"></span>
+                                <span>无着件公示</span>
+                            </a>
+                        </li>
+
                     </ul>
-                        <!-- 轮播图 -->
-                    <div class="banner">
-                        <div class="bannerWidt">
-                            <a href="javascript:;" class="banner_left" style="display: none;"></a>
-                            <ul class="banner_img  clearfix">                          
-                                <li>
-                                    <ul class="content_banenr_img clearfix">
-                                        <li>
-                                            <a href="javascript:;"> 
-                                                <img class="contimg" src="images/PCkuaidifuwu-0213.jpg" />
-                                                <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
-                                                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
-                                                <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>冷运服务</h3>
-                                                    <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
-                                                </div>
-                                            </a>
-                                        </li>   
-                                    </ul>                                 
-                                </li>
-                                <li>
-                                    <ul class="content_banenr_img clearfix">
-                                        <li>
-                                            <a href="javascript:;">
-                                                <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
-                                                <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
-                                                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <img class="contimg" src="images/cangku.jpg" />
-                                                <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>仓储服务</h3>
-                                                    <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
-                                                </div>
-                                            </a>
-                                        </li>   
-                                    </ul>  
-                                </li>
-                                                   
-                            </ul>
-                            <ul class="banner_splot content_banenr_splot  clearfix">
-                                <li class="banner_splot_curr"><a href="javascript:;"></a></li>
-                                <li><a href="javascript:;"></a></li>
-                            </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="big-background">
+            <div class="content">
+                <div class="container">
+                    <div class="main-content">
+                        <div class="function">
+                            <div class="main-content-row">
+                                <div class="time-search">
+                                    <a class="fr"
+                                        href="https://www.sf-express.com/cn/sc/dynamic_function/price/time_internal.html">
+                                        <span class=" iconfont icon-huabanfuben"></span>
+                                        <span>查看中国内地出口时效表</span>
+                                    </a>
+                                    <h5>运费时效查询</h5>
+                                    <dl>
+                                        <dt>
+                                            原寄地
+                                        </dt>
+                                        <dd>
+                                            <div class="input-group">
+                                                <input type="text" placeholder="请输入原寄地地区,例如:长沙市">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+                                            目的地
+                                        </dt>
+                                        <dd class="location-input">
+                                            <div class="input-group">
+                                                <input type="text" placeholder="请输入目的地地区,例如:长沙市">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="height">
+                                        <dt>
+                                            重量
+                                        </dt>
+                                        <dd class="location-input">
+                                            <div class="input-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </dd>
+                                        <dd class="dd-right">
+                                            KG
+                                        </dd>
+                                    </dl>
+                                    <dl class="sender-time">
+                                        <dt>
+                                            寄件时间
+                                        </dt>
+                                        <dd class="location-input">
+                                            <div class="input-group">
+                                                <input type="text" id="mydatepicker2" placeholder="">
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                    <button>查询</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <div>
+                                <div class="note-content">
+                                    <p><strong>一、运费计算基于以下计费规则：</strong></p>
+                                    <p><strong>1. 体积重量计算方法</strong></p>
+                                    <p class="padding-left30">托寄物的计费重量取体积重量与实际重量两者之间的较大值，体积重量的计算方法为：</p>
+                                    <p class="padding-left30"><strong>【顺丰即日/次晨/标快】</strong></p>
+                                    <p class="padding-left30">同城、省内件以及经济区域内互寄，体积重量=长(CM)×宽(CM)×高(CM)÷12000；</p>
+
+                                    <p class="padding-left30">
+                                        省外跨经济区域互寄，体积重量=长(CM)×宽(CM)×高(CM)÷6000；(经济区域包含：京津冀区域，江浙沪皖区域,，川渝区域，黑吉辽区域)</p>
+                                    <p class="padding-left30"><strong>【顺丰特惠】 </strong> 体积重量=长(CM)×宽(CM)×高(CM)÷12000；</p>
+                                    <p class="padding-left30"><strong>
+                                            【重货包裹/小票零担/冷运速配/冷运特惠】</strong>体积重量=长(CM)×宽(CM)×高(CM)÷6000；</p>
+                                    <p class="padding-left30"><strong>【冷运零担】 </strong>体积重量=长(CM)×宽(CM)×高(CM)÷3000；</p>
+                                    <p class="padding-left30"><strong>【港澳台（服务）】 </strong>体积重量=长(CM)×宽(CM)×高(CM)÷6000</p>
+                                    <p class="padding-left30"><strong> 【国际快递（服务）】</strong>体积重量=长(CM)×宽(CM)×高(CM) ÷5000
+                                    </p>
+                                    <p class="padding-left30">其他产品计算方法请致电95338或咨询当地收派员。
+                                    </p>
+                                    <p><strong>2. 计费重量小数点进位处理方式</strong></p>
+
+                                    <p class="padding-left30">
+                                        <strong>【中国内地互寄业务】</strong>10KG以下，续重以0.1KG为计重单位，四舍五入保留1位小数；10-100KG，续重以0.5KG为计重单位，采用2378制（2退3进7退8进）；100KG及以上，四舍五入取整数。
+                                    </p>
+                                    <p class="padding-left30"><strong> 【港澳本地业务】</strong>续重以0.5KG为计重单位，不足0.5kg，按0.5kg计。
+                                    </p>
+                                    <p class="padding-left30"><strong> 【中国内地始发至港澳台业务】</strong>100KG以下,
+                                        续重以0.5KG为计重单位，不足0.5kg，按0.5kg计；100KG及以上，以1KG为计重单位，小数点后尾数大于零的，向上进位至下一个1KG。</p>
+                                    <p class="padding-left30"><strong>【中国内地始发至海外国家及地区业务】 </strong>20KG以下,
+                                        续重以0.5KG为计重单位，不足0.5kg，按0.5kg计；20KG及以上，以1KG为计重单位，小数点后尾数大于零的，向上进位至下一个1KG。</p>
+                                    <p><strong>3. 运费计算结果处理方式</strong></p>
+                                    <p class="padding-left30">- 运费计算结果按四舍五入取整数值；</p>
+                                    <p class="padding-left30">- 不同产品起始重量各有差异，不足起重的快件将按起重计费并显示。</p>
+                                    <p class="padding-left30">以上计费规则可能因服务（产品）或所在地区不同而有所差异，详情致电95338或与当地收派员进行咨询。</p>
+                                    <p></p>
+                                    <p><strong>温馨提示：</strong></p>
+                                    <p><strong>一、时效标准</strong></p>
+                                    <p class="padding-left30">1、预计时效因节假日、天气、交通管控、资源等原因不同日期时间查询会有所差异，具体以系统实时返回为准</p>
+                                    <p><strong>二、始发地或目的地任一方为港澳台地区：</strong></p>
+                                    <p class="padding-left30">1、此价格供参考。更多收费和服务详情，详情请致电中国内地客户服务热线 95338。</p>
+                                    <p class="padding-left30">2、中国台湾地区寄往中国内地的特殊包裹品项及价格请<a
+                                            href="https://www.sf-express.com/cn/sc/download/20181211-Dynamic_function-pric-TW-C-type.pdf">按此</a>
+                                        查询，参考时效在顺丰标快产品基础上加时3-5天；。</p>
+                                    <p class="padding-left30">
+                                        3、对于约定由收件人或第三方付费（含运费及增值服务费）的快件，在快件签收之前，可提出对费用付款方式变更为寄方付。对于需要更改付款方式的快件，寄件人除需要支付运费外，每票需另外支付更改付款方式服务费。详见具体<a
+                                            href="">收费标准</a> 。</p>
+
+                                    <p class="padding-left30">4、如收派件地址为<a
+                                            href="https://www.sf-express.com/hk/tc/download/HK_RemoteArea_TC.pdf">香港地区偏远地区</a>
+                                        ，收派件时效需加1个工作日。</p>
+
+                                    <p class="padding-left30">5、中国台湾地区部分地区收派时效需加0.5-1工作日，可<a
+                                            href="https://www.sf-express.com/cn/sc/download/TW_Remote_area_TC01.PDF">按此</a>查阅详情。
+                                    </p>
+                                    <p class="padding-left30">
+                                        6、以上由中国香港、中国澳门及中国台湾地区寄件至中国内地，以及中国港澳台地区之间互寄,运费已包含燃油附加费。燃油附加费说明请<a
+                                            href="https://www.sf-express.com/cn/sc/dynamic_function/price/fuel_surcharge_introduction.html">按此</a>了解。
+                                    </p>
+                                    <p><strong>三、始发地或目的地任一方为海外国家:</strong></p>
+                                    <p class="padding-left30">1、以上查询的流向价格与时效仅供参考。具体服务及收费详情，请致电国际业务客服专线9533883.</p>
+                                    <p class="padding-left30">2、以上查询的流向运费已包含燃油附加费（请<a
+                                            href="https://www.sf-express.com/cn/sc/dynamic_function/price/international_fuel_surcharge_introduction.html">按此</a>了解更多燃油附加费的资料），但未包含清关税费、偏远地区附加费、住宅派送附加费、特殊处理费等可能产生的其他费用。
+                                    </p>
+                                    <p class="padding-left30">
+                                        3、时效标准天数是指工作日，不包含收件日，不包括周末和节假日。具体派送时效以目的地邮编为准。如遇偏远地区或郊区、航班延误、清关异常等情形，时效会额外增加。时效为参考时效，非承诺时效。
+                                    </p>
+                                    <p class="padding-left30">
+                                        4、在清关资料齐全且不存在自扣与海关扣等风险或异常的情况，以下情况需在参考时效的基础上增加时长：中国内地、港澳台进口的个人物品和正式报关货件增加1-2个工作日，中国内地进口的分运行李货件增加2-4个工作日，中国内地、港澳台出口的正式报关货件增加1个工作日，海外国家进口的正式报关货件增加2-3个工作日。
+                                    </p>
+                                    <p class="padding-left30">
+                                        5、为降低因收发件人信息、申报品名不完整或错误及申报价值不符等原因导致的清关风险；收发件人信息必须真实有效，托寄物品名需写明材质和用途，托寄物价值必须如实申报。如因以上原因造成的查验延误，及产生的相关所有费用将与相关税费一起向寄件人或者收件人收取。
+                                    </p>
+
+
+
+
+
+
+
+                                    <p class="padding-left30"></p>
+                                    <p class="padding-left30"></p>
+                                    <p class="padding-left30"></p>
+                                    <p class="padding-left30"></p>
+                                    <p class="padding-left30"></p>
+
+
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- <ul class="content_banenr_img">
-                        <li>
-                            <a href="javascript:;">
-                                <img src="images/lengyunbusiness-img2.jpg" />
-                                <div class="content_img_tit">
-                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
-                                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="images/lengyunbusiness-img2.jpg" />
-                                <div class="content_img_tit">
-                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>冷运服务</h3>
-                                    <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
-                                </div>
-                            </a>
-                        </li>
-                        
-                    </ul> -->
                 </div>
             </div>
-            <!-- 物流和金融的轮播图结束 -->
-
-            <!-- 成功案例开始 -->
-            <div class="content_success">
-                <div class="content_su_tit">
-                    <h2>成功案例</h2>
-                    <span>每一时刻，都有无数的客户托付与期待被成功交付，顺丰与前瞻者同行，与成就者共成就</span>
-                    <a href="javascript:;">查看全部> </a>
-                </div>
-                <ul class="content_su_nav">
-                    <li>
-                        <a href="javascript:;">
-                            <div class="su_nav_img">
-                                <img src="images/red-t-img-1.png" class="red"/>
-                                <img src="images/white-t-img-1.png" class="white"/>
-                            </div>
-                            <p>3C电子行业</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="su_nav_img">
-                                <img src="images/red-t-img-5.png" class="red"/>
-                                <img src="images/white-t-img-5.png" class="white"/>
-                            </div>
-                            <p>医疗行业</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="su_nav_img">
-                                <img src="images/red-t-img-3.png" class="red"/>
-                                <img src="images/white-t-img-3.png" class="white"/>
-                            </div>
-                            <p>生鲜行业</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="su_nav_img">
-                                <img src="images/red-t-img-4.png" class="red"/>
-                                <img src="images/white-t-img-4.png" class="white"/>
-                            </div>
-                            <p>快消行业</p>
-                        </a>
-                    </li>
-                </ul class="content_su_nav">
-              
-            </div>
-            <!-- 成功案例结束 -->
-
-            <!-- 新闻资讯开始 -->
-            <div class="content_new">
-                <div class="content_new_tit">
-                    <h2>新闻资讯</h2>
-                    <span>新闻资讯抢先知晓</span>
-                    <a href="javascript:;"> 查看全部> </a>
-                </div>
-                <ul class="content_new_nav wrap">
-                    <li>
-                        <a href="javascript:;">
-                            <div class="content_new_img">
-                                <img src="images/0923-1.jpg"/>
-                            </div>
-                            <div class="content_new_de">
-                                <h3> 顺丰“空中皇后”B747洲际航线首航入欧，打造全球 ...</h3>
-                                <p> 2019年9月15日凌晨，顺丰第二架B747首航成功。从无锡 ...<b>[详情]</b></p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="content_new_img">
-                                <img src="images/ISO29151.jpg"/>
-                            </div>
-                            <div class="content_new_de">
-                                <h3>  顺丰科技获颁ISO/IEC 27701:2019隐 ...</h3>
-                                <p>  2019年11月8日，国际认证机构DNV GL正式向顺丰科技 ...<b>[详情]</b></p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="content_new_img">
-                                <img src="images/227360051142573262.png"/>
-                            </div>
-                            <div class="content_new_de">
-                                <h3> 确认过眼神，你就是要寻找的“最美”！</h3>
-                                <p> <b>[详情]</b></p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="content_new_img">
-                                <img src="images/picture.jpg"/>
-                            </div>
-                            <div class="content_new_de">
-                                <h3>  深入科学探讨 激发科研新动力——顺丰加入“未来科学 ...</h3>
-                                <p>  顺丰首次参与高峰论坛，与全球杰出科学家分享交流科学发展的前沿 ...<b>[详情]</b></p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- 新闻资讯结束 -->
-
-            <!-- 返回顶部按钮开始 -->
-            <div class="back_top">
-                <div class="wrap">
-                    <div class="back_top_img wrap"></div>
-                </div>        
-            </div>
-            <!-- 返回顶部按钮结束 -->
-
         </div>
-        <!-- content结束 -->
 
 
-        <!-- 尾部开始 -->
+        <!-- 尾部头部开始 -->
         <div class="footer">
+            <div class="return_to iconfont_ding">
+                &#xe609;
+            </div>
             <!-- 尾部头部开始 -->
             <div class="footer_top wrap clearfix">
                 <div class="footer_top_l">
@@ -699,7 +689,8 @@
                 </ul>
                 <ul class="footer_ver_r">
                     <li>
-                        <a href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
+                        <a
+                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
 
                     </li>
                 </ul>
@@ -709,27 +700,42 @@
             <div class="footer_safe wrap clearfix">
                 <ul class="clearfix">
                     <li>
-                        <a href="javascript:;"><img src="http://webcert.cnmstl.net/images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157" alt="安全网址认证书"></a>
+                        <a href="javascript:;"><img
+                                src="http://webcert.cnmstl.net/images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157"
+                                alt="安全网址认证书"></a>
                     </li>
                     <li>
-                        <a href="javascript:;"><img src="images/security_site_1.png" alt="安全认证"></a>
+                        <a href="javascript:;"><img src="../images/security_site_1.png" alt="安全认证"></a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="images/security_site_2.png" alt="公安网认证"> 深圳市市场监督管理局企业主体身份公示
+                            <img src="../images/security_site_2.png" alt="公安网认证"> 深圳市市场监督管理局企业主体身份公示
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="images/security_site_3.png"> 粤公网安备 44030502003091号
+                            <img src="../images/security_site_3.png"> 粤公网安备 44030502003091号
                         </a>
                     </li>
                 </ul>
             </div>
             <!-- 底部网站安全部分结束 -->
         </div>
-        <!-- 尾部结束 -->
-    </divc>
+        <a href="" class="index-online-service">
+            <p>在线客服</p>
+        </a>
+    </div>
+
 </body>
+<script type="text/javascript">
+    $(() => {
+        $('#mydatepicker').dcalendarpicker();
+        $('#mydatepicker2').dcalendarpicker({
+            format: 'yyyy-mm-dd'
+        });
+        $('#mycalendar').dcalendar();
+    })
+
+</script>
 
 </html>

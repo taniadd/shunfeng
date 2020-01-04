@@ -1,0 +1,101 @@
+/* 预约上门按钮 */
+.order-button-wrapper {
+    text-align: center;
+    padding: 15px 0;
+}
+.order-button {
+    display: inline-block;
+    height: 72px;
+    line-height: 64px;
+    border: solid 4px #dc1e32;
+    border-radius: 3px;
+    background: url(../images/order-button-background.png);
+    font-size: 16px;
+    color: #dc1e32;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.order-button .icon {
+    height: 28px;
+    width: 25px;
+    position: absolute;
+    top: 16px;
+    left: 14px;
+}
+.order-button .text {
+    display: inline-block;
+}
+.order-button .arrow {
+    position: absolute;
+    height: 9px;
+    width: 14px;
+    background: url(../images/order-button-arrow.png);
+    opacity: 0;
+    top: 28px;
+    right: 3px;
+}
+
+.order-button .order-button-inner {
+    position: relative;
+    padding: 0 35px 0 47px;
+}
+.order-button .flash {
+    display: none;
+    position: absolute;
+    background: url(../images/order-button-flash.png);
+    height: 100%;
+    width: 101px;
+    left: -101px;
+    top: 0;
+}
+
+
+/* 一排两个输入框样式 */
+.time-search .displayflex{
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.time-search .displayflex .flex40 {
+    width: 40%;
+}
+.time-search dl dt {
+    color: #000000;
+    width: 50px !important;
+    border-right: none !important;
+}
+.time-search dl input {
+    padding-left: 50px !important;
+}
+
+
+.accept-content {
+    background-color: #FFF;
+    border-radius: 4px;
+    padding: 40px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 14px;
+    position: relative;
+}
+.accept-content h4 {
+    text-align: center;
+    font-size: 24px;
+}
+.accept-content p {
+    font-size: 13px;
+    font-weight: 700;
+    height: 26px;
+    line-height: 26px;
+}
+.accept-content li {
+    list-style: outside;
+    font-size: 13px;
+    height: 26px;
+    line-height: 26px;
+}
+.accept-content .tips {
+    margin-top: 26px;
+    color: #dc1e32;
+}

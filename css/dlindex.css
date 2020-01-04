@@ -1,5 +1,31 @@
+/* 在线客服开始 */
+/* .shouye_index {
+    position: relative;
+} */
+.online_servic {
+    position: fixed;
+    z-index: 9999999999;
+    bottom: 50px;
+    right: 0;
+    height: 70px;
+    width: 70px;
+    background-color: #DC1E32;
+}
+.online_servic a {
+    display: block;
+    height: 40px;
+    width: 70px;
+    background: url(../images/smallBanner-icon1.png) no-repeat 17px -183px #dc1e32;
+}
+.online_servic p {
+    line-height: 27px;
+    color: #ffffff;
+    text-align: center;
+}
+/* 在线客服结束 */
 .banner {
     position: relative;
+    
 }
 .banner .bill_number {
     position: absolute;
@@ -43,6 +69,100 @@
     color: #ffffff;
     border-radius: 5px;
 }
+.banner .bannerWidt {
+    width: 100%;
+    height: 487px;
+    position: relative;
+    overflow: hidden;
+}
+.banner .banner_img {
+    width: 300%;
+    position: absolute;
+}
+.banner .banner_img li{
+    float: left;
+    width: 33.33%;
+}
+.banner .banner_img img {
+    width: 100%;
+}
+.banner .bannerWidt .banner_splot{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    /* margin-left: -20px; */
+}
+.banner .banner_splot li{
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #b1b1b1;       
+}
+.banner .banner_splot .banner_splot_curr{
+    background-color: #dc1e32;
+}
+/* 温馨提醒 */
+.banner .warm_tips {
+    position: absolute;
+    /* right: 0; */
+    right: -180px;
+    top: 30%;
+    height: 84px;
+}
+.banner .warm_tips .warm_tips_img{
+    float: left;
+    width: 60px;
+    height: 100%;
+    background: #dc1e32;
+    cursor: pointer;
+}
+.banner .warm_tips_img .img{
+    width: 100%;
+    height: 30px;
+    background: url(../images/warning_prompt_icon1.png) no-repeat center center;
+    margin-top: 7px;
+    border: none;
+    margin-bottom: 5px;
+}
+.banner .warm_tips_img p {
+    font-size: 14px;
+    line-height: 15px;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.banner .warm_tips_tit{
+    float: left;
+    background-color: #fff;
+    height: 100%;
+    width: 177px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+.banner .warm_tips_tit a{
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 18px;
+    font-size: 13px;
+    color: #dc1e32;
+}
+.banner .warm_tips_tit a:hover{
+  text-decoration: underline #dc1e32;
+}
+.banner .addvices {
+    top: 50%
+}
+.banner .addvices .img{
+    width: 100%;
+    height: 30px;
+    background: url(../images/warning_prompt_icon2.png) no-repeat center center;
+    margin-top: 7px;
+    border: none;
+    margin-bottom: 5px;
+}
 /* content开始 */
 .content {
     width: 100%;
@@ -50,15 +170,87 @@
 /* content_nav开始 */
 .content .content_nav {
     background-color: #DC1E32;
-    padding-left: 100px;
+    padding: 0 100px;
 }
-.content .content_nav ul li{
-    float: left;
-    width: 213px;
-    height: 100%;
+.content .content_nav ul{
+    display: flex;
+    justify-content:space-between;
+}
+.content .content_nav ul>li{
+    width: 20%;
     text-align: center;
     line-height: 98px;
 }
+.content .content_nav ul li:first-child{
+    position: relative;
+}
+
+.content .bill_number {
+    position: absolute;
+    z-index: 222;
+    bottom: 98px;
+    left: -23%;
+    width: 385px;
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0 20px 0 0px;
+    box-sizing: border-box;
+}
+.content .bill_number .bill_search {
+    position: relative;
+    line-height: 0;
+    padding: 20px 20px 0 0;
+
+}
+.content .bill_number .search_icon {
+    position: absolute;
+    top: 20px;
+    right: 14px;
+    width: 41px;
+    height: 42px;
+    background: url(../images/smallHeader-searchIcon.png) no-repeat center -18px;
+    /* display: none; */
+    border: 1px solid #e1e1e0;
+    border-left: none;
+}
+.content .bill_number .bill_search input {
+    width: 280px;
+    line-height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #E1E1E0;
+    box-shadow:inset 0px 0px 5px 1px #E1E1E0;
+}
+.content .bill_number .search_bill_number {
+    line-height: 30px;
+    width: 325px;
+    /* margin-top: 10px; */
+    padding: 5px 20px;
+    background-color: #DC1E32;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.content .bill_number .bill_search_hidden {
+    display: none;
+    width: 280px;
+    font-size: 12px;
+    color: #999;
+    margin: 16px auto 0;
+    border: 1px solid #E1E1E0;
+    box-shadow: inset 0px 0px 5px 1px #E1E1E0;
+    box-sizing: border-box;
+} 
+.content .bill_number .bill_search_hidden textarea {
+    width: 100%;
+    min-height: 70px;
+    /* text-indent: 2rem; */
+    padding: 8px 0 0 10px;
+    box-sizing: border-box;
+    resize: none;
+    overflow: hidden;
+    color: #999;
+}
+
 .content .content_nav li a {
     display: flex;
     color: #fff;
@@ -112,7 +304,34 @@
 .content .content_nav li:hover .content_sope {
     background-position: 0 -152px;
 }
-
+.content .content_img_tit {
+    height: 80px;
+    padding: 20px 20px;
+    background-color: #F1F1F1;
+}
+.content .content_img_tit:hover{
+    background-color: #DC1E32;
+}
+.content .content_img_tit .content_tit_img {
+    width:10%;
+    padding-right: 10px;
+}
+.content .content_img_tit h3{
+    font-size:  22px;
+}
+.content .content_img_tit p{
+    font-size:  13px;
+    margin-top: 10px;
+    color: #626262;
+}
+.content .content_img_tit:hover{
+    background-color: #DC1E32;
+}
+.content .content_img_tit:hover h3,
+.content .content_img_tit:hover p {
+    color: #ffffff;
+    
+}
 /* content_nav结束 */
 
 /* 物流和金融的轮播图开始 */
@@ -134,7 +353,7 @@
     line-height: 36px;
     border-bottom: 2px solid #949494;
 }
-.content .content_banner_tit .current {
+.content .content_banner_tit .content_current {
     border-bottom: 2px solid #DC1E32;
 }
 .content .content_banner_tit li a {
@@ -151,12 +370,162 @@
 .content .content_banenr_img li{
     width: 49.5%;
 }
-.content .content_banenr_img li img {
+.content .content_banenr_img li .contimg {
     width: 100%;
-}
-{
-    content_img_tit
+    height: 255px;
 }
 
-/* 物流和金融的轮播图开始 */
+/* 物流和金融的轮播图结束 */
+/* 内容成功案例开始 */
+.content .content_success {
+    width: 100%;
+    height: 400px;
+    background: #f5f4f1;
+    position: relative;
+    margin: 0 auto;
+    background: url(../images/case-shareBg.jpg);
+}
+
+.content .content_success .content_su_tit h2,
+ .content_new .content_new_tit h2{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    line-height: 80px;
+}
+.content .content_success .content_su_tit span,
+.content_new .content_new_tit span{
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.content_new .content_new_tit span {
+    text-indent: 8.5rem;
+}
+.content .content_success .content_su_tit a ,
+.content_new .content_new_tit a{
+    color: #dc1e32;
+    top: 80px;
+    font-size: 16px;
+}
+.content .content_success .content_su_nav{
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+.content .content_success .content_su_nav li {
+    width: 15.9%;
+    height: 172px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.content .content_success .content_su_nav li:hover {
+    background: #DC1E32;
+}
+.content .content_success .content_su_nav  .su_nav_img {
+    width:100%;
+    text-align: center;
+    margin-top: 39px;
+}
+.content .content_success .content_su_nav li .white {
+    display: none;
+}
+.content .content_success .content_su_nav li:hover .red{
+    display: none;
+
+}
+.content .content_success .content_su_nav li:hover .white{
+    display: inline-block;
+
+}
+.content .content_success .content_su_nav li p{
+    font-size: 20px;
+    color: #dc1e32;
+    text-align: center;
+    font-weight: 400;
+    line-height: 40px;
+}
+.content .content_success .content_su_nav li:hover p {
+    color: #ffffff;
+}
+/* 内容成功案例结束 */
+
+/* 内容新闻资讯开始 */
+.content_new {
+    padding-bottom: 100px;
+}
+.content_new .content_new_nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.content_new .content_new_nav li {
+    width: 24%;
+    background-color: #F1F1F1;
+}
+.content_new .content_new_nav li img{
+    width: 100%;
+}
+.content_new .content_new_nav .content_new_de {
+    padding: 15px 20px;
+}
+.content_new .content_new_nav h3{
+    font-size: 20px; 
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+    display: -webkit-box;  
+    -webkit-line-clamp: 2;   
+    -webkit-box-orient: vertical;
+}
+.content_new .content_new_nav p{
+    font-size: 14px;
+    margin-top: 10px;
+    /* overflow: hidden;
+    text-overflow: ellipsis;   
+    display: -webkit-box;  
+    -webkit-line-clamp: 2;   
+    -webkit-box-orient: vertical; */
+   
+}
+.content_new .content_new_nav b{
+    font-weight: normal;
+    color: #DC1E32;
+} 
+.content_new .content_new_nav li:hover{
+    background-color: #DC1E32;
+}
+.content_new .content_new_nav li:hover h3,
+.content_new .content_new_nav li:hover p,
+.content_new .content_new_nav li:hover b {
+    color: #ffffff;
+}
+
+/* 内容新闻资讯结束 */
+/* 返回顶部开始 */
+.back_top{
+    background: #e8e8e8;
+    height: 60px;
+}
+.back_top .wrap {
+    position: relative;
+}
+.back_top .back_top_img{
+    position: absolute;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    background: url(../images/to-top-red.png) no-repeat;
+    cursor: pointer;
+}
+/* 返回顶部按钮结束 */
+
+
+
 /* content结束 */

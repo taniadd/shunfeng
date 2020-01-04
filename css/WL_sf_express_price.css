@@ -1,0 +1,225 @@
+/* 二级导航栏样式 */
+.sfexpress_header_nav {
+    height         : 240px;
+    display        : flex;
+    justify-content: center;
+    position       : relative;
+    min-width      : 1280px;
+    background     : url(../images/dynamic_nav_bar_bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.sfexpress_header_nav>a {
+    height     : 48px;
+    display    : flex;
+    align-items: center;
+    padding    : 0 50px;
+    margin     : 0 2px;
+    color      : #fff;
+    position   : relative;
+    opacity    : .7;
+}
+
+.sfexpress_header_nav a.current {
+    color        : #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.sfexpress_header_nav>a:hover {
+    color        : #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.sfexpress_header_nav .big-title {
+    position  : absolute;
+    margin-top: 110px;
+    text-align: center;
+    color     : #fff;
+}
+
+.sfexpress_header_nav .big-title .bold {
+    font-size: 24px;
+    color    : #fff;
+}
+
+.sfexpress_header_nav .big-title .normal {
+    margin-top: 7px;
+    font-size : 16px;
+    color     : #fff;
+}
+
+/* 三级导航栏 */
+
+.service-nav {
+    font-size: 12px;
+    position : absolute;
+    bottom   : 0px;
+    width    : 100%;
+}
+
+.service-nav .nav-bg {
+    margin-left    : calc(50% - 530px);
+    background     : url(../images/dynamic_nav_bar_bg_mask.png) no-repeat;
+    background-size: cover;
+    min-height     : 68px;
+    display        : flex;
+    align-items    : center;
+    padding-left   : 50px;
+}
+.service-nav .navs {
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+}
+.service-nav a * {
+    color: #999;
+}
+.service-nav a .iconfont {
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+.service-nav a:hover *{
+    color: #dc1e32;
+}
+/* 内容区 */
+.express-content-wrapper {
+    background    : #f2f2f2;
+    padding-bottom: 71px;
+    min-width     : 1280px;
+}
+
+.express-content {
+    width : 960px;
+    margin: 0 auto;
+}
+
+/* 内容区 */
+.big-background {
+    background-color: #f2f2f2;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 13px;
+    line-height: 1.42857;
+    color: #333;
+    min-width: 1280px;
+}
+.big-background .content {
+    color: #333;
+    min-height: 400px;
+    padding: 55px 0;
+}
+.big-background .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 990px;
+}
+
+.big-background .main-content .main-content-row {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    margin-bottom: 14px;
+    position: relative;
+    padding: 20px 32px;
+}
+.time-search a:hover *{
+    color: #dc1e32;
+}
+.big-background dl {
+    position: relative;
+    margin: 16px 0;
+    display: block;
+}
+.big-background  dl dt {
+    font-size: 13px;
+    font-weight: lighter;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    width: 125px;
+    border-right: 1px dotted #bfbfbf;
+}
+.big-background dl .dd-right {
+    font-size: 13px;
+    font-weight: lighter;
+    position: absolute;
+    top: 4px;
+    text-align: center;
+    right: 0px;
+    height: 24px;
+    line-height: 24px;
+    width: 50px;
+    border-left: 1px dotted #bfbfbf;
+}
+.big-background dl.height {
+    width: 500px;
+}
+.big-background dl.sender-time {
+    width: 350px;
+}
+.big-background  .input-group {
+    border-radius: 3px;
+    border: 1px solid #bfbfbf;
+    color: gray;
+}
+.big-background  .input-group:hover {
+    border: 1px solid #000;
+}
+.big-background  .input-group input
+{
+    width: 100%;
+    padding-left: 135px;
+    background: 0 0;
+    height: 30px;
+}
+.function button
+{
+    color: #fff;
+    background-color: #dc1e32;
+    line-height: 30px;
+    padding: 0;
+    padding-left: 2px;
+    width: 118px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid #b51919;
+    position: relative;
+    -webkit-transition: top .2s;
+    transition: top .2s;
+    top: 0;
+}
+.note-content
+{
+    background-color: #FFF;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 14px;
+    position: relative;
+}
+.padding-left30 {
+    padding-left: 30px;
+}
+.note-content p {
+   line-height: 24px;
+}
+.note-content p a {
+    color: #dc1e32;
+}
