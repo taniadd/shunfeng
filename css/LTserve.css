@@ -1,0 +1,292 @@
+/* 在线客服界面 开始*/
+.LTground .LTback{
+    box-shadow: 4px 7px 21px 1px #364350;
+    border-radius: 20px;
+    position: absolute;
+    width: 73.2%;
+    height: 82.7%;
+    position: absolute;
+    top: 11.6%;
+    left: 15%;
+    overflow: hidden;
+}
+.LTground{
+    width: 100%;
+    height: 100%;
+    position: relative;
+     min-width: 1400px;
+}
+html{
+    overflow: hidden;
+}
+body {
+    background: #495A6D;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.LTground .LTpre1{
+    width: 100%;
+    height: 17%;
+    background: #000;
+}
+.LTground .LTpre1 .img2{
+    width: 180px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+.LTground .LTbre1{
+    background: pink;
+    height: 83%;
+}
+.LTground .LTbre1 .LTleft_1{
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    background: #7ACCDF;
+}
+.LTground .LTbre1 .LTleft_1 .LTchat{
+    background: #7accdf;
+    height: 65%;
+}
+.LTground .LTbre1 .LTleft_1 .LTask{
+    height: 35%;
+    background: #98e9fc;
+}
+.LTbre1 .LTleft_1 .LThorn{
+    height: 30px;
+    border-bottom: 1px solid #f6e7cb;
+    background: rgba(142,196,232, 0.9);
+}
+.LTbre1 .LTleft_1 .LThorn p{
+    color: white;
+    display: inline;
+    line-height: 30px;
+}
+.LTbre1 .LTleft_1 .LThorn .imgla{
+    width: 19px;
+    margin-left: 8px;
+}
+.LTbre1 .LTleft_1 .LThorn a{
+    display: inline-block;
+    margin-left: 176px;
+}
+.LTbre1 .LTleft_1 .LThorn .imgba{
+    width: 10px;
+}
+.LTbre1 .LTleft_1 .LTtwo{
+    /* height: 25px; */
+    margin-top: 25px;
+    text-align: center;
+}
+.LTbre1 .LTleft_1 .LTtwo p{
+    display: inline;
+    line-height: 25px;
+}
+.LTbre1 .LTleft_1 .LTtwo .laba2{
+    width: 25px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.LTbre1 .LTleft_1 .LTtwo .laba2_1{
+    display: none;
+    position: absolute;
+    top: 141px;
+    left: 761px;
+    color: white;
+    font-size: 20px;
+}
+.LTbre1 .LTleft_1 .LTrobot{
+    width: 50px;
+    margin: 21px 16px;
+    position: absolute;
+}
+.LTbre1 .LTleft_1 .LTrobot_p{
+    display: inline-block;
+    margin-top: 28px;
+    margin-left: 82px;
+    background: #CEEDF5;
+    border-radius: 8px;
+    padding: 6px;
+}
+.LTbre1 .LTleft_1 .LTrobot_p p{
+    line-height: 20px;
+}
+.LTbre1 .LTleft_1 .LTtime{
+    text-align: center;
+}
+.LTbre1 .LTleft_1 .LTrobot_p a{
+    color: rgb(26, 155, 90);
+    line-height: 10px;
+    display: block;
+    line-height: 15px;
+}
+.LTbre1 .LTleft_1 .LTrobot_p a:hover{
+    text-decoration:underline;
+}
+.LTbre1 .LTask img{
+    width: 26px;
+    margin-left: 12px;
+    margin-top: 6px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.LTbre1 .LTask .inp{
+    width: 100%;
+    height: 55%;
+    padding-top: 5px;
+    text-indent: 0.5em;
+    background: #98E9FC;
+}
+.LTbre1 .LTask .LTend p{
+    display: inline;
+    margin-left: 20px;
+}
+.LTbre1 .LTask .LTend .LTbtn1{
+    background: none;
+    width: 67px;
+    height: 20px;
+    border: 1px solid #333;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 420px;
+}
+.LTbre1 .LTask .LTend .LTbtn2{
+    background: rgba(126,191,209,.8);
+    width: 67px;
+    height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left:8px;
+}
+.LTbre1 .LTright_1{
+    float: right;
+    width: 30%;
+}
+/* .LTbre1 .LTright_1 .LTmobile{
+    background: red;
+}  */
+.LTbre1 .LTright_1 .LTmobile .LTmo{
+    width: 142%;
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 8px;
+}
+.LTbre1 .LTright_1 .LTmo>li{
+    float: left; 
+    /* width: 50%; */
+    /* width: 173px; */
+    margin-left: 9%;
+    height: 144px;
+}
+.LTbre1 .LTright_1 .LTmobile img{
+    width: 255px;
+    border-radius: 10px;
+}
+.LTbre1 .LTright_1 .LTmobile .LTkuai1{
+    background: rgba(3, 3, 3, 0.4);
+    height: 6px;
+    width: 25px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.LTbre1 .LTright_1 .LTmobile .LTkuai2{
+    background: rgba(3, 3, 3, 0.4);
+    height: 6px;
+    width: 25px;
+    display: inline-block;
+}
+.LTkuai3{
+    background: rgba(206, 92, 39, 0.8);
+}
+.LTbre1 .LTright_1 .LTmobile .LTmc{
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+}
+.LTbre1 .LTright_1 .LTtab{
+    display: flex;
+    border-bottom: 2px solid #999;
+    /* margin-top: 16px; */
+    position: relative;
+}
+.LTbre1 .LTright_1 .LTtab .LTli{
+    height: 30px;
+    width: 67px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.LTbre1 .LTright_1 .LTtab .LTli2{
+    color:red;
+}
+
+.LTbre1 .LTright_1 .LTtab .LTli:hover{
+    color:red
+    
+}
+.LTbre1 .LTright_1 .LTtab .LTlili{
+    width: 72px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    top: 29px;
+    margin-left: 13px;
+}
+.LTbre1 .LTright_1 .LTtemplate1 a{
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    padding: 8px;
+}
+.LTbre1 .LTright_1 .LTtemplate1 a:hover{
+    background: #FCD8DE;
+}
+.LTbre1 .LTright_1 .LTtemplate1 ul{
+    width: 100%;
+}
+.LTbre1 .LTright_1 .LTtemplate1 li{
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.LTbre1 .LTright_1 .LTtemplate1 img{
+    width: 32%;
+    margin-bottom: 3px;
+}
+.LTbre1 .LTright_1 .LTtemplate2{
+    display: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+.LTbre1 .LTright_1 .LTtemplate2 img{
+    width: 62%;
+}
+
+
+/* 在线客服界面 结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

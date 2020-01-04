@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+<title>ic_vol</title>
+<desc>Created with Sketch.</desc>
+<defs></defs>
+<g id="对话" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="对话-h51" transform="translate(-678.000000, -152.000000)">
+        <g id="添加图片-copy" transform="translate(678.000000, 152.000000)">
+            <circle id="Oval-10-Copy" fill="#000000" opacity="0.300000012" cx="24" cy="24" r="23.1724138"></circle>
+            <g id="静音-copy" transform="translate(12.413793, 11.586207)" fill-rule="nonzero" fill="#FFFFFF">
+                <path d="M14.0004972,24.8275862 L4.65016513,17.5862069 L0,17.5862069 L0,7.24137932 L4.65016513,7.24137932 L14.0004972,0 L14.0004972,24.8275862 Z M2.00007102,15.5172414 L5.35019,15.5172414 L12.0004262,20.6896552 L12.0004262,4.13793104 L5.35019,9.31034483 L2.00007102,9.31034483 L2.00007102,15.5172414 Z M17.5859938,9.31842672 L19.5860648,9.31842672 L19.5860648,15.5253233 L17.5859938,15.5253233 L17.5859938,9.31842672 Z M22.4137221,7.24946121 L24.4137931,7.24946121 L24.4137931,17.5942888 L22.4137221,17.5942888 L22.4137221,7.24946121 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</g>
+</svg>

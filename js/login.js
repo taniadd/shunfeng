@@ -86,11 +86,10 @@ $(() => {
     let fose = true;
     $('.login_yan button').on('click', function(event) { //点击获取验证码
         event.stopPropagation();
-        let now = Math.ceil(Math.random() * 9); //验证码第一位数
-        let wang = Math.ceil(Math.random() * 9); //验证码第二位数
-        let sui = Math.ceil(Math.random() * 9); //验证码第三位数
-        let to = Math.ceil(Math.random() * 9); //验证码第四位数
-        let pj = parseInt(('' + now + wang + sui + to))
+        let pj = '';
+        for (var i = 0; i < 4; i++) {
+            pj += Math.ceil(Math.random() * 9);
+        }
         rand.push(parseInt(pj));
         if (jinzhi > 0) {
             $(this).css('cursor', 'not-allowed')

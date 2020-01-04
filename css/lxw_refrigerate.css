@@ -72,13 +72,6 @@
     border-left: 1px solid black;
 }
 
-.banner_img .serve {
-    width: 100%;
-    text-align: center;
-    background-color: #F1F1F1;
-
-}
-
 .dh {
     position: fixed;
     top: 0;
@@ -130,6 +123,20 @@
     padding: 0 30px;
     line-height: 22px;
 
+}
+
+.banner_img .list_width {
+    width: 100%;
+    background-color: #F1F1F1;
+
+
+
+}
+
+.banner_img .serve {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .tab_title {

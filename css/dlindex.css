@@ -25,6 +25,7 @@
 /* 在线客服结束 */
 .banner {
     position: relative;
+    overflow: hidden;
     
 }
 .banner .bill_number {
@@ -43,7 +44,6 @@
 
 }
 .banner .bill_number .search_icon {
-    position: absolute;
     position: absolute;
     top: 0px;
     width: 41px;
@@ -523,6 +523,13 @@
     height: 48px;
     background: url(../images/to-top-red.png) no-repeat;
     cursor: pointer;
+}
+.back_top .fixed {
+    position: fixed;
+    right: 3%;
+    bottom: 0;
+    z-index: 999999;
+
 }
 /* 返回顶部按钮结束 */
 
