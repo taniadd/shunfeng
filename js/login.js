@@ -36,7 +36,7 @@ $(() => {
     $('.login_denglu_tel').on('keyup', function() { //判断用户输入的手机号是否符合规定
         let tel = /^(0|86|17951)?(13[0-9]|15[012356789]|17[01235678]|18[0-9]|14[579]|16[6]|19[189])[0-9]{8}$/
         if (tel.test($(this).val())) { //当用户输入手机号符合规定时
-            $(this).parents('.login_tel').css('background-image', "url('./images/correct.png')")
+            $(this).parents('.login_tel').css('background-image', "url('../images/correct.png')")
             if (flag) { //阀门,防止定时器还没走完,能够重复触发此代码.
                 $('.login_yan button').removeAttr("disabled").css('cursor', 'pointer').css('background-color', '#333333');
             }
@@ -68,7 +68,7 @@ $(() => {
             yan();
         } else {
             yan();
-            $(this).parents('.login_tel').css('background-image', "url('./images/error.png')")
+            $(this).parents('.login_tel').css('background-image', "url('../images/error.png')")
         }
 
         function yan() {
@@ -91,6 +91,8 @@ $(() => {
             pj += Math.ceil(Math.random() * 9);
         }
         rand.push(parseInt(pj));
+        console.log(rand);
+
         if (jinzhi > 0) {
             $(this).css('cursor', 'not-allowed')
                 .css('background-color', '#333333')
@@ -180,6 +182,7 @@ $(() => {
             .css('cursor', 'pointer');
         sum = 30
         flag = true;
+        fose = true;
         $('.quick').attr({
                 "disabled": "disabled"
             }) //内容为空的时候就禁用按钮
