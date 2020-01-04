@@ -1,1 +1,18 @@
-LTsuccess.html       成功案例
+LTsuccess.html       全部行业案例1
+LTsuccess1.html       全部行业案例2
+LTmedical.html         医疗行业
+LTfresh.html            生鲜行业
+LTelectronic.html        3c电子行业
+LTconsumer.html           快消行业
+
+LTdetails1.html         查看详情链接页 第1张 
+LTdetails2.html         查看详情链接页 第2张 
+LTdetails3.html         查看详情链接页 第3张 
+LTdetails4.html         查看详情链接页 第4张 
+LTdetails5.html         查看详情链接页 第5张 
+LTdetails6.html         查看详情链接页 第6张 
+LTdetails7.html         查看详情链接页 第7张
+LTdetails8.html         查看详情链接页 第8张
+
+LTonlineservice.html       在线客服
+LTcooperation.html         合作咨询           

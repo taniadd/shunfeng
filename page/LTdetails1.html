@@ -7,7 +7,11 @@
 	<link href="../css/base.css" type="text/css" rel="stylesheet" />
 	<link href="../css/common.css" type="text/css" rel="stylesheet" />
 	<link href="../css/LTdetails.css" type="text/css" rel="stylesheet" />
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_w9js8nm2a9c.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/login.js"></script>
+	<script src="../js/LTding.js"></script>
 </head>
 
 <body>
@@ -211,9 +215,10 @@
 					</li>
 				</ul>
 				<ul class="nav_r clearfix">
-					<li class="login">
+					<!-- 原先类名为login,由于类名冲突已经更名为celerity_login -->
+					<li class="celerity_login">
 						<span class="icon member"></span>
-						<a href="javascript:;">快速登录/注册</a>
+						<a href="javascript:;" class="Thelogin_button">快速登录/注册</a>
 						<!-- <span class="icon country"></span> -->
 					</li>
 					<li></li>
@@ -221,32 +226,193 @@
 				</ul>
 			</div>
 		</div>
+		<!-- 登录界面 -->
+		<div class="keep"></div>
+		<div class="login">
+			<div class="login_title">
+				<ul>
+					<li class="login_scan">
+						<a href="javascript:;" class="creent">扫码登录</a>
+					</li>
+					<li class="login_bank">
+						<a href="javascript:;">账号登录</a>
+					</li>
+				</ul>
+				<span class="close">
+					<a href="javascrpit:;">×</a>
+				</span>
+			</div>
+			<div class="login_content">
+				<p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
+				<h5>登录后即可免验证快速下单与查件</h5>
+				<div class="img">
+					<img src="./images/erweima.png" alt="">
+				</div>
+				<h4>请使用微信扫描二维码</h4>
+				<h5 class="self"></h5>
+				<div class="aotulog">
+					<input type="checkbox" checked>
+					<span class="self">自动登录</span>
+				</div>
+				<p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
+			</div>
+			<div class="login_denglu">
+				<form action="" id="reset" autocomplete="off">
+					<div class="login_denglu_box">
+						<p class="login_denglu_p">登录后即可免验证快速下单与查件</p>
+						<div class="login_tel">
+							<div class="selected">
+								<span class="selected_diqu">+86</span>
+								<i></i>
+								<ul>
+									<li>中国内地<span>+86</span>
+									</li>
+									<li>中国香港<span>+852</span>
+									</li>
+									<li>中国澳门<span>+853</span></li>
+									<li>中国台湾<span>+886</span></li>
+								</ul>
+							</div>
+							<input type="text" class="login_denglu_tel" placeholder="请输入手机号" name="tel">
+						</div>
+						<div class="login_yan">
+							<div class="login_input">
+								<input type="text" class="login_input_yan" placeholder="请输入验证码" name="auth">
+								<p class="mistake">验证码错误</p>
+							</div>
+							<button>获取验证码</button>
+						</div>
+						<p class="login_denglu_p1">未注册用户登录默认注册顺丰会员</p>
+						<div class="aotulog">
+							<input type="checkbox" checked>
+							<span class="self">自动登录</span>
+						</div>
+						<div class="login_denglu_quick">
+							<button class="quick">快速登录</button>
+							<button class="enterprise"><a href="javascript:;">我是月结企业用户</a></button>
+						</div>
+						<p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- 登录界面结束 -->
 		<!-- 头部结束 -->
 		<!-- banner开始 -->
 		<div class="banner">
 			<ul class="banner_img">
-				<li><img src="../images/nanjing392.jpg" /></li>
+				<li><img src="../images/zzz11111.jpg" /></li>
 			</ul>
 		</div>
 		<!-- banner结束 -->
-		<!-- Top_content 开始 -->
-		<div class="Top_content">
-			
+		<!-- LT_content 开始 -->
+		<div class="LT_content wrap clearfix">
+			<a href="javascript:;"> <img src="../images/link_icon_red.png" alt=""> 返回</a>
+			<div class="right clearfix">
+				<p>分享好友</p>
+				<ul class="right_ul clearfix">
+					<li>
+						<a href="javascript:;" class="iconfont icon-weibo"></a>
+					</li>
+					<li>
+						<a href="javascript:;" class="iconfont icon-weixin">
+							<img src="../images/weixin.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="iconfont icon-kongjian"></a>
+					</li>
+					<li>
+						<a href="javascript:;" class="iconfont icon-douban"></a>
+					</li>
+				</ul>
+			</div>
+			<h2>新疆生物制品需求告急！顺丰冷运4天3夜配送完毕</h2>
+			<p>我们用专业和严谨丈量祖国东西部的土地，用高效和用心成就客户和人民的需求。</p>
 		</div>
-        <!-- Top_content 结束  -->
-        <!-- Top_middle 开始 -->
-		<div class="Top_content">
-			
-        </div>
-        <!-- Top_middle 结束  -->
-        <!-- Top_bottom 开始 -->
-		<div class="Top_content">
-			
-        </div>
-        <!-- Top_bottom 结束  -->
-		
+		<!-- LT_content 结束  -->
+		<!-- LT_middle 开始 -->
+		<div class="LT_middle wrap clearfix">
+			<img src="../images/zzzz11349.jpg" alt="">
+			<ul>
+				<li>
+					<h1>新疆生物制品需求告急，省疾控中心增援</h1>
+					<p>2017年5月4日，顺丰冷运接到江苏省疾控中心紧急支援新疆克孜勒苏柯尔克孜自治州（以下简称“新疆克州“）生物制品派送任务！<br />克州当地急需在5月12日前接到此批生物制品，且要求在全程2-8℃环境下储运确保不脱温。<br>
+
+						时间紧任务重，江苏南京和新疆克州距离约5300公里，横跨了中国东西部地区，顺丰冷运鉴于此行的特殊情况，当天便制定了初步方案。</p>
+				</li>
+				<li>
+					<h1>紧急部署会议，高效制定客制化方案</h1>
+					<p>5月5日，南京地区各部门已做好出行准备，并召开了紧急动员会。同时，南京地区紧急部署了从总部至地区15人的项目视频会议，综合评估了：货品储运方案&包装方案、路线&路况、区域地理人文、航空运输方案比较分析（当地“一带一路
+						”国际合作高峰论坛召开在即，航空制约因素多），最终决定此行方案：</p>
+				</li>
+				<li>
+					<h1>1.“专车直运，全程监控”</h1>
+					<p>采用CDC专车直发发运模式（两地疾控中心直达无中转模式），总部大后方紧急项目组全程值班对接实况人员，监控温度数据及车辆GPS，确保货、车、人的数据全程对接；&包装方案、路线&路况、区域地理人文、航空运输方案比较分析（当地“一带一路
+						”国际合作高峰论坛召开在即，航空制约因素多），最终决定此行方案：</p>
+				</li>
+				<li>
+					<h1>2.“轮流接驳，专人跟随”</h1>
+					<p>早在5月6日凌晨，2名驾驶员便动身乘火车前往西安，准备接车。
+
+						5月6日冷藏车修检出车后，1名专人全程跟车，2名驾驶员轮流开车，到了接驳点换人，如此交替。这既能全程确人员的身体健康及驾驶状态，又能专业快速地应对突发情况，在途径无人区、隧道等弱信号区可保证通讯；&包装方案、路线&路况、区域地理人文、航空运输方案比较分析（当地“一带一路
+						”国际合作高峰论坛召开在即，航空制约因素多），最终决定此行方案：</p>
+				</li>
+				<li>
+					<h1>3.“双冷保温控，沿途备案”</h1>
+					<p>采用冷藏车制冷+冷媒包装保冷的“双冷温控”方式，确保装卸&储运均不脱温；预先备案，为预防长途中车辆可能的故障或路障，联系沿途各站点疾控中心预留储存空间，如遇到紧急情况，立刻在当地疾控中心进行换车接驳或储存；&包装方案、路线&路况、区域地理人文、航空运输方案比较分析（当地“一带一路
+						”国际合作高峰论坛召开在即，航空制约因素多），最终决定此行方案：</p>
+				</li>
+				<li>
+					<h1>4.“双保险控温，依实况调节”</h1>
+					<p>在车载温度记录仪和随箱温度记录仪上传数据的同时，跟车专人也进行实时的温度调整把控，确保运输温度受外界（区域温差、昼夜温差、复杂天气）影响最小化；&包装方案、路线&路况、区域地理人文、航空运输方案比较分析（当地“一带一路
+						”国际合作高峰论坛召开在即，航空制约因素多），最终决定此行方案：</p>
+				</li>
+				<li>
+					<h1>5.“注重细节，尊重文化”</h1>
+					<p>沿途协调我司本地资源，特别在进入新疆地域后，由当地同事开车随行，充分尊重途径地区的人文风俗和文化差异，带入最优路线，提高沟通和运输效率。
+
+						最终在5月10日凌晨抵达目的地，上午10点许与疾控中心人员完成接货。&包装方案、路线&路况、区域地理人文、航空运输方案比较分析（当地“一带一路
+						”国际合作高峰论坛召开在即，航空制约因素多），最终决定此行方案：</p>
+				</li>
+				<li>
+					<h1>新疆医药冷链行，健康在传递<br>
+						5300多公里，跨越东西部7省，4天3夜约119小时，全程温控2-8℃。</h1>
+
+					<p>我们用专业和严谨丈量祖国东西的土地，用高效和用心成就客户和人民的需求。
+
+						从医药冷链业务初始至今的2年内，顺丰冷运在极端气候和特殊地域医药冷链配送中完成了一次次任务，并不断汲取经验，在不同模式下的医药冷链运输中会持续发力，不断优化。&包装方案、路线&路况、区域地理人文、航空运输方案比较分析（当地“一带一路
+						”国际合作高峰论坛召开在即，航空制约因素多），最终决定此行方案：</p>
+				</li>
+
+			</ul>
+		</div>
+		<!-- LT_middle 结束  -->
+		<!-- LT_bottom 开始 -->
+		<div class="LT_bottom wrap clearfix">
+			<h3>合作咨询</h3>
+				<img src="../images/zzzz22349.jpg" alt="">
+				<div class="midd">
+					<p>如果您对我们的产品感兴趣,可以提交您的信息，我们的专业人员会及时与您联系！</p>
+					<a class="LTboo a1" href="">
+							联系在线客服
+							<span></span>
+						</a>
+						<a class="LTboo a2" href="">
+								合作咨询
+							<span></span>
+						</a>
+				</div>
+			</div>
+		<!-- LT_bottom 结束  -->
+
 		<!-- 尾部开始 -->
 		<div class="footer">
+
+			<!-- 返回顶部开始 -->
+			<img src="../images/zzz-top-red (1).png" alt="" class="LTding">
+			<!-- 返回顶部结束 -->
+
 			<!-- 尾部头部开始 -->
 			<div class="footer_top wrap clearfix">
 				<div class="footer_top_l">
@@ -347,7 +513,7 @@
 					</li>
 				</ul>
 			</div>
-			<!-- 尾部底部版权部分结束  --> 
+			<!-- 尾部底部版权部分结束  -->
 			<!-- 底部网站安全部分开始 -->
 			<div class="footer_safe wrap clearfix">
 				<ul class="clearfix">
@@ -371,7 +537,7 @@
 			</div>
 			<!-- 底部网站安全部分结束 -->
 		</div>
-		
+
 	</div>
 </body>
 
