@@ -101,7 +101,7 @@
 
 .tab_container ul li:last-child {
     margin: 100px auto;
-    height: 440px;
+    min-height: 440px;
 }
 
 .tab_container ul li img {
@@ -134,7 +134,6 @@
 }
 
 .banner_img .serve {
-    width: 1280px;
     margin: 0 auto;
     text-align: center;
 }
