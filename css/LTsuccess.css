@@ -1,3 +1,21 @@
+
+/* 置顶图标 */
+.footer{
+    position: relative;
+}
+.LTding{
+    position: fixed;
+    bottom: 20px;
+    right:60px;
+    display: none;
+}
+.current{
+    position: absolute;
+    top: -60px;
+}
+.LTding:hover{
+    content: url("../images/zzz-top-red (2).png")
+}
 /* industry 开始 */
 .TLindustry{
     background-color: #F1F1F1;
@@ -68,6 +86,7 @@
  .LTmodule ul{
      margin-left:-30px;
      overflow: hidden;
+     min-width: 1473px;
  }
  .LTmodule li{
      float: left;
