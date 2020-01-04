@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>首页</title>
-    <link href="../css/base.css" type="text/css" rel="stylesheet" />
-    <link href="../css/common.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
-    <link rel="stylesheet" href="../css/lxw_refrigerate.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无着件公示</title>
+    <link type="text/css" rel="stylesheet" href="../css/base.css">
+    <link type="text/css" rel="stylesheet" href="../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_v7fe8bgq07n.css">
+    <link rel="stylesheet" href="../css/WL_sf_express_price.css">
+    <link rel="stylesheet" href="../css/WL_sf_express_range.css">
+    <link rel="stylesheet" href="../css/WL_sf_express_exchange.css">
+    <link rel="stylesheet" href="../css/WLdcalendar.picker.css">
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/lxw_refrigerate.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/wl_sf_express.js"></script>
 </head>
 
 <body>
@@ -257,8 +262,8 @@
                 <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
             </div>
             <div class="login_denglu">
-                <form action="" id="reset" autocomplete="off">
-                    <div class="login_denglu_box">
+                <form action="" id="reset" autocomplete="off" class="reset">
+                    <div class="login_denglu_box ">
                         <p class="login_denglu_p">登录后即可免验证快速下单与查件</p>
                         <div class="login_tel">
                             <div class="selected">
@@ -298,121 +303,134 @@
         </div>
         <!-- 登录界面结束 -->
         <!-- 头部结束 -->
-        <!-- banner开始 -->
-        <div class="banner">
-            <ul class="banner_img">
-                <!-- <li><img src="../images/IMG20190905_171924.jpg"/></li> -->
-                <li><img src="../images/lengyun.jpg" alt=""></li>
-                <li class="serve"><span>食品服务
-                        <ul class="list">
-                            <li>
-                                冷运速配
-                            </li>
-                            <li>
-                                生鲜速配
-                            </li>
-                            <li>
-                                大闸蟹专递
-                            </li>
-                            <li>
-                                冷运特惠
-                            </li>
-                            <li>
-                                冷运到店
-                            </li>
-                            <li>
-                                顺丰冷运零担
-                            </li>
-                            <li>
-                                冷运专车
-                            </li>
-                            <li>
-                                冷运仓储
-                            </li>
-                        </ul>
-                    </span>
-                    <div class="long"></div><span>医药服务
-                        <ul class="list">
-                            <li>
-                                医药安心递
-                            </li>
-                            <li>
-                                精温定航
-                            </li>
-                            <li>
-                                医药专递
-                            </li>
-                            <li>
-                                精温定达
-                            </li>
-                            <li>
-                                医药专车
-                            </li>
-                            <li>
-                                医药仓储
-                            </li>
 
-                        </ul>
-                    </span>
-                </li>
-            </ul>
+        <!-- 内容区开始 -->
+        <!--二级导航栏-->
+        <nav class="sfexpress_header_nav clearfix">
+            <!-- 我要寄件的链接 -->
+            <a href="./WLquick.html">我要寄件</a>
+            <!--运单追踪的链接-->
+            <a href="./WL_waybill.html">运单追踪</a>
+            <!--服务支持的链接-->
+            <a class="current" href="./WL_sf_express.html">服务支持</a>
+            <div class="big-title">
+                <p class="bold">
+                    SF支持,你要的这里都有
+                </p>
+                <p class="normal">
+                    我们期待为你带来更加优质的线上服务体验
+                </p>
+            </div>
+            <!-- 三级导航栏 -->
+            <div class="service-nav">
+                <div class="nav-bg">
+                    <ul class="navs">
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-jinqian"></span>
+                                <span>运费时效</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-fuwufanwei"></span>
+                                <span>服务范围</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-location"></span>
+                                <span>网点查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-gantanhao-xianxingsanjiaokuang"></span>
+                                <span>收寄标准</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-huishuai"></span>
+                                <span>汇率查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-statement"></span>
+                                <span>代收货款账单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-zhangdan"></span>
+                                <span>代收货款对账</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-zhexiantu"></span>
+                                <span>常用表格</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-lipei"></span>
+                                <span>理赔</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-qingguanfuwu"></span>
+                                <span>清关服务</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./WL_sf_express_price.html">
+                                <span class="iconfont icon-gongshi"></span>
+                                <span>无着件公示</span>
+                            </a>
+                        </li>
 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="big-background">
+            <div class="content">
+                <div class="container">
+                    <div class="main-content">
+                        <div class="function">
+                            <div class="main-content-row-1">
+
+                                <div class="row-content">
+                                    <div class="lost-package">
+                                        <h2>无着件公示</h2>
+                                        <p style="color: #ccc;">
+                                            根据国家邮政局《无法投递又无法退回快件管理规定》第十二条规定，快递企业应当建立无法投递又无法退回快件的认领信息平台，将规定第十一条第二款开拆快件所登记的相关信息进行公示，公示时间不少于30日。以下为顺丰速运有限公司无法投遇文无法退回快件公示：
+                                        </p>
+                                        <section>
+                                            <a href=""></a>
+                                        </section>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- banner结束 -->
-        <!-- container集装箱模块 -->
-        <div class="tab_container">
-            <h1 class="tab_title">冷运速配</h1>
-            <ul class="clearfix">
-                <li><img src="../images/dtop_img3.png" alt="">
-                    <h3>服务介绍</h3>
-                    <p>基于冷仓，对有温度控制要求的食品，通过包装方案满足温控，提供优先配载、优先派送的专属快递服务。</p>
-                </li>
-                <li><img src="../images/w_feature.png" alt="">
-                    <h3>服务特性</h3>
-                    <p><strong>专业包装、新鲜速达：</strong>专业包装保鲜、保冷、保安全，为客户提供一站式的冷运快速寄递服务。</p>
-                </li>
-                <li><img src="../images/dtop_img1.png" alt="">
-                    <h3>服务时效</h3>
-                    <p>整体不超过3天。</p>
-                </li>
-                <li><img src="../images/w_added-service.png" alt="">
-                    <h3>增值服务</h3>
-                    <p>保价、代收货款、个性化包装服务（可循环保温箱派送）</p>
-                </li>
-                <li><img src="../images/dtop_img2.png" alt="">
-                    <h3>服务范围</h3>
-                    <p>中国内地地区，超过300个城市。</p>
 
-                </li>
-                <li><img src="../images/w_price.png" alt="">
-                    <h3>服务定价</h3>
-                    <p>首重（1KG）+续重，根据不同的流向价格会有所差异。</p>
-                </li>
-                <li class="notice"><img src="../images/w_use.png" alt="">
-                    <h3>使用须知</h3>
-                    <p><strong>· 客户类型：</strong>仅限月结客户，需签订《物流及物流辅助服务合同（主合同）》和《冷仓速配服务条款》。</p>
-                    <p><strong>· 托寄物内容：</strong>加工食品、初级农产品（常温/冷藏/冷冻运输的食品），单票不超过15kg（含包材），不允许操作子母件。</p>
-                    <p><strong>· 运输温区：</strong>冷藏；冷冻；常温；深冻</p>
-                    <p><strong>· 客户资质要求：</strong>根据托寄物的内容，需要提供相应的资质，详情请咨询当地分公司或9533881。</p>
-                </li>
-            </ul>
 
-        </div>
-        <div class="b_link_list">
-            <ul class="b_link_icon">
-                <li><span class="iconfont2">&#xe699;</span></li>
-                <li><span class="iconfont2">&#xe619;</span></li>
-                <li><span class="iconfont2">&#xe659;</span>
-                    <div class="erweima"><img src="../images/erweima.png" alt=""></div>
-                </li>
-                <li><span class="iconfont2">&#xe64d;</span></li>
-                <li>分享好友</li>
-            </ul>
-        </div>
-        <!-- container集装箱结束 -->
-        <!-- 尾部开始 -->
+
+        <!-- 尾部头部开始 -->
         <div class="footer">
-            <div class="iconfont">&#xe65b;</div>
+            <div class="return_to iconfont_ding">
+                &#xe609;
+            </div>
             <!-- 尾部头部开始 -->
             <div class="footer_top wrap clearfix">
                 <div class="footer_top_l">
@@ -517,28 +535,33 @@
             <!-- 底部网站安全部分开始 -->
             <div class="footer_safe wrap clearfix">
                 <ul class="clearfix">
-                    <li><a href="javascript:;"><img
+                    <li>
+                        <a href="javascript:;"><img
                                 src="http://webcert.cnmstl.net/images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157"
-                                alt="安全网址认证书"></a></li>
-                    <li><a href="javascript:;"><img src="../images/security_site_1.png" alt="安全认证"></a></li>
+                                alt="安全网址认证书"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="../images/security_site_1.png" alt="安全认证"></a>
+                    </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="../images/security_site_2.png" alt="公安网认证">
-                            深圳市市场监督管理局企业主体身份公示
+                            <img src="../images/security_site_2.png" alt="公安网认证"> 深圳市市场监督管理局企业主体身份公示
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="../images/security_site_3.png">
-                            粤公网安备 44030502003091号
+                            <img src="../images/security_site_3.png"> 粤公网安备 44030502003091号
                         </a>
                     </li>
                 </ul>
             </div>
             <!-- 底部网站安全部分结束 -->
         </div>
-        <!-- 尾部结束 -->
+        <a href="" class="index-online-service">
+            <p>在线客服</p>
+        </a>
     </div>
+
 </body>
 
 </html>

@@ -46,7 +46,7 @@ a {
     align-items    : center;
     justify-content: center;
     background     : #333;
-    min-width      : 1280px;
+ 
 
 }
 
@@ -71,7 +71,7 @@ a {
 
 /* 内容区大盒子 */
 .quick_content_wrapper {
-    min-width       : 1280px;
+
     padding-bottom  : 71px;
     background-color: #f2f2f2;
 }
@@ -94,8 +94,7 @@ a {
     height       : 71px;
     line-height  : 71px;
     border-bottom: 2px solid #ccc;
-    margin       : 0 -81px;
-    padding      : 0 81px;
+  
 }
 
 .content_nav a {
