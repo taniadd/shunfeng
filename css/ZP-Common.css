@@ -1,0 +1,45 @@
+#go_nav {
+    width: 48px;
+    height: 48px;
+    background: url(../images/to-top-red.png);
+
+}
+#go_nav:hover {
+    background: url(../images/to-top-black.png);
+}
+.go_top_nav {
+    position: fixed;
+    top: 100%;
+    right: 50%;
+    margin-top: -50px;
+    margin-right: -640px;
+}
+.footer {
+    position: relative;
+}
+.go_left_nav {
+    position: absolute;
+    top: -2%;
+    right: 50%;
+    margin-right: -640px;
+}
+.service {
+    position: fixed;
+    top: 70%;
+    right: 10px;
+    width: 66px;
+    background-color: #dc1e32;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 7px;
+    z-index: 10;
+}
+.service::before {
+    content: '';
+    display: block;
+    height: 45px;
+    background: url(../images/smallBanner-icon.png) no-repeat 17px -183px #dc1e32;
+}
+.service p {
+    color: #fff;
+}
