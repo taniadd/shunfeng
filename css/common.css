@@ -74,7 +74,7 @@
 /* .header .nav_l .current {
     color: #e13d4e;
 } */
-.header .nav_l li a:hover {
+.header .nav_l > li a:hover {
     color: #e13d4e;
 }
 /* .header .nav_l .current::after {
@@ -87,7 +87,7 @@
     width: 100%;
     bottom: 0;
 } */
-.header .nav_l li a:hover::after {
+.header .nav_l>li>a:hover::after {
     color: #e13d4e;
     position: absolute;
     content: "";
