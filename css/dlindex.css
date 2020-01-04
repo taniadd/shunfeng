@@ -25,6 +25,7 @@
 /* 在线客服结束 */
 .banner {
     position: relative;
+    
 }
 .banner .bill_number {
     position: absolute;
@@ -67,6 +68,40 @@
     background-color: #DC1E32;
     color: #ffffff;
     border-radius: 5px;
+}
+.banner .bannerWidt {
+    width: 100%;
+    height: 487px;
+    position: relative;
+    overflow: hidden;
+}
+.banner .banner_img {
+    width: 300%;
+    position: absolute;
+}
+.banner .banner_img li{
+    float: left;
+    width: 33.33%;
+}
+.banner .banner_img img {
+    width: 100%;
+}
+.banner .bannerWidt .banner_splot{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    /* margin-left: -20px; */
+}
+.banner .banner_splot li{
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #b1b1b1;       
+}
+.banner .banner_splot .banner_splot_curr{
+    background-color: #dc1e32;
 }
 /* content开始 */
 .content {
