@@ -14,14 +14,19 @@ background-color: #f1f1f1;
     float: left; 
 }
 .tabs_nava_fa a {
-    padding: 0 60px;
+    margin: 0 70px;
+    padding: 2px;
     color: #333;
     font-size: 16px;
-    border-right: 1px solid #333;
+    font-weight: 700;
     text-align: center;
 }
-.tabs_nava_fa a:last-child(6) {
-    border-right: 0;
+.tabs_nava_fa li:nth-child(-n+5) {
+    background: url(../images/a_line.png) no-repeat right center;
+}
+.a_1 {
+    color: #dc1e23 !important;
+    border-bottom: 2px solid #dc1e23;
 }
 .tab_container {
     width: 1280px;
@@ -29,14 +34,10 @@ background-color: #f1f1f1;
 }
 .tab_container_1 {
     font-size: 36px;
+    font-weight: 700;
     color: #333;
     text-align: center;
-}
-.tab_container_1 {
     margin: 0 0 70px;
-}
-.tab_container_img {
-    /* float: left; */
 }
 .tab_container_text {
     box-sizing: border-box;
@@ -45,6 +46,7 @@ background-color: #f1f1f1;
     width: 785px;
     height: 300px;
     font-size: 14px;
+    line-height: 24px;
     padding: 50px 60px 0 60px;
 }
 .red_1 {
