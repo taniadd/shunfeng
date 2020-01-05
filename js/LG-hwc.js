@@ -39,12 +39,12 @@ $(function () {
         timer = setInterval(() => {
             
             var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-            scrollTo(0,oTop-10);
+            scrollTo(0,oTop-50);
             if(oTop<=0){
                 clearInterval(timer);
                 return
             }
-        }, 2000);
+        }, 20);
     }
 
 

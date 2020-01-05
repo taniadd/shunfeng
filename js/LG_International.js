@@ -1,7 +1,7 @@
 $(function () {
     $(window).scroll(function () {
         var scrollTop = $(window).scrollTop(); //页面滚动的距离
-        
+        var tab_top = $(".express_service_list").offset().top - $(".tabs_nav").height();
         if (scrollTop < 50) {
             $(".box").fadeOut();
         } else {
@@ -9,7 +9,7 @@ $(function () {
         }
 
 
-        if (scrollTop > 780) {
+        if (scrollTop > 890) {
             $(".box").removeClass("box_mixbox")
          $(".box").addClass("box_minbox")
             
@@ -21,7 +21,7 @@ $(function () {
           }
 
 
-          if(scrollTop >590) {
+          if(scrollTop >tab_top) {
             $(".tabs_nav").addClass("tabs_nav_ul_two")
           }else{
             $(".tabs_nav").removeClass("tabs_nav_ul_two")
@@ -33,7 +33,7 @@ $(function () {
         timer = setInterval(() => {
             
             var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-            scrollTo(0,oTop-10);
+            scrollTo(0,oTop-50);
             if(oTop<=0){
                 clearInterval(timer);
                 return

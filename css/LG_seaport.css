@@ -29,7 +29,7 @@
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 9999;
+    z-index: 9;
 }
 
 .express_service_list {
@@ -172,7 +172,7 @@
     top: 50px;
 }
 .box {
-   z-index: 999;
+   z-index: 99;
     width: 48px;
     height: 48px;
     background: url(../images/to-top-red.png) no-repeat;
