@@ -29,7 +29,7 @@
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 5;
+    z-index: 9999;
 }
 
 .express_service_list {
@@ -151,7 +151,7 @@
 }
 
 .b_link_icon ul li .b_link_con_img :hover {
-    background-color: red;
+    background-color:#DC1E32;
 }
 
 .b_link_icon ul li:nth-child(1) {
@@ -203,8 +203,11 @@ top:-543px
     margin: 0 auto;
 }
 .tabs_nav_ul .tabs_nav_ul_ul li:hover{
-    background-color:red;
+    background-color:#DC1E32;
     width: 253px;
+}
+.tabs_nav_ul .tabs_nav_ul_ul li:hover a{
+    color: white !important;
 }
 .tabs_nav_ul .tabs_nav_ul_ul {
     display: none;
@@ -242,6 +245,7 @@ top:-543px
     border-bottom:2px solid #DC1E32 ;
     padding-bottom: 6px;
 }
+
 .tabs_nav_ul_two {
     position: fixed;
     padding-top: -4px;

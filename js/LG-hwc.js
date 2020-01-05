@@ -44,7 +44,7 @@ $(function () {
                 clearInterval(timer);
                 return
             }
-        }, 20);
+        }, 2000);
     }
 
 

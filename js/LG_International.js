@@ -1,6 +1,7 @@
 $(function () {
     $(window).scroll(function () {
         var scrollTop = $(window).scrollTop(); //页面滚动的距离
+        
         if (scrollTop < 50) {
             $(".box").fadeOut();
         } else {
