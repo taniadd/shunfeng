@@ -1,7 +1,11 @@
 $(function () {
     $(window).scroll(function () {
         var scrollTop = $(window).scrollTop(); //页面滚动的距离
-        // var tab_top = 
+        var tab_top = $(".express_service_list").offset().top - $(".tabs_nav").height();
+        console.log($(".express_service_list").offset().top);
+        console.log($(".tabs_nav").height());
+        
+        
         if (scrollTop < 50) {
             $(".box").fadeOut();
         } else {
@@ -21,10 +25,12 @@ $(function () {
           }
 
 
-          if(scrollTop >590) {
+          if(scrollTop > tab_top) {
             $(".tabs_nav").addClass("tabs_nav_ul_two")
+            $(".express_service_list").addClass("express_service_list_top")
           }else{
             $(".tabs_nav").removeClass("tabs_nav_ul_two")
+            $(".express_service_list").removeClass("express_service_list_top")
           }
     });
     let box = document.querySelector(".box")
