@@ -213,9 +213,6 @@ section .three_tab {
 }
 
 /* 寄件人步骤下的表单区域 */
-.bulkShipping .item {
-    width: 1300px;
-}
 
 .bulkShipping .item .page {
     width      : 800px;
