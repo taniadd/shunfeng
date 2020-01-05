@@ -43,3 +43,53 @@
 .service p {
     color: #fff;
 }
+
+.tabs_nav_fa>ul>li>a:hover {
+    color: #dc1e32;
+    border-bottom: 2px solid #dc1e32;
+}
+
+.tob_red {
+    color: #dc1e32;
+    border-bottom: 2px solid #dc1e32;
+}
+
+.download p {
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto 0;
+    text-overflow: ellipsis;
+}
+.download span {
+    overflow: hidden;
+}
+
+.tabs_pull_down {
+    width: 100%;
+    line-height: 0;
+    position: absolute;
+    z-index: 10;
+    border: 1px solid #ccc;
+    border-top: 0;
+    background-color: #fff;
+    display: none;
+}
+.tabs_pull_down li {
+    font-weight: 400;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.tabs_pull_down li:hover {
+    background-color: #dc1e32;
+    color: #fff !important;
+    border: 0;
+}
+.tabs_pull_down li:hover a {
+    color: #fff !important;
+}
+.tabs_nav_fa>ul>li:hover .tabs_pull_down {
+    display: block !important;
+}

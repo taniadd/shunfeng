@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
     <title>公司介绍</title>
+
     <link href="../css/base.css" type="text/css" rel="stylesheet" />
     <link href="../css/common.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
+    <link href="../css/dlindex.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/xkwe.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/login.js"></script>
+
 </head>
 
 <body>
@@ -212,9 +216,10 @@
                     </li>
                 </ul>
                 <ul class="nav_r clearfix">
-                    <li class="login">
+                    <!-- 原先类名为login,由于类名冲突已经更名为celerity_login -->
+                    <li class="celerity_login">
                         <span class="icon member"></span>
-                        <a href="javascript:;">快速登录/注册</a>
+                        <a href="javascript:;" class="Thelogin_button">快速登录/注册</a>
                         <!-- <span class="icon country"></span> -->
                     </li>
                     <li></li>
@@ -222,17 +227,91 @@
                 </ul>
             </div>
         </div>
+        <!-- 登录界面 -->
+        <div class="keep"></div>
+        <div class="login">
+            <div class="login_title">
+                <ul>
+                    <li class="login_scan">
+                        <a href="javascript:;" class="creent">扫码登录</a>
+                    </li>
+                    <li class="login_bank">
+                        <a href="javascript:;">账号登录</a>
+                    </li>
+                </ul>
+                <span class="close">
+              <a href="javascrpit:;">×</a>
+          </span>
+            </div>
+            <div class="login_content">
+                <p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
+                <h5>登录后即可免验证快速下单与查件</h5>
+                <div class="img">
+                    <img src="../images/erweima.png" alt="">
+                </div>
+                <h4>请使用微信扫描二维码</h4>
+                <h5 class="self"></h5>
+                <div class="aotulog">
+                    <input type="checkbox" checked>
+                    <span class="self">自动登录</span>
+                </div>
+                <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
+            </div>
+            <div class="login_denglu">
+                <form action="" id="reset" autocomplete="off">
+                    <div class="login_denglu_box">
+                        <p class="login_denglu_p">登录后即可免验证快速下单与查件</p>
+                        <div class="login_tel">
+                            <div class="selected">
+                                <span class="selected_diqu">+86</span>
+                                <i></i>
+                                <ul>
+                                    <li>中国内地<span>+86</span>
+                                    </li>
+                                    <li>中国香港<span>+852</span>
+                                    </li>
+                                    <li>中国澳门<span>+853</span></li>
+                                    <li>中国台湾<span>+886</span></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="login_denglu_tel" placeholder="请输入手机号" name="tel">
+                        </div>
+                        <div class="login_yan">
+                            <div class="login_input">
+                                <input type="text" class="login_input_yan" placeholder="请输入验证码" name="auth">
+                                <p class="mistake">验证码错误</p>
+                            </div>
+                            <button>获取验证码</button>
+                        </div>
+                        <p class="login_denglu_p1">未注册用户登录默认注册顺丰会员</p>
+                        <div class="aotulog">
+                            <input type="checkbox" checked>
+                            <span class="self">自动登录</span>
+                        </div>
+                        <div class="login_denglu_quick">
+                            <button class="quick">快速登录</button>
+                            <button class="enterprise"><a href="javascript:;">我是月结企业用户</a></button>
+                        </div>
+                        <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 登录界面结束 -->
         <!-- 头部结束 -->
         <!-- banner开始 -->
         <div class="banner">
+            <!-- 轮播图 -->
             <ul class="banner_img">
                 <li><img src="../images/SF-CN-About-SF.jpg" /></li>
             </ul>
+            
         </div>
         <!-- banner结束 -->
+        <!-- 主体部分开始 -->
         <div class="tabs_nava_fa">
             <ul>
-                <li><a href="#">公司介绍</a></li>
+                <li><a href="#" class="a_1">公司介绍</a></li>
                 <li><a href="#">发展历程</a></li>
                 <li><a href="#">品牌理念</a></li>
                 <li><a href="#">企业文化</a></li>
@@ -255,7 +334,7 @@
                 <P>顺丰采用直营的经营模式，由总部对各分支机构实施统一经营、统一管理，保障了网络整体运营质量。</P>
             </div>
         </div>
-
+<!-- 主体部分结束 -->
         <!-- 尾部开始 -->
         <div class="footer">
             <!-- 尾部头部开始 -->
