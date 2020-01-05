@@ -54,17 +54,6 @@
     border-bottom: 2px solid #dc1e32;
 }
 
-.download p {
-    width: 85%;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: auto 0;
-    text-overflow: ellipsis;
-}
-.download span {
-    overflow: hidden;
-}
-
 .tabs_pull_down {
     width: 100%;
     line-height: 0;
@@ -92,4 +81,46 @@
 }
 .tabs_nav_fa>ul>li:hover .tabs_pull_down {
     display: block !important;
+}
+.text_red {
+    color: #dc1e32;
+}
+
+.download {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.download li {
+    width: 60%;
+    margin: 25px auto;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.download li span,
+.download li p,
+.download li a {
+    display: inline-block;
+}
+.download li span {
+    margin-right: 5px;
+}
+.download li p {
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.download li a {
+    float: right;
+}
+
+.tabs_fixed {
+    position: relative;
+    top: 0;
+}
+
+.tabs_nav_fa li:nth-child(5) {
+    background: #F1F1F1;
+}
+.tabs_nav_fa {
+    z-index: 999;
 }
