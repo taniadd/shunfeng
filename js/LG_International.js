@@ -2,14 +2,16 @@ $(function () {
     $(window).scroll(function () {
         var scrollTop = $(window).scrollTop(); //页面滚动的距离
         var tab_top = $(".express_service_list").offset().top - $(".tabs_nav").height();
-        if (scrollTop < 50) {
+        var wrap_top = $(".wrap").height();
+        
+        if (scrollTop < wrap_top) {
             $(".box").fadeOut();
         } else {
             $(".box").fadeIn();
         }
 
 
-        if (scrollTop > 890) {
+        if (scrollTop > 900) {
             $(".box").removeClass("box_mixbox")
          $(".box").addClass("box_minbox")
             
