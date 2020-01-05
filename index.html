@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/login.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/dlindex.js"></script>
 </head>
 
 <body class="shouye_index">
@@ -304,18 +305,46 @@
         <!-- banner开始 -->
         <div class="banner">
             <!-- 轮播图 -->
-            <ul class="banner_img">
-                <li><img src="images/IMG20190905_171924.jpg" /></li>
-            </ul>
+            <div class="bannerWidt">
+                <a href="javascript:;" class="banner_left" style="display: none;"></a>
+                <ul class="banner_img clearfix">
+                    <li><img src="images/IMG20190905_170942.jpg" /></li>
+                    <li><img src="images/IMG20190905_171924.jpg" /></li>
+                </ul>
+                <ul class="banner_splot clearfix">
+                    <!-- <li class="banner_splot_curr"><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li> -->
+                </ul>
+            </div>
             <!-- 运货单查询 -->
-            <div class="bill_number">
+            <!-- <div class="bill_number">
                 <div class="bill_search">
                     <input type="search" placeholder="您可以输运单号进行查询" />
                     <button class="search_icon"></button>
                 </div>
                 <button class="search_bill_number">马上查单</button>
-
+            </div> -->
+            <!-- 温馨提醒 -->
+            <div class="warm_tips clearfix">
+                <div class="warm_tips_img">
+                    <div class="img"></div>
+                    <p>温馨提醒</p>
+                </div>
+                <div class="warm_tips_tit">
+                    <a href="javascript::">关于防范“冒充顺丰员工加微信好友骚扰或诈骗”的温馨提示</a>                
+                </div>
             </div>
+            <!-- 意见反馈 -->
+            <div class="warm_tips addvices clearfix">
+                <div class="warm_tips_img">
+                    <div class="img"></div>
+                    <p>意见反馈</p>
+                </div>
+                <div class="warm_tips_tit">
+                    <a href="javascript::">如您对顺丰官网有任何建议和反馈，可留言给我们</a>                
+                </div>
+            </div>
+
         </div>
         <!-- banner结束 -->
 
@@ -329,6 +358,19 @@
                     <li>
                         <a href="javascript:;">
                             <i class="content_icon content_search"></i> 运单追踪
+                            <!-- 运货单查询 -->
+                            <div class="bill_number">
+                                <div class="bill_search">
+                                    <input type="search" placeholder="您可以输运单号进行查询" />
+                                    <button class="search_icon"></button>
+                                </div>
+                                <!-- <div class="bill_search_hidden">
+                                    <textarea type="search" placeholder="请输入需要查询的运单号" ></textarea>
+                                    最多可查询20条，以逗号、空格或回车键隔开
+                                   
+                                </div> -->
+                                <button class="search_bill_number">马上查单</button>
+                            </div>
                         </a>
                     </li>
                     <li>
@@ -362,7 +404,64 @@
                         <li class="content_current"><a href="javascript:;">物流</a></li>
                         <li><a href="javascript:;">金融</a></li>
                     </ul>
-                    <ul class="content_banenr_img">
+                        <!-- 轮播图 -->
+                    <div class="banner">
+                        <div class="bannerWidt">
+                            <a href="javascript:;" class="banner_left" style="display: none;"></a>
+                            <ul class="banner_img  clearfix">                          
+                                <li>
+                                    <ul class="content_banenr_img clearfix">
+                                        <li>
+                                            <a href="javascript:;"> 
+                                                <img class="contimg" src="images/PCkuaidifuwu-0213.jpg" />
+                                                <div class="content_img_tit">
+                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
+                                                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
+                                                <div class="content_img_tit">
+                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>冷运服务</h3>
+                                                    <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
+                                                </div>
+                                            </a>
+                                        </li>   
+                                    </ul>                                 
+                                </li>
+                                <li>
+                                    <ul class="content_banenr_img clearfix">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
+                                                <div class="content_img_tit">
+                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
+                                                    <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img class="contimg" src="images/cangku.jpg" />
+                                                <div class="content_img_tit">
+                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>仓储服务</h3>
+                                                    <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
+                                                </div>
+                                            </a>
+                                        </li>   
+                                    </ul>  
+                                </li>
+                                                   
+                            </ul>
+                            <ul class="banner_splot content_banenr_splot  clearfix">
+                                <li class="banner_splot_curr"><a href="javascript:;"></a></li>
+                                <li><a href="javascript:;"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <ul class="content_banenr_img">
                         <li>
                             <a href="javascript:;">
                                 <img src="images/lengyunbusiness-img2.jpg" />
@@ -382,7 +481,7 @@
                             </a>
                         </li>
                         
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
             <!-- 物流和金融的轮播图结束 -->
@@ -495,7 +594,7 @@
             <!-- 返回顶部按钮开始 -->
             <div class="back_top">
                 <div class="wrap">
-                    <div class="back_top_img wrap"></div>
+                    <div class="back_top_img"></div>
                 </div>        
             </div>
             <!-- 返回顶部按钮结束 -->

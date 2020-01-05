@@ -1,2 +1,5 @@
 WLquick.html  服务支持-我要寄件.主页面
 WL_waybill.html 服务支持-运单追踪.主页面
+WL_sf_express.html 服务支持-服务支持.主页面
+WL_sf_express_price.html  服务支持-服务支持.分页面1运费时效
+WL_sf_express_range.html 服务支持-服务支持.分页面2服务范围

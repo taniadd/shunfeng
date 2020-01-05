@@ -1,3 +1,60 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/font_zn0llf2az1/iconfont.eot');
+    src: url('../font/font_zn0llf2az1/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/font_zn0llf2az1/iconfont.woff2') format('woff2'),
+        url('../font/font_zn0llf2az1/iconfont.woff') format('woff'),
+        url('../font/font_zn0llf2az1/iconfont.ttf') format('truetype'),
+        url('../font/font_zn0llf2az1/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: fixed;
+    text-align: center;
+    line-height: 40px;
+    width: 35px;
+    height: 35px;
+    bottom: 30px;
+    right: 300px;
+    font-weight: 700;
+    border: 2px solid #DC1E32;
+    border-radius: 50%;
+    color: #DC1E32;
+    display: none;
+    cursor: pointer;
+}
+
+.iconfont2 {
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+
+
+}
+
+.footer {
+    position: relative;
+}
+
+.w {
+    position: absolute;
+    top: -80px;
+}
+
+.banner {
+    position: relative;
+}
+
 .banner_img .serve span {
     display: inline-block;
     font-size: 18px;
@@ -5,50 +62,46 @@
     height: 90px;
     font-weight: 700;
     line-height: 80px;
+    position: relative;
 }
 
-.banner_img .serve {
-    text-align: center;
-    /* border-left: 1px solid #000; */
-    background-color: #F1F1F1;
+.banner .banner_img .long {
+    display: inline-block;
+    height: 16px;
+    margin: -4px 0;
+    border-left: 1px solid black;
+}
+
+.dh {
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 .tab_container .tab_title {
-    font-size: 36px;
+    font-size: 2.25rem;
     text-align: center;
 }
 
 .tab_container ul {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 0 auto;
-    width: 100%;
-
-}
-
-.tab_container ul li:nth-child(1) {
-    margin-left: 15.7%;
-}
-
-.tab_container ul li:nth-child(3) {
-    margin-right: 9.5%;
-}
-
-.tab_container ul li:nth-child(4) {
-    margin-left: 15.7%;
-}
-
-.tab_container ul li:nth-child(6) {
-    margin-right: 9.5%;
 }
 
 .tab_container ul li {
-    display: block;
-    float: left;
-    width: 393px;
+    width: 25%;
     height: 275px;
-    margin: 0 30px;
     margin-top: 100px;
     border: 4px solid #F1F1F1;
 
+}
+
+.tab_container ul li:last-child {
+    margin: 100px auto;
+    min-height: 440px;
 }
 
 .tab_container ul li img {
@@ -72,13 +125,95 @@
 
 }
 
-.tab_container ul .notice {
-    margin: 100px 50%;
-    transform: translateX(-50%);
-    height: 440px;
+.banner_img .list_width {
+    width: 100%;
+    background-color: #F1F1F1;
+
+
 
 }
 
+.banner_img .serve {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .tab_title {
-    margin-top: 60px;
+    padding-top: 60px;
+}
+
+.serve .list {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    border: 1px solid #F1F1F1;
+    width: 312px;
+    z-index: 999;
+    background-color: #fff;
+    display: none;
+
+}
+
+.banner_img .serve span:hover .list {
+    display: block;
+    cursor: pointer;
+}
+
+.serve .list li:hover {
+    cursor: pointer;
+    background-color: #DC1E32;
+    color: white;
+}
+
+.b_link_list {
+    width: 100%;
+    height: 100px;
+    background-color: #F1F1F1;
+    margin-bottom: 100px;
+}
+
+.b_link_list .b_link_icon {
+    margin: 0 auto;
+    transform: translateX(-25%);
+}
+
+.b_link_list .b_link_icon li {
+    position: relative;
+    float: right;
+    padding: 20px;
+    line-height: 55px;
+    width: 25px;
+    height: 25px;
+}
+
+.b_link_list .b_link_icon li:hover .iconfont2 {
+    border: 2px solid #DC1E32;
+    color: #DC1E32;
+    cursor: pointer;
+}
+
+.b_link_list .b_link_icon li .erweima img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -130px;
+    left: -38px;
+}
+
+.b_link_list .b_link_icon li .erweima {
+    display: none;
+}
+
+.b_link_list .b_link_icon li:nth-child(3):hover .erweima {
+    display: block;
+
+}
+
+.b_link_list .b_link_icon li:last-child {
+    font-size: 16px;
+    width: 65px;
 }

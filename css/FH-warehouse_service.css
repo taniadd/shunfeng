@@ -55,7 +55,7 @@
 
 .service_tab {
     width: 250px;
-    height: 180px;
+    height: 90px;
     margin: auto;
 }
 
@@ -239,4 +239,10 @@
     height: 45px;
     /* background: url('../images/smallBanner-icon-red.png') no-repeat 17px -183px; */
     background: url(../images/smallBanner-icon.png) no-repeat 17px -183px #dc1e32;
+}
+
+.absoluteness {
+    display: block;
+    position: absolute;
+    top: -8px;
 }

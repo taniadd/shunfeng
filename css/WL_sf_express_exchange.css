@@ -1,0 +1,219 @@
+.main-content .function .main-content-row-1 {
+    background   : #fff;
+    border       : 1px solid #d9d9d9;
+    border-radius: 3px;
+    margin-bottom: 14px;
+    position     : relative;
+}
+
+.main-content-row-1 .row-title {
+
+    margin    : 0;
+    background: gray;
+    font-size : 18px;
+    color     : #fff;
+    padding   : 12px 30px;
+
+
+}
+
+.form-table table {
+    width: 100%;
+}
+
+.form-table th {
+    width           : 15%;
+    background-color: #f2f2f2;
+    border          : 1px solid #ccc;
+    padding         : 10px;
+    ;
+    text-align: center;
+}
+
+.form-table th:nth-child(2) {
+    width: 70%;
+
+}
+
+.form-table td {
+    border : 1px solid #ccc;
+    padding: 10px;
+    
+    text-align: center;
+}
+.form-table tr td:nth-child(2) {
+    text-align: left;
+} 
+.red {
+    color: #dc1e32;
+}
+
+.row-content h3 {
+    font-weight: 700;
+    font-size  : 13px;
+    height     : 39px;
+    line-height: 39px;
+}
+
+.row-content p {
+    font-size: 13px;
+
+    line-height: 26px;
+}
+
+/* 汇率查询输入 */
+.main-content-row-1 .row-content {
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 7px;
+}
+
+.form-group label {
+    float      : left;
+    width      : 36%;
+    padding-top: 7px;
+    text-align : right;
+}
+
+.form-group .form-group-input {
+    margin-left: 20px;
+    float      : left;
+    position   : relative;
+}
+
+.form-group .form-group-input input {
+    width       : 222px;
+    height      : 32px;
+    padding-left: 8px;
+    border      : 1px solid #ccc;
+}
+
+.form-group-input>div {
+    float: left;
+}
+
+.form-group .form-group-input button {
+    position        : absolute;
+    width           : 20px;
+    background-color: #ccc;
+    border          : none;
+    border-radius   : 0px;
+    right           : 0px;
+}
+
+/* 下拉插件 */
+.comboTreeWrapper {
+    position  : relative;
+    text-align: left !important;
+}
+
+.comboTreeInputWrapper {
+    position: relative;
+}
+
+.comboTreeArrowBtn {
+    position     : absolute;
+    right        : 1px;
+    bottom       : 1px;
+    top          : 1px;
+    box-sizing   : border-box;
+    border       : none;
+    border-left  : 1px solid #c7c7c7;
+    border-radius: 0 3px 3px 0;
+}
+
+.comboTreeDropDownContainer {
+    display   : none;
+    background: #fff;
+    border    : 1px solid #aaa;
+    max-height: 250px;
+    overflow-y: auto;
+    position  : absolute;
+    width     : 100%;
+    box-sizing: border-box;
+    z-index   : 999;
+}
+
+.comboTreeDropDownContainer ul {
+    padding: 0px;
+    margin : 0;
+}
+
+.comboTreeDropDownContainer li {
+    list-style-type: none;
+    padding-left   : 15px;
+    cursor         : pointer;
+}
+
+.comboTreeDropDownContainer li:hover {
+    background-color: #ddd;
+}
+
+.comboTreeDropDownContainer li:hover ul {
+    background-color: #fff;
+}
+
+.comboTreeDropDownContainer li span.comboTreeItemTitle.comboTreeItemHover {
+    background-color: #418EFF;
+    color           : #fff;
+}
+
+span.comboTreeItemTitle {
+    display: block;
+    padding: 2px 4px;
+}
+
+.comboTreeDropDownContainer label {
+    cursor : pointer;
+    width  : 100%;
+    display: block;
+}
+
+.comboTreeDropDownContainer .comboTreeItemTitle input {
+    position: relative;
+    top     : 2px;
+    margin  : 0px 4px 0px 0px;
+}
+
+.comboTreeParentPlus {
+    position: relative;
+    left    : -12px;
+    top     : 4px;
+    width   : 4px;
+    float   : left;
+}
+
+
+.comboTreeInputBox {
+    padding      : 5px;
+    border-radius: 3px;
+    border       : 1px solid #999;
+    width        : 100%;
+    box-sizing   : border-box;
+    padding-right: 24px;
+}
+
+.comboTreeArrowBtnImg {
+    font-size: 10px;
+}
+
+.multiplesFilter {
+    width        : 100%;
+    padding      : 5px;
+    box-sizing   : border-box;
+    border-top   : none;
+    border-left  : none;
+    border-right : none;
+    border-bottom: 1px solid #999;
+}
+/* 无着件公示 */
+.main-content .lost-package {
+    padding: 20px;
+}
+.main-content .lost-package h2 {
+     font-size: 24px;
+     font-weight: 700;
+     margin: 10px 0;
+}

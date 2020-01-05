@@ -1,0 +1,249 @@
+
+/* 置顶图标 */
+.footer{
+    position: relative;
+}
+.LTding{
+    position: fixed;
+    bottom: 20px;
+    right:60px;
+    display: none;
+}
+.current{
+    position: absolute;
+    top: -60px;
+}
+.LTding:hover{
+    content: url("../images/zzz-top-red (2).png")
+}
+/* 换banner图,啥的 */
+.banner .banner_img{
+    position: relative;
+    display: block;
+}
+.banner .banner_img .LTbanner{
+    width: 800px;
+    height: 280px;
+    position: absolute;
+    left: 50%;
+    top:70%;
+    margin-left:-400px;
+    margin-top:-232px;
+}
+.banner .banner_img .LTbanner .LTplay{
+    width: 87px;
+    height: 87px;
+    display: block;
+    margin: 0 auto;
+    background: url(../images/play.png) no-repeat;
+    position: relative;
+    top: 100px;
+}
+.banner .banner_img .LTbanner:hover .LTplay{
+    background: url(../images/icon.png) no-repeat;
+}
+ /* LT_content 开始  */
+.LT_content a{
+    font: 17px/70px "微软雅黑";
+    color: rgba(0,0,0,.8);
+}
+.LT_content a:hover{
+    color: rgb(233, 47, 47);
+}
+.LT_content .right{
+    float:right;
+}
+.LT_content .right p{
+    display: inline;
+    font-size: 18px;
+    margin-right: 18px;
+    line-height: 76px;
+}
+h2{
+    font-size: 41px;
+    margin: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.LT_content p{
+    font: 14px/28px "微软雅黑";
+    margin-bottom: 25px;
+}
+.LT_content .right .right_ul{
+    float:right;
+}
+.LT_content .right .right_ul li{
+    font-size: 20px;
+    float: left;
+}
+.LT_content .right  li a{
+    font-size: 29px;
+    margin: 10px;
+}
+.LT_content .right  li .icon-weixin{
+    position: relative;
+}
+.LT_content .right  li img{
+    position: absolute;
+    top: -167px;
+    left: -60px;
+    display: none;
+}
+.LT_content .right .icon-weixin:hover img{
+    display: block;
+}
+/* LT_content 结束 */
+
+ /* LT_middle 开始  */
+ .LT_middle{
+     border:1px solid rgba(0,0,0,.5);
+    min-width: 1100px;
+    }
+ .LT_middle>img{
+    width: 40%;
+     display: inline;
+ }
+ .LT_middle ul{
+    padding: 31px 70px;
+    float: right;
+    width: 49%;
+ }
+ .LT_middle ul li{
+     margin: 20px 0;
+ }
+ .LT_middle ul h1{
+    font: 15px/31px "微软雅黑";
+    font-weight: bold;
+ }
+ .LT_middle ul p{
+    font: 14px/23px "微软雅黑";
+ }
+
+ /* LT_middle 结束  */
+
+ 
+ 
+ /* <!-- LT_bottom 开始 --> */
+ 
+ .LT_bottom .midd .LTboo {
+    height: 44px;
+    width: 231px;
+    border: 1px solid #000;
+    display: inline-block;
+    font: 18px/46px "微软雅黑";
+    text-indent: 2em;
+    margin-top: 30px;
+    color: rgba(0,0,0,.7);
+    margin-left: 40px;
+}
+.LT_bottom .midd .a2{
+    text-indent: 3em;
+}
+.LT_bottom .midd{
+    display: inline-block;
+    margin-top: 50px;
+    float: right;
+    margin-right: 217px;
+}
+.LT_bottom .midd p{
+    font-size: 15px;
+    line-height: 36px;
+    text-indent: 2em;
+}
+.LT_bottom h3 {
+    font: 35px/130px "微软雅黑";
+    text-align: center;
+    font-weight: bold;
+    margin-top: 90px;
+}
+.LT_bottom img{
+    margin-left: 117px;
+    margin-bottom: 60px;
+}
+
+.LT_bottom .midd .LTboo span{
+    height: 50px;
+    width: 50px;
+    background: url(../images/a_rlink_gray.png) no-repeat;
+    float: right;
+    margin-top: 5px;
+}
+ .LT_bottom  .midd .LTboo:hover  span{
+       /* 换背景图 */
+       background: url(../images/a_rlink_red.png) no-repeat;
+       transition:all 0.3s; 
+   }
+   .LT_bottom .midd .LTboo:hover {
+    border-color:white;
+    background: #DA1D35;
+    color:white;
+    transition:all 0.3s; 
+}
+
+/* <!-- LT_bottom 结束  --> */
+
+
+
+/* 合作咨询界面 开始*/
+/* 实线(solid)虚线(dashed)点线(dotted) */
+
+.LTpp1{
+    height: 150px;
+    border-bottom: 1px dashed #7c7c7c;
+}
+.LTpp1>p{
+    color: #666565;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 47px;
+    margin-left: 16px;
+}
+.LTpp1>img{
+    vertical-align: baseline;
+}
+
+.LTpp1 ul{
+    width: 100%;
+    border-bottom:  1px dashed #7c7c7c;
+    padding-bottom:40px;
+}
+.LTpp1 li{
+    height: 30px;
+    width: 100%;
+    margin-top:30px;
+}
+.LTpp1 li input{
+    width: 38%;
+    height: 30px;
+    background: #F1F1F1;
+    margin: 0 10px 0 100px;
+}
+.LTpp1 li div{
+    display: inline-block;
+}
+.LTpp1 li .LTco1{
+    margin-left: 18%;
+    font-size: 20px;
+}
+.LTpp1 li .LTco2 span{
+    font-size: 15px;
+    color: #DA1D35;
+    vertical-align: middle;
+}
+/* .LTpp1 li .LTco2{
+     display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
