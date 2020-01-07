@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>国际标快</title>
+    <link href="../css/base.css" type="text/css" rel="stylesheet" />
+    <link href="../css/common.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/LG_seaport.css">
+    <link rel="stylesheet" href="../css/FH-Storage.css">
+    <link rel="stylesheet" href="../css/LG_International.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/LG-hwc.js"></script> 
+     <script src="../js/LG_International.js"></script>
+</head>
+
+<body>
+    <div class="mwrap">
+        <!-- 头部开始 -->
+        <div class="header">
+            <div class="wrap clearfix">
+                <img src="../images/sf.png">
+                <ul class="nav_l clearfix">
+                    <li>
+                        <a href="javascript:;" class="current">首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">物流</a>
+                        <ul class="nav_two nav_two_bg clearfix"
+                            style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
+                            <li class="nav_two_wul">
+                                <ul class="wuliu_serv clearfix">
+                                    <!-- 快递服务 -->
+                                    <li class="wuliu_kuaidi">
+                                        <h2><i class="iconfont icon-truck"></i>快递服务</h2>
+                                        <ul class="nav_two_wuliu clearfix">
+                                            <li>
+                                                <h3>同城</h3>
+                                            </li>
+                                            <li><a href="javascript:;">顺丰同城急送</a></li>
+                                        </ul>
+                                        <ul class="nav_two_wuliu clearfix">
+                                            <li>
+                                                <h3>内地及港澳台</h3>
+                                            </li>
+                                            <li><a href="javascript:;">顺丰即日</a></li>
+                                            <li><a href="javascript:;">顺丰次晨</a></li>
+                                            <li><a href="javascript:;">顺丰标快</a></li>
+                                            <li><a href="javascript:;">顺丰特惠</a></li>
+                                            <li><a href="javascript:;">E顺递</a></li>
+                                            <li><a href="javascript:;">重货快运</a></li>
+                                            <li><a href="javascript:;">重货专运</a></li>
+                                            <li><a href="javascript:;">重货包裹</a></li>
+                                            <li><a href="javascript:;">小票零担</a></li>
+                                            <li><a href="javascript:;">物流普运（港澳地区）</a></li>
+                                        </ul>
+                                        <ul class="nav_two_wuliu clearfix">
+                                            <li>
+                                                <h3>国际</h3>
+                                            </li>
+                                            <li><a href="javascript:;">国际标快</a></li>
+                                            <li><a href="javascript:;">国际特惠</a></li>
+                                            <li><a href="javascript:;">国际小包</a></li>
+                                            <li><a href="javascript:;">国际重货</a></li>
+                                            <li><a href="javascript:;">国际电商专递</a></li>
+                                            <li><a href="javascript:;">海购丰运</a></li>
+                                            <li><a href="javascript:;">签收确认服务</a></li>
+                                            <li><a href="javascript:;">海外仓</a></li>
+                                            <li><a href="javascript:;">前往国际网站</a></li>
+                                        </ul>
+                                        <ul class="nav_two_wuliu clearfix">
+                                            <li>
+                                                <h3>增值服务</h3>
+                                            </li>
+                                            <li><a href="javascript:;">保价</a></li>
+                                            <li><a href="javascript:;">委托件</a></li>
+                                            <li><a href="javascript:;">特安服务</a></li>
+                                            <li><a href="javascript:;">包装服务</a></li>
+                                            <li><a href="javascript:;">代收货款</a></li>
+                                            <li><a href="javascript:;">保鲜服务</a></li>
+                                            <li><a href="javascript:;">签单返还</a></li>
+                                            <li><a href="javascript:;">送货上楼</a></li>
+                                            <li><a href="javascript:;">口令签收</a></li>
+                                            <li><a href="javascript:;">验货服务</a></li>
+                                        </ul>
+                                        <ul class="nav_two_wuliu clearfix">
+                                            <li>&nbsp;</li>
+                                            <li><a href="javascript:;">电子验收</a></li>
+                                            <li><a href="javascript:;">定时派送</a></li>
+                                            <li><a href="javascript:;">保单配送</a></li>
+                                            <li><a href="javascript:;">大件入户</a></li>
+                                            <li><a href="javascript:;">特殊入仓</a></li>
+                                            <li><a href="javascript:;">送货服务</a></li>
+                                            <li><a href="javascript:;">提货服务</a></li>
+                                            <li><a href="javascript:;">装卸服务</a></li>
+                                            <li><a href="javascript:;">安装服务</a></li>
+                                            <li><a href="javascript:;">货物保管</a></li>
+                                        </ul>
+                                        <ul class="nav_two_wuliu clearfix">
+                                            <li>&nbsp;</li>
+                                            <li><a href="javascript:;">春节服务</a></li>
+                                            <li><a href="javascript:;">超长超重</a></li>
+                                            <li><a href="javascript:;">住宅附加费</a></li>
+                                            <li><a href="javascript:;">燃油附加费</a></li>
+                                            <li><a href="javascript:;">原单转寄退回</a></li>
+                                            <li><a href="javascript:;">国际偏远附加费</a></li>
+                                            <li><a href="javascript:;">顺丰国际直邮认证服务</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- 冷运 -->
+                                    <li class="wuliu_kuaidi">
+                                        <h2><i class="iconfont icon-truck"></i>冷运服务</h2>
+                                        <ul class="nav_two_wuliu clearfix">
+                                            <li>
+                                                <h3>食品服务</h3>
+                                            </li>
+                                            <li><a href="javascript:;">生鲜速配</a></li>
+                                            <li><a href="javascript:;">冷运速配</a></li>
+                                            <li><a href="javascript:;">大闸蟹专递</a></li>
+                                            <li><a href="javascript:;">冷运到店</a></li>
+                                            <li><a href="javascript:;">顺丰冷运零担</a></li>
+                                            <li><a href="javascript:;">冷运专车</a></li>
+                                            <li><a href="javascript:;">冷运仓储</a></li>
+                                        </ul>
+                                        <ul class="nav_two_wuliu clearfix">
+                                            <li>
+                                                <h3>医药服务</h3>
+                                            </li>
+                                            <li><a href="javascript:;">医药安心递</a></li>
+                                            <li><a href="javascript:;">医药专递</a></li>
+                                            <li><a href="javascript:;">精温定达</a></li>
+                                            <li><a href="javascript:;">精温定航</a></li>
+                                            <li><a href="javascript:;">医药专车</a></li>
+                                            <li><a href="javascript:;">医药仓储</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- 仓储 -->
+                                    <li class="wuliu_kuaidi">
+                                        <h2><i class="iconfont icon-cangchu"></i>仓储服务</h2>
+                                        <ul class="nav_two_wuliu clearfix">
+                                            <li>
+                                                <h3>仓储服务</h3>
+                                            </li>
+                                            <li><a href="javascript:;">标准化仓储管理</a></li>
+                                            <li><a href="javascript:;">仓储核心能力</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav_two_r">
+                                <ul class="clearfix">
+                                    <li><button type="button">我要寄件</button></li>
+                                    <li><a href="javascript:;">收寄范围查询</a></li>
+                                    <li><a href="javascript:;">收寄标准查询</a></li>
+                                    <li><a href="javascript:;">运费时效查询</a></li>
+                                    <li><a href="javascript:;">其他寄件方式</a></li>
+                                    <li><button>合作咨询</button></li>
+                                    <li><button>月结服务平台</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">金融</a></li>
+                    <li>
+                        <a href="javascript:;">成功案例</a>
+                        <ul class="nav_two">
+                            <li><a href="javascript:;">3C电子行业</a></li>
+                            <li><a href="javascript:;">医疗行业</a></li>
+                            <li><a href="javascript:;">生鲜行业</a></li>
+                            <li><a href="javascript:;">快消行业</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">服务支持</a>
+                        <ul class="nav_two clearfix" style="width: 305%;">
+                            <li class="nav_two_child">
+                                <ul>
+                                    <li><a href="javascript:;">我要寄件</a></li>
+                                    <li><a href="javascript:;">运单追踪</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_two_child">
+                                <ul>
+                                    <li><a href="javascript:;">运费时效查询</a></li>
+                                    <li><a href="javascript:;">收寄范围查询</a></li>
+                                    <li><a href="javascript:;">服务网点查询</a></li>
+                                    <li><a href="javascript:;">收寄标准查询</a></li>
+                                    <li><a href="javascript:;">更多内容查询</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">顺丰控股投资者关系</a>
+                        <ul class="nav_two" style="width: 100%;">
+                            <li><a href="javascript:;">公司治理</a></li>
+                            <li><a href="javascript:;">公司公告</a></li>
+                            <li><a href="javascript:;">定期报告</a></li>
+                            <li><a href="javascript:;">投资者联络</a></li>
+                            <li><a href="javascript:;">投资者关系日历</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">关于我们</a>
+                        <ul class="nav_two">
+                            <li><a href="javascript:;">关于顺丰</a></li>
+                            <li><a href="javascript:;">新闻资讯</a></li>
+                            <li><a href="javascript:;">服务公告</a></li>
+                            <li><a href="javascript:;">推广专区</a></li>
+                            <li><a href="javascript:;">会员权益</a></li>
+                            <li><a href="javascript:;">人才招聘</a></li>
+                            <li><a href="javascript:;">集团采购</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav_r clearfix">
+                    <!-- 原先类名为login,由于类名冲突已经更名为celerity_login -->
+                    <li class="celerity_login">
+                        <span class="icon member"></span>
+                        <a href="javascript:;" class="Thelogin_button">快速登录/注册</a>
+                        <!-- <span class="icon country"></span> -->
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 登录界面 -->
+        <div class="keep"></div>
+        <div class="login">
+            <div class="login_title">
+                <ul>
+                    <li class="login_scan">
+                        <a href="javascript:;" class="creent">扫码登录</a>
+                    </li>
+                    <li class="login_bank">
+                        <a href="javascript:;">账号登录</a>
+                    </li>
+                </ul>
+                <span class="close">
+                    <a href="javascrpit:;">×</a>
+                </span>
+            </div>
+            <div class="login_content">
+                <p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
+                <h5>登录后即可免验证快速下单与查件</h5>
+                <div class="img">
+                    <img src="../images/erweima.png" alt="">
+                </div>
+                <h4>请使用微信扫描二维码</h4>
+                <h5 class="self"></h5>
+                <div class="aotulog">
+                    <input type="checkbox" checked>
+                    <span class="self">自动登录</span>
+                </div>
+                <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
+            </div>
+            <div class="login_denglu">
+                <form action="" id="reset" autocomplete="off">
+                    <div class="login_denglu_box">
+                        <p class="login_denglu_p">登录后即可免验证快速下单与查件</p>
+                        <div class="login_tel">
+                            <div class="selected">
+                                <span class="selected_diqu">+86</span>
+                                <i></i>
+                                <ul>
+                                    <li>中国内地<span>+86</span>
+                                    </li>
+                                    <li>中国香港<span>+852</span>
+                                    </li>
+                                    <li>中国澳门<span>+853</span></li>
+                                    <li>中国台湾<span>+886</span></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="login_denglu_tel" placeholder="请输入手机号" name="tel">
+                        </div>
+                        <div class="login_yan">
+                            <div class="login_input">
+                                <input type="text" class="login_input_yan" placeholder="请输入验证码" name="auth">
+                                <p class="mistake">验证码错误</p>
+                            </div>
+                            <button>获取验证码</button>
+                        </div>
+                        <p class="login_denglu_p1">未注册用户登录默认注册顺丰会员</p>
+                        <div class="aotulog">
+                            <input type="checkbox" checked>
+                            <span class="self">自动登录</span>
+                        </div>
+                        <div class="login_denglu_quick">
+                            <button class="quick">快速登录</button>
+                            <button class="enterprise"><a href="javascript:;">我是月结企业用户</a></button>
+                        </div>
+                        <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 头部结束 -->
+        <!-- banner开始 -->
+        <div class="banner">
+            <ul class="banner_img">
+                <li><img src="../images/-003061201.jpg" /></li>
+            </ul>
+        </div>
+
+        <!-- 海外仓导航栏 -->
+        <div class="tabs_nav">
+            <ul class="tabs_nav_ul clearfix">
+                <li> <span>同城</span>
+                    <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_one ">
+                        <li>
+                            <a href="">顺丰同城急送</a>
+                        </li>
+                    </ul></li> <i>|</i>
+               
+                <li> <span>内地及港澳台</span>
+                    <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_two">
+                        <li>
+                            <a href="">顺丰即日</a>
+                        </li>
+                        <li>
+                            <a href="">顺丰次晨</a>
+                        </li>
+                        <li>
+                            <a href="">顺丰标快</a>
+                        </li>
+                        <li>
+                            <a href="">顺丰特惠</a>
+                        </li>
+                        <li>
+                            <a href="">顺丰重货快运</a>
+                        </li>
+                        <li>
+                            <a href="">E顺递</a>
+                        </li>
+                        <li>
+                            <a href="">重货包裹</a>
+                        </li>
+                        <li>
+                            <a href="">小票零单</a>
+                        </li>
+                        <li>
+                            <a href="">重货专运</a>
+                        </li>
+                        <li>
+                            <a href="">物流普顺(港澳地区)</a>
+                        </li>
+                    </ul></li><i>|</i>
+               
+                <li> <span style="color: #DC1E32; border-bottom:2px solid #DC1E32; padding-bottom: 6px;">国际</span>
+                 <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_there">
+                    <li>
+                        <a href=""style="color:red">国际标快</a>
+                    </li>
+                    <li>
+                        <a href="">国际专快</a>
+                    </li>
+                    <li>
+                        <a href="">国际飞快</a>
+                    </li> 
+                    <li>
+                        <a href="">国际很快</a>
+                    </li> 
+                    <li>
+                        <a href="">国际再快</a>
+                    </li> 
+                    <li>
+                        <a href="">国际够快</a>
+                    </li> 
+                    <li>
+                        <a href="">国际才快</a>
+                    </li> 
+                    <li>
+                        <a href="">国际必快</a>
+                    </li> 
+                </ul>
+            </li><i>|</i>
+                
+                <li><span>增值</span>
+                    <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_there">
+                        <li>
+                            <a href="">国际标慢</a>
+                        </li>
+                        <li>
+                            <a href="">国际专慢</a>
+                        </li>
+                        <li>
+                            <a href="">国际飞慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际很慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际再慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际够慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际才慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际必慢</a>
+                        </li> 
+                    </ul>
+        </li>
+            </ul>
+        </div>
+
+        <!-- 海外仓内容模块 -->
+        <div class="express_service_list">
+            <!-- 海外仓标题模块 -->
+            <div class="tab_title">国际标快</div>
+            <!-- 海外仓详细模块 -->
+            <div class="wrapper">
+                <ul>
+                    <div>
+                        <img src="../images/dtop_img3.png" alt="">
+                        <h2>服务介绍</h2>
+                        <p>为满足客户紧急物品寄递需求，各环节均以最快速度<br />
+                            <br> 进行发运、中转和派送的高品质门到门国际快件服
+                            <br />
+                            <br> 务。
+                            <br />
+                            <br> 
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../images/w_feature.png" alt="">
+                        <h2>服务特性</h2>
+                        <p>
+                            √ 高效揽收：中国内地1小时内上门收件，全年无<br />
+                            <br> 休；<br>
+                            <br> √ 快捷下单：支持电子运单、微信预约；<br />
+                            <br> √ 高性价比：免中国内地出口D类报关服务费；<br />
+                            <br>√ 轻抛优势：体积重除5000计费；<br>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../images/dtop_img2.png" alt="">
+                        <h2>服务范围</h2>
+                        <p>
+                            收件范围：中国内地及港澳台地区、俄罗斯、美国、<br>
+                            <br> 新加坡、马来西亚、日本、韩国、蒙古、越南、泰
+                            <br />
+                            <br>国；<br />
+                            <br> 派件范围：美国、加拿大、新加坡、马来西亚、日
+                            <br>
+                            <br>
+                            本、韩国、澳大利亚、泰国、越南、蒙古、印度、
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../images/dtop_img2.png" alt="">
+                        <h2>服务时间</h2>
+                        <p>
+                            中国内地及港澳地区：周一至周日提供收派服务；<br>
+                            <br> 台湾地区：周一至周六提供收派服务；
+                            <br />
+                            <br> 新加坡/马来西亚/日本/韩国：周一至周六提供收派服<br />
+                            <br> 务；
+                            <br>
+                            <br>
+                            美国/蒙古/俄罗斯：周一至周五提供收派服务。
+                        </p>
+                    </div>
+                </ul>
+            </div>
+            <!-- 邮寄模块 -->
+            <div class="cooperation">
+                <a href="" class="consult">
+                    <img src="../images/youxiang.png" alt=""> 咨询服务
+                </a>
+                <div class="cooperation_share">
+                    <span>分享好友</span>
+
+                    <ul>
+                        <li>
+                            <a href="" class="iconfont">&#xe699;</a>
+                        </li>
+                        <li>
+                            <a href="" class="iconfont">&#xe659;</a>
+                            <div class="weixin_code">
+                                <img src="../images/weixinerweima.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="iconfont">&#xe619;</a>
+                        </li>
+                        <li>
+                            <a href="" class="iconfont">&#xe64d;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- banner结束 -->
+
+
+
+
+        <div class="footer">
+            <div class="return_to iconfont_ding">
+                &#xe609;
+            </div>
+            <!-- 尾部头部开始 -->
+            <div class="footer_top wrap clearfix">
+                <div class="footer_top_l">
+                    <dl>
+                        <dt>物流</dt>
+                        <dd>快递服务</dd>
+                        <dd>冷运服务</dd>
+                        <dd>仓储服务</dd>
+                    </dl>
+                    <dl>
+                        <dt>金融</dt>
+                        <dd>信贷业务</dd>
+                        <dd>综合支付</dd>
+                        <dd>金融科技</dd>
+                    </dl>
+                    <dl>
+                        <dt>成功案例</dt>
+                        <dd>3c电子行业</dd>
+                        <dd>医疗行业</dd>
+                        <dd>生鲜行业</dd>
+                        <dd>快消行业</dd>
+                    </dl>
+                    <dl>
+                        <dt>服务支持</dt>
+                        <dd>我要寄件</dd>
+                        <dd>运单追踪</dd>
+                        <dd>运费时效查询</dd>
+                        <dd>收寄范围查询</dd>
+                        <dd>服务网点查询</dd>
+                        <dd>收寄标准查询</dd>
+                        <dd>更多内容查询</dd>
+                    </dl>
+                    <dl>
+                        <dt>顺丰控股投资者关系</dt>
+                        <dd>公司治理</dd>
+                        <dd>公司公告</dd>
+                        <dd>定期报告</dd>
+                        <dd>投资者联系</dd>
+                        <dd>投资者关系日历</dd>
+                    </dl>
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd>关于顺丰</dd>
+                        <dd>新闻资讯</dd>
+                        <dd>服务公告</dd>
+                        <dd>推广专区</dd>
+                        <dd>会员权益</dd>
+                        <dd>人才招聘</dd>
+                        <dd>集团采购</dd>
+                    </dl>
+                    <dl>
+                        <dt>联系我们</dt>
+                        <dd>合作咨询</dd>
+                        <dd>在线客服</dd>
+                        <dd>服务热线</dd>
+                    </dl>
+                </div>
+                <div class="footer_top_r">
+                    <p>联系我们</p>
+                    <div class="footer_top_img">
+                        <a href="javascript:;" class="footer_icon weibo"></a>
+                        <a href="javascript:;" class="footer_icon weixin"></a>
+                        <a href="javascript:;" class="footer_icon kefu"></a>
+                        <a href="javascript:;" class="footer_icon phone"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 尾部头部结束 -->
+            <!-- 尾部中间部分开始 -->
+            <div class="footer_nav">
+                <ul class="wrap">
+                    <li><a href="javascript:;">顺丰科技</a></li>
+                    <li><a href="javascript:;">数据灯塔</a></li>
+                    <li><a href="javascript:;">顺丰航空</a></li>
+                    <li><a href="javascript:;">顺丰产业园</a></li>
+                    <li><a href="javascript:;">丰修</a></li>
+                    <li><a href="javascript:;">顺丰国籍</a></li>
+                    <li><a href="javascript:;">Rong-E链</a></li>
+                    <li><a href="javascript:;">顺丰公益</a></li>
+                    <li><a href="javascript:;">顺丰一站</a></li>
+                    <li><a href="javascript:;">人才招聘</a></li>
+                </ul>
+            </div>
+            <!-- 尾部中间部分结束 -->
+            <!-- 尾部底部版权部分开始 -->
+            <div class="footer_ver wrap clearfix">
+                <ul class="footer_ver_l clearfix">
+                    <li><a href="javascript:;">使用条款</a>|</li>
+                    <li><a href="javascript:;">服务网络</a>|</li>
+                    <li><a href="javascript:;">丰桥平台</a>|</li>
+                    <li><a href="javascript:;">隐私政策</a></li>
+                </ul>
+                <ul class="footer_ver_r">
+                    <li>
+                        <a
+                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- 尾部底部版权部分结束 -->
+            <!-- 底部网站安全部分开始 -->
+            <div class="footer_safe wrap clearfix">
+                <!-- 返回头部的盒子 -->
+            <div class="box box_mixbox">
+            </div>
+                <ul class="clearfix">
+                    <li>
+                        <a href="javascript:;"><img
+                                src="http://webcert.cnmstl.net/images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157"
+                                alt="安全网址认证书"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="../images/security_site_1.png" alt="安全认证"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="../images/security_site_2.png" alt="公安网认证"> 深圳市市场监督管理局企业主体身份公示
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="../images/security_site_3.png"> 粤公网安备 44030502003091号
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 底部网站安全部分结束 -->
+        </div>
+        <a href="" class="index-online-service">
+            <p>在线客服</p>
+        </a>
+    </div>
+</body>
+
+</html>
