@@ -18,9 +18,14 @@
   },
   "homepage": "https://github.com/taniadd/shunfeng#readme",
   "dependencies": {
+    "art-template": "^4.13.2",
     "express": "^4.17.1",
+    "express-art-template": "^1.0.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.8.4",
     "nodemon": "^2.0.2",
     "path": "^0.12.7",
+    "session": "^0.1.0",
     "util": "^0.12.1"
   }
 }

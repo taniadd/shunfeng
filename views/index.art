@@ -1,30 +1,31 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>首页</title>
-    <link href="css/base.css" type="text/css" rel="stylesheet" />
-    <link href="css/common.css" type="text/css" rel="stylesheet" />
-    <link href="css/dlindex.css" type="text/css" rel="stylesheet" />
+    <link href="../css/base.css" type="text/css" rel="stylesheet" />
+    <link href="../css/common.css" type="text/css" rel="stylesheet" />
+    <link href="../css/dlindex.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/dlindex.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/dlindex.js"></script>
 </head>
 
 <body class="shouye_index">
     <!-- 在线客服开始 -->
-    <div  class="online_servic">
-       <a href="javascript:;"></a>
-       <p>在线客服</p>
+    <div class="online_servic">
+        <a href="javascript:;"></a>
+        <p>在线客服</p>
     </div>
-        <!-- 在线客服结束 -->
+    <!-- 在线客服结束 -->
     <div class="mwrap">
         <!-- 头部开始 -->
         <div class="header">
             <div class="wrap clearfix">
-                <img src="images/sf.png">
+                <img src="../images/sf.png">
                 <ul class="nav_l clearfix">
                     <li>
                         <a href="javascript:;" class="current">首页</a>
@@ -146,8 +147,8 @@
                                             <li>
                                                 <h3>仓储服务</h3>
                                             </li>
-                                            <li><a href="javascript:;">标准化仓储管理</a></li>
-                                            <li><a href="javascript:;">仓储核心能力</a></li>
+                                            <li><a href=".../page/FH-warehouse_service.html">标准化仓储管理</a></li>
+                                            <li><a href=".../page/FH-Storage.html">仓储核心能力</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -221,9 +222,12 @@
                 <ul class="nav_r clearfix">
                     <!-- 原先类名为login,由于类名冲突已经更名为celerity_login -->
                     <li class="celerity_login">
-                        <span class="icon member"></span>
+                        <span class="icon member"></span> {{if tel}}
+                        <a href="javascript:;">{{tel+'用户欢迎您'}}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                        <a href="/date" class="date">退出登录</a> {{else}}
                         <a href="javascript:;" class="Thelogin_button">快速登录/注册</a>
                         <!-- <span class="icon country"></span> -->
+                        {{/if}}
                     </li>
                     <li></li>
                     <li></li>
@@ -250,7 +254,7 @@
                 <p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
                 <h5>登录后即可免验证快速下单与查件</h5>
                 <div class="img">
-                    <img src="./images/erweima.png" alt="">
+                    <img src="../images/erweima.png" alt="">
                 </div>
                 <h4>请使用微信扫描二维码</h4>
                 <h5 class="self"></h5>
@@ -261,7 +265,7 @@
                 <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
             </div>
             <div class="login_denglu">
-                <form action="" id="reset" autocomplete="off">
+                <form action="/login" id="reset" autocomplete="off">
                     <div class="login_denglu_box">
                         <p class="login_denglu_p">登录后即可免验证快速下单与查件</p>
                         <div class="login_tel">
@@ -308,8 +312,8 @@
             <div class="bannerWidt">
                 <a href="javascript:;" class="banner_left" style="display: none;"></a>
                 <ul class="banner_img clearfix">
-                    <li><img src="images/IMG20190905_170942.jpg" /></li>
-                    <li><img src="images/IMG20190905_171924.jpg" /></li>
+                    <li><img src="../images/IMG20190905_170942.jpg" /></li>
+                    <li><img src="../images/IMG20190905_171924.jpg" /></li>
                 </ul>
                 <ul class="banner_splot clearfix">
                     <!-- <li class="banner_splot_curr"><a href="javascript:;"></a></li>
@@ -331,7 +335,7 @@
                     <p>温馨提醒</p>
                 </div>
                 <div class="warm_tips_tit">
-                    <a href="javascript::">关于防范“冒充顺丰员工加微信好友骚扰或诈骗”的温馨提示</a>                
+                    <a href="javascript::">关于防范“冒充顺丰员工加微信好友骚扰或诈骗”的温馨提示</a>
                 </div>
             </div>
             <!-- 意见反馈 -->
@@ -341,14 +345,14 @@
                     <p>意见反馈</p>
                 </div>
                 <div class="warm_tips_tit">
-                    <a href="javascript::">如您对顺丰官网有任何建议和反馈，可留言给我们</a>                
+                    <a href="javascript::">如您对顺丰官网有任何建议和反馈，可留言给我们</a>
                 </div>
             </div>
 
         </div>
         <!-- banner结束 -->
 
-   
+
 
         <!-- content开始 -->
         <div class="content">
@@ -404,60 +408,64 @@
                         <li class="content_current"><a href="javascript:;">物流</a></li>
                         <li><a href="javascript:;">金融</a></li>
                     </ul>
-                        <!-- 轮播图 -->
+                    <!-- 轮播图 -->
                     <div class="banner">
                         <div class="bannerWidt">
                             <a href="javascript:;" class="banner_left" style="display: none;"></a>
-                            <ul class="banner_img  clearfix">                          
+                            <ul class="banner_img  clearfix">
                                 <li>
                                     <ul class="content_banenr_img clearfix">
                                         <li>
-                                            <a href="javascript:;"> 
-                                                <img class="contimg" src="images/PCkuaidifuwu-0213.jpg" />
+                                            <a href="javascript:;">
+                                                <img class="contimg" src="../images/PCkuaidifuwu-0213.jpg" />
                                                 <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
+                                                    <h3><img class="content_tit_img" src="../images/business-wl1-icon1.png" />快递服务</h3>
                                                     <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="javascript:;">
-                                                <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
+                                                <img class="contimg" src="../images/lengyunbusiness-img2.jpg" />
                                                 <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>冷运服务</h3>
+                                                    <h3><img class="content_tit_img" src="../images/business-wl1-icon2.png" />冷运服务</h3>
                                                     <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
                                                 </div>
                                             </a>
-                                        </li>   
-                                    </ul>                                 
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <ul class="content_banenr_img clearfix">
                                         <li>
                                             <a href="javascript:;">
-                                                <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
+                                                <img class="contimg" src="../images/lengyunbusiness-img2.jpg" />
                                                 <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon1.png"/>快递服务</h3>
+                                                    <h3><img class="content_tit_img" src="../images/business-wl1-icon1.png" />快递服务</h3>
                                                     <p>顺丰依托自有丰富运力资源，通过多项不同的快递产品和增值服务，来满足客户多样化、个性化的寄件需求。</p>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="javascript:;">
-                                                <img class="contimg" src="images/cangku.jpg" />
+                                                <img class="contimg" src="../images/cangku.jpg" />
                                                 <div class="content_img_tit">
-                                                    <h3><img class="content_tit_img" src="images/business-wl1-icon2.png"/>仓储服务</h3>
+                                                    <h3><img class="content_tit_img" src="../images/business-wl1-icon2.png" />仓储服务</h3>
                                                     <p>顺丰依托强大的冷链运输网和温控管理系统，为食品&医药冷链客户提供专业的冷运服务。</p>
                                                 </div>
                                             </a>
-                                        </li>   
-                                    </ul>  
+                                        </li>
+                                    </ul>
                                 </li>
-                                                   
+
                             </ul>
                             <ul class="banner_splot content_banenr_splot  clearfix">
-                                <li class="banner_splot_curr"><a href="javascript:;"></a></li>
-                                <li><a href="javascript:;"></a></li>
+                                <li class="banner_splot_curr">
+                                    <a href="javascript:;"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -497,8 +505,8 @@
                     <li>
                         <a href="javascript:;">
                             <div class="su_nav_img">
-                                <img src="images/red-t-img-1.png" class="red"/>
-                                <img src="images/white-t-img-1.png" class="white"/>
+                                <img src="../images/red-t-img-1.png" class="red" />
+                                <img src="../images/white-t-img-1.png" class="white" />
                             </div>
                             <p>3C电子行业</p>
                         </a>
@@ -506,8 +514,8 @@
                     <li>
                         <a href="javascript:;">
                             <div class="su_nav_img">
-                                <img src="images/red-t-img-5.png" class="red"/>
-                                <img src="images/white-t-img-5.png" class="white"/>
+                                <img src="../images/red-t-img-5.png" class="red" />
+                                <img src="../images/white-t-img-5.png" class="white" />
                             </div>
                             <p>医疗行业</p>
                         </a>
@@ -515,8 +523,8 @@
                     <li>
                         <a href="javascript:;">
                             <div class="su_nav_img">
-                                <img src="images/red-t-img-3.png" class="red"/>
-                                <img src="images/white-t-img-3.png" class="white"/>
+                                <img src="../images/red-t-img-3.png" class="red" />
+                                <img src="../images/white-t-img-3.png" class="white" />
                             </div>
                             <p>生鲜行业</p>
                         </a>
@@ -524,14 +532,14 @@
                     <li>
                         <a href="javascript:;">
                             <div class="su_nav_img">
-                                <img src="images/red-t-img-4.png" class="red"/>
-                                <img src="images/white-t-img-4.png" class="white"/>
+                                <img src="../images/red-t-img-4.png" class="red" />
+                                <img src="../images/white-t-img-4.png" class="white" />
                             </div>
                             <p>快消行业</p>
                         </a>
                     </li>
                 </ul class="content_su_nav">
-              
+
             </div>
             <!-- 成功案例结束 -->
 
@@ -546,7 +554,7 @@
                     <li>
                         <a href="javascript:;">
                             <div class="content_new_img">
-                                <img src="images/0923-1.jpg"/>
+                                <img src="../images/0923-1.jpg" />
                             </div>
                             <div class="content_new_de">
                                 <h3> 顺丰“空中皇后”B747洲际航线首航入欧，打造全球 ...</h3>
@@ -557,18 +565,18 @@
                     <li>
                         <a href="javascript:;">
                             <div class="content_new_img">
-                                <img src="images/ISO29151.jpg"/>
+                                <img src="../images/ISO29151.jpg" />
                             </div>
                             <div class="content_new_de">
-                                <h3>  顺丰科技获颁ISO/IEC 27701:2019隐 ...</h3>
-                                <p>  2019年11月8日，国际认证机构DNV GL正式向顺丰科技 ...<b>[详情]</b></p>
+                                <h3> 顺丰科技获颁ISO/IEC 27701:2019隐 ...</h3>
+                                <p> 2019年11月8日，国际认证机构DNV GL正式向顺丰科技 ...<b>[详情]</b></p>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
                             <div class="content_new_img">
-                                <img src="images/227360051142573262.png"/>
+                                <img src="../images/227360051142573262.png" />
                             </div>
                             <div class="content_new_de">
                                 <h3> 确认过眼神，你就是要寻找的“最美”！</h3>
@@ -579,11 +587,11 @@
                     <li>
                         <a href="javascript:;">
                             <div class="content_new_img">
-                                <img src="images/picture.jpg"/>
+                                <img src="../images/picture.jpg" />
                             </div>
                             <div class="content_new_de">
-                                <h3>  深入科学探讨 激发科研新动力——顺丰加入“未来科学 ...</h3>
-                                <p>  顺丰首次参与高峰论坛，与全球杰出科学家分享交流科学发展的前沿 ...<b>[详情]</b></p>
+                                <h3> 深入科学探讨 激发科研新动力——顺丰加入“未来科学 ...</h3>
+                                <p> 顺丰首次参与高峰论坛，与全球杰出科学家分享交流科学发展的前沿 ...<b>[详情]</b></p>
                             </div>
                         </a>
                     </li>
@@ -595,7 +603,7 @@
             <div class="back_top">
                 <div class="wrap">
                     <div class="back_top_img"></div>
-                </div>        
+                </div>
             </div>
             <!-- 返回顶部按钮结束 -->
 
@@ -712,16 +720,16 @@
                         <a href="javascript:;"><img src="http://webcert.cnmstl.net/images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157" alt="安全网址认证书"></a>
                     </li>
                     <li>
-                        <a href="javascript:;"><img src="images/security_site_1.png" alt="安全认证"></a>
+                        <a href="javascript:;"><img src="../images/security_site_1.png" alt="安全认证"></a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="images/security_site_2.png" alt="公安网认证"> 深圳市市场监督管理局企业主体身份公示
+                            <img src="../images/security_site_2.png" alt="公安网认证"> 深圳市市场监督管理局企业主体身份公示
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="images/security_site_3.png"> 粤公网安备 44030502003091号
+                            <img src="../images/security_site_3.png"> 粤公网安备 44030502003091号
                         </a>
                     </li>
                 </ul>
@@ -729,7 +737,7 @@
             <!-- 底部网站安全部分结束 -->
         </div>
         <!-- 尾部结束 -->
-    </divc>
+        </divc>
 </body>
 
 </html>
