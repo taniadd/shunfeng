@@ -2,11 +2,11 @@ $(function () {
     $(window).scroll(function () {
         var scrollTop = $(window).scrollTop(); //页面滚动的距离
         var tab_top = $(".express_service_list").offset().top - $(".tabs_nav").height();
-        console.log($(".express_service_list").offset().top);
-        console.log($(".tabs_nav").height());
+        var wrap_top = $(".wrap").height();
+
+
         
-        
-        if (scrollTop < 50) {
+        if (scrollTop < wrap_top) {
             $(".box").fadeOut();
         } else {
             $(".box").fadeIn();
@@ -39,7 +39,7 @@ $(function () {
         timer = setInterval(() => {
             
             var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-            scrollTo(0,oTop-10);
+            scrollTo(0,oTop-50);
             if(oTop<=0){
                 clearInterval(timer);
                 return

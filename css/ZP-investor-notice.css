@@ -91,28 +91,6 @@
     color: red;
 }
 
-.download {
-    margin: 0 320px;
-    margin-bottom: 50px;
-    overflow: hidden;
-}
-.download ul {
-    display: block;
-}
-.download ul li {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-.download ul li span,
-.download ul li a,
-.download ul li p {
-    display: inline-block;
-    padding: 5px 0;
-}
-.download ul li a {
-    float: right;
-    font-size: 16px;
-}
 
 .flip_over {
     display: inline-block;  
