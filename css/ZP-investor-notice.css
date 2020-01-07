@@ -15,8 +15,8 @@
 }
 .tabs_nav_fa >ul>li>a {
     font-weight: 700;
-    margin: 0 76px;
     padding-bottom: 3px;
+    text-align: center;
 }
 
 /* 内容区域 */

@@ -32,7 +32,7 @@
     text-align: center;
     color: #fff;
     padding-bottom: 7px;
-    z-index: 10;
+    z-index: 91;
 }
 .service::before {
     content: '';
@@ -122,5 +122,15 @@
     background: #F1F1F1;
 }
 .tabs_nav_fa {
-    z-index: 999;
+    z-index: 90;
+}
+
+#go_nav {
+    z-index: 91;
+}
+
+.tabs_nav_fa>ul>li {
+    width: 20%;
+    white-space: nowrap;
+    text-align: center;
 }
