@@ -5,54 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>顺丰运费及时效查询</title>
+    <title>清关服务</title>
     <link type="text/css" rel="stylesheet" href="../css/base.css">
     <link type="text/css" rel="stylesheet" href="../css/common.css">
     <link type="text/css" rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_v7fe8bgq07n.css">
     <link rel="stylesheet" href="../css/WL_sf_express_price.css">
+    <link rel="stylesheet" href="../css/WL_sf_express_range.css">
+    <link rel="stylesheet" href="../css/WL_sf_express_exchange.css">
+    <link rel="stylesheet" href="../css/WLdcalendar.picker.css">
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/dcalendar.picker.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/wl_sf_express.js"></script>
-    <style>
-        
-        td.selected span{
-           color: red !important;
-           
-        }
-        td.selected {
-            padding: 0px !important;
-            background: #ccc;
-        }
-        .calendar {
-            box-sizing: border-box;
-            width: 225px !important;
-            left: 124px !important;
-            z-index: 1 !important;
-            background-color: #ccc;
-        }
-        .calendar * {
-            text-align: center;
-        }
-        .calendar thead tr:nth-child(1) th {
-            width: 14.28%;
-        }
-        .calendar thead tr:nth-child(1) th:nth-child(2) {
-            width: 60% !important;
-            text-align: center;
-        }
-       
-        .calendar tbody tr td{
-            width: 14.28% ;
-        }
-        
-        .calendar tbody td span {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 
 <body>
@@ -437,157 +401,27 @@
                 <div class="container">
                     <div class="main-content">
                         <div class="function">
-                            <div class="main-content-row">
-                                <div class="time-search">
-                                    <a class="fr"
-                                        href="https://www.sf-express.com/cn/sc/dynamic_function/price/time_internal.html">
-                                        <span class=" iconfont icon-huabanfuben"></span>
-                                        <span>查看中国内地出口时效表</span>
-                                    </a>
-                                    <h5>运费时效查询</h5>
-                                    <dl>
-                                        <dt>
-                                            原寄地
-                                        </dt>
-                                        <dd>
-                                            <div class="input-group">
-                                                <input type="text" placeholder="请输入原寄地地区,例如:长沙市">
-                                            </div>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>
-                                            目的地
-                                        </dt>
-                                        <dd class="location-input">
-                                            <div class="input-group">
-                                                <input type="text" placeholder="请输入目的地地区,例如:长沙市">
-                                            </div>
-                                        </dd>
-                                    </dl>
-                                    <dl class="height">
-                                        <dt>
-                                            重量
-                                        </dt>
-                                        <dd class="location-input">
-                                            <div class="input-group">
-                                                <input type="text" placeholder="">
-                                            </div>
-                                        </dd>
-                                        <dd class="dd-right">
-                                            KG
-                                        </dd>
-                                    </dl>
-                                    <dl class="sender-time">
-                                        <dt>
-                                            寄件时间
-                                        </dt>
-                                        <dd class="location-input">
-                                            <div class="input-group">
-                                                <input type="text" id="mydatepicker2" placeholder="">
-                                            </div>
-                                        </dd>
-                                    </dl>
-
-                                    <button>查询</button>
+                            <div class="main-content-row-1">
+                                <div class="row-title">
+                                    税金信息查询
+                                </div>
+                                <div class="row-content">
+                                    <h3 class="red">1. 税金信息查询说明</h3>
+                                    <p>仅供查询自中国内地口岸海关放行后2个月内，派件时需中国内地收件客户支付税金的进口快件税金数据 。</p>
+                                    <h3 class="red">2. 正本税单提供规则说明</h3>
+                                    <p>普通快件（个人行邮物品及正式报关件除外）采用“清单”形式批量清关，海关不针对单票快件单独出具税单。如有用纸质KJ3税金明细对账的需求，可选择查询后进行下载。
+                                    </p>
+                                    <p>如有个人行邮物品《个人邮递物品进口税款缴纳凭证》（正本税单）的需求，请致电顺丰热线95338进行处理。</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="note">
-                            <div>
-                                <div class="note-content">
-                                    <p><strong>一、运费计算基于以下计费规则：</strong></p>
-                                    <p><strong>1. 体积重量计算方法</strong></p>
-                                    <p class="padding-left30">托寄物的计费重量取体积重量与实际重量两者之间的较大值，体积重量的计算方法为：</p>
-                                    <p class="padding-left30"><strong>【顺丰即日/次晨/标快】</strong></p>
-                                    <p class="padding-left30">同城、省内件以及经济区域内互寄，体积重量=长(CM)×宽(CM)×高(CM)÷12000；</p>
-
-                                    <p class="padding-left30">
-                                        省外跨经济区域互寄，体积重量=长(CM)×宽(CM)×高(CM)÷6000；(经济区域包含：京津冀区域，江浙沪皖区域,，川渝区域，黑吉辽区域)</p>
-                                    <p class="padding-left30"><strong>【顺丰特惠】 </strong> 体积重量=长(CM)×宽(CM)×高(CM)÷12000；</p>
-                                    <p class="padding-left30"><strong>
-                                            【重货包裹/小票零担/冷运速配/冷运特惠】</strong>体积重量=长(CM)×宽(CM)×高(CM)÷6000；</p>
-                                    <p class="padding-left30"><strong>【冷运零担】 </strong>体积重量=长(CM)×宽(CM)×高(CM)÷3000；</p>
-                                    <p class="padding-left30"><strong>【港澳台（服务）】 </strong>体积重量=长(CM)×宽(CM)×高(CM)÷6000</p>
-                                    <p class="padding-left30"><strong> 【国际快递（服务）】</strong>体积重量=长(CM)×宽(CM)×高(CM) ÷5000
-                                    </p>
-                                    <p class="padding-left30">其他产品计算方法请致电95338或咨询当地收派员。
-                                    </p>
-                                    <p><strong>2. 计费重量小数点进位处理方式</strong></p>
-
-                                    <p class="padding-left30">
-                                        <strong>【中国内地互寄业务】</strong>10KG以下，续重以0.1KG为计重单位，四舍五入保留1位小数；10-100KG，续重以0.5KG为计重单位，采用2378制（2退3进7退8进）；100KG及以上，四舍五入取整数。
-                                    </p>
-                                    <p class="padding-left30"><strong> 【港澳本地业务】</strong>续重以0.5KG为计重单位，不足0.5kg，按0.5kg计。
-                                    </p>
-                                    <p class="padding-left30"><strong> 【中国内地始发至港澳台业务】</strong>100KG以下,
-                                        续重以0.5KG为计重单位，不足0.5kg，按0.5kg计；100KG及以上，以1KG为计重单位，小数点后尾数大于零的，向上进位至下一个1KG。</p>
-                                    <p class="padding-left30"><strong>【中国内地始发至海外国家及地区业务】 </strong>20KG以下,
-                                        续重以0.5KG为计重单位，不足0.5kg，按0.5kg计；20KG及以上，以1KG为计重单位，小数点后尾数大于零的，向上进位至下一个1KG。</p>
-                                    <p><strong>3. 运费计算结果处理方式</strong></p>
-                                    <p class="padding-left30">- 运费计算结果按四舍五入取整数值；</p>
-                                    <p class="padding-left30">- 不同产品起始重量各有差异，不足起重的快件将按起重计费并显示。</p>
-                                    <p class="padding-left30">以上计费规则可能因服务（产品）或所在地区不同而有所差异，详情致电95338或与当地收派员进行咨询。</p>
-                                    <p></p>
-                                    <p><strong>温馨提示：</strong></p>
-                                    <p><strong>一、时效标准</strong></p>
-                                    <p class="padding-left30">1、预计时效因节假日、天气、交通管控、资源等原因不同日期时间查询会有所差异，具体以系统实时返回为准</p>
-                                    <p><strong>二、始发地或目的地任一方为港澳台地区：</strong></p>
-                                    <p class="padding-left30">1、此价格供参考。更多收费和服务详情，详情请致电中国内地客户服务热线 95338。</p>
-                                    <p class="padding-left30">2、中国台湾地区寄往中国内地的特殊包裹品项及价格请<a
-                                            href="https://www.sf-express.com/cn/sc/download/20181211-Dynamic_function-pric-TW-C-type.pdf">按此</a>
-                                        查询，参考时效在顺丰标快产品基础上加时3-5天；。</p>
-                                    <p class="padding-left30">
-                                        3、对于约定由收件人或第三方付费（含运费及增值服务费）的快件，在快件签收之前，可提出对费用付款方式变更为寄方付。对于需要更改付款方式的快件，寄件人除需要支付运费外，每票需另外支付更改付款方式服务费。详见具体<a
-                                            href="">收费标准</a> 。</p>
-
-                                    <p class="padding-left30">4、如收派件地址为<a
-                                            href="https://www.sf-express.com/hk/tc/download/HK_RemoteArea_TC.pdf">香港地区偏远地区</a>
-                                        ，收派件时效需加1个工作日。</p>
-
-                                    <p class="padding-left30">5、中国台湾地区部分地区收派时效需加0.5-1工作日，可<a
-                                            href="https://www.sf-express.com/cn/sc/download/TW_Remote_area_TC01.PDF">按此</a>查阅详情。
-                                    </p>
-                                    <p class="padding-left30">
-                                        6、以上由中国香港、中国澳门及中国台湾地区寄件至中国内地，以及中国港澳台地区之间互寄,运费已包含燃油附加费。燃油附加费说明请<a
-                                            href="https://www.sf-express.com/cn/sc/dynamic_function/price/fuel_surcharge_introduction.html">按此</a>了解。
-                                    </p>
-                                    <p><strong>三、始发地或目的地任一方为海外国家:</strong></p>
-                                    <p class="padding-left30">1、以上查询的流向价格与时效仅供参考。具体服务及收费详情，请致电国际业务客服专线9533883.</p>
-                                    <p class="padding-left30">2、以上查询的流向运费已包含燃油附加费（请<a
-                                            href="https://www.sf-express.com/cn/sc/dynamic_function/price/international_fuel_surcharge_introduction.html">按此</a>了解更多燃油附加费的资料），但未包含清关税费、偏远地区附加费、住宅派送附加费、特殊处理费等可能产生的其他费用。
-                                    </p>
-                                    <p class="padding-left30">
-                                        3、时效标准天数是指工作日，不包含收件日，不包括周末和节假日。具体派送时效以目的地邮编为准。如遇偏远地区或郊区、航班延误、清关异常等情形，时效会额外增加。时效为参考时效，非承诺时效。
-                                    </p>
-                                    <p class="padding-left30">
-                                        4、在清关资料齐全且不存在自扣与海关扣等风险或异常的情况，以下情况需在参考时效的基础上增加时长：中国内地、港澳台进口的个人物品和正式报关货件增加1-2个工作日，中国内地进口的分运行李货件增加2-4个工作日，中国内地、港澳台出口的正式报关货件增加1个工作日，海外国家进口的正式报关货件增加2-3个工作日。
-                                    </p>
-                                    <p class="padding-left30">
-                                        5、为降低因收发件人信息、申报品名不完整或错误及申报价值不符等原因导致的清关风险；收发件人信息必须真实有效，托寄物品名需写明材质和用途，托寄物价值必须如实申报。如因以上原因造成的查验延误，及产生的相关所有费用将与相关税费一起向寄件人或者收件人收取。
-                                    </p>
 
 
-
-
-
-
-
-                                    <p class="padding-left30"></p>
-                                    <p class="padding-left30"></p>
-                                    <p class="padding-left30"></p>
-                                    <p class="padding-left30"></p>
-                                    <p class="padding-left30"></p>
-
-
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
         <!-- 尾部头部开始 -->
@@ -727,15 +561,5 @@
     </div>
 
 </body>
-<script type="text/javascript">
-    $(() => {
-        $('#mydatepicker').dcalendarpicker();
-        $('#mydatepicker2').dcalendarpicker({
-            format: 'yyyy-mm-dd'
-        });
-        $('#mycalendar').dcalendar();
-    })
-
-</script>
 
 </html>

@@ -389,6 +389,7 @@ label {
 }
 
 .btn-primary .icon-duanjiantou {
+    top: 40%;
     font-size: 14px;
     position : absolute;
     right    : 25px;
@@ -411,17 +412,19 @@ label {
 }
 
 /* 寄大件的提交按钮 */
-.btn-primary.submit-order {
+.btn-primary.disabled {
+    
     background-color: #999;
-    margin-top      : 20px;
 }
-
+#orders {
+    margin-top: 20px;
+}
 .checked {
     color: #dc1e32;
 }
 
 .checked span {
-    color: #dc1e32;
+    color: #dc1e32 !important;
 }
 
 
@@ -447,8 +450,7 @@ label {
 
 h3 {
     font-size    : 15px;
-    margin-top   : 18px;
-    margin-bottom: 9px;
+    
 }
 
 .support_value_model_content {
@@ -550,11 +552,21 @@ h3 {
 
 /* 预约信息title行 */
 .appointmentInformation .appointmenttitle  {
+    height: 30px;
+    line-height: 30px;
     padding: 20px 0;
 }
 .appointmentInformation .appointmenttitle h3 {
+    height: 30px;
+    line-height: 30px;
     font-size: 23px;
-    margin: 0px;
+  
+}
+.appointmenttitle h3 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 23px;
+  
 }
  .appointmenttitle p a {
     color: #333;
@@ -597,4 +609,20 @@ h3 {
     height: 45px;
     /* background: url(../images/smallBanner-icon-red.png) no-repeat 17px -183px; */
     background: url(../images/smallBanner-icon.png) no-repeat 17px -183px #dc1e32;
+}
+
+/* 我要寄件第四页下单盒子 */
+.three_tab_4 .orders {
+    text-align: center;
+    padding:100px  ;
+}
+
+
+/* 寄大件 */
+.btn-primary.disabled {
+    cursor: not-allowed;
+}
+.btn-primary.disabled:hover {
+    background-color: #999;
+   
 }
