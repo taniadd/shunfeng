@@ -264,6 +264,7 @@
 }
 .content .content_nav li .content_icon{
     display: inline-table;
+    padding-right: 5px;
     margin-top: 35px;
     text-align: center;
     height: 31px;
@@ -329,8 +330,17 @@
 }
 .content .content_img_tit:hover h3,
 .content .content_img_tit:hover p {
-    color: #ffffff;
-    
+    color: #ffffff; 
+}
+.content .content_img_tit:hover .red,
+.content .content_img_tit .white
+{
+    display: none;
+}
+.content .content_img_tit:hover .white,
+.content .content_img_tit .red
+{
+    display: inline-block;
 }
 /* content_nav结束 */
 
@@ -362,6 +372,12 @@
     font-size: 18px;
     text-align: center;
 }
+.content .content_banner_tit .content_current a {
+    color: #DC1E32;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+}
 .content .content_banenr_img {
     margin-top: 20px;
     display: flex;
@@ -374,6 +390,17 @@
     width: 100%;
     height: 255px;
 }
+.content .content_img {
+    width: 300%;
+    position: absolute;
+}
+.content .contentImg{
+    width: 33.33%;
+    float: left;
+}
+/* .content .content_bannerWidth {
+    width: 300%;
+} */
 
 /* 物流和金融的轮播图结束 */
 /* 内容成功案例开始 */
