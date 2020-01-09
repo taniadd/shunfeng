@@ -2,8 +2,12 @@ const express = require('express')
 const app = express();
 const bodyParser=require('body-parser')
 const mongoose = require('mongoose');
-const path=require('path')
-const session = require("express-session")
+
+const path = require('path')
+const session = require('express-session')
+app.use(session({
+    secret: 'asdasfgsqag'
+}))
 mongoose.connect('mongodb://localhost/shunfeng', {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -12,8 +16,8 @@ mongoose.connect('mongodb://localhost/shunfeng', {
     .catch((err) => console.log(err, '数据库连接失败'))
 
 app.use(express.static(__dirname));
-//用来记录用户信息
-app.use( session( {secret:"sadkfoiurew"} ) )
+
+
 //收集post请求参数
 app.use(bodyParser.urlencoded({extended:false}))
 
@@ -30,5 +34,13 @@ app.engine('art', require('express-art-template'));
 const shunfeng=require('./route/WL.js')
 app.use("/shunfeng",shunfeng);
 
+
+const sf = require('./route/index')
+app.use(sf);
+app.set('views', path.join(__dirname, 'views', ));
+app.engine('art', require('express-art-template'));
+app.set('view engine', 'art')
+
+
 app.listen(80);
-console.log('创建服务器成功');
+console.log('创建服务器成功')

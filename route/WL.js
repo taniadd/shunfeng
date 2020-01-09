@@ -12,7 +12,7 @@ router.post("/WL_waybill", async (req, res) => {
 //运单追踪get路由
 router.get('/WL_waybill', async (req, res) => {
  let searchnum=req.query.num
-let arr=searchnum==''?await Senderinfor.find():await Senderinfor.findOne({_id:searchnum})
+//  let arr=searchnum==''?await Senderinfor.find():await Senderinfor.findOne({_id:searchnum})
 
 
   let arr= await Senderinfor.find()
