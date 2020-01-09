@@ -305,11 +305,11 @@
         <!--二级导航栏-->
         <nav class="sfexpress_header_nav clearfix">
             <!-- 我要寄件的链接 -->
-            <a href="./WLquick.html">我要寄件</a>
+            <a href="/shunfeng/WL_quick">我要寄件</a>
             <!--运单追踪的链接-->
-            <a href="./WL_waybill.html">运单追踪</a>
+            <a href="/shunfeng/WL_waybill">运单追踪</a>
             <!--服务支持的链接-->
-            <a class="current" href="./WL_sf_express.html">服务支持</a>
+            <a class="current" href="/shunfeng/WL_sf_express">服务支持</a>
             <div class="big-title">
                 <p class="bold">
                     SF支持,你要的这里都有
@@ -329,25 +329,25 @@
                         <div class="often-use-container">
                             <ul class="clearfix">
                                 <li class="fl often-use-item">
-                                    <a href="./WL_sf_express_price.html">
+                                    <a href="/shunfeng/WL_sf_express_price">
                                         <span class="iconfont icon-jinqian"></span>
                                         <p class="desc-text">运费时效</p>
                                     </a>
                                 </li>
                                 <li class="fl often-use-item">
-                                    <a href="">
+                                    <a href="/shunfeng/WL_sf_express_range">
                                         <span class="iconfont icon-fuwufanwei"></span>
                                         <p class="desc-text">服务范围</p>
                                     </a>
                                 </li>
                                 <li class="fl often-use-item">
-                                    <a href="">
+                                    <a href="/shunfeng/WL_sf_express_store">
                                         <span class="iconfont icon-location"></span>
                                         <p class="desc-text">网点查询</p>
                                     </a>
                                 </li>
                                 <li class="fl often-use-item">
-                                    <a href="">
+                                    <a href="/shunfeng/WL_sf_express_accept">
                                         <span class="iconfont icon-gantanhao-xianxingsanjiaokuang"></span>
                                         <p class="desc-text">收寄标准</p>
                                     </a>
@@ -373,43 +373,43 @@
                     </div>
                     <ul class="more-support clearfix">
                         <li class="fl more-support-item">
-                            <a class="wrapper" href="">
+                            <a class="wrapper" href="/shunfeng/WL_sf_express_exchange">
                                 <span class="iconfont icon-huishuai"></span>
                                 <p class="desc-text">汇率查询</p>
                             </a>
                         </li>
                         <li class="fl more-support-item">
-                            <a class="wrapper" href="">
+                            <a class="wrapper" href="/shunfeng/WL_sf_express_agency">
                                 <span class="iconfont icon-zhangdan1"></span>
-                                <p class="desc-text">代收账单</p>
+                                <p class="desc-text">代收货款账单</p>
                             </a>
                         </li>
                         <li class="fl more-support-item">
-                            <a class="wrapper" href="">
+                            <a class="wrapper" href="/shunfeng/WL_sf_express_COD">
                                 <span class="iconfont icon-jinqian"></span>
                                 <p class="desc-text">代收货款对账</p>
                             </a>
                         </li>
                         <li class="fl more-support-item">
-                            <a class="wrapper" href="">
+                            <a class="wrapper" href="/shunfeng/WL_sf_express_formdownload">
                                 <span class="iconfont icon-zhexiantu"></span>
                                 <p class="desc-text">常用表格</p>
                             </a>
                         </li>
                         <li class="fl more-support-item">
-                            <a class="wrapper" href="">
+                            <a class="wrapper" href="/shunfeng/WL_sf_express_payment">
                                 <span class="iconfont icon-lipei"></span>
                                 <p class="desc-text">理赔</p>
                             </a>
                         </li>
                         <li class="fl more-support-item">
-                            <a class="wrapper" href="">
+                            <a class="wrapper" href="/shunfeng/WL_sf_express_clearance">
                                 <span class="iconfont icon-qingguanfuwu"></span>
                                 <p class="desc-text">清关服务</p>
                             </a>
                         </li>
                         <li class="fl more-support-item">
-                            <a class="wrapper" href="">
+                            <a class="wrapper" href="/shunfeng/WL_sf_express_lost">
                                 <span class="iconfont icon-edit"></span>
                                 <p class="desc-text">无着件公示</p>
                             </a>
@@ -421,7 +421,7 @@
                     <div class="hot-problem-list">
                         <ul class="clearfix">
                             <li class="hot-problem-item fl">
-                                <a href="" class="problem-click">
+                                <a href="/shunfeng/xkmember" class="problem-click">
                                     <div class="problem-title">个人问题等级说明</div>
                                     <div class="problem-subtitle">积分好礼,会员好货</div>
                                     <span class="shade-pic"></span>
@@ -429,7 +429,7 @@
                                 </a>
                             </li>
                             <li class="hot-problem-item fl">
-                                <a href="" class="problem-click">
+                                <a href="/shunfeng/xkmonthly" class="problem-click">
                                     <div class="problem-title">月结客户权益介绍</div>
                                     <div class="problem-subtitle">按月度一次性结算快递...</div>
                                     <span class="shade-pic"></span>

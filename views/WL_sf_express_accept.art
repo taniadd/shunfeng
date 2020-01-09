@@ -306,11 +306,11 @@
         <!--二级导航栏-->
         <nav class="sfexpress_header_nav clearfix">
             <!-- 我要寄件的链接 -->
-            <a href="./WLquick.html">我要寄件</a>
+            <a href="/shunfeng/WL_quick">我要寄件</a>
             <!--运单追踪的链接-->
-            <a href="./WL_waybill.html">运单追踪</a>
+            <a href="/shunfeng/WL_waybill">运单追踪</a>
             <!--服务支持的链接-->
-            <a class="current" href="./WL_sf_express.html">服务支持</a>
+            <a class="current" href="/shunfeng/WL_sf_express">服务支持</a>
             <div class="big-title">
                 <p class="bold">
                     SF支持,你要的这里都有
@@ -324,67 +324,67 @@
                 <div class="nav-bg">
                     <ul class="navs">
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_price">
                                 <span class="iconfont icon-jinqian"></span>
                                 <span>运费时效</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_range">
                                 <span class="iconfont icon-fuwufanwei"></span>
                                 <span>服务范围</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_store">
                                 <span class="iconfont icon-location"></span>
                                 <span>网点查询</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_accept">
                                 <span class="iconfont icon-gantanhao-xianxingsanjiaokuang"></span>
                                 <span>收寄标准</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_exchange">
                                 <span class="iconfont icon-huishuai"></span>
                                 <span>汇率查询</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_agency">
                                 <span class="iconfont icon-statement"></span>
                                 <span>代收货款账单</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_COD">
                                 <span class="iconfont icon-zhangdan"></span>
                                 <span>代收货款对账</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_formdownload">
                                 <span class="iconfont icon-zhexiantu"></span>
                                 <span>常用表格</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_payment">
                                 <span class="iconfont icon-lipei"></span>
                                 <span>理赔</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_clearance">
                                 <span class="iconfont icon-qingguanfuwu"></span>
                                 <span>清关服务</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./WL_sf_express_price.html">
+                            <a href="/shunfeng/WL_sf_express_lost">
                                 <span class="iconfont icon-gongshi"></span>
                                 <span>无着件公示</span>
                             </a>

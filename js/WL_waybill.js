@@ -5,7 +5,10 @@ $(()=>{
         $(this).stop().animate({paddingLeft:0,paddingRight:0},300).find(".arrow").stop().animate({opacity:0},600)
        
     }  )
-
+    
+    $(".order-button-wrapper").click(function(){
+        location.href='/shunfeng/WL_quick'
+    })
 
     // <!-- tab栏切换JavaScript代码 -->
         class Tab {

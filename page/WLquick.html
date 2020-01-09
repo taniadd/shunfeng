@@ -872,7 +872,7 @@
                     <!-- 寄大件的内容 -->
                     <section>
                         <div class="bulkShipping-big">
-                            <form action="" class="senderInformation2" method="POST">
+                            <form action="/WL_waybill" class="senderInformation2" method="POST">
                             <!-- 步骤下面的内容 -->
                             <div class="item clearfix">
                                 <!-- 当前翻页盒子 -->
@@ -911,13 +911,13 @@
                                                     <div class="col-xs-5">
                                                         <label class="control-label required" for="">姓名</label>
                                                         <input class="senderName input form-control input_red"
-                                                            type="text" placeholder="请填写联系人姓名"><span
+                                                            type="text" name="sendername" placeholder="请填写联系人姓名"><span
                                                             class="spa  spa1"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
                                                         <label for="" class="control-label">公司名称</label>
                                                         <input class="company input form-control input_red" type="text"
-                                                            placeholder="请填写公司名称"><span class="spa  spa4"></span>
+                                                          name="sendercompany"  placeholder="请填写公司名称"><span class="spa  spa4"></span>
                                                     </div>
 
                                                 </div>
@@ -926,13 +926,13 @@
                                                     <div class="col-xs-5">
                                                         <label class="control-label " for="">手机号码</label>
                                                         <input class="telephoneNumber form-control input_red input"
-                                                            type="text" placeholder="请填写手机号码"><span
+                                                         name="sendertel"   type="text" placeholder="请填写手机号码"><span
                                                             class="spa  spa2"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
                                                         <label for="" class="control-label">固话</label>
                                                         <input class="lineTelephone form-control input_red input"
-                                                            type="text" placeholder="请填写固话号码"><span
+                                                        name="senderline"    type="text" placeholder="请填写固话号码"><span
                                                             class="spa  spa5"></span>
                                                     </div>
 
@@ -942,7 +942,7 @@
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">省市区</label>
                                                         <input class="bigAddress form-control input_red input"
-                                                            type="text" placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区">
+                                                          name="senderbigadd"  type="text" placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区">
                                                         <span class="iconfont icon-fuwufanwei"></span><span
                                                             class="spa  spa3"></span>
                                                     </div>
@@ -954,7 +954,7 @@
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">详细地址</label>
                                                         <input class="smallAddress form-control input_red input"
-                                                            type="text" placeholder="请选择所在街道以及详细地址"><span
+                                                        name="sendersmalladd"    type="text" placeholder="请选择所在街道以及详细地址"><span
                                                             class="spa  spa6"></span>
 
                                                     </div>
@@ -989,13 +989,13 @@
                                                     <div class="col-xs-5">
                                                         <label class="control-label required" for="">姓名</label>
                                                         <input class="senderName form-control input_red input receiverName"
-                                                            type="text" placeholder="请填写联系人姓名"><span
+                                                        name="receivername"    type="text" placeholder="请填写联系人姓名"><span
                                                             class="spa  spa1"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
                                                         <label for="" class="control-label">公司名称</label>
                                                         <input class="company form-control input_red input receiverCompany" type="text"
-                                                            placeholder="请填写公司名称"><span class="spa  spa4"></span>
+                                                        name="receivercompany"    placeholder="请填写公司名称"><span class="spa  spa4"></span>
                                                     </div>
 
                                                 </div>
@@ -1004,13 +1004,13 @@
                                                     <div class="col-xs-5">
                                                         <label class="control-label " for="">手机号码</label>
                                                         <input class="telephoneNumber input_red form-control input receiverTel"
-                                                            type="text" placeholder="请填写手机号码"><span
+                                                         name="rececivertel"   type="text" placeholder="请填写手机号码"><span
                                                             class="spa  spa2"></span>
                                                     </div>
                                                     <div class="col-xs-5 col-xs-offset-2">
                                                         <label for="" class="control-label">固话</label>
                                                         <input class="lineTelephone  input_red form-control input receiverLine"
-                                                            type="text" placeholder="请填写固话号码"><span
+                                                        name="receiverline"    type="text" placeholder="请填写固话号码"><span
                                                             class="spa  spa5"></span>
                                                     </div>
 
@@ -1020,7 +1020,7 @@
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">省市区</label>
                                                         <input class="bigAddress input_red form-control input receiverBigAdd"
-                                                            type="text" placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区"><span
+                                                        name="receiverbigadd"    type="text" placeholder="请选择所在地区,例如:湖南省-长沙市-岳麓区"><span
                                                             class="spa  spa3"></span>
 
                                                     </div>
@@ -1032,7 +1032,7 @@
                                                     <div class="col-xs-10">
                                                         <label class="control-label required" for="">详细地址</label>
                                                         <input class="smallAddress input_red form-control input receiverSmallAdd"
-                                                            type="text" placeholder="请选择所在街道以及详细地址"><span
+                                                         name="receiversmalladd"   type="text" placeholder="请选择所在街道以及详细地址"><span
                                                             class="spa  spa6"></span>
 
                                                     </div>

@@ -72,7 +72,7 @@
 
 .form-group label {
     float      : left;
-    width      : 36%;
+    width      : 41%;
     padding-top: 7px;
     text-align : right;
 }
@@ -216,4 +216,10 @@ span.comboTreeItemTitle {
      font-size: 24px;
      font-weight: 700;
      margin: 10px 0;
+}
+
+.function  .row-content .submit {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
 }
