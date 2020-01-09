@@ -171,7 +171,8 @@ window.addEventListener('load',function(){
     var content_banner = document.querySelector('.content_banner_tit');
     var content_lis = content_banner.querySelectorAll('li');
     var content_banner_lis = document.querySelectorAll('.content_banner_lis');
-    var content_a = content_lis.children
+    var content_a = content_lis.children;
+    var flagx = true;
     for(var i = 0; i < content_lis.length; i++){
         content_lis[i].setAttribute('index',i);
         content_lis[i].addEventListener('click',function(){
@@ -185,105 +186,161 @@ window.addEventListener('load',function(){
                 content_banner_lis[i].style.display = 'none';
             }
             content_banner_lis[index].style.display = 'block'
+            console.log(index);
+            
+        })
+        content_lis[0].addEventListener('click',function(){
+            // let contentImg = document.querySelector('.content_img');
+            // contentImg.remove()
+            auto(box_content)
+        })
+        content_lis[1].addEventListener('click',function(){
+            // let contentImg = document.querySelector('.content_img');
+            // contentImg.remove();
+            auto(box_contents)
+            
         })
     }
-    // 业务介绍tab栏切换结束
+    // 业务介绍tab栏切换结束    
 
 
     // 业务介绍轮播图开始
-    // var box_content = document.querySelector('.box_content');
-    // auto(box_content);
-    // function auto(box){
-        var contentWidth = document.querySelector('.content_bannerWidth');
-        var contentWidt = contentWidth.offsetWidth;  
-        var contentImg = document.querySelector('.content_img');
-        var contentSplot = document.querySelector('.content_banner_splot'); 
-        var contentRight = document.querySelector('.content_left');
-        for( var i = 0; i < contentImg.children.length; i++){
-            //创建节点
-            var splotLiss =  document.createElement('li');
-            //创建自定义属性
-            splotLiss.setAttribute('data-indexs',i);
-            // console.log(splotLis);
-            //获取节点
-            contentSplot.appendChild(splotLiss);
-            splotLiss.addEventListener('click',function(){
-                for(var i = 0; i < contentSplot.children.length; i++){
-                    contentSplot.children[i].className = '';
-                }
-                this.className = 'banner_splot_curr';
-                //切换小圆点的时候，图片自动切换
-                var dataIndexs = this.getAttribute('data-indexs');
-                // console.log(dataIndex);               
-                nums = dataIndexs;  
-                circles = dataIndexs;           
-                animate(contentImg, -dataIndexs * contentWidt);
-                 
-                           
-            });
-            contentSplot.style.marginLeft = -contentSplot.offsetWidth/2 + 'px'; 
+    var box_content = document.querySelector('.box_content');
+    var box_contents = document.querySelector('.box_contents');
+    auto(box_content);
+    // auto(box_contents);
+    
+// if(flagx){
+    // console.log(flagx);
+    // flagx = false;
+    function auto(box){
+        var flagx = true;
+        var contentWidth = box.children[0];
+           console.log(contentWidth);
+           
+       // var contentWidth = document.querySelector('.content_bannerWidth');
+       var contentWidt = contentWidth.offsetWidth;  
+       console.log(contentWidt);
+          console.log(box);
+          
+       var contentImg = box.querySelector('.content_img');
+       var contentSplot = box.querySelector('.content_banner_splot'); 
+       var contentRight = box.querySelector('.content_left');
+    //    var contentImg = document.querySelector('.content_img');
+    //    var contentSplot = document.querySelector('.content_banner_splot'); 
+    //    var contentRight = document.querySelector('.content_left');
+       for( var i = 0; i < contentImg.children.length; i++){
+           //创建节点
+        //    console.log(i);
+           
+        //    console.log(contentImg.children);
+           console.log(contentSplot);
+           
+        //    if(contentSplot.children.length == 0){
+        //         var splotLiss =  document.createElement('li');
+        //         //创建自定义属性
+        //         splotLiss.setAttribute('data-indexs',i);
+        //         // console.log(splotLis);
+        //         //获取节点
+        //          contentSplot.appendChild(splotLiss);
+        //    } else if(contentSplot.children.length >= 2) {
+        //     contentSplot.children.remove(contentSplot.children.length-2);
+        //    }
+          
+                 var splotLiss =  document.createElement('li');
+                //创建自定义属性
+                splotLiss.setAttribute('data-indexs',i);
+                // console.log(splotLis);
+                //获取节点
+                 contentSplot.appendChild(splotLiss);
+    
+        
+           splotLiss.addEventListener('click',function(){
+               console.log(1);
+               
+               for(var i = 0; i < contentSplot.children.length; i++){
+                   contentSplot.children[i].className = '';
+               }
+               this.className = 'banner_splot_curr';
+               //切换小圆点的时候，图片自动切换
+               var dataIndexs = this.getAttribute('data-indexs');
+               // console.log(dataIndex);               
+               nums = dataIndexs;  
+               circles = dataIndexs;    
+               console.log();
+                      
+               animate(contentImg, -dataIndexs * contentWidt);
+                
+                          
+           });
+           contentSplot.style.marginLeft = -contentSplot.offsetWidth/2 + 'px'; 
+       }
+        //第一个小圆圈的颜色
+        contentSplot.children[0].className = 'banner_splot_curr';
+        //克隆元素
+        if(flag){
+            var firsts = contentImg.children[0].cloneNode(true);
+            contentImg.appendChild(firsts);
+            flagx = false;
         }
-         //第一个小圆圈的颜色
-         contentSplot.children[0].className = 'banner_splot_curr';
-         //克隆元素
-         var firsts = contentImg.children[0].cloneNode(true);
-         contentImg.appendChild(firsts);
-         //小圆点函数封装
-         function changCircles(){
-             for( var i = 0; i < contentSplot.children.length; i++){
-                contentSplot.children[i].className = '';
-             }
-            contentSplot.children[circles].className = 'banner_splot_curr';
-         }
-        // 当鼠标移入轮播图中的时候，自动播放取消
-        contentWidth.addEventListener('mouseover',function(){
-            clearInterval(timers);
-            timers = null;
-         });
-        // 当鼠标移入轮播图中的时候，自动播放取消
-        contentWidth.addEventListener('mouseleave',function(){
-            //定时器
-            timers = setInterval(function(){
-                contentRight.click();     
-          },5000); 
-         })
-        // // 右侧
-        var nums = 0; //图片
-        var circles = 0;//小圆点
-        var flags = true; // 节阀流
-        contentRight.addEventListener('click',function(){
-            if(flags){
-                flags = false;
-                if(nums == contentImg.children.length - 1){
-                    contentImg.style.left = 0;
-                    nums = 0;
-                }
-                nums++;
-                animate(contentImg, -nums * contentWidt,function(){
-                    flags = true;
-                });
-                    
-                circles++;
-                if(circles == contentSplot.children.length ){
-                    circles = 0;
-                }
-                changCircles();
-            }   
-        });
-        //定时器
-        var timers = setInterval(function(){
-            contentRight.click();
-            
-        },5000); 
+       
+        //小圆点函数封装
+        function changCircles(){
+            for( var i = 0; i < contentSplot.children.length; i++){
+               contentSplot.children[i].className = '';
+            }
+           contentSplot.children[circles].className = 'banner_splot_curr';
+        }
+       // 当鼠标移入轮播图中的时候，自动播放取消
+       // contentWidth.addEventListener('mouseover',function(){
+       //     clearInterval(timers);
+       //     timers = null;
+       //  });
+       // // 当鼠标移入轮播图中的时候，自动播放取消
+       // contentWidth.addEventListener('mouseleave',function(){
+       //     //定时器
+       //     timers = setInterval(function(){
+       //         contentRight.click();     
+       //   },5000); 
+       //  })
+       // // 右侧
+       var nums = 0; //图片
+       var circles = 0;//小圆点
+       var flags = true; // 节阀流
+       contentRight.addEventListener('click',function(){
+           if(flags){
+               flags = false;
+               if(nums == contentImg.children.length - 1){
+                   contentImg.style.left = 0;
+                   nums = 0;
+               }
+               nums++;
+               animate(contentImg, -nums * contentWidt,function(){
+                   flags = true;
+               });
+                   
+               circles++;
+               if(circles == contentSplot.children.length ){
+                   circles = 0;
+               }
+               changCircles();
+           }   
+       });
+       //定时器
+       var timers = setInterval(function(){
+           contentRight.click();
+           
+       },5000); 
 
-
-        var contentWidths = document.querySelector('.content_bannerWidths');
-        console.log(contentWidths.offsetWidth);
+   }
+// }
+        // var contentWidths = document.querySelector('.content_bannerWidths');
+        // console.log(contentWidths.offsetWidth);
         
-        var contentImgs = document.querySelector('.content_img2');
+        // var contentImgs = document.querySelector('.content_img2');
         
-        var contentSplots = document.querySelector('.content_banner_splots'); 
-        var contentRights = document.querySelector('.content_left2');
+        // var contentSplots = document.querySelector('.content_banner_splots'); 
+        // var contentRights = document.querySelector('.content_left2');
        
     // 业务介绍轮播图结束
 
