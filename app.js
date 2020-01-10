@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const bodyParser=require('body-parser')
+const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 const dateFormat=require('dateformat')
 const template=require('art-template')
@@ -11,9 +11,9 @@ app.use(session({
     secret: 'asdasfgsqag'
 }))
 mongoose.connect('mongodb://localhost/shunfeng', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    })
     .then(() => console.log('数据库连接成功'))
     .catch((err) => console.log(err, '数据库连接失败'))
 
@@ -22,7 +22,9 @@ app.use(express.static(__dirname));
 template.defaults.imports.dateFormat=dateFormat;
 
 //收集post请求参数
-app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.urlencoded({
+    extended: false
+}))
 
 app.use(bodyParser.json())
 
@@ -43,11 +45,11 @@ app.use("/shunfeng",guoji);
 
 
 const sf = require('./route/index')
-app.use(sf);
+app.use('/shunfeng', sf);
 app.set('views', path.join(__dirname, 'views', ));
 app.engine('art', require('express-art-template'));
 app.set('view engine', 'art')
 
 
-app.listen(80);
+app.listen(3000);
 console.log('创建服务器成功')

@@ -29,6 +29,7 @@ background-color: #f1f1f1;
     border-bottom: 2px solid #dc1e23;
 }
 .tab_container {
+    position: relative;
     width: 1280px;
     margin: 90px auto 75px;
 }
@@ -51,4 +52,19 @@ background-color: #f1f1f1;
 }
 .red_1 {
     color:red;
+}
+/* 返回顶部 */
+.tip {
+    display: none;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    background: url(../images/to-top-red.png) no-repeat;
+    bottom: 0;
+    right: 110px;
+    cursor: pointer;
+    z-index: 99;
+}
+.tip:hover {
+    background: url(../images/to-top-black.png) no-repeat;
 }

@@ -1,0 +1,57 @@
+.case_i {
+    background-color: #f1f1f1;
+    margin-bottom: 90px;
+}
+
+.case {
+    width: 512px;
+    height: 90px;
+    margin: 0 auto;
+    background: url(../images/a_line.png) no-repeat center center;
+}
+.case_1 {
+    float: left;
+    width: 256px;
+    height: 90px;
+    text-align: center;
+}
+.case_2 {
+    float: left;
+    width: 256px;
+    height: 90px;
+    text-align: center;
+}
+.case p {
+    font-size: 18px;
+    color: #333;
+    line-height: 90px;
+}
+.case ul {
+    position: absolute;
+    width: 256px;
+    z-index: 99;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    display: none;
+}
+.case li a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.case li a {
+    display: block;
+}
+.case li:hover {
+    background-color: #dc1e23;
+    color: #fff;
+}
+.case li:hover a {
+    color: #fff;
+}
+.a1:hover a{
+    color: #dc1e23;
+    border-bottom: 2px solid #dc1e23;
+}
