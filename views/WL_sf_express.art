@@ -28,8 +28,7 @@
                     </li>
                     <li>
                         <a href="javascript:;">物流</a>
-                        <ul class="nav_two nav_two_bg clearfix"
-                            style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
+                        <ul class="nav_two nav_two_bg clearfix" style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
                             <li class="nav_two_wul">
                                 <ul class="wuliu_serv clearfix">
                                     <!-- 快递服务 -->
@@ -109,7 +108,7 @@
                                             <li><a href="javascript:;">顺丰国际直邮认证服务</a></li>
                                         </ul>
                                     </li>
-
+      
                                     <!-- 冷运 -->
                                     <li class="wuliu_kuaidi">
                                         <h2><i class="iconfont icon-truck"></i>冷运服务</h2>
@@ -144,8 +143,8 @@
                                             <li>
                                                 <h3>仓储服务</h3>
                                             </li>
-                                            <li><a href="javascript:;">标准化仓储管理</a></li>
-                                            <li><a href="javascript:;">仓储核心能力</a></li>
+                                            <li><a href=".../page/FH-warehouse_service.html">标准化仓储管理</a></li>
+                                            <li><a href=".../page/FH-Storage.html">仓储核心能力</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -219,9 +218,12 @@
                 <ul class="nav_r clearfix">
                     <!-- 原先类名为login,由于类名冲突已经更名为celerity_login -->
                     <li class="celerity_login">
-                        <span class="icon member"></span>
+                        <span class="icon member"></span> {{if tel}}
+                        <a href="javascript:;">{{tel+'用户欢迎您'}}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                        <a href="/shunfeng/WL_sf_express_date" class="date">退出登录</a> {{else}}
                         <a href="javascript:;" class="Thelogin_button">快速登录/注册</a>
                         <!-- <span class="icon country"></span> -->
+                        {{/if}}
                     </li>
                     <li></li>
                     <li></li>
@@ -241,8 +243,8 @@
                     </li>
                 </ul>
                 <span class="close">
-                    <a href="javascrpit:;">×</a>
-                </span>
+              <a href="javascrpit:;">×</a>
+          </span>
             </div>
             <div class="login_content">
                 <p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
@@ -259,8 +261,8 @@
                 <p class="deal">登录即代表您已经同意<a href="javascript:;">《顺丰速运隐私政策》</a></p>
             </div>
             <div class="login_denglu">
-                <form action="" id="reset" autocomplete="off" class="reset">
-                    <div class="login_denglu_box ">
+                <form action="/shunfeng/WL_sf_express_login" id="reset" autocomplete="off">
+                    <div class="login_denglu_box">
                         <p class="login_denglu_p">登录后即可免验证快速下单与查件</p>
                         <div class="login_tel">
                             <div class="selected">

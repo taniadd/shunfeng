@@ -313,19 +313,19 @@
 				</p>
 				<ul class='TLlist'>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTsuccess.html">全部行业</a>
+						<a href="/shunfeng/LTsuccess">全部行业</a>
 					</li>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTelectronic.html">3c电子行业</a>
+						<a href="/shunfeng/LTelectronic">3c电子行业</a>
 					</li>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTmedical.html">医疗行业</a>
+						<a href="/shunfeng/LTmedical">医疗行业</a>
 					</li>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTfresh.html">生鲜行业</a>
+						<a href="/shunfeng/LTfresh">生鲜行业</a>
 					</li>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTconsumer.html">快消行业</a>
+						<a href="/shunfeng/LTconsumer">快消行业</a>
 					</li>
 				</ul>
 			</div>
@@ -341,12 +341,12 @@
                             <div class="LTmo">
                                 <div class="LTzi">手机新品首发，顺丰为您保驾护航</div>
                                 <p>每年的手机新品首发都是粉丝们的狂欢，但新品首发对物流配送要求非常严格，顺丰作为某国际领先手机品牌的承运商，如何快速将新品快速、准确、安全的寄递到消费者手中...</p>
-                                <a class="LTcircle" href="file:///D:/shunfeng/page/LTdetails6.html">
+                                <a class="LTcircle" href="/shunfeng/LTdetails6">
                                     <!-- <img src="../images/white-t-img-5.png" alt=""> -->
                                     <img class="telephone" src="../images/red-t-img-1.png" alt="">
                                     <p class="LTelectronic">3c电子行业</p>
                                 </a>
-                                <a class="LTbox" href="file:///D:/shunfeng/page/LTdetails6.html">
+                                <a class="LTbox" href="/shunfeng/LTdetails6">
                                     查看详情
                                     <span></span>
                                 </a>

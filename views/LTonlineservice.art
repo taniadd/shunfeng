@@ -75,7 +75,7 @@
                         </div>
                         <textarea class="inp" cols="50" rows="10" placeholder="请输入您的问题..."></textarea>
                         <div class="LTend">
-                            <p>在线人工服务时间 08:30 - 10:00</p>
+                            <p class="LTtime">在线人工服务时间 08:30 - 10:00</p>
                             <button class="LTbtn1">结束会话</button>
                             <button class="LTbtn2">发送</button>
                         </div>
@@ -90,7 +90,7 @@
                             <li><img src="../images/z79.jpg" alt=""></li>
                         </ul>
                         <div class="LTmc">
-                            <div class="LTkuai1"></div>
+                            <div class="LTkuai1 LTkuai3"></div>
                             <div class="LTkuai2"></div>
                         </div>
                     </div>
