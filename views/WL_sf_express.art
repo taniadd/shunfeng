@@ -144,7 +144,7 @@
                                             <li>
                                                 <h3>仓储服务</h3>
                                             </li>
-                                            <li><a href="/ccfw">标准化仓储管理</a></li>
+                                            <li><a href="/ccgl">标准化仓储管理</a></li>
                                             <li><a href="/hxnl">仓储核心能力</a></li>
                                         </ul>
                                     </li>
@@ -152,11 +152,11 @@
                             </li>
                             <li class="nav_two_r">
                                 <ul class="clearfix">
-                                    <li><button type="button">我要寄件</button></li>
-                                    <li><a href="javascript:;">收寄范围查询</a></li>
-                                    <li><a href="javascript:;">收寄标准查询</a></li>
-                                    <li><a href="javascript:;">运费时效查询</a></li>
-                                    <li><a href="javascript:;">其他寄件方式</a></li>
+                                    <li><a href="/shunfeng/WL_quick"><button type="button">我要寄件</button></a></li>
+                                    <li><a href="/shunfeng/WL_sf_express_range">收寄范围查询</a></li>
+                                    <li><a href="/shunfeng/WL_sf_express_accept">收寄标准查询</a></li>
+                                    <li><a href="/shunfeng/WL_sf_express_price">运费时效查询</a></li>
+                                    <li><a href="/shunfeng/WL_sf_express">其他寄件方式</a></li>
                                     <li><button>合作咨询</button></li>
                                     <li><button>月结服务平台</button></li>
                                 </ul>
@@ -165,7 +165,7 @@
                     </li>
                     <li><a href="javascript:;">金融</a></li>
                     <li>
-                        <a href="/shunfeng/LTsuccess">成功案例</a>
+                        <a href="/shunfeng/LTsuccess  ">成功案例</a>
                         <ul class="nav_two">
                             <li><a href="/shunfeng/LTelectronic">3C电子行业</a></li>
                             <li><a href="/shunfeng/LTmedical">医疗行业</a></li>

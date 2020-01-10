@@ -9,7 +9,7 @@
     right:60px;
     display: none;
 }
-.current{
+.currenttop{
     position: absolute;
     top: -60px;
 }

@@ -4,20 +4,32 @@ $(function(){
      var headerTop = $(".header").height();
      var footerTop = $(".footer").offset().top;
 
-      $(window).scroll(function(){
-          if($(document).scrollTop() >= headerTop){
-            $(".LTding").fadeIn();
-               if($(document).scrollTop() >= footerTop-700){
-                  // $(".LTding").css("position","absolute").css("top","-60px");
-                  $(".LTding").addClass('current');
-            } else {
-               $(".LTding").removeClass('current');
-            }
-         } else {
-           // $(".LTding").fadeOut();
-             $(".LTding").fadeOut();
-         };
-      })
+     $(window).scroll(function(){
+      if($(document).scrollTop() >= headerTop){
+        $(".LTding").fadeIn();
+
+        //窗口可视高度
+        var nl = $(window).height();
+        console.log(nl);
+                                        
+           if($(document).scrollTop() >= $('.footer').offset().top-nl){
+              // $(".LTding").css("position","absolute").css("top","-60px");
+              $(".LTding").addClass('currenttop');
+        } else {
+           $(".LTding").removeClass('currenttop');
+        }
+     } else {
+       // $(".LTding").fadeOut();
+         $(".LTding").fadeOut();
+     };
+  })
+
+ $(".LTding").click(function(){
+ $("body,html").stop().animate({                            
+     scrollTop:0
+ });
+})
+
 
      $(".LTding").click(function(){
      $("body,html").stop().animate({                            

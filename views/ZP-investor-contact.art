@@ -50,25 +50,25 @@
             <!-- tab导航栏 -->
             <div class="tabs_nav_fa tabs_fixed">
                 <ul>
-                    <li><a href="./ZP-investor-govern.html">公司治理</a></li>
-                    <li><a href="./ZP-investor-notice.html">公司公告</a></li>
+                    <li><a href="/shunfeng/ZP-investor-govern">公司治理</a></li>
+                    <li><a href="/shunfeng/ZP-investor-notice">公司公告</a></li>
                     <li>
-                        <a href="./ZP-investor-report-finance.html">定期报告</a>
+                        <a href="/shunfeng/ZP-investor-report-finance">定期报告</a>
                         <div class="tabs_pull_down">
                             <ul>
-                                <li><a href="./ZP-investor-report-finance.html">财务信息</a></li>
-                                <li><a href="./ZP-investor-report-society.html">社会责任报告</a></li>
+                                <li><a href="/shunfeng/ZP-investor-report-finance">财务信息</a></li>
+                                <li><a href="/shunfeng/ZP-investor-report-society">社会责任报告</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="./ZP-investor-contact.html" class="tob_red">投资者联络</a></li>
+                    <li><a href="/shunfeng/ZP-investor-contact" class="tob_red">投资者联络</a></li>
                     <li>
-                        <a href="./ZP-investor-calendar-director.html" class="tabs_nav_fa_a">投资者关系日历
+                        <a href="/shunfeng/ZP-investor-calendar-director" class="tabs_nav_fa_a">投资者关系日历
                             <div class="tabs_pull_down">
                                 <ul>
-                                    <li><a href="./ZP-investor-calendar-director.html">董事会</a></li>
-                                    <li><a href="./ZP-investor-calendar-shareholder.html">股东会</a></li>
-                                    <li><a href="./ZP-investor-calendar-activity.html">投资者活动日</a></li>
+                                    <li><a href="/shunfeng/ZP-investor-calendar-director">董事会</a></li>
+                                    <li><a href="/shunfeng/ZP-investor-calendar-shareholder">股东会</a></li>
+                                    <li><a href="/shunfeng/ZP-investor-calendar-activity">投资者活动日</a></li>
                                 </ul>
                             </div>
                         </a>
