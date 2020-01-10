@@ -34,13 +34,27 @@
         <div class="banner">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img src="../images/ZP-newYear.jpg" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/ZP-anzhuochoujiang.jpg" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/ZP-banner6.jpg" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/ZP-banner1.jpg" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/ZP-banner2.jpg" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/ZP-banner3.jpg" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/ZP-banner5.jpg" alt=""></a></div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../images/ZP-newYear.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../images/ZP-anzhuochoujiang.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../images/ZP-banner6.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../images/ZP-banner1.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../images/ZP-banner2.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../images/ZP-banner3.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="../images/ZP-banner5.jpg" alt=""></a>
+                    </div>
                 </div>
                 <!-- 如果需要分页器 -->
                 <div class="swiper-pagination"></div>
@@ -71,10 +85,8 @@
                     </div>
                     <div class="box-desc">
                         专业维修
-                        <span>|</span>
-                        品质配件
-                        <span>|</span>
-                        1小时修好
+                        <span>|</span> 品质配件
+                        <span>|</span> 1小时修好
                     </div>
                 </div>
                 <div class="nav-box recycle">
@@ -84,10 +96,8 @@
                     </div>
                     <div class="box-desc">
                         高价回收
-                        <span>|</span>
-                        极速付款
-                        <span>|</span>
-                        安全可靠
+                        <span>|</span> 极速付款
+                        <span>|</span> 安全可靠
                     </div>
                 </div>
                 <div class="nav-box supply">
@@ -97,10 +107,8 @@
                     </div>
                     <div class="box-desc">
                         品牌齐全
-                        <span>|</span>
-                        货源充足
-                        <span>|</span>
-                        质量安全有保障
+                        <span>|</span> 货源充足
+                        <span>|</span> 质量安全有保障
                     </div>
                 </div>
             </div>
@@ -300,35 +308,67 @@
     $(() => {
         // 第一张图
         $('.div-img-1').on('mouseover', () => {
-            $('.div-img-1').css({ 'background': 'url("../images/ZP-advantage_1.jpg")' })
-            $('.div-img-1').css({ 'background-size': 'cover' })
-        }).on('mouseout', () => {
-            $('.div-img-1').css({ 'background': 'url("../images/ZP-tro_1.png")' })
-            $('.div-img-1').css({ 'background-size': 'cover' })
-        })
-        // 第二张图
+                $('.div-img-1').css({
+                    'background': 'url("../images/ZP-advantage_1.jpg")'
+                })
+                $('.div-img-1').css({
+                    'background-size': 'cover'
+                })
+            }).on('mouseout', () => {
+                $('.div-img-1').css({
+                    'background': 'url("../images/ZP-tro_1.png")'
+                })
+                $('.div-img-1').css({
+                    'background-size': 'cover'
+                })
+            })
+            // 第二张图
         $('.div-img-2').on('mouseover', () => {
-            $('.div-img-2').css({ 'background': 'url("../images/ZP-advantage_2.jpg")' })
-            $('.div-img-2').css({ 'background-size': 'cover' })
-        }).on('mouseout', () => {
-            $('.div-img-2').css({ 'background': 'url("../images/ZP-tro_2.png")' })
-            $('.div-img-2').css({ 'background-size': 'cover' })
-        })
-        // 第三张图
+                $('.div-img-2').css({
+                    'background': 'url("../images/ZP-advantage_2.jpg")'
+                })
+                $('.div-img-2').css({
+                    'background-size': 'cover'
+                })
+            }).on('mouseout', () => {
+                $('.div-img-2').css({
+                    'background': 'url("../images/ZP-tro_2.png")'
+                })
+                $('.div-img-2').css({
+                    'background-size': 'cover'
+                })
+            })
+            // 第三张图
         $('.div-img-3').on('mouseover', () => {
-            $('.div-img-3').css({ 'background': 'url("../images/ZP-advantage_3.jpg")' })
-            $('.div-img-3').css({ 'background-size': 'cover' })
-        }).on('mouseout', () => {
-            $('.div-img-3').css({ 'background': 'url("../images/ZP-tro_3.png")' })
-            $('.div-img-3').css({ 'background-size': 'cover' })
-        })
-        // 第四张图
+                $('.div-img-3').css({
+                    'background': 'url("../images/ZP-advantage_3.jpg")'
+                })
+                $('.div-img-3').css({
+                    'background-size': 'cover'
+                })
+            }).on('mouseout', () => {
+                $('.div-img-3').css({
+                    'background': 'url("../images/ZP-tro_3.png")'
+                })
+                $('.div-img-3').css({
+                    'background-size': 'cover'
+                })
+            })
+            // 第四张图
         $('.div-img-4').on('mouseover', () => {
-            $('.div-img-4').css({ 'background': 'url("../images/ZP-advantage_4.jpg")' })
-            $('.div-img-4').css({ 'background-size': 'cover' })
+            $('.div-img-4').css({
+                'background': 'url("../images/ZP-advantage_4.jpg")'
+            })
+            $('.div-img-4').css({
+                'background-size': 'cover'
+            })
         }).on('mouseout', () => {
-            $('.div-img-4').css({ 'background': 'url("../images/ZP-tro_4.png")' })
-            $('.div-img-4').css({ 'background-size': 'cover' })
+            $('.div-img-4').css({
+                'background': 'url("../images/ZP-tro_4.png")'
+            })
+            $('.div-img-4').css({
+                'background-size': 'cover'
+            })
         })
 
         // 第二部分图片转换

@@ -86,12 +86,7 @@ $(() => {
     let fose = true;
     $('.login_yan button').on('click', function(event) { //点击获取验证码
         event.stopPropagation();
-        let pj = '';
-        for (var i = 0; i < 4; i++) {
-            pj += Math.ceil(Math.random() * 9);
-        }
-        rand.push(parseInt(pj));
-        console.log(rand);
+
 
         if (jinzhi > 0) {
             $(this).css('cursor', 'not-allowed')
@@ -102,6 +97,12 @@ $(() => {
             flag = false;
             jinzhi--
             if (fose) {
+                let pj = '';
+                for (var i = 0; i < 4; i++) {
+                    pj += Math.ceil(Math.random() * 9);
+                }
+                rand.push(parseInt(pj));
+                console.log(rand);
                 dsq = setInterval(function() {
                         sum--
                         $('.login_yan button').html(sum)
@@ -139,8 +140,6 @@ $(() => {
                 flag = true;
             }
         }))
-        console.log(flag);
-        console.log(rand);
 
         event.stopPropagation();
         if ($('.login_input_yan').val() == rand[rand.length - 1]) {

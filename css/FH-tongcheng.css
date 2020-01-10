@@ -356,6 +356,10 @@ body {
     width: 4520px;
     position: relative;
     transition: all 1s;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
 }
 
 .slide {

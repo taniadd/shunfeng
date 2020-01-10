@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express();
-const bodyParser=require('body-parser')
+const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
-const dateFormat=require('dateformat')
-const template=require('art-template')
+const dateFormat = require('dateformat')
+const template = require('art-template')
 
 const path = require('path')
 const session = require('express-session')
@@ -11,18 +11,18 @@ app.use(session({
     secret: 'asdasfgsqag'
 }))
 mongoose.connect('mongodb://localhost/shunfeng', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    })
     .then(() => console.log('数据库连接成功'))
     .catch((err) => console.log(err, '数据库连接失败'))
 
 app.use(express.static(__dirname));
 
-template.defaults.imports.dateFormat=dateFormat;
+template.defaults.imports.dateFormat = dateFormat;
 
 //收集post请求参数
-app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(bodyParser.json())
 
@@ -36,19 +36,19 @@ app.set('view engine', 'art');
 app.engine('art', require('express-art-template'));
 
 // 王磊路由
-const shunfeng=require('./route/WL.js')
-app.use("/shunfeng",shunfeng);
+const shunfeng = require('./route/WL.js')
+app.use("/shunfeng", shunfeng);
 // 尹龙腾路由
-const lt=require('./route/LT.js')
-app.use("/shunfeng",lt);
+const lt = require('./route/LT.js')
+app.use("/shunfeng", lt);
 // 李盖路由
 
-const guoji=require('./route/LG.js')
-app.use("/shunfeng",guoji);
+const guoji = require('./route/LG.js')
+app.use("/shunfeng", guoji);
 
 // 徐珂周鹏李雄伟路由
-const page=require('./route/page.js')
-app.use("/shunfeng",page);
+const page = require('./route/page.js')
+app.use("/shunfeng", page);
 
 const sf = require('./route/index')
 app.use(sf);
