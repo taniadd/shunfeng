@@ -123,8 +123,8 @@
                                             <li>
                                                 <h3>仓储服务</h3>
                                             </li>
-                                            <li><a href=".../page/FH-warehouse_service.html">标准化仓储管理</a></li>
-                                            <li><a href=".../page/FH-Storage.html">仓储核心能力</a></li>
+                                            <li><a href="/ccfw">标准化仓储管理</a></li>
+                                            <li><a href="/hxnl">仓储核心能力</a></li>
                                         </ul>
                                     </li>
                                 </ul>
