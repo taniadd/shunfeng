@@ -32,7 +32,7 @@ app.set('view engine', 'art');
 // 当渲染后缀为art的模板时 所使用的模板引擎是什么
 app.engine('art', require('express-art-template'));
 const shunfeng=require('./route/WL.js')
-
+app.use("/shunfeng",shunfeng);
 
 const guoji=require('./route/LG.js')
 app.use("/shunfeng",guoji);
@@ -41,7 +41,7 @@ app.use("/shunfeng",guoji);
 
 
 
-app.use("/shunfeng",shunfeng);
+
 
 const sf = require('./route/index')
 app.use(sf);
