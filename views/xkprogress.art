@@ -32,12 +32,12 @@
         <!-- 主体部分开始 -->
         <div class="tabs_nava_fa">
             <ul>
-                <li><a href="xkwe.html">公司介绍</a></li>
-                <li><a href="xkprogress.html" class="a_2">发展历程</a></li>
-                <li><a href="xkidea.html">品牌理念</a></li>
-                <li><a href="xkculture.html">企业文化</a></li>
-                <li><a href="xkhonor.html">企业荣誉</a></li>
-                <li><a href="xkcontinue.html">可持续发展</a></li>
+                <li><a href="/shunfeng/xkwe">公司介绍</a></li>
+                <li><a href="/shunfeng/xkprogress" class="a_2">发展历程</a></li>
+                <li><a href="/shunfeng/xkidea">品牌理念</a></li>
+                <li><a href="/shunfeng/xkculture">企业文化</a></li>
+                <li><a href="/shunfeng/xkhonor">企业荣誉</a></li>
+                <li><a href="/shunfeng/xkcontinue">可持续发展</a></li>
             </ul>
         </div>
         <div class="tab_container">
