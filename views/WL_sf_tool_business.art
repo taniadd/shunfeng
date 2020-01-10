@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>无着件公示</title>
+    <title>速打</title>
     <link type="text/css" rel="stylesheet" href="../css/base.css">
     <link type="text/css" rel="stylesheet" href="../css/common.css">
     <link type="text/css" rel="stylesheet" href="../css/login.css">
@@ -17,31 +17,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/wl_sf_express.js"></script>
-    <style>
-    .lost-package section a {
-    height: 46px;
-    margin-top: 16px;
-    border-radius: 4px;
-    border: 1px solid #f1f1f1;
-    display: flex;
-    padding: 0 20px;
-    align-items: center;
-    justify-content: space-between;
-    transition: all .2s linear;
-    -webkit-transition: all .2s linear;
-}
-.lost-package section a:hover * {
-    color: #dc1e32;
-}
-.lost-package section a:hover {
-    box-shadow: 5px 5px 5px 5px #888888;
-}
-.lost-package section .time {
-    color: #ccc;
-}
-    </style>
 </head>
-
 
 <body>
     <div class="mwrap">
@@ -148,57 +124,25 @@
                     <div class="main-content">
                         <div class="function">
                             <div class="main-content-row-1">
-
+                                <div class="row-title">
+                                   速打
+                                </div>
                                 <div class="row-content">
-                                    <div class="lost-package">
-                                        <h2>无着件公示</h2>
-                                        <p style="color: #ccc;">
-                                            根据国家邮政局《无法投递又无法退回快件管理规定》第十二条规定，快递企业应当建立无法投递又无法退回快件的认领信息平台，将规定第十一条第二款开拆快件所登记的相关信息进行公示，公示时间不少于30日。以下为顺丰速运有限公司无法投遇文无法退回快件公示：
-                                        </p>
-                                        <section>
-                                            <a title="20190827001中山区无着落件公示明细" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/2019082701.xlsx">
-                                                <span>20190827001中山区无着落件公示明细</span>
-                                                <span class="time">2019-08-28</span>
-                                            </a>
-                                            <a title="20191224-3中山区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191224-3.xlsx">
-                                                <span>20191224-3中山区无着快件处理公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="20191224-2中山区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191224-2.xlsx">
-                                                <span>20191224-2中山区无着快件处理公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="20191224-1中山区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191224-1.xlsx">
-                                                <span>20191224-1中山区无着快件处理公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="广州区无着快件公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191218.xlsx">
-                                                <span>广州区无着快件公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="北京区无着快件公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191217-1.xlsx">
-                                                <span>北京区无着快件公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="山西区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191217.xlsx">
-                                                <span>山西区无着快件处理公示</span>
-                                                <span class="time">2019-12-17</span>
-                                            </a>
-                                            <a title="鲁东区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191209.xlsx">
-                                                <span>鲁东区无着快件处理公示</span>
-                                                <span class="time">2019-12-09</span>
-                                            </a>
-                                            <a title="鲁东区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191202.xlsx">
-                                                <span>鲁东区无着快件处理公示</span>
-                                                <span class="time">2019-12-02</span>
-                                            </a>
-                                            <a title="20191125冀州区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191125.xlsx">
-                                                <span>20191125冀州区无着快件处理公示</span>
-                                                <span class="time">2019-11-25</span>
-                                            </a>
-                                        </section>
-                                    </div>
+                                    <h3 class="red">服务介绍</h3>
+                                    <p>“速打”是针对线下商家需求开发的一款打单软件，功能精炼、操作简便。产品支持智能录入、批量导入、自定义模板、电子运单打印、路由查询、短信发送等，完美支持商家的订单及运单管理业务，中小微企业信息化好帮手。</p>
+                                    <h3 class="red">功能说明</h3>
+                                    <p>1、新建订单：单条建单，批量建单，表格导入，自定义表格导入
+                                    </p>
+                                    <p>2、批量打印：顺丰丰密电子面单、顺丰丰密A4电子面单顺丰港澳台跨境电子面单等</p>
+                                    <p>3、短信管理：通知短信发送、营销短信发送、短信签名维护、短信模板维护、短信充值、短信发送记录</p>
+                                    <p>4、安装打印机：一键安装打印机驱动，省心省力</p>
+                                    <p>5、其他功能：订单管理、路由查询、地址管理、子账号管理、月结卡号管理、商品管理、通讯录管理等</p>
+                                    <h3 class="red">使用步骤</h3>
+                                    <p>1、<a href="https://www.sf-express.com/cn/sc/download/SDClient-Setup-wd.exe" class="red" >点击下载速打客户端安装包</a>（网点） <a class="red" href="https://www.sf-express.com/cn/sc/download/SDClient-Setup-kh.exe">   点击下载速打客户端安装包</a>  （客户）</p>
 
+                                    <p>2、注册帐号并登录</p>
+                                    <p>客服QQ 800157966（9:00-21:00全年无休）</p>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>

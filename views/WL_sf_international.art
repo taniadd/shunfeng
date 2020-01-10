@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>无着件公示</title>
+    <title>国际件下单工具</title>
     <link type="text/css" rel="stylesheet" href="../css/base.css">
     <link type="text/css" rel="stylesheet" href="../css/common.css">
     <link type="text/css" rel="stylesheet" href="../css/login.css">
@@ -17,31 +17,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/wl_sf_express.js"></script>
-    <style>
-    .lost-package section a {
-    height: 46px;
-    margin-top: 16px;
-    border-radius: 4px;
-    border: 1px solid #f1f1f1;
-    display: flex;
-    padding: 0 20px;
-    align-items: center;
-    justify-content: space-between;
-    transition: all .2s linear;
-    -webkit-transition: all .2s linear;
-}
-.lost-package section a:hover * {
-    color: #dc1e32;
-}
-.lost-package section a:hover {
-    box-shadow: 5px 5px 5px 5px #888888;
-}
-.lost-package section .time {
-    color: #ccc;
-}
-    </style>
 </head>
-
 
 <body>
     <div class="mwrap">
@@ -51,8 +27,8 @@
         <!-- 头部结束 -->
 
         <!-- 内容区开始 -->
-         <!--二级导航栏-->
-         <nav class="sfexpress_header_nav clearfix">
+        <!--二级导航栏-->
+        <nav class="sfexpress_header_nav clearfix">
             <!-- 我要寄件的链接 -->
             <a href="/shunfeng/WL_quick">我要寄件</a>
             <!--运单追踪的链接-->
@@ -67,8 +43,8 @@
                     我们期待为你带来更加优质的线上服务体验
                 </p>
             </div>
-             <!-- 三级导航栏 -->
-             <div class="service-nav">
+            <!-- 三级导航栏 -->
+            <div class="service-nav">
                 <div class="nav-bg">
                     <ul class="navs">
                         <li>
@@ -148,58 +124,27 @@
                     <div class="main-content">
                         <div class="function">
                             <div class="main-content-row-1">
-
-                                <div class="row-content">
-                                    <div class="lost-package">
-                                        <h2>无着件公示</h2>
-                                        <p style="color: #ccc;">
-                                            根据国家邮政局《无法投递又无法退回快件管理规定》第十二条规定，快递企业应当建立无法投递又无法退回快件的认领信息平台，将规定第十一条第二款开拆快件所登记的相关信息进行公示，公示时间不少于30日。以下为顺丰速运有限公司无法投遇文无法退回快件公示：
-                                        </p>
-                                        <section>
-                                            <a title="20190827001中山区无着落件公示明细" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/2019082701.xlsx">
-                                                <span>20190827001中山区无着落件公示明细</span>
-                                                <span class="time">2019-08-28</span>
-                                            </a>
-                                            <a title="20191224-3中山区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191224-3.xlsx">
-                                                <span>20191224-3中山区无着快件处理公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="20191224-2中山区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191224-2.xlsx">
-                                                <span>20191224-2中山区无着快件处理公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="20191224-1中山区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191224-1.xlsx">
-                                                <span>20191224-1中山区无着快件处理公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="广州区无着快件公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191218.xlsx">
-                                                <span>广州区无着快件公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="北京区无着快件公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191217-1.xlsx">
-                                                <span>北京区无着快件公示</span>
-                                                <span class="time">2019-12-24</span>
-                                            </a>
-                                            <a title="山西区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191217.xlsx">
-                                                <span>山西区无着快件处理公示</span>
-                                                <span class="time">2019-12-17</span>
-                                            </a>
-                                            <a title="鲁东区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191209.xlsx">
-                                                <span>鲁东区无着快件处理公示</span>
-                                                <span class="time">2019-12-09</span>
-                                            </a>
-                                            <a title="鲁东区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191202.xlsx">
-                                                <span>鲁东区无着快件处理公示</span>
-                                                <span class="time">2019-12-02</span>
-                                            </a>
-                                            <a title="20191125冀州区无着快件处理公示" href="https://www.sf-express.com/cn/.content/function/lost/lost_file/20191125.xlsx">
-                                                <span>20191125冀州区无着快件处理公示</span>
-                                                <span class="time">2019-11-25</span>
-                                            </a>
-                                        </section>
-                                    </div>
-
+                                <div class="row-title">
+                                    国际件下单工具
                                 </div>
+                                <div class="row-content">
+                                    <h3 class="red">服务介绍</h3>
+                                    <p>国际件下单系统（简称“IBS”）是顺丰速运推出的针对国际件月结客户的自助服务软件，集合打单做件、订单查询、发票打印等功能于一身，灵活设置个性化操作界面，为您提供全方位的贴心服务！
+                                    </p>
+                                    <h3 class="red">使用步骤</h3>
+                                    <p>1. 提交需求，由销售人员开通账号；</p>
+                                    <p>2. 使用账号直接登录；</p>
+                                    <p>3. 选择相应菜单进行体验。</p>
+                                    <h3 class="red">功能说明</h3>
+                                    <p>1. 模板设置：个性化模板设置；</p>
+                                    <p>2. 导入订单：批量处理国际件订单；</p>
+                                    <p>3. 订单列表：编辑订单、打印运单、打印发票等订单管理功能；</p>
+                                    <p>4. 托寄物：托寄物内容编辑、管理等功能；</p>
+                                    <p>5.  地址簿：地址簿管理功能</p>
+                                    <h3 class="red">系统地址</h3>
+                                   <p ><a class="red" href="http://osms.sf-express.com/osms/index.pub?request_locale=zh_CN">点击此处直接打开</a></p>
+                                   <h3 class="red">温馨提示：</h3>
+                                   <p>若系统异常，请联系销售接口人解决。</p>
                             </div>
                         </div>
 

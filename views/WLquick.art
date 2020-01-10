@@ -111,7 +111,7 @@
                                             <li><a href="javascript:;">顺丰国际直邮认证服务</a></li>
                                         </ul>
                                     </li>
-      
+
                                     <!-- 冷运 -->
                                     <li class="wuliu_kuaidi">
                                         <h2><i class="iconfont icon-truck"></i>冷运服务</h2>
@@ -180,17 +180,17 @@
                         <ul class="nav_two clearfix" style="width: 305%;">
                             <li class="nav_two_child">
                                 <ul>
-                                    <li><a href="javascript:;">我要寄件</a></li>
-                                    <li><a href="javascript:;">运单追踪</a></li>
+                                    <li><a href="/shunfeng/WL_quick">我要寄件</a></li>
+                                    <li><a href="/shunfeng/WL_waybill">运单追踪</a></li>
                                 </ul>
                             </li>
                             <li class="nav_two_child">
                                 <ul>
-                                    <li><a href="javascript:;">运费时效查询</a></li>
-                                    <li><a href="javascript:;">收寄范围查询</a></li>
-                                    <li><a href="javascript:;">服务网点查询</a></li>
-                                    <li><a href="javascript:;">收寄标准查询</a></li>
-                                    <li><a href="javascript:;">更多内容查询</a></li>
+                                    <li><a href="/shunfeng/WL_sf_express_price">运费时效查询</a></li>
+                                    <li><a href="/shunfeng/WL_sf_express_range">收寄范围查询</a></li>
+                                    <li><a href="/shunfeng/WL_sf_express_store">服务网点查询</a></li>
+                                    <li><a href="/shunfeng/WL_sf_express_accept">收寄标准查询</a></li>
+                                    <li><a href="/shunfeng/WL_sf_express">更多内容查询</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -223,7 +223,7 @@
                     <li class="celerity_login">
                         <span class="icon member"></span> {{if tel}}
                         <a href="javascript:;">{{tel+'用户欢迎您'}}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-                        <a href="/shunfeng/WL_quick_date" class="date">退出登录</a> {{else}}
+                        <a href="/date" class="date">退出登录</a> {{else}}
                         <a href="javascript:;" class="Thelogin_button">快速登录/注册</a>
                         <!-- <span class="icon country"></span> -->
                         {{/if}}
@@ -1438,7 +1438,7 @@
             </div>
             <!-- 底部网站安全部分结束 -->
         </div>
-        <a href="" class="index-online-service">
+        <a href="/shunfeng/LTonlineservice " class="index-online-service">
             <p>在线客服</p>
         </a>
     </div>
