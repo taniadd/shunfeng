@@ -3,128 +3,100 @@
 
 <head>
     <meta charset="utf-8">
-    <title>投资者关系日历-投资者活动日</title>
+    <title>公司介绍</title>
+
     <link href="../css/base.css" type="text/css" rel="stylesheet" />
     <link href="../css/common.css" type="text/css" rel="stylesheet" />
     <link href="../css/dlindex.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/xkmember.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/ZP-investor-calendar-director.css">
-    <link rel="stylesheet" href="../css/ZP-Common.css">
-    <link rel="stylesheet" href="../css/swiper.min.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/login.js"></script>
-    <script src="../js/ZP-Common.js"></script>
-    <script src="../js/swiper.min.js"></script>
+    <script src="../js/xkmember.js"></script>
+    <script src="../js/draggable.js"></script>
+    <script src="../js/EZView.js"></script>
 </head>
 
 <body>
     <div class="mwrap">
         <!-- 头部开始 -->
         {{include './common/header.art'}}
-        <!-- 登录界面结束 -->
         <!-- 头部结束 -->
         <!-- banner开始 -->
-        <div class="banner">
-            <div class="banner">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../images/061211.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="../images/061211.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="../images/061211.jpg" alt=""></div>
-                    </div>
-                    <!-- 如果需要分页器 -->
-                    <div class="swiper-pagination"></div>
-                    <!-- 如果需要导航按钮 -->
-                    <div class="swiper-button-prev" id="ccc"></div>
-                    <div class="swiper-button-next" id="ccc"></div>
-                </div>
-            </div>
-            </div>
         <!-- banner结束 -->
-        <!-- 楼层区 -->
-        <div class="floor">
-            <!-- 在线客服固定导航 -->
-            <a href="#" class="service">
-                <p>在线客服</p>
-            </a>
-            <!-- tab导航栏 -->
-            <div class="tabs_nav_fa tabs_fixed">
-                <ul>
-                    <li><a href="./ZP-investor-govern.html">公司治理</a></li>
-                    <li><a href="./ZP-investor-notice.html">公司公告</a></li>
-                    <li>
-                        <a href="./ZP-investor-report-finance.html">定期报告</a>
-                        <div class="tabs_pull_down">
-                            <ul>
-                                <li><a href="./ZP-investor-report-finance.html">财务信息</a></li>
-                                <li><a href="./ZP-investor-report-society.html">社会责任报告</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="./ZP-investor-contact.html">投资者联络</a></li>
-                    <li>
-                        <a href="./ZP-investor-calendar-director.html" class="tabs_nav_fa_a tob_red">投资者关系日历
-                            <div class="tabs_pull_down">
-                                <ul>
-                                    <li><a href="./ZP-investor-calendar-director.html">董事会</a></li>
-                                    <li><a href="./ZP-investor-calendar-shareholder.html">股东会</a></li>
-                                    <li><a href="./ZP-investor-calendar-activity.html" class="text_red">投资者活动日</a></li>
+        <!-- 主体部分开始 -->
+        <div class="big_background">
+            <div class="content">
+                <div class="member_left">
+                    <h3>集团采购</h3>
+                    <ul>
+                        <li class="item1">
+                            <a href="#">采购政策</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" id="person">采购动态信息</a>
+                            <div class="i23">
+                                <ul id="bag">
+                                    <li><a href="#">采购需求信息</a></li>
+                                    
                                 </ul>
                             </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- 导航栏结束 -->
-            <!-- 内容头部区域 -->
-            <div class="tab_content">
-                <div class="tab_content_h1">
-                    <h1>投资者活动日</h1>
-                </div>
-                <div class="head_memu">
-                    <div class="month">
-                        <div class="month_dox">2019
-                            <div class="trilateral"></div>
-                        </div>
-                        <div id="nav">
-                            <ul>
-                                <li><a href="">2019</a></li>
-                                <li><a href="">2018</a></li>
-                                <li><a href="">2017</a></li>
-                                <li><a href="">2016</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="conference">
-                    <ul>
-                        <li>
-                            <span class="time">2019-08-28</span>
-                            <p>2019半年报业绩说明会</p>
                         </li>
-                        <li>
-                            <span class="time">2019-04-02</span>
-                            <p>深交所投资者教育活动</p>
+                        <li class="item">
+                            <a href="#" id="persons">供应商管理</a>
+                            <div class="i23">
+                                <ul id="bags">
+                                    <li><a href="#">供应商注册</a></li>
+                                    <li><a href="#">供应商关系管理平台</a></li>
+                                    <li><a href="#">供应商需知</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li>
-                            <span class="time">2019-03-27</span>
-                            <p>全景网2018年度业绩说明会</p>
-                        </li>
-                        <li>
-                            <span class="time">2019-03-18</span>
-                            <p>2018年度业绩发布会</p>
+                        <li class="item1">
+                            <a href="#">采购招标信息公示</a>
                         </li>
                     </ul>
                 </div>
+                <div class="member_right">
+                    <div class="title">
+                        <h1>展示当前页采购招标信息</h1>
+                    </div>
+                    <div class="purchase">
+                        <h4 class="purchase_h4"><span>招标项目</span><span>发布时间</span></h4>
+                        
+                        <div class="what">
+                            <a href="../cg.pdf" title="转弯机采购----新供应商招募公示">转弯机采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="智能分拣柜采购项目招标公示">智能分拣柜采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="纸质运单采购----新供应商招募公示">纸质运单采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="新能源车辆租赁项目招标公示">新能源车辆租赁项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="顺丰员工重大疾病与家属福利保险采购项目招标公示">顺丰员工重大疾病与家属福利保险采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="顺丰特安货运险采购项目招标公示">顺丰特安货运险采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="顺丰工业型扫地机器人采购项目招标公示">顺丰工业型扫地机器人采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="伸缩机采购----新供应商招募公示">伸缩机采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="皮带输送机采购----新供应商招募公示">皮带输送机采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="金属工具采购----新供应商招募公示">金属工具采购----新供应商招募公示<span>2019-12-16</span></a>
+                        </div>
+                        <div class="page">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <a href="#">→</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- 楼层区结束 -->
+        <!-- 主体部分结束 -->
         <!-- 尾部开始 -->
         <div class="footer">
-            <!-- 固定返回顶部导航 -->
-            <div id="go_nav" class="go_top_nav"></div>
-            <!-- 新加部分结束 -->
             <!-- 尾部头部开始 -->
             <div class="footer_top wrap clearfix">
                 <div class="footer_top_l">
@@ -219,8 +191,7 @@
                 </ul>
                 <ul class="footer_ver_r">
                     <li>
-                        <a
-                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
+                        <a href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
 
                     </li>
                 </ul>
@@ -230,9 +201,7 @@
             <div class="footer_safe wrap clearfix">
                 <ul class="clearfix">
                     <li>
-                        <a href="javascript:;"><img
-                                src="http://webcert.cnmstl.net/../images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157"
-                                alt="安全网址认证书"></a>
+                        <a href="javascript:;"><img src="http://webcert.cnmstl.net/../images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157" alt="安全网址认证书"></a>
                     </li>
                     <li>
                         <a href="javascript:;"><img src="../images/security_site_1.png" alt="安全认证"></a>
@@ -254,25 +223,5 @@
         <!-- 尾部结束 -->
     </div>
 </body>
-<script type="text/javascript">
-    var mySwiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        speed: 800,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        }
-    }) 
-</script>
 
 </html>

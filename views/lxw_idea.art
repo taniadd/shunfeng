@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
     <link rel="stylesheet" href="../css/lxw_refrigerate.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/lxw_idea.css">
+    <link href="../css/dlindex.css" type="text/css" rel="stylesheet" />
     <script src="../js/jquery.min.js"></script>
     <script src="../js/lxw_refrigerate.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/lxw_idea.js"></script>
 </head>
 
 <body>
@@ -22,123 +25,100 @@
     </div>
     <!-- 在线客服结束 -->
     <div class="mwrap">
-        <!-- 头部开始 -->
+        <!-- 头部开始 -->    
         {{include './common/header.art'}}
         <!-- 头部结束 -->
-        <!-- banner开始 -->
-        <div class="banner">
-            <ul class="banner_img">
-                <!-- <li><img src="../images/IMG20190905_171924.jpg"/></li> -->
-                <li><img src="../images/lengyun.jpg" alt=""></li>
-                <li class="list_width">
-                    <div class="serve mwrap"><span>食品服务
-                            <ul class="list">
-                                <li>
-                                    冷运速配
-                                </li>
-                                <li>
-                                    生鲜速配
-                                </li>
-                                <li>
-                                    大闸蟹专递
-                                </li>
-                                <li>
-                                    冷运特惠
-                                </li>
-                                <li>
-                                    冷运到店
-                                </li>
-                                <li>
-                                    顺丰冷运零担
-                                </li>
-                                <li>
-                                    冷运专车
-                                </li>
-                                <li>
-                                    冷运仓储
-                                </li>
-                            </ul>
-                        </span>
-                        <div class="long"></div><span>医药服务
-                            <ul class="list">
-                                <li>
-                                    医药安心递
-                                </li>
-                                <li>
-                                    精温定航
-                                </li>
-                                <li>
-                                    医药专递
-                                </li>
-                                <li>
-                                    精温定达
-                                </li>
-                                <li>
-                                    医药专车
-                                </li>
-                                <li>
-                                    医药仓储
-                                </li>
+        <!-- 问题反馈模块 -->
+        <div class="idea">
+            <div class="h_idea"><a id="btn_1" class="iconfont4" href="#">&#xe642;<span>我有建议</span></a><a id="btn_2"
+                    class="iconfont4" href="#">&#xe84a;<span>遇到问题</span></a>
+                <a class="iconfont4" href="/shunfeng/LTonlineservice">&#xe643;<span>在线客服</span></a></div>
+            <div class="d_idea">
+                <h3 class="re_idea">热门问题</h3>
+                <a class="re_span">
+                    <p>怎么进行批量下单?</p><span class="you_span iconfont3">&#xe62c;</span>
+                </a>
+                <a class="re_span">
+                    <p>怎么修改下单信息?</p><span class="you_span iconfont3">&#xe62c;</span>
+                </a>
+                <a class="re_span">
+                    <p>“我寄的”或“我收的”查询不到运单信息？</p><span class="you_span iconfont3">&#xe62c;</span>
+                </a>
+                <a class="re_span">
+                    <p>怎么申请电子发票?</p><span class="you_span iconfont3">&#xe62c;</span>
+                </a>
+                <a class="re_span">
+                    <p>国际件开通的国家有那些?</p><span class="you_span iconfont3">&#xe62c;</span>
+                </a>
+                <a class="re_span">
+                    <p>申请月结需要满足那些条件?</p><span class="you_span iconfont3">&#xe62c;</span>
+                </a>
+            </div>
+            <div class="idea2">
+                <div class="btn iconfont7">&#xe557;</div>
+                <h3 class="re_idea">您的建议是?</h3>
+                <p>我们期待为您带来最好的服务</p>
+                <p class="p2">请选择您要建议的功能</p>
+                <ul class="action">
+                    <li><span class="iconfont5">&#xe627;</span>派收服务</li>
+                    <li><span class="iconfont5">&#xe616;</span>包装物料</li>
+                    <li><span class="iconfont5">&#xe683;</span>价格发票</li>
+                    <li><span class="iconfont5">&#xe626;</span>附加服务</li>
+                    <li><span class="iconfont5">&#xe63e;</span>其他</li>
+                </ul>
+                <textarea name="" id="" cols="30" rows="7" placeholder="欢迎您反馈对顺丰官网的使用建议，帮助我们做的更好（必填）"></textarea>
+                <span class="num">0/200</span>
+                <p class="p3">反馈页面截图</p>
+                <div class="add-image">
+                    <input id="imgInp" class="file" type="file" accept="image/*">
+                    <div class="add">
 
-                            </ul>
-                        </span>
-                    </div class="serve">
-                </li>
-            </ul>
+                        <p class="iconfont4">&#xe62b;</p>
+                    </div>
+                    <img id="blah" style="width:150px; height:140px; display:none;">
+                </div>
 
+                <div class="idea_name">
+                    <input type="text" placeholder="姓名 (选填)">
+                    <input type="text" placeholder="联系方式 (选填)">
+                </div>
+                <p class="p4">若有问题需要咨询或解决，请联系<a href="#">在线客服</a>
+                    <input class="submit" type="submit" value="提交">
+                </p>
+
+            </div>
+            <div class="d_idea2">
+                <div class="btn iconfont7">&#xe557;</div>
+                <h3 class="re_idea">请选择问题类型</h3>
+                <p class="s1">我们期待为您带来最好的服务</p>
+                <a class="re_span">
+                    <div class="d1">
+                        <p><span class="iconfont6">&#xe627;</span><span class="s22">寄快递<br>
+                                <span class="s33">信息填写、地址簿、下单异常等</span>
+                            </span></p>
+                        <span class="you_span iconfont3">&#xe62c;</span>
+                    </div>
+
+                </a>
+                <a class="re_span">
+                    <div class="d1">
+                        <p><span class="iconfont6">&#xe530;</span><span class="s22">查快递<br>
+                                <span class="s33">更该派送、路由信息、自寄码等</span></span></p>
+                        <span class="you_span iconfont3">&#xe62c;</span>
+                    </div class="d1">
+                </a>
+                <a class="re_span">
+                    <div class="d1">
+                        <p><span class="iconfont6">&#xe63e;</span><span class="s22">其他功能<br>
+                                <span class="s33">会员福利、偏好设置、服务查询等</span></span></p>
+                        <span class="you_span iconfont3">&#xe62c;</span>
+                    </div>
+                </a>
+                <div class="gao"></div>
+            </div>
+            <div class="b_idea"></div>
         </div>
-        <!-- banner结束 -->
-        <!-- container集装箱模块 -->
-        <div class="tab_container">
-            <h1 class="tab_title">冷运速配</h1>
-            <ul class="clearfix">
-                <li><img src="../images/dtop_img3.png" alt="">
-                    <h3>服务介绍</h3>
-                    <p>基于冷仓，对有温度控制要求的食品，通过包装方案满足温控，提供优先配载、优先派送的专属快递服务。</p>
-                </li>
-                <li><img src="../images/w_feature.png" alt="">
-                    <h3>服务特性</h3>
-                    <p><strong>专业包装、新鲜速达：</strong>专业包装保鲜、保冷、保安全，为客户提供一站式的冷运快速寄递服务。</p>
-                </li>
-                <li><img src="../images/dtop_img1.png" alt="">
-                    <h3>服务时效</h3>
-                    <p>整体不超过3天。</p>
-                </li>
-                <li><img src="../images/w_added-service.png" alt="">
-                    <h3>增值服务</h3>
-                    <p>保价、代收货款、个性化包装服务（可循环保温箱派送）</p>
-                </li>
-                <li><img src="../images/dtop_img2.png" alt="">
-                    <h3>服务范围</h3>
-                    <p>中国内地地区，超过300个城市。</p>
-
-                </li>
-                <li><img src="../images/w_price.png" alt="">
-                    <h3>服务定价</h3>
-                    <p>首重（1KG）+续重，根据不同的流向价格会有所差异。</p>
-                </li>
-                <li class="notice"><img src="../images/w_use.png" alt="">
-                    <h3>使用须知</h3>
-                    <p><strong>· 客户类型：</strong>仅限月结客户，需签订《物流及物流辅助服务合同（主合同）》和《冷仓速配服务条款》。</p>
-                    <p><strong>· 托寄物内容：</strong>加工食品、初级农产品（常温/冷藏/冷冻运输的食品），单票不超过15kg（含包材），不允许操作子母件。</p>
-                    <p><strong>· 运输温区：</strong>冷藏；冷冻；常温；深冻</p>
-                    <p><strong>· 客户资质要求：</strong>根据托寄物的内容，需要提供相应的资质，详情请咨询当地分公司或9533881。</p>
-                </li>
-            </ul>
-
-        </div>
-        <div class="b_link_list">
-            <ul class="b_link_icon">
-                <li><span class="iconfont2">&#xe63d;</span></li>
-                <li><span class="iconfont2">&#xe62f;</span></li>
-                <li><span class="iconfont2">&#xe659;</span>
-                    <div class="erweima"><img src="../images/erweima.png" alt=""></div>
-                </li>
-                <li><span class="iconfont2">&#xe64d;</span></li>
-                <li>分享好友</li>
-            </ul>
-        </div>
-        <!-- container集装箱结束 -->
+        <!-- 问题反馈模块结束 -->
         <!-- 尾部开始 -->
         <div class="footer">
             <div class="iconfont">&#xe66c;</div>

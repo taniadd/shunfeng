@@ -39,11 +39,11 @@
                                             <li>
                                                 <h3>国际</h3>
                                             </li>
-                                            <li><a href="javascript:;">国际标快</a></li>
-                                            <li><a href="javascript:;">国际特惠</a></li>
-                                            <li><a href="javascript:;">国际小包</a></li>
-                                            <li><a href="javascript:;">国际重货</a></li>
-                                            <li><a href="javascript:;">国际电商专递</a></li>
+                                            <li><a href="/shunfeng/LG_International">国际标快</a></li>
+                                            <li><a href="/shunfeng/LG_Designed">国际特惠</a></li>
+                                            <li><a href="/shunfeng/LG_very_fast">国际小包</a></li>
+                                            <li><a href="/shunfeng/LG_quickly">国际重货</a></li>
+                                            <li><a href="/shunfeng/LG_seaport">国际电商专递</a></li>
                                             <li><a href="javascript:;">海购丰运</a></li>
                                             <li><a href="javascript:;">签收确认服务</a></li>
                                             <li><a href="javascript:;">海外仓</a></li>
@@ -97,7 +97,7 @@
                                                 <h3>食品服务</h3>
                                             </li>
                                             <li><a href="javascript:;">生鲜速配</a></li>
-                                            <li><a href="javascript:;">冷运速配</a></li>
+                                            <li><a href="/shunfeng/lxw_refrigerate">冷运速配</a></li>
                                             <li><a href="javascript:;">大闸蟹专递</a></li>
                                             <li><a href="javascript:;">冷运到店</a></li>
                                             <li><a href="javascript:;">顺丰冷运零担</a></li>
