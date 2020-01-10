@@ -15,12 +15,6 @@
 </head>
 
 <body>
-    <!-- 在线客服开始 -->
-    <div class="online_servic">
-        <a href="javascript:;"></a>
-        <p>在线客服</p>
-    </div>
-    <!-- 在线客服结束 -->
     <div class="mwrap">
         <!-- 头部开始 -->
         {{include './common/header.art'}}
