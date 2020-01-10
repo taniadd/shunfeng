@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/font_t99d9cklc6/iconfont.eot');
+    src: url('../font/font_t99d9cklc6/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/font_t99d9cklc6/iconfont.woff2') format('woff2'),
+        url('../font/font_t99d9cklc6/iconfont.woff') format('woff'),
+        url('../font/font_t99d9cklc6/iconfont.ttf') format('truetype'),
+        url('../font/font_t99d9cklc6/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont3 {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont4 {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont5 {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont6 {
+    font-family: "iconfont" !important;
+    font-size: 24px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 40px;
+}
+
+.iconfont7 {
+    font-family: "iconfont" !important;
+    font-size: 24px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.idea {
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.b_idea {
+    height: 120px;
+}
+
+.h_idea {
+    width: 950px;
+    height: 162px;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transform: translateY(20%);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.h_idea a {
+    transform: translateY(30%);
+}
+
+.re_idea {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 40px;
+    padding: 40px 30px 20px 30px;
+}
+
+.d_idea {
+    width: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    transform: translateY(10%);
+    border-radius: 4px;
+
+}
+
+.re_span p {
+    display: inline-block;
+    font-size: 16px;
+    border-bottom: 1px solid #F1F1F1;
+    width: 90%;
+    transform: translateX(8%);
+    line-height: 80px;
+
+}
+
+.h_idea .iconfont4 span {
+    display: block;
+    font-size: 14px;
+    margin: 10px 10px 10px -12px;
+}
+
+.idea2 {
+    position: relative;
+    width: 950px;
+    background-color: #fff;
+    margin: 0 auto;
+    transform: translateY(10%);
+    display: none;
+}
+
+.idea2 .re_idea {
+    padding-bottom: 10px;
+}
+
+.idea2 p {
+    margin-left: 68px;
+    font-size: 14px;
+    color: #999;
+}
+
+.idea2 .p2 {
+    margin-left: 68px;
+    transform: translateY(300%);
+    font-size: 12px;
+    color: #999;
+}
+
+.idea2 .action {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    transform: translateX(6.5%);
+}
+
+.idea2 .action li {
+    width: 30%;
+    background-color: #F2F2F2;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 7px;
+    transform: translateY(150%);
+
+
+}
+
+.idea2 .action li span {
+    margin: 10px;
+}
+
+textarea {
+    position: relative;
+    width: 82.8%;
+    background-color: #F2F2F2;
+    margin: 65px;
+    border: 25px solid #F2F2F2;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.idea2 .num {
+    position: absolute;
+    right: 80px;
+    bottom: 180px;
+}
+
+.idea2 .p3 {
+    margin-left: 68px;
+    transform: translateY(-300%);
+    font-size: 12px;
+    color: #999;
+}
+
+.idea2 .p4 {
+    position: relative;
+    margin-left: 50px;
+    font-size: 14px;
+    color: #999;
+    padding-bottom: 40px;
+}
+
+.idea2 .p4 a {
+    font-size: 14px;
+    color: #007AFF;
+}
+
+.add-image {
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+
+}
+
+.file {
+    position: absolute;
+    top: -20px;
+    left: 65px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    z-index: 999;
+
+}
+
+.add-image .add {
+    position: absolute;
+    top: -20px;
+    left: 65px;
+    width: 150px;
+    height: 140px;
+    background-color: #F2F2F2;
+}
+
+.add-image .add p {
+    transform: translate(-12%, 140%);
+    font-size: 32px;
+}
+
+.add-image #blah {
+    transform: translate(143%, -15%);
+}
+
+.idea_name {
+    padding: 42px;
+}
+
+.idea_name input {
+    font-size: 14px;
+    color: #999;
+    padding: 7px 20px;
+    border-bottom: 1px solid #999;
+
+}
+
+.idea2 .submit {
+    position: absolute;
+    right: 65px;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #999;
+    color: white;
+}
+
+.d_idea2 {
+    position: relative;
+    width: 950px;
+    background-color: #fff;
+    margin: 0 auto;
+    transform: translateY(10%);
+    border-radius: 4px;
+    display: none;
+
+}
+
+.d_idea2 .btn {
+    position: absolute;
+    top: 40px;
+    width: 40px;
+    height: 30px;
+    background-color: black;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    border-radius: 0 25px 25px 0;
+}
+
+.idea2 .btn {
+    position: absolute;
+    top: 40px;
+    width: 40px;
+    height: 30px;
+    background-color: black;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    border-radius: 0 25px 25px 0;
+}
+
+.d_idea2 .btn:hover {
+    background-color: rgb(225, 61, 78);
+    cursor: pointer;
+}
+
+.idea2 .btn:hover {
+    background-color: rgb(225, 61, 78);
+    cursor: pointer;
+}
+
+.idea3 {
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.d_idea2 .s1 {
+    color: #999;
+    margin-left: 70px;
+    font-size: 14px;
+
+}
+
+.d_idea2 .re_span .d1 {
+    position: relative;
+    transform: translateX(8%);
+    width: 85%;
+    border: 1px solid #F2F2F2;
+    margin: 30px 0;
+    padding-bottom: 10px;
+    transition: all linear .2s;
+    border-radius: 7px;
+}
+
+.d_idea2 .re_span p {
+    border: 0px solid #F2F2F2;
+}
+
+.gao {
+    height: 30px;
+}
+
+.s22 {
+    position: absolute;
+    top: -10px;
+}
+
+.s33 {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 220px;
+    font-size: 14px;
+    color: #999;
+}
+
+.d_idea2 .re_span .d1:hover .iconfont6 {
+    color: rgb(225, 61, 78);
+
+}
+
+.d_idea2 .re_span .d1:hover .s22 {
+    color: rgb(225, 61, 78);
+
+}
+
+.d_idea2 .re_span .d1:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.h_idea .iconfont4:hover {
+    color: rgb(225, 61, 78);
+}

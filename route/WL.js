@@ -95,6 +95,15 @@ router.get('/WL_sf_express_payment', (req, res) => {
 router.get('/WL_sf_express_lost', (req, res) => {
     res.render("WL_sf_express_lost.art")
 })
+//速打
+router.get('/WL_sf_tool_business', (req, res) => {
+    res.render("WL_sf_tool_business.art")
+})
+//国际件下单工具
+router.get('/WL_sf_international', (req, res) => {
+    res.render("WL_sf_international.art")
+})
+
 //常用表格
 router.get('/WL_sf_express_formdownload', (req, res) => {
     res.render("WL_sf_express_formdownload.art")
