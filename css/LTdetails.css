@@ -185,14 +185,19 @@ h2{
 
 
 
+
+
 /* 合作咨询界面 开始*/
 /* 实线(solid)虚线(dashed)点线(dotted) */
 
 .LTpp1{
-    height: 150px;
-    border-bottom: 1px dashed #7c7c7c;
+    padding-bottom: 50px;
 }
-.LTpp1>p{
+.LTpp2{
+    border-bottom: 1px dashed #7c7c7c;
+    padding-bottom: 50px;
+}
+.LTpp2>p{
     color: #666565;
     display: inline-block;
     font-size: 20px;
@@ -200,7 +205,7 @@ h2{
     margin-top: 47px;
     margin-left: 16px;
 }
-.LTpp1>img{
+.LTpp2>img{
     vertical-align: baseline;
 }
 
@@ -213,36 +218,225 @@ h2{
     height: 30px;
     width: 100%;
     margin-top:30px;
+    position: relative;
 }
 .LTpp1 li input{
     width: 38%;
     height: 30px;
     background: #F1F1F1;
-    margin: 0 10px 0 100px;
+    position: absolute;
+    top: 0;
+    left: 32%;
+    text-indent: 1.5em;
+    font-size: 13px;
 }
+
 .LTpp1 li div{
     display: inline-block;
 }
 .LTpp1 li .LTco1{
+       font-size: 18px;
+    line-height: 30px;
     margin-left: 18%;
-    font-size: 20px;
 }
 .LTpp1 li .LTco2 span{
     font-size: 15px;
     color: #DA1D35;
     vertical-align: middle;
 }
-/* .LTpp1 li .LTco2{
-     display: none;
-} */
+.LTpp1 li .LTco2{
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 71%;
+}
+.LTpp1 li .LTqu1::placeholder {
+    /* placeholder颜色  */
+       color: #A5B2C4;
+   }
+
+   .LTpp1 li .LTshi{
+    display: none;
+    border-left: 1px solid #a9a7a7;
+    border-right: 1px solid #a9a7a7;
+    border-bottom: 1px solid #a9a7a7;
+    width: 38%;
+    position: absolute;
+    top: 30px;
+    left: 32%;
+    z-index: 3;
+    padding-bottom: 0;
+    background: white;
+}
+.LTpp1 li .LTshi .LTshi1{
+    border:none;
+}
+.LTpp1 li .LTshi .LTshi1 li:nth-child(3){
+    display: none;
+}
+.LTpp1 li .LTshi .LTshi1 p{
+    width: 89%;
+    border-top: 2px solid black;
+    position: absolute;
+    top: 30px;
+    left: 34px;
+}
+.LTpp1 li .LTshi .LTshi2{
+     border:none;
+}
+.LTpp1 li .LTshi .LTshi3{
+    border:none;
+    display: none;
+}
+.LTpp1 li .LTshi .LTshi4{
+    border:none;
+   display: none;
+}
+.LTpp1 li .LTshi .LTshi5{
+    border:none;
+    display: none;
+}
+.LTpp1 ul .LTshi .LTS{
+        width: 100%;
+}
+.LTpp1 ul .LTshi .LTS .LTzu{
+    width: 100%;
+}
+.LTpp1 ul .LTshi .LTS li:hover{
+    background: #dddada;
+}
+.LTpp1 ul .LTshi li{
+    float: left;
+    width: 25%;
+    height: 30px;
+    background: white;
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+    margin-top: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.LTpp1 ul .LTshi .LTshi1 li{
+    width: 33.33%;
+}
+
+.LTchang{
+    background: rgb(65, 65, 65) !important;
+    color: white;
+} 
+.LTcha{
+    list-style:block !important;
+}
+   .LTpp1 li .LTqu2::placeholder {
+       color: rgb(127, 137, 150);
+   }
+   .LTpp1 li .LTqu3::placeholder {
+       color: rgb(75, 76, 78);
+       font-size: 15px;
+       font-weight:bold;
+   }
+   .LTpp1 li .LTig{
+    position: absolute;
+    top: 4px;
+    left: 74%;
+    width: 130px;
+    margin-top: -4px;
+   }
+   .LTpp1 ul .LTcheck{
+    margin: 29px 0 0 90px;
+    position: relative;
+   }
+   .LTpp1 ul .LTcheck .LTco8{
+       display: none;
+       position: absolute;
+       top: 36px;
+       left: 0;
+   }
+   .LTpp1 .LTcheck .LTco8 span{
+    color: red;
+    font-size: 17px;
+    vertical-align: bottom;
+   }
+   .LTpp1 ul .LTcheck .LTcheckbox{
+    vertical-align: bottom;
+   }
+
+   .LTpp1 .LTti{
+    color: #DA1D35;
+    font-size: 17px;
+    margin: 33px 0 0 90px;
+    display: block;
+   }
+   .LTpp1 .LTjiao{
+    width: 121px;
+    height: 57px;
+    background: #DA1D35;
+    text-align: center;
+    line-height: 57px;
+    font-size: 18px;
+    color: white;
+    margin-left: 46%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.LTpp1 ul .LTsu{
+    display: none;
+    border-left: 1px solid #666565;
+    border-right: 1px solid #666565;
+    border-bottom: 1px solid #666565;
+    width: 38%;
+    position: absolute;
+    top: 30px;
+    left: 32%;
+    z-index: 3;
+    padding-bottom: 0;
+}
+.LTpp1 ul .LTsu li{
+    width: 100%;
+    height: 30px;
+    background: white;
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+    margin-top: 0;
+    z-index: 2;
+    font-weight: bold;
+}
+.LTpp1 ul .LTsu li:hover{
+    background: red;
+    cursor: pointer;
+}
+.LTpp1 ul .LTyun{
+    position: absolute;
+    top: 10px;
+    left: 990px;
+    background: url(../images/zzz33332.png) no-repeat;
+    height: 8px;
+    width: 15px;
+    background-position-y: -7px;
+    cursor: pointer;
+}
 
 
-
-
-
-
-
-
+.LTpp1 ul li .LTform{
+    position: absolute;
+    top: 0px;
+    left: 64%;
+    height: 30px;
+}
+.LTpp1 ul li .LTform select{
+    height: 30px;
+    width: 60px;
+}
+.LTcoo{
+    background: url(../images/zzs-prompt-b.png) !important;
+}
+.LTyun2{
+    background-position-y: 0 !important;
+}
 
 
 
