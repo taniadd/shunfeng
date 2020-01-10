@@ -223,3 +223,14 @@ span.comboTreeItemTitle {
     left: 50%;
     transform: translate(-50%,0);
 }
+
+.huansuan {
+    width: 48px;
+    text-align: center;
+    font-size: 13px;
+    height: 32px;
+    line-height: 32px;
+}
+.huansuan::before{
+    content: ">";
+}

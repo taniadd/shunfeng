@@ -43,8 +43,11 @@ const sendinforSchema = new mongoose.Schema({
         type: Number
     },receivercompany:{ /*收件人公司,非必填*/
         type:String
+    },time:{
+        type:String,
+        required:true
     }
-
+   
 })
 // 创建寄件规则集合
 const Senderinfor=mongoose.model('Senderinfor',sendinforSchema)
