@@ -19,4 +19,13 @@ route.get('/date', (req, res) => {
     })
 
 })
+route.get('/tcindex', (req, res) => {
+    res.render('FH-tongcheng.art')
+})
+route.get('/ccgl', (req, res) => {
+    res.render('FH-warehouse_service.art')
+})
+route.get('/hxnl', (req, res) => {
+    res.render('FH-Storage.art')
+})
 module.exports = route;

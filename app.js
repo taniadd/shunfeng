@@ -36,6 +36,9 @@ app.set('view engine', 'art');
 app.engine('art', require('express-art-template'));
 const shunfeng=require('./route/WL.js')
 
+const lt=require('./route/LT.js')
+app.use("/shunfeng",lt);
+
 
 const guoji=require('./route/LG.js')
 app.use("/shunfeng",guoji);

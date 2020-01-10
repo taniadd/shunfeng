@@ -1,5 +1,473 @@
-.mwrap {
-    min-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.red {
+    color: #EF3756 !important;
+}
+body {
+    /* height: 3000px; */
+}
+/* 头部 */
+header {
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+    font-family: "Noto Sans CJK SC", "Source Han Sans CN", 黑体;
+}
+
+header li:hover {
+    background-color: #F7F7F7;
+}
+
+/* 左边 */
+.left {
+    padding-top: 32px;
+
+}
+.icon-logo {
+    display: inline-block;
+    width: 170px;
+    height: 60px;
+    background: url(../images/ZP-1.png) no-repeat;
+    background-size: 163px 33px;
+}
+
+/* 右边 */
+.right {
+    position: relative;
+}
+.right a {
+    color: #666;
+}
+.right>ul>li {
+    float: left;
+    line-height: 100px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #666;
+}
+.hot {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 10px;
+    left: 150px;
+    background-position: -713px -16px;
+}
+.icon {
+    background-image: url(../images/ZP-sprite.png);
+    background-size: 2500px;
+    display: inline-block;
+}
+/* 轮播图 */
+.banner img {
+    height: 356px;
+}
+
+/* --------- */
+.to-fix {
+    width: 1200px;
+    background: #fff;
+    /* margin: 60px auto; */
+    /* padding: 50px 0 66px 0; */
+    margin: 70px auto 80px auto;
+}
+.to-fix .fix-btn {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: rgb(235, 0, 40) 3px 3px 15px -2px;
+    background: rgb(238, 49, 67);
+    margin: 0px auto;
+    font: 18px / 50px "Noto Sans CJK SC", "Source Han Sans CN", 黑体;
+    border-radius: 30px;
+}
+.to-fix .fix-btn:hover {
+    background: rgb(238, 49, 67, .8);
+}
+
+.fix-img {
+    width: 1200px;
+    height: 200px;
+    height: 270px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 80px;
+}
+.fix-img .div-img-1 {
+    width: 280px;
+    height: 270px;
+    background: url(../images/ZP-tro_1.png);
+    background-size: cover;
+}
+.fix-img .div-img-2 {
+    width: 280px;
+    height: 270px;
+    background: url(../images/ZP-tro_2.png);
+    background-size: cover;
+}
+.fix-img .div-img-3 {
+    width: 280px;
+    height: 270px;
+    background: url(../images/ZP-tro_3.png);
+    background-size: cover;
+
+}
+.fix-img .div-img-4 {
+    width: 280px;
+    height: 270px;
+    background: url(../images/ZP-tro_4.png);
+    background-size: cover;
+}
+.fix-img>div {
+    float: left;
+    margin-right: 26px;
+}
+.service {
+    padding: 40px 0px 70px;
+    background: rgb(247, 247, 247);
+}
+.title {
+    width: 1200px;
+    position: relative;
+    color: rgb(35, 33, 33);
+    text-align: center;
+    margin: 0px auto 30px;
+    font: 28px / 68px "Noto Sans CJK SC", "Source Han Sans CN", 黑体;
+}
+.service>.title span {
+    width: 60px;
+    height: 0px;
+    position: absolute;
+    top: 60px;
+    left: 567px;
+    border-top: 2px solid rgb(235, 0, 40);
+}
+.nav {
+    width: 1200px;
+    display: flex;
+    margin: 0px auto;
+}
+.nav-box {
+    width: 380px;
+    height: 350px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    box-shadow: rgb(209, 209, 209) 0px 0px 15px 1px;
+    background-size: 100%;
+    cursor: pointer;
+    float: left;
+    flex: 1 1 0%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+}
+ 
+.repair {
+    background: url(../images/ZP-phone_fix.jpg);
+}
+.recycle {
+    background: url(../images/ZP-phone_recycling.jpg);
+}
+.supply {
+    background: url(../images/ZP-phone_mall.jpg);
+}
+
+.box-title {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(44, 43, 48);
+}
+.title-left {
+    font: bolder 24px/40px "Noto Sans CJK SC", "Source Han Sans CN","黑体";
+    display: inline-block;
+}
+.title-right {    
+    font: 24px/40px "Noto Sans CJK SC", "Source Han Sans CN","黑体";
+    display: inline-block;
+}
+
+.box-desc {
+    color: #9388a6;
+    font: 15px/40px "Noto Sans CJK SC", "Source Han Sans CN","黑体";
+    text-align: center;
+}
+.box-desc>span {
+    color: #eb0028;
+    margin: 0 5px;
+}
+
+.tab {
+    background: #24292d;
+    padding: 40px 0 0 0;
+    height: 518px;
+}
+.tab-in {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.btn-left {
+    left: -60px;
+    top: 250px;
+    background-position: -773px -9px;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    font: 15px/40px "Noto Sans CJK SC", "Source Han Sans CN","黑体";
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    background-image: url(../images/ZP-sprite.png);
+    background-size: 2500px;
+    display: inline-block;
+}
+.btn-right {
+    left: 1220px;
+    top: 250px;
+    background-position: -838px -9px;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    font: 15px/40px "Noto Sans CJK SC", "Source Han Sans CN","黑体";
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    background-image: url(../images/ZP-sprite.png);
+    background-size: 2500px;
+    display: inline-block;
+}
+
+.tab-title {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    font: 28px/68px "Noto Sans CJK SC", "Source Han Sans CN","黑体";
+    color: #fff;
+    text-align: center;
+    font-weight: bold!important;
+    letter-spacing: 3px!important;
+    font-size: 28px!important;
+}
+.tab-title>span {
+    width: 60px;
+    height: 0;
+    position: absolute;
+    border-top: solid 2px #eb0028;
+    top: 60px;
+    left: 567px;
+}
+
+.tab-inner {
+    display: flex;
+}
+.tab-inner li {
+    width: 380px;
+    /* height: 330px; */
+    flex: 1;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.tab-inner li img {
+    width: 100%;
+    /* height: 100%; */
+    display: block;
+}
+.tab-desc {
+    background: #fff;
+    text-align: center;
+    padding: 20px 0 15px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font: 24px/32px "Noto Sans CJK SC", "Source Han Sans CN","黑体";
+    color: #232121;
+    display: block;
+}
+.desc-text {
+    font: 16px/32px "Noto Sans CJK SC", "Source Han Sans CN","黑体";
+    color: #666;
+}
+.ul1 {
+    display: block;
+}
+
+
+
+.news {
+    background: #f7f7f7;
+    padding: 40px 0 70px 0;
+}
+.news .title {
+    width: 1200px;
+    position: relative;
+    color: rgb(35, 33, 33);
+    text-align: center;
+    margin: 0px auto 30px;
+    font: 28px / 68px "Noto Sans CJK SC", "Source Han Sans CN", 黑体;
+    font-weight: bold!important;
+    letter-spacing: 3px!important;
+    font-size: 28px!important;
+}
+.news .title span {
+    width: 60px;
+    height: 0;
+    position: absolute;
+    border-top: solid 2px #eb0028;
+    top: 60px;
+    left: 567px;
+}
+.news-nav {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.nav-sub {
+    width: 390px;
+    height: 335px;
+    /* flex: 1; */
+    margin-right: 15px;
+    background: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+}
+.nav-sub:hover {
+    box-shadow: #ccc 3px 3px 15px -2px;
+
+}
+.news-img {
+    width: 390px;
+    height: 200px;
+    background: #ccc;
+}
+.news-title {
+    color: rgb(51, 51, 51);
+    font: 18px / 18px "Noto Sans CJK SC", "Source Han Sans CN", 黑体;
+    padding: 20px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-desc {
+    color: rgb(153, 153, 153);
+    height: 42px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font: 14px / 22px "Noto Sans CJK SC", "Source Han Sans CN", 黑体;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+
+/* 底部 */
+.fff {
+    color: #fff;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.footer {
+    display: block;
+}
+
+.footer-in {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-bottom {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 58px;
+}
+
+.fbRight {
+    float: right;
+}
+.fbRight>p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 22px;
+    /* padding-left: 20px; */
+    text-align-last: left;
+}
+.QRcode {
+    width: 110px;
+    height: 110px;
+    background-color: #fff;
+    display: inline-block;
+    background-position: -446px -102px;
+    background-image: url(../images/ZP-sprite.png);
+    background-size: 2500px;
+}
+.fbLeft {
+    float: left;
+    text-align: left;
+    margin-right: 50px;
+}
+.footerLogo {
+    width: 160px;
+    height: 58px;
+    margin: 0px 0px 24px 0px;
+    background-position: -600px -168px;
+    background-image: url(../images/ZP-sprite.png);
+    background-size: 2500px;
+    display: inline-block;
+}
+.customerService {
+    text-align: left;
+    font-size: 12px;
+}
+.customerService>p:nth-child(1) {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.customerService>p {
+    color: #fff;
+    line-height: 22px;
+}
+
+.fbMiddle {
+    float: left;
+}
+.titleLi {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 58px 0px 0px;
+    text-align: left;
+    vertical-align: top;
+}
+.titleLi ul {
+    margin-top: 40px;
+}
+.infoLi {
+    margin-bottom: 18px;
+}
+.infoLi>a {
+    color: #999;
+    font-size: 14px;
 }

@@ -141,7 +141,10 @@
 .swiper-pagination-bullet-active {
     --swiper-theme-color: blue;
 }
-
+.swiper-wrapper img {
+    width: 1519px;
+    height: 404.15px;
+}
 /* 翻页按钮 */
 #ccc {
     color: #ccc;

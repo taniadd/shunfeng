@@ -227,38 +227,39 @@
 
 
 /* 为啥经过图片的时候没有效果过渡 */
-.LTmodule li :hover .LTcircle p{
+.LTmodule li:hover .LTcircle p{
     color:white;
     transition:all 0.3s; 
 }
-.LTmodule li :hover .LTcircle{
+
+.LTmodule>ul>li:hover .LTcircle{
     background: #DA1D35;
     transition:all 0.3s;
 }
-.LTmodule li :hover .LTcircle img{
+.LTmodule li:hover .LTcircle img{
     /* 换图片 */
    content:url("../images/white-t-img-5.png");
    transition:all 0.3s;
 }
-.LTmodule li :hover .LTcircle .LThei{
+.LTmodule li:hover .LTcircle .LThei{
     content:url("../images/tr_imgs_white3.png");
     transition:all 0.3s;
  }
- .LTmodule li :hover .LTcircle .telephone{
+ .LTmodule li:hover .LTcircle .telephone{
     content:url("../images/white-t-img-1.png");
     transition:all 0.3s;
  }
- .LTmodule li :hover .LTcircle .fresh{
+ .LTmodule li:hover .LTcircle .fresh{
     content:url("../images/white-t-img-3.png");
     transition:all 0.3s;
  }
-.LTmodule li :hover .LTbox{
+.LTmodule li:hover .LTbox{
     border-color:#F1F1F1;
     background: #DA1D35;
     color:white;
     transition:all 0.3s; 
 }
-.LTmodule li :hover .LTbox span{
+.LTmodule li:hover .LTbox span{
     /* 换背景图 */
     background: url(../images/a_rlink_red.png) no-repeat;
     transition:all 0.3s; 
