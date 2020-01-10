@@ -17,7 +17,7 @@
 <body class="shouye_index">
     <!-- 在线客服开始 -->
     <div class="online_servic">
-        <a href="javascript:;"></a>
+        <a href="/shunfeng/LTonlineservice"></a>
         <p>在线客服</p>
     </div>
     <!-- 在线客服结束 -->
@@ -74,42 +74,43 @@
         <div class="content">
             <!-- 内容导航 -->
             <div class="content_nav">
+                <div class="bill_number">
+                    <div class="bill_search">
+                        <input id="search_input1" type="search" placeholder="您可以输运单号进行查询" />
+                        <button id="search_button1" class="search_icon"></button>
+                    </div>
+                    <!-- <div class="bill_search_hidden">
+                        <textarea type="search" placeholder="请输入需要查询的运单号" ></textarea>
+                        最多可查询20条，以逗号、空格或回车键隔开
+                       
+                    </div> -->
+                    <button id="search_button2" class="search_bill_number">马上查单</button>
+                </div>
                 <ul class="clearfix">
                     <li>
-                        <a href="javascript:;">
+                        <a href="/shunfeng/WL_waybill">
                             <i class="content_icon content_search"></i> 运单追踪
                             <!-- 运货单查询 -->
-                            <div class="bill_number">
-                                <div class="bill_search">
-                                    <input id="search_input1" type="search" placeholder="您可以输运单号进行查询" />
-                                    <button id="search_button1" class="search_icon"></button>
-                                </div>
-                                <!-- <div class="bill_search_hidden">
-                                    <textarea type="search" placeholder="请输入需要查询的运单号" ></textarea>
-                                    最多可查询20条，以逗号、空格或回车键隔开
-                                   
-                                </div> -->
-                                <button id="search_button2" class="search_bill_number">马上查单</button>
-                            </div>
+                           
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;">
+                        <a href="/shunfeng/WL_quick">
                             <i class="content_icon content_sender"></i> 我要寄件
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;">
+                        <a href="/shunfeng/WL_sf_express_price">
                             <i class="content_icon content_money"></i> 运费时效查询
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;">
+                        <a href="/shunfeng/WL_sf_express_store">
                             <i class="content_icon content_address"></i> 服务网点查询
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;">
+                        <a href="/shunfeng/WL_sf_express_accept">
                             <i class="content_icon content_sope"></i> 收寄范围查询
                         </a>
                     </li>
@@ -132,7 +133,7 @@
                                 <li class="contentImg">
                                     <ul class="content_banenr_img clearfix">
                                         <li>
-                                            <a href="javascript:;">
+                                            <a href="/shunfeng/LG_Designed">
                                                 <img class="contimg" src="images/PCkuaidifuwu-0213.jpg" />
                                                 <div class="content_img_tit">
                                                     <h3>
@@ -145,7 +146,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:;">
+                                            <a href="/shunfeng/lxw_refrigerate">
                                                 <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
                                                 <div class="content_img_tit">
                                                     <h3>
@@ -163,7 +164,7 @@
                                 <li class="contentImg">
                                     <ul class="content_banenr_img clearfix">
                                         <li>
-                                            <a href="javascript:;"> 
+                                            <a href="/shunfeng/LG_Designed"> 
                                                 <img class="contimg" src="images/lengyunbusiness-img2.jpg" />
                                                 <div class="content_img_tit">
                                                     <h3>
@@ -176,7 +177,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:;">
+                                            <a href="/shunfeng/lxw_refrigerate">
                                                 <img class="contimg" src="images/PCkuaidifuwu-0213.jpg" />
                                                 <div class="content_img_tit">
                                                     <h3>
@@ -284,11 +285,11 @@
                 <div class="content_su_tit">
                     <h2>成功案例</h2>
                     <span>每一时刻，都有无数的客户托付与期待被成功交付，顺丰与前瞻者同行，与成就者共成就</span>
-                    <a href="javascript:;">查看全部> </a>
+                    <a href="/shunfeng/LTsuccess">查看全部> </a>
                 </div>
                 <ul class="content_su_nav">
                     <li>
-                        <a href="javascript:;">
+                        <a href="/shunfeng/LTelectronic ">
                             <div class="su_nav_img">
                                 <img src="images/red-t-img-1.png" class="red" />
                                 <img src="images/white-t-img-1.png" class="white" />
@@ -297,7 +298,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;">
+                        <a href="/shunfeng/LTmedical">
                             <div class="su_nav_img">
                                 <img src="images/red-t-img-5.png" class="red" />
                                 <img src="images/white-t-img-5.png" class="white" />
@@ -306,7 +307,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;">
+                        <a href="/shunfeng/LTfresh">
                             <div class="su_nav_img">
                                 <img src="images/red-t-img-3.png" class="red" />
                                 <img src="images/white-t-img-3.png" class="white" />
@@ -315,7 +316,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;">
+                        <a href="/shunfeng/LTconsumer">
                             <div class="su_nav_img">
                                 <img src="images/red-t-img-4.png" class="red" />
                                 <img src="images/white-t-img-4.png" class="white" />
@@ -333,7 +334,7 @@
                 <div class="content_new_tit">
                     <h2>新闻资讯</h2>
                     <span>新闻资讯抢先知晓</span>
-                    <a href="javascript:;"> 查看全部> </a>
+                    <a href="/shunfeng/xkjournalism"> 查看全部> </a>
                 </div>
                 <ul class="content_new_nav wrap">
                     <li>

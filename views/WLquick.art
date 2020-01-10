@@ -224,7 +224,7 @@
                     <li class="celerity_login">
                         <span class="icon member"></span> {{if tel}}
                         <a href="javascript:;">{{tel+'用户欢迎您'}}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-                        <a href="/date" class="date">退出登录</a> {{else}}
+                        <a href="/shunfeng/WL_quick_date" class="date">退出登录</a> {{else}}
                         <a href="javascript:;" class="Thelogin_button">快速登录/注册</a>
                         <!-- <span class="icon country"></span> -->
                         {{/if}}
