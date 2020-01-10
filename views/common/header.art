@@ -4,7 +4,7 @@
                 <img src="../images/sf.png">
                 <ul class="nav_l clearfix">
                     <li>
-                        <a href="javascript:;" class="current">首页</a>
+                        <a href="/index" class="current">首页</a>
                     </li>
                     <li>
                         <a href="javascript:;">物流</a>
@@ -175,23 +175,23 @@
                     <li>
                         <a href="javascript:;">顺丰控股投资者关系</a>
                         <ul class="nav_two" style="width: 100%;">
-                            <li><a href="javascript:;">公司治理</a></li>
-                            <li><a href="javascript:;">公司公告</a></li>
-                            <li><a href="javascript:;">定期报告</a></li>
-                            <li><a href="javascript:;">投资者联络</a></li>
-                            <li><a href="javascript:;">投资者关系日历</a></li>
+                            <li><a href="/shunfeng/ZP-investor-govern">公司治理</a></li>
+                            <li><a href="/shunfeng/ZP-investor-notice">公司公告</a></li>
+                            <li><a href="/shunfeng/ZP-investor-report-finance">定期报告</a></li>
+                            <li><a href="/shunfeng/ZP-investor-contact">投资者联络</a></li>
+                            <li><a href="/shunfeng/ZP-investor-calendar-director">投资者关系日历</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="javascript:;">关于我们</a>
                         <ul class="nav_two">
-                            <li><a href="javascript:;">关于顺丰</a></li>
-                            <li><a href="javascript:;">新闻资讯</a></li>
+                            <li><a href="/shunfeng/xkwe">关于顺丰</a></li>
+                            <li><a href="/shunfeng/xkjournalism">新闻资讯</a></li>
                             <li><a href="javascript:;">服务公告</a></li>
                             <li><a href="javascript:;">推广专区</a></li>
-                            <li><a href="javascript:;">会员权益</a></li>
+                            <li><a href="/shunfeng/xkmember">会员权益</a></li>
                             <li><a href="javascript:;">人才招聘</a></li>
-                            <li><a href="javascript:;">集团采购</a></li>
+                            <li><a href="/shunfeng/xkrecruit">集团采购</a></li>
                         </ul>
                     </li>
                 </ul>
