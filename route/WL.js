@@ -4,23 +4,57 @@ const router = express.Router();
 //运单追踪post路由
 router.post("/WL_waybill", async (req, res) => {
     console.log(req.body);
-
+      
+      
     await Senderinfor.create(req.body)
     res.redirect('/shunfeng/WL_waybill')
 
 })
 //运单追踪get路由
 router.get('/WL_waybill', async (req, res) => {
- let searchnum=req.query.num
-//  let arr=searchnum==''?await Senderinfor.find():await Senderinfor.findOne({_id:searchnum})
+    console.log(req.session);
+    let searchnum = req.query.num
+
+    if( req.session.tel==null) {
+      res.render("WL_waybill2" ,{ message:"请先登录"})
+    }else {
+        if (searchnum == null) {
+            let arr = await Senderinfor.find()
+            let obj = {
+                infor: arr
+            }
+            res.render("WL_waybill.art", obj)
+        } else {
+            let arr = []
+            let arr1
+            try {
+                arr1 = await Senderinfor.findOne({ _id: searchnum })
+                throw "没找到"
+            }
+            catch{
+                err => console.log(err)
+            }
+            console.log(typeof (arr1));
+            if (typeof (arr1) == "object") {
+                arr.push(arr1)
+                let obj = {
+                    infor: arr
+                }
+                res.render("WL_waybill1.art", obj)
+            } else {
+                res.render("WL_waybill2.art", { message: "没有找到该运单" })
+            }
+    
+    
+        }
+    }
+  
 
 
-  let arr= await Senderinfor.find()
 
 
-    res.render("WL_waybill.art", {
-        infor: arr
-    })
+
+    //   let arr= await Senderinfor.find()
 })
 
 // //运单追踪get路由
@@ -30,7 +64,7 @@ router.get('/WL_waybill', async (req, res) => {
 //    console.log('**********',arr)
 //    res.render("WL_waybill.art",{infor:arr})
 //   });
- 
+
 // })
 
 //我要寄件路由
@@ -90,5 +124,47 @@ router.get('/delete', async (req, res) => {
     await Senderinfor.findOneAndDelete({ _id: id })
     res.redirect("/shunfeng/WL_waybill")
 })
+ router.get("/WL_waybill_login",(req,res)=>{
+    let tel = req.query.tel;
+    req.session.tel = tel;
+    req.app.locals.tel = req.session.tel;
+    res.redirect('/shunfeng/WL_waybill')
+    console.log(req.session);
+ }) 
+ router.get("/WL_quick_login",(req,res)=>{
+    let tel = req.query.tel;
+    req.session.tel = tel;
+    req.app.locals.tel = req.session.tel;
+    res.redirect('/shunfeng/WL_quick')
+})
+ router.get('/WL_quick_date', (req, res) => {
+    req.session.destroy(function() {
+        res.clearCookie('connect.sid')
+        res.redirect('/shunfeng/WL_quick')
+        req.app.locals.tel = undefined;
+    })
+ })
+ router.get("/WL_sf_express_login",(req,res)=>{
+    let tel = req.query.tel;
+    req.session.tel = tel;
+    req.app.locals.tel = req.session.tel;
+    res.redirect('/shunfeng/WL_sf_express')
+})
+ router.get('/WL_sf_express_date', (req, res) => {
+    req.session.destroy(function() {
+        res.clearCookie('connect.sid')
+        res.redirect('/shunfeng/WL_sf_express')
+        req.app.locals.tel = undefined;
+    })
+ })
 
-module.exports = router
+
+ router.get('/WL_waybill_date', (req, res) => {
+    req.session.destroy(function() {
+        res.clearCookie('connect.sid')
+        res.redirect('/shunfeng/WL_waybill')
+        req.app.locals.tel = undefined;
+    })
+
+})
+module.exports =router

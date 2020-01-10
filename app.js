@@ -2,6 +2,8 @@ const express = require('express')
 const app = express();
 const bodyParser=require('body-parser')
 const mongoose = require('mongoose');
+const dateFormat=require('dateformat')
+const template=require('art-template')
 
 const path = require('path')
 const session = require('express-session')
@@ -17,6 +19,7 @@ mongoose.connect('mongodb://localhost/shunfeng', {
 
 app.use(express.static(__dirname));
 
+template.defaults.imports.dateFormat=dateFormat;
 
 //收集post请求参数
 app.use(bodyParser.urlencoded({extended:false}))
@@ -32,8 +35,16 @@ app.set('view engine', 'art');
 // 当渲染后缀为art的模板时 所使用的模板引擎是什么
 app.engine('art', require('express-art-template'));
 const shunfeng=require('./route/WL.js')
-app.use("/shunfeng",shunfeng);
 
+
+const guoji=require('./route/LG.js')
+app.use("/shunfeng",guoji);
+
+
+
+
+
+app.use("/shunfeng",shunfeng);
 
 const sf = require('./route/index')
 app.use(sf);

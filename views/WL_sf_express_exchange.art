@@ -431,8 +431,8 @@
                     我们期待为你带来更加优质的线上服务体验
                 </p>
             </div>
-             <!-- 三级导航栏 -->
-             <div class="service-nav">
+            <!-- 三级导航栏 -->
+            <div class="service-nav">
                 <div class="nav-bg">
                     <ul class="navs">
                         <li>
@@ -527,9 +527,8 @@
                                         <div class="form-group-input">
                                             <input style="width: 92px;" id="justAnotherInputBox1" type="text"
                                                 placeholder="请选择">
-                                            <div
-                                                style="width: 30px;text-align: center;font-size: 13px;height: 32px;line-height: 32px;">
-                                                </div>
+                                            <div class="huansuan">
+                                            </div>
                                             <input style=" width: 92px;" id="justAnotherInputBox2" type="text"
                                                 placeholder="请选择">
                                         </div>
@@ -537,15 +536,15 @@
                                     <div class="form-group clearfix">
                                         <label for="">币种金额</label>
                                         <div class="form-group-input">
-                                            <input type="text" placeholder="请选择">
+                                            <input id="input-money" type="text" placeholder="请选择">
 
                                         </div>
                                     </div>
-                                    <div style="display: none;" class="form-group clearfix money">
+                                    <div style="display: none;height: 50px;  line-height: 50px;" class="form-group clearfix money">
                                         <label for="">换算金额</label>
-                                        <div class="form-group-input  conversion-money">
-                                            
-                                            
+                                        <div style="font-size: 32px; height: 50px;line-height: 50px" class="form-group-input  conversion-money">
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -718,18 +717,54 @@
         $('#mydatepicker2').dcalendarpicker({
             format: 'yyyy-mm-dd'
         });
+
+
         $('#mycalendar').dcalendar();
 
-        $('input').blur(function(){
-            $('input').each(function (index,dom) {
-                if($(dom).val()==''){
-                    console.log(1);
-                    
-                    $('.money').css('display','none')
-                }else{
-                    $('.money').css('display','block')
+        $('input').blur(function () {
+            $('input').each(function (index, dom) {
+                if ($(dom).val() == '') {
+                    console.log($('#justAnotherInputBox1').val());
+
+                    $('.money').css('display', 'none')
+                } else {
+                    var amonnt1 = $("#justAnotherInputBox1").val();
+                    var amonnt2 = $("#justAnotherInputBox2").val();
+                    function judgeAmonnt(amonnt) {
+                        let rate;
+                        if (amonnt == '新台币') {
+                            return rate = 0.2;
+                        } else if (amonnt == '人民币') {
+                            return rate = 1;
+                        } else if (amonnt == '美元') {
+                            return rate = 6.7;
+                        } else if (amonnt == '卢布') {
+                            return rate = 0.1;
+                        } else if (amonnt == "韩元") {
+                            return rate = 0.005
+                        } else if (amonnt == '日元') {
+                            return rate = 0.06
+                        } else if (amonnt == "欧元") {
+                            return rate = 7.56;
+                        } else if (amonnt == '泰铢') {
+                            return rate = 0.21;
+                        } else if (amonnt == "港币") {
+                            return rate = 0.85;
+                        } else if (amonnt == "英镑") {
+                            return rate = 8.86
+                        }
+                    }
+                    var num1 = judgeAmonnt(amonnt1);
+                    console.log(num1);
+
+                    var num2 = judgeAmonnt(amonnt2);
+                    var money1 = $("#input-money").val();
+                    var money2 = num1 * money1 / num2;
+                    money2=money2.toFixed(2)
+                    $(".conversion-money").html(money2);
+                    $('.money').css('display', 'block')
                 }
-              })
+            })
         })
     })
 
@@ -737,10 +772,11 @@
 <script type="text/javascript">
 
     var SampleJSONData = [
+        // {
+        //     id: 0,
+        //     title: '新台币 '
+        // },
         {
-            id: 0,
-            title: '蒙古币  '
-        }, {
             id: 1,
             title: '人民币',
 
@@ -768,7 +804,7 @@
             title: '港币'
         }, {
             id: 9,
-            title: '越南盾'
+            title: '英镑'
         }
 
     ];
@@ -786,6 +822,9 @@
             isMultiple: false
         });
     });
+
+
+
 
 
 </script>

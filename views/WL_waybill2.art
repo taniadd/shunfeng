@@ -22,6 +22,8 @@
 
   <div class="mwrap">
 
+    <!-- 头部开始 -->
+   
     <div class="header">
       <div class="wrap clearfix">
           <img src="../images/sf.png">
@@ -304,6 +306,7 @@
       </div>
   </div>
     <!-- 登录界面结束 -->
+    <!-- 登录界面结束 -->
     <!-- 头部结束 -->
 
     <!-- 内容区开始 -->
@@ -368,117 +371,11 @@
                     <!-- 二级tab栏内容1 当前类 -->
                     <div style="display: block;" class="tab-list send-list">
                       <!-- 单个运单 -->
-                      {{each infor}}
-                      <div class="list-wrap">
-                        <div class="item center-between ">
-                          <div>
-                            <!-- 运单第一排 -->
-                            <div class="center-between ">
-                              <p>
-                                <span style="color: #999999;">运单号</span>
-                                <!-- 运单号 -->
-                                <span>{{@$value._id}}</span>
-                              </p>
-                              <p>
-                                <span style="color: #999999;">签收时间</span>
-                                <!-- 时间 -->
-                                <span>{{dateFormat($value.time,"yyyy-mm-dd hh:MM")}}</span>
-                              </p>
-                            </div>
-                            <!-- 运单第二排 -->
-                            <div class="center-between flow">
-                              <!-- 寄信人 -->
-                              <div class="sender">
-                                <div class="city" title=" {{$value.senderbigadd}}">
-                                  {{$value.senderbigadd}}
-                                </div>
-                                <div class="gray" title=" {{$value.sendername}}">
-                                  {{$value.sendername}}
-                                </div>
-                              </div>
-                              <div class="status">
-                                <p>
-                                  <span class="progress"></span>
-                                </p>
-                                <p class="text">已签收</p>
-                              </div>
-                              <div class="receiver">
-                                <div class="city" title=" {{$value.receiverbigadd}}">
-                                  {{$value.receiverbigadd}}
-                                </div>
-                                <div class="gray" title=" {{$value.receivername}}">
-                                  {{$value.receivername}}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="price-wrapper">
-                            <p class="price">¥22</p>
-                          </div>
-                          <div>
-                            <button data-id="{{@$value._id}}" class="clear-list-wrap  iconfont icon-shanchu"></button>
-                          </div>
-                        </div>
-
-                      </div>
-                      {{/each}}
+                     <div style="font-size: 24px;padding: 20px 0;">{{message}}</div> 
                     </div>
                     <!-- 二级tab栏内容2 -->
                     <div style="display: none;" class="tab-list receive-list">
-                      {{each infor}}
-                      <div class="list-wrap">
-                        <div class="item center-between ">
-                          <div>
-                            <!-- 运单第一排 -->
-                            <div class="center-between ">
-                              <p>
-                                <span style="color: #999999;">运单号</span>
-                                <!-- 运单号 -->
-                                <span>{{@$value._id}}</span>
-                              </p>
-                              <p>
-                                <span style="color: #999999;">签收时间</span>
-                                <!-- 时间 -->
-                                <span>{{dateFormat($value.time,"yyyy-mm-dd hh:MM")}}</span>
-                              </p>
-                            </div>
-                            <!-- 运单第二排 -->
-                            <div class="center-between flow">
-                              <!-- 寄信人 -->
-                              <div class="sender">
-                                <div class="city" title="{{$value.senderbigadd}}">
-                                  {{$value.senderbigadd}}
-                                </div>
-                                <div class="gray" title="{{$value.sendername}}">
-                                  {{$value.sendername}}
-                                </div>
-                              </div>
-                              <div class="status">
-                                <p>
-                                  <span class="progress"></span>
-                                </p>
-                                <p class="text">已签收</p>
-                              </div>
-                              <div class="receiver">
-                                <div class="city" title="{{$value.receiverbigadd}}">
-                                  {{$value.receiverbigadd}}
-                                </div>
-                                <div class="gray" title="{{$value.receivername}}">
-                                  {{$value.receivername}}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="price-wrapper">
-                            <p class="price">¥22</p>
-                          </div>
-                          <div>
-                            <button data-id="{{@$value._id}}" class="clear-list-wrap  iconfont icon-shanchu"></button>
-                          </div>
-                        </div>
-
-                      </div>
-                      {{/each}}
+                     
                     </div>
                     <!-- 二级tab栏内容3 -->
                     <div style="display: none;" class="tab-list batch-list">
@@ -490,7 +387,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div></div>
                 </div>
               </div>
             </div>
@@ -647,8 +544,7 @@
     <a href="" class="index-online-service">
       <p>在线客服</p>
     </a>
-  </div>
-
+  
 </body>
 
 </html>
