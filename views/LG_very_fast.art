@@ -3,17 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>企业荣誉</title>
-
+    <title>国际飞快</title>
     <link href="../css/base.css" type="text/css" rel="stylesheet" />
     <link href="../css/common.css" type="text/css" rel="stylesheet" />
-    <link href="../css/dlindex.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/xkprogress.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/LG_seaport.css">
+    <link rel="stylesheet" href="../css/FH-Storage.css">
+    <link rel="stylesheet" href="../css/LG_International.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/login.js"></script>
-    <script src="../js/xktip.js"></script>
+    <script src="../js/LG-hwc.js"></script> 
+     <script src="../js/LG_International.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,8 @@
                     </li>
                     <li>
                         <a href="javascript:;">物流</a>
-                        <ul class="nav_two nav_two_bg clearfix" style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
+                        <ul class="nav_two nav_two_bg clearfix"
+                            style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
                             <li class="nav_two_wul">
                                 <ul class="wuliu_serv clearfix">
                                     <!-- 快递服务 -->
@@ -240,8 +242,8 @@
                     </li>
                 </ul>
                 <span class="close">
-              <a href="javascrpit:;">×</a>
-          </span>
+                    <a href="javascrpit:;">×</a>
+                </span>
             </div>
             <div class="login_content">
                 <p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
@@ -297,80 +299,214 @@
                 </form>
             </div>
         </div>
-        <!-- 登录界面结束 -->
         <!-- 头部结束 -->
         <!-- banner开始 -->
         <div class="banner">
-            <!-- 轮播图 -->
-            <img src="../images/SF-CN-About-SF.jpg" alt="">
-            
-        </div>
-        <!-- banner结束 -->
-        <!-- 主体部分开始 -->
-        <div class="tabs_nava_fa">
-            <ul>
-                <li><a href="xkwe.html">公司介绍</a></li>
-                <li><a href="xkprogress.html">发展历程</a></li>
-                <li><a href="xkidea.html">品牌理念</a></li>
-                <li><a href="xkculture.html">企业文化</a></li>
-                <li><a href="xkhonor.html" class="a_5">企业荣誉</a></li>
-                <li><a href="xkcontinue.html">可持续发展</a></li>
+            <ul class="banner_img">
+                <li><img src="../images/-003061201.jpg" /></li>
             </ul>
         </div>
-        <div class="tab_container">
-            <div class="tab_container_1">企业荣誉</div>
-           <div class="idea">
-               <img src="../images/Honors-1.jpg" alt="">
-               <div class="idea_1">
-                   <P class="idea_2">荣誉来自认可</P>
-                   <P>&nbsp;</P>
-                   <P>中国物流与采购联合会“AAAAA”物流企业</P>
-                   <P>中国物流与采购联合会“中国物流改革开放30年旗帜企业”;</P>
-                   <P>2009物流企业统计样本企业</P>
-                   <P>2010年度广东省邮政业统计工作先进单位</P>
-                   <P>中国快递物流示范基地</P>
-                   <P>广东省深圳大运会邮政服务与邮路安保工作先进集体</P>
-                   <P>十佳电子商务物流创新企业 </P>
-                   <P>深圳市重点物流企业</P>
-                   <P>深圳市知名品牌</P>
-                   <P>中国（深圳）国际物流与交通运输博览会“品牌企业奖”</P>
-                   <p>国家质量监督检验检疫总局“信用管理AA级企业”</p>
-                   <p>广东省经济与信息化委员会“大型骨干企业”</p>
-               </div>
-           </div>
-           <div class="idea_3">
-            <div class="idea_4">
-                <P>顺丰的信息安全管理已达国际标准,正式通过ISO27001信息安全管理体系国际认证。</P>
+
+        <!-- 海外仓导航栏 -->
+        <div class="tabs_nav">
+            <ul class="tabs_nav_ul clearfix">
+                <li> <span>同城</span>
+                    <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_one ">
+                        <li>
+                            <a href="">顺丰同城急送</a>
+                        </li>
+                    </ul></li> <i>|</i>
+               
+                <li> <span>内地及港澳台</span>
+                    <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_two">
+                        <li>
+                            <a href="">顺丰即日</a>
+                        </li>
+                        <li>
+                            <a href="">顺丰次晨</a>
+                        </li>
+                        <li>
+                            <a href="">顺丰标快</a>
+                        </li>
+                        <li>
+                            <a href="">顺丰特惠</a>
+                        </li>
+                        <li>
+                            <a href="">顺丰重货快运</a>
+                        </li>
+                        <li>
+                            <a href="">E顺递</a>
+                        </li>
+                        <li>
+                            <a href="">重货包裹</a>
+                        </li>
+                        <li>
+                            <a href="">小票零单</a>
+                        </li>
+                        <li>
+                            <a href="">重货专运</a>
+                        </li>
+                        <li>
+                            <a href="">物流普顺(港澳地区)</a>
+                        </li>
+                    </ul></li><i>|</i>
+               
+                <li> <span style="color: #DC1E32; border-bottom:2px solid #DC1E32; padding-bottom: 6px;">国际</span>
+                 <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_there">
+                    <li>
+                        <a href="/shunfeng/LG_International" >国际标快</a>
+                    </li>
+                    <li>
+                        <a href="/shunfeng/LG_Designed">国际专快</a>
+                    </li>
+                    <li>
+                        <a href="/shunfeng/LG_very_fast"style="color:red">国际飞快</a>
+                    </li> 
+                    <li>
+                        <a href="/shunfeng/LG_quickly" >国际很快</a>
+                    </li> 
+                    <li>
+                        <a href="">国际再快</a>
+                    </li> 
+                    <li>
+                        <a href="">国际够快</a>
+                    </li> 
+                    <li>
+                        <a href="">国际才快</a>
+                    </li> 
+                    <li>
+                        <a href="/shunfeng/LG_seaport">国际必快</a>
+                    </li> 
+                </ul>
+            </li><i>|</i>
+                
+                <li><span>增值</span>
+                    <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_there">
+                        <li>
+                            <a href="">国际标慢</a>
+                        </li>
+                        <li>
+                            <a href="">国际专慢</a>
+                        </li>
+                        <li>
+                            <a href="">国际飞慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际很慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际再慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际够慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际才慢</a>
+                        </li> 
+                        <li>
+                            <a href="">国际必慢</a>
+                        </li> 
+                    </ul>
+        </li>
+            </ul>
+        </div>
+
+        <!-- 海外仓内容模块 -->
+        <div class="express_service_list">
+            <!-- 海外仓标题模块 -->
+            <div class="tab_title">国际飞快</div>
+            <!-- 海外仓详细模块 -->
+            <div class="wrapper">
+                <ul>
+                    <div>
+                        <img src="../images/dtop_img3.png" alt="">
+                        <h2>服务介绍</h2>
+                        <p>为跨境电商B2C卖家发送2KG以下包裹而推出的一款<br />
+                            <br> 高品质小包类服务。
+                            <br />
+                            <br>
+                            <br />
+                            <br> 
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../images/w_feature.png" alt="">
+                        <h2>服务特性</h2>
+                        <p>
+                            高效揽收:  中国内地1小时内上门收件，全年无休；<br />
+                            <br> 上网快速：当天即可查询到上网信息；<br>
+                            <br> 安全高效：次日离港，便捷清关，时效可控；<br />
+                            <br> 轨迹跟踪：挂号全程跟踪，平邮显示到达目的国。<br />
+                            <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../images/dtop_img2.png" alt="">
+                        <h2>服务范围</h2>
+                        <p>
+                            收件范围：中国内地；派件范围：全球200多个国家<br>
+                            <br> 及地区。
+                            <br />
+                            <!-- <br>国；<br />
+                            <br> 派件范围：美国、加拿大、新加坡、马来西亚、日
+                            <br>
+                            <br>
+                            本、韩国、澳大利亚、泰国、越南、蒙古、印度、 -->
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../images/dtop_img2.png" alt="">
+                        <h2>服务时间</h2>
+                        <p>
+                            中国内地：周一至周日提供收派服务。<br>
+                            <!-- <br> 台湾地区：周一至周六提供收派服务；
+                            <br />
+                            <br> 新加坡/马来西亚/日本/韩国：周一至周六提供收派服<br />
+                            <br> 务；
+                            <br>
+                            <br>
+                            美国/蒙古/俄罗斯：周一至周五提供收派服务。 -->
+                        </p>
+                    </div>
+                </ul>
             </div>
-            <img src="../images/4.png" alt="">
-        </div>
-        <div class="idea_3">
-            <div class="idea_4">
-                <P>为确保履行网络运营者安全保护义务，顺丰已对五大类核心系统进行网络安全等级保护备案，并每年<br/>依据《网络安全等级保护基本要求》开展测评工作，落实等级保护要求。</P>
+            <!-- 邮寄模块 -->
+            <div class="cooperation">
+                <a href="" class="consult">
+                    <img src="../images/youxiang.png" alt=""> 咨询服务
+                </a>
+                <div class="cooperation_share">
+                    <span>分享好友</span>
+
+                    <ul>
+                        <li>
+                            <a href="" class="iconfont">&#xe699;</a>
+                        </li>
+                        <li>
+                            <a href="" class="iconfont">&#xe659;</a>
+                            <div class="weixin_code">
+                                <img src="../images/weixinerweima.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="iconfont">&#xe619;</a>
+                        </li>
+                        <li>
+                            <a href="" class="iconfont">&#xe64d;</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <img src="../images/1 (1).png" alt="">
         </div>
-        <div class="idea_3">
-            <div class="idea_4">
-                <P class="idea_2">顺丰协助国家邮政局制定邮政业信息系统安全等级相关标准</P>
-                <p>2014年7月，国家邮政局委托顺丰信息安全与内控处协助制定《邮政业信息系统安全等级保护定级指<br/>南》。该标准已于2015年6月11日正式发布，其发布标志着邮政业信息安全工作步入标准化和规范化<br/>阶段，也是顺丰为提升行业信息安全治理水平做出的重要贡献。</p>
-            </div>
-            <img src="../images/Certificate-ICT.png" alt="">
-        </div>
-        <div class="idea">
-            <img src="../images/5.png" alt="">
-            <div class="idea_1">
-                <P>此后，顺丰参与起草了《邮政业信息系统安全等级保护基本要求》，结合邮政行业实际情况，参考行<br/>业实践经验，在GB/T 22239-2008的基础上增加邮政业增强保护类安全要求，使标准更具行业指导意义。</P>
-            </div>
-        </div>
-         <!-- 返回顶部 -->
-         <div class="tip">
-        
-        </div>
-        </div>
-<!-- 主体部分结束 -->
-        <!-- 尾部开始 -->
+        <!-- banner结束 -->
+
+
+
+
         <div class="footer">
+            <div class="return_to iconfont_ding">
+                &#xe609;
+            </div>
             <!-- 尾部头部开始 -->
             <div class="footer_top wrap clearfix">
                 <div class="footer_top_l">
@@ -465,7 +601,8 @@
                 </ul>
                 <ul class="footer_ver_r">
                     <li>
-                        <a href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
+                        <a
+                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
 
                     </li>
                 </ul>
@@ -473,9 +610,14 @@
             <!-- 尾部底部版权部分结束 -->
             <!-- 底部网站安全部分开始 -->
             <div class="footer_safe wrap clearfix">
+                <!-- 返回头部的盒子 -->
+            <div class="box box_mixbox">
+            </div>
                 <ul class="clearfix">
                     <li>
-                        <a href="javascript:;"><img src="http://webcert.cnmstl.net/../images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157" alt="安全网址认证书"></a>
+                        <a href="javascript:;"><img
+                                src="http://webcert.cnmstl.net/images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157"
+                                alt="安全网址认证书"></a>
                     </li>
                     <li>
                         <a href="javascript:;"><img src="../images/security_site_1.png" alt="安全认证"></a>
@@ -494,7 +636,9 @@
             </div>
             <!-- 底部网站安全部分结束 -->
         </div>
-        <!-- 尾部结束 -->
+        <a href="" class="index-online-service">
+            <p>在线客服</p>
+        </a>
     </div>
 </body>
 

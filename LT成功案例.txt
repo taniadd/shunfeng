@@ -1,18 +1,18 @@
-/shunfeng/page/LTsuccess.html       全部行业案例1
-/shunfeng/page/LTsuccess1.html       全部行业案例2
-/shunfeng/page/LTmedical.html         医疗行业
-/shunfeng/page/LTfresh.html            生鲜行业
-/shunfeng/page/LTelectronic.html        3c电子行业
-/shunfeng/page/LTconsumer.html           快消行业
+/shunfeng/LTsuccess.html       全部行业案例1
+/shunfeng/LTsuccess1.html       全部行业案例2
+/shunfeng/LTmedical.html         医疗行业
+/shunfeng/LTfresh.html            生鲜行业
+/shunfeng/LTelectronic.html        3c电子行业
+/shunfeng/LTconsumer.html           快消行业
 
-/shunfeng/page/LTdetails1.html         查看详情链接页 第1张 
-/shunfeng/page/LTdetails2.html         查看详情链接页 第2张 
-/shunfeng/page/LTdetails3.html         查看详情链接页 第3张 
-/shunfeng/page/LTdetails4.html         查看详情链接页 第4张 
-/shunfeng/page/LTdetails5.html         查看详情链接页 第5张 
-/shunfeng/page/LTdetails6.html         查看详情链接页 第6张 
-/shunfeng/page/LTdetails7.html         查看详情链接页 第7张
-/shunfeng/page/LTdetails8.html         查看详情链接页 第8张
+/shunfeng/LTdetails1.html         查看详情链接页 第1张 
+/shunfeng/LTdetails2.html         查看详情链接页 第2张 
+/shunfeng/LTdetails3.html         查看详情链接页 第3张 
+/shunfeng/LTdetails4.html         查看详情链接页 第4张 
+/shunfeng/LTdetails5.html         查看详情链接页 第5张 
+/shunfeng/LTdetails6.html         查看详情链接页 第6张 
+/shunfeng/LTdetails7.html         查看详情链接页 第7张
+/shunfeng/LTdetails8.html         查看详情链接页 第8张
 
-/shunfeng/page/LTonlineservice.html       在线客服
-/shunfeng/page/LTcooperation.html         合作咨询           
+/shunfeng/LTonlineservice.html       在线客服
+/shunfeng/LTcooperation.html         合作咨询           

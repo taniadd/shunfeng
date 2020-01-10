@@ -3,18 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>国际飞快</title>
+    <title>公司介绍</title>
+
     <link href="../css/base.css" type="text/css" rel="stylesheet" />
     <link href="../css/common.css" type="text/css" rel="stylesheet" />
+    <link href="../css/dlindex.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/xkmember.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/LG_seaport.css">
-    <link rel="stylesheet" href="../css/FH-Storage.css">
-    <link rel="stylesheet" href="../css/LG_International.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/login.js"></script>
-    <script src="../js/LG-hwc.js"></script> 
-     <script src="../js/LG_International.js"></script>
+    <script src="../js/xkmember.js"></script>
+    <script src="../js/draggable.js"></script>
+    <script src="../js/EZView.js"></script>
 </head>
 
 <body>
@@ -29,8 +30,7 @@
                     </li>
                     <li>
                         <a href="javascript:;">物流</a>
-                        <ul class="nav_two nav_two_bg clearfix"
-                            style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
+                        <ul class="nav_two nav_two_bg clearfix" style="width:1300px;margin: 0 auto; left: 0;margin-left: -200%;">
                             <li class="nav_two_wul">
                                 <ul class="wuliu_serv clearfix">
                                     <!-- 快递服务 -->
@@ -242,8 +242,8 @@
                     </li>
                 </ul>
                 <span class="close">
-                    <a href="javascrpit:;">×</a>
-                </span>
+              <a href="javascrpit:;">×</a>
+          </span>
             </div>
             <div class="login_content">
                 <p class="yuejie"><a href="javascript:;">我是月结企业用户</a></p>
@@ -299,214 +299,82 @@
                 </form>
             </div>
         </div>
+        <!-- 登录界面结束 -->
         <!-- 头部结束 -->
         <!-- banner开始 -->
-        <div class="banner">
-            <ul class="banner_img">
-                <li><img src="../images/-003061201.jpg" /></li>
-            </ul>
-        </div>
-
-        <!-- 海外仓导航栏 -->
-        <div class="tabs_nav">
-            <ul class="tabs_nav_ul clearfix">
-                <li> <span>同城</span>
-                    <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_one ">
-                        <li>
-                            <a href="">顺丰同城急送</a>
-                        </li>
-                    </ul></li> <i>|</i>
-               
-                <li> <span>内地及港澳台</span>
-                    <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_two">
-                        <li>
-                            <a href="">顺丰即日</a>
-                        </li>
-                        <li>
-                            <a href="">顺丰次晨</a>
-                        </li>
-                        <li>
-                            <a href="">顺丰标快</a>
-                        </li>
-                        <li>
-                            <a href="">顺丰特惠</a>
-                        </li>
-                        <li>
-                            <a href="">顺丰重货快运</a>
-                        </li>
-                        <li>
-                            <a href="">E顺递</a>
-                        </li>
-                        <li>
-                            <a href="">重货包裹</a>
-                        </li>
-                        <li>
-                            <a href="">小票零单</a>
-                        </li>
-                        <li>
-                            <a href="">重货专运</a>
-                        </li>
-                        <li>
-                            <a href="">物流普顺(港澳地区)</a>
-                        </li>
-                    </ul></li><i>|</i>
-               
-                <li> <span style="color: #DC1E32; border-bottom:2px solid #DC1E32; padding-bottom: 6px;">国际</span>
-                 <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_there">
-                    <li>
-                        <a href="">国际标快</a>
-                    </li>
-                    <li>
-                        <a href="">国际专快</a>
-                    </li>
-                    <li>
-                        <a href=""style="color:red">国际飞快</a>
-                    </li> 
-                    <li>
-                        <a href="">国际很快</a>
-                    </li> 
-                    <li>
-                        <a href="">国际再快</a>
-                    </li> 
-                    <li>
-                        <a href="">国际够快</a>
-                    </li> 
-                    <li>
-                        <a href="">国际才快</a>
-                    </li> 
-                    <li>
-                        <a href="">国际必快</a>
-                    </li> 
-                </ul>
-            </li><i>|</i>
-                
-                <li><span>增值</span>
-                    <ul class="tabs_nav_ul_ul tabs_nav_ul_ul_there">
-                        <li>
-                            <a href="">国际标慢</a>
-                        </li>
-                        <li>
-                            <a href="">国际专慢</a>
-                        </li>
-                        <li>
-                            <a href="">国际飞慢</a>
-                        </li> 
-                        <li>
-                            <a href="">国际很慢</a>
-                        </li> 
-                        <li>
-                            <a href="">国际再慢</a>
-                        </li> 
-                        <li>
-                            <a href="">国际够慢</a>
-                        </li> 
-                        <li>
-                            <a href="">国际才慢</a>
-                        </li> 
-                        <li>
-                            <a href="">国际必慢</a>
-                        </li> 
-                    </ul>
-        </li>
-            </ul>
-        </div>
-
-        <!-- 海外仓内容模块 -->
-        <div class="express_service_list">
-            <!-- 海外仓标题模块 -->
-            <div class="tab_title">国际飞快</div>
-            <!-- 海外仓详细模块 -->
-            <div class="wrapper">
-                <ul>
-                    <div>
-                        <img src="../images/dtop_img3.png" alt="">
-                        <h2>服务介绍</h2>
-                        <p>为跨境电商B2C卖家发送2KG以下包裹而推出的一款<br />
-                            <br> 高品质小包类服务。
-                            <br />
-                            <br>
-                            <br />
-                            <br> 
-                        </p>
-                    </div>
-                    <div>
-                        <img src="../images/w_feature.png" alt="">
-                        <h2>服务特性</h2>
-                        <p>
-                            高效揽收:  中国内地1小时内上门收件，全年无休；<br />
-                            <br> 上网快速：当天即可查询到上网信息；<br>
-                            <br> 安全高效：次日离港，便捷清关，时效可控；<br />
-                            <br> 轨迹跟踪：挂号全程跟踪，平邮显示到达目的国。<br />
-                            <br><br>
-                        </p>
-                    </div>
-                    <div>
-                        <img src="../images/dtop_img2.png" alt="">
-                        <h2>服务范围</h2>
-                        <p>
-                            收件范围：中国内地；派件范围：全球200多个国家<br>
-                            <br> 及地区。
-                            <br />
-                            <!-- <br>国；<br />
-                            <br> 派件范围：美国、加拿大、新加坡、马来西亚、日
-                            <br>
-                            <br>
-                            本、韩国、澳大利亚、泰国、越南、蒙古、印度、 -->
-                        </p>
-                    </div>
-                    <div>
-                        <img src="../images/dtop_img2.png" alt="">
-                        <h2>服务时间</h2>
-                        <p>
-                            中国内地：周一至周日提供收派服务。<br>
-                            <!-- <br> 台湾地区：周一至周六提供收派服务；
-                            <br />
-                            <br> 新加坡/马来西亚/日本/韩国：周一至周六提供收派服<br />
-                            <br> 务；
-                            <br>
-                            <br>
-                            美国/蒙古/俄罗斯：周一至周五提供收派服务。 -->
-                        </p>
-                    </div>
-                </ul>
-            </div>
-            <!-- 邮寄模块 -->
-            <div class="cooperation">
-                <a href="" class="consult">
-                    <img src="../images/youxiang.png" alt=""> 咨询服务
-                </a>
-                <div class="cooperation_share">
-                    <span>分享好友</span>
-
+        <!-- banner结束 -->
+        <!-- 主体部分开始 -->
+        <div class="big_background">
+            <div class="content">
+                <div class="member_left">
+                    <h3>集团采购</h3>
                     <ul>
-                        <li>
-                            <a href="" class="iconfont">&#xe699;</a>
+                        <li class="item1">
+                            <a href="#">采购政策</a>
                         </li>
-                        <li>
-                            <a href="" class="iconfont">&#xe659;</a>
-                            <div class="weixin_code">
-                                <img src="../images/weixinerweima.png" alt="">
+                        <li class="item">
+                            <a href="#" id="person">采购动态信息</a>
+                            <div class="i23">
+                                <ul id="bag">
+                                    <li><a href="#">采购需求信息</a></li>
+                                    
+                                </ul>
                             </div>
                         </li>
-                        <li>
-                            <a href="" class="iconfont">&#xe619;</a>
+                        <li class="item">
+                            <a href="#" id="persons">供应商管理</a>
+                            <div class="i23">
+                                <ul id="bags">
+                                    <li><a href="#">供应商注册</a></li>
+                                    <li><a href="#">供应商关系管理平台</a></li>
+                                    <li><a href="#">供应商需知</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li>
-                            <a href="" class="iconfont">&#xe64d;</a>
+                        <li class="item1">
+                            <a href="#">采购招标信息公示</a>
                         </li>
                     </ul>
                 </div>
+                <div class="member_right">
+                    <div class="title">
+                        <h1>展示当前页采购招标信息</h1>
+                    </div>
+                    <div class="purchase">
+                        <h4 class="purchase_h4"><span>招标项目</span><span>发布时间</span></h4>
+                        
+                        <div class="what">
+                            <a href="../cg.pdf" title="转弯机采购----新供应商招募公示">转弯机采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="智能分拣柜采购项目招标公示">智能分拣柜采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="纸质运单采购----新供应商招募公示">纸质运单采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="新能源车辆租赁项目招标公示">新能源车辆租赁项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="顺丰员工重大疾病与家属福利保险采购项目招标公示">顺丰员工重大疾病与家属福利保险采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="顺丰特安货运险采购项目招标公示">顺丰特安货运险采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="顺丰工业型扫地机器人采购项目招标公示">顺丰工业型扫地机器人采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="伸缩机采购----新供应商招募公示">伸缩机采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="皮带输送机采购----新供应商招募公示">皮带输送机采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="金属工具采购----新供应商招募公示">金属工具采购----新供应商招募公示<span>2019-12-16</span></a>
+                        </div>
+                        <div class="page">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <a href="#">→</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- banner结束 -->
-
-
-
-
+        <!-- 主体部分结束 -->
+        <!-- 尾部开始 -->
         <div class="footer">
-            <div class="return_to iconfont_ding">
-                &#xe609;
-            </div>
             <!-- 尾部头部开始 -->
             <div class="footer_top wrap clearfix">
                 <div class="footer_top_l">
@@ -601,8 +469,7 @@
                 </ul>
                 <ul class="footer_ver_r">
                     <li>
-                        <a
-                            href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
+                        <a href="javascript:;">©&nbsp;2017&nbsp;&nbsp;顺丰速运&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;粤&nbsp;&nbsp;ICP&nbsp;&nbsp;备08034243号</a>
 
                     </li>
                 </ul>
@@ -610,14 +477,9 @@
             <!-- 尾部底部版权部分结束 -->
             <!-- 底部网站安全部分开始 -->
             <div class="footer_safe wrap clearfix">
-                <!-- 返回头部的盒子 -->
-            <div class="box box_mixbox">
-            </div>
                 <ul class="clearfix">
                     <li>
-                        <a href="javascript:;"><img
-                                src="http://webcert.cnmstl.net/images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157"
-                                alt="安全网址认证书"></a>
+                        <a href="javascript:;"><img src="http://webcert.cnmstl.net/../images/cert/code/officialbrand_small_h_img.jpg?sn=c6cc6af3fac440c28901c15a104582fe&amp;t=1476167429157" alt="安全网址认证书"></a>
                     </li>
                     <li>
                         <a href="javascript:;"><img src="../images/security_site_1.png" alt="安全认证"></a>
@@ -636,9 +498,7 @@
             </div>
             <!-- 底部网站安全部分结束 -->
         </div>
-        <a href="" class="index-online-service">
-            <p>在线客服</p>
-        </a>
+        <!-- 尾部结束 -->
     </div>
 </body>
 
