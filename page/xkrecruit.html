@@ -3,17 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>企业荣誉</title>
+    <title>公司介绍</title>
 
     <link href="../css/base.css" type="text/css" rel="stylesheet" />
     <link href="../css/common.css" type="text/css" rel="stylesheet" />
     <link href="../css/dlindex.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/xkprogress.css">
+    <link rel="stylesheet" href="../css/xkmember.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_vgvt2d5gsxk.css">
     <link rel="stylesheet" href="../css/login.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/login.js"></script>
-    <script src="../js/xktip.js"></script>
+    <script src="../js/xkmember.js"></script>
+    <script src="../js/draggable.js"></script>
+    <script src="../js/EZView.js"></script>
 </head>
 
 <body>
@@ -300,75 +302,77 @@
         <!-- 登录界面结束 -->
         <!-- 头部结束 -->
         <!-- banner开始 -->
-        <div class="banner">
-            <!-- 轮播图 -->
-            <img src="../images/SF-CN-About-SF.jpg" alt="">
-            
-        </div>
         <!-- banner结束 -->
         <!-- 主体部分开始 -->
-        <div class="tabs_nava_fa">
-            <ul>
-                <li><a href="xkwe.html">公司介绍</a></li>
-                <li><a href="xkprogress.html">发展历程</a></li>
-                <li><a href="xkidea.html">品牌理念</a></li>
-                <li><a href="xkculture.html">企业文化</a></li>
-                <li><a href="xkhonor.html" class="a_5">企业荣誉</a></li>
-                <li><a href="xkcontinue.html">可持续发展</a></li>
-            </ul>
-        </div>
-        <div class="tab_container">
-            <div class="tab_container_1">企业荣誉</div>
-           <div class="idea">
-               <img src="../images/Honors-1.jpg" alt="">
-               <div class="idea_1">
-                   <P class="idea_2">荣誉来自认可</P>
-                   <P>&nbsp;</P>
-                   <P>中国物流与采购联合会“AAAAA”物流企业</P>
-                   <P>中国物流与采购联合会“中国物流改革开放30年旗帜企业”;</P>
-                   <P>2009物流企业统计样本企业</P>
-                   <P>2010年度广东省邮政业统计工作先进单位</P>
-                   <P>中国快递物流示范基地</P>
-                   <P>广东省深圳大运会邮政服务与邮路安保工作先进集体</P>
-                   <P>十佳电子商务物流创新企业 </P>
-                   <P>深圳市重点物流企业</P>
-                   <P>深圳市知名品牌</P>
-                   <P>中国（深圳）国际物流与交通运输博览会“品牌企业奖”</P>
-                   <p>国家质量监督检验检疫总局“信用管理AA级企业”</p>
-                   <p>广东省经济与信息化委员会“大型骨干企业”</p>
-               </div>
-           </div>
-           <div class="idea_3">
-            <div class="idea_4">
-                <P>顺丰的信息安全管理已达国际标准,正式通过ISO27001信息安全管理体系国际认证。</P>
+        <div class="big_background">
+            <div class="content">
+                <div class="member_left">
+                    <h3>集团采购</h3>
+                    <ul>
+                        <li class="item1">
+                            <a href="#">采购政策</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" id="person">采购动态信息</a>
+                            <div class="i23">
+                                <ul id="bag">
+                                    <li><a href="#">采购需求信息</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="#" id="persons">供应商管理</a>
+                            <div class="i23">
+                                <ul id="bags">
+                                    <li><a href="#">供应商注册</a></li>
+                                    <li><a href="#">供应商关系管理平台</a></li>
+                                    <li><a href="#">供应商需知</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item1">
+                            <a href="#">采购招标信息公示</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="member_right">
+                    <div class="title">
+                        <h1>展示当前页采购招标信息</h1>
+                    </div>
+                    <div class="purchase">
+                        <h4 class="purchase_h4"><span>招标项目</span><span>发布时间</span></h4>
+                        
+                        <div class="what">
+                            <a href="../cg.pdf" title="转弯机采购----新供应商招募公示">转弯机采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="智能分拣柜采购项目招标公示">智能分拣柜采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="纸质运单采购----新供应商招募公示">纸质运单采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="新能源车辆租赁项目招标公示">新能源车辆租赁项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="顺丰员工重大疾病与家属福利保险采购项目招标公示">顺丰员工重大疾病与家属福利保险采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="顺丰特安货运险采购项目招标公示">顺丰特安货运险采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="顺丰工业型扫地机器人采购项目招标公示">顺丰工业型扫地机器人采购项目招标公示<span>2019-12-16</span></a>
+                            <a href="#" title="伸缩机采购----新供应商招募公示">伸缩机采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="皮带输送机采购----新供应商招募公示">皮带输送机采购----新供应商招募公示<span>2019-12-16</span></a>
+                            <a href="#" title="金属工具采购----新供应商招募公示">金属工具采购----新供应商招募公示<span>2019-12-16</span></a>
+                        </div>
+                        <div class="page">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <a href="#">→</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img src="../images/4.png" alt="">
         </div>
-        <div class="idea_3">
-            <div class="idea_4">
-                <P>为确保履行网络运营者安全保护义务，顺丰已对五大类核心系统进行网络安全等级保护备案，并每年<br/>依据《网络安全等级保护基本要求》开展测评工作，落实等级保护要求。</P>
-            </div>
-            <img src="../images/1 (1).png" alt="">
-        </div>
-        <div class="idea_3">
-            <div class="idea_4">
-                <P class="idea_2">顺丰协助国家邮政局制定邮政业信息系统安全等级相关标准</P>
-                <p>2014年7月，国家邮政局委托顺丰信息安全与内控处协助制定《邮政业信息系统安全等级保护定级指<br/>南》。该标准已于2015年6月11日正式发布，其发布标志着邮政业信息安全工作步入标准化和规范化<br/>阶段，也是顺丰为提升行业信息安全治理水平做出的重要贡献。</p>
-            </div>
-            <img src="../images/Certificate-ICT.png" alt="">
-        </div>
-        <div class="idea">
-            <img src="../images/5.png" alt="">
-            <div class="idea_1">
-                <P>此后，顺丰参与起草了《邮政业信息系统安全等级保护基本要求》，结合邮政行业实际情况，参考行<br/>业实践经验，在GB/T 22239-2008的基础上增加邮政业增强保护类安全要求，使标准更具行业指导意义。</P>
-            </div>
-        </div>
-         <!-- 返回顶部 -->
-         <div class="tip">
-        
-        </div>
-        </div>
-<!-- 主体部分结束 -->
+        <!-- 主体部分结束 -->
         <!-- 尾部开始 -->
         <div class="footer">
             <!-- 尾部头部开始 -->
