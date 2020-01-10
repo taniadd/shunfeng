@@ -103,6 +103,9 @@ $(() => {
             location.href = "/shunfeng/delete?id=" + id;
         }
     })
-
+   //删除搜索框运单号
+   $(".icon-shanchu").click(function(){
+       $(this).parent().siblings(".search-input").val("")
+   })
 
 })
