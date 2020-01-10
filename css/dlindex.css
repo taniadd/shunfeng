@@ -82,6 +82,7 @@
 .banner .banner_img li{
     float: left;
     width: 33.33%;
+    height: 487px;
 }
 .banner .banner_img img {
     width: 100%;
@@ -92,6 +93,14 @@
     left: 50%;
     /* margin-left: -20px; */
 }
+.content .content_bannerWidth .content_banner_splot{
+    bottom: 55px;
+    left: 50%;
+}
+.content .content_bannerWidths .content_banner_splo{
+    bottom: 55px;
+    left: 50%;
+} 
 .banner .banner_splot li{
     float: left;
     height: 15px;
@@ -394,7 +403,15 @@
     width: 300%;
     position: absolute;
 }
+.content .content_img2 {
+    width: 300%;
+    position: absolute;
+}
 .content .contentImg{
+    width: 33.33%;
+    float: left;
+}
+.content .contentImg2{
     width: 33.33%;
     float: left;
 }

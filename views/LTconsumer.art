@@ -313,19 +313,19 @@
 				</p>
 				<ul class='TLlist'>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTsuccess.html">全部行业</a>
+						<a href="/shunfeng/LTsuccess">全部行业</a>
 					</li>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTelectronic.html">3c电子行业</a>
+						<a href="/shunfeng/LTelectronic">3c电子行业</a>
 					</li>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTmedical.html">医疗行业</a>
+						<a href="/shunfeng/LTmedical">医疗行业</a>
 					</li>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTfresh.html">生鲜行业</a>
+						<a href="/shunfeng/LTfresh">生鲜行业</a>
 					</li>
 					<li>
-						<a href="file:///D:/shunfeng/page/LTconsumer.html">快消行业</a>
+						<a href="/shunfeng/LTconsumer">快消行业</a>
 					</li>
 				</ul>
 			</div>
@@ -341,12 +341,12 @@
                             <div class="LTmo">
                                 <div class="LTzi">顺丰客户服务案例——周黑鸭</div>
                                 <p>为了给客户最优质的服务体验，周黑鸭联手顺丰冷运，开展冷运到家业务的推广，2016年双十一期间，顺丰承接了周黑鸭全部订单，7天内完成60万单配送，带给客户最新鲜健...</p>
-                                <a class="LTcircle" href="file:///D:/shunfeng/page/LTdetails3.html">
+                                <a class="LTcircle" href="/shunfeng/LTdetails3">
                                     <!-- <img src="../images/white-t-img-5.png" alt=""> -->
                                     <img class="LThei" src="../images/tr_imgs3.png" alt="">
                                     <p>快消行业</p>
                                 </a>
-                                <a class="LTbox" href="file:///D:/shunfeng/page/LTdetails3.html">
+                                <a class="LTbox" href="/shunfeng/LTdetails3">
                                     查看详情
                                     <span></span>
                                 </a>
@@ -359,12 +359,12 @@
                             <div class="LTmo">
                                 <div class="LTzi">顺丰+谢裕大：古老茶叶的互新思路</div>
                                 <p>谢裕大茶文化博物馆是由谢裕大茶叶股份有限公司建立（以下简称“谢裕大”），建筑面积7000平方米，集旅游、文化展览、销售、科研与一体。而在博物馆内设立的顺丰...</p>
-                                <a class="LTcircle" href="file:///D:/shunfeng/page/LTdetails4.html">
+                                <a class="LTcircle" href="/shunfeng/LTdetails4">
                                     <!-- <img src="../images/white-t-img-5.png" alt=""> -->
                                     <img class="LThei" src="../images/tr_imgs3.png" alt="">
                                     <p>快消行业</p>
                                 </a>
-                                <a class="LTbox" href="file:///D:/shunfeng/page/LTdetails4.html">
+                                <a class="LTbox" href="/shunfeng/LTdetails4">
                                     查看详情
                                     <span></span>
                                 </a>

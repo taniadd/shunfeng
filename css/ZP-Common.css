@@ -134,3 +134,18 @@
     white-space: nowrap;
     text-align: center;
 }
+
+
+/* 轮播图 */
+/* 小圆点当前原点颜色 */
+.swiper-pagination-bullet-active {
+    --swiper-theme-color: blue;
+}
+.swiper-wrapper img {
+    width: 1519px;
+    height: 404.15px;
+}
+/* 翻页按钮 */
+#ccc {
+    color: #ccc;
+}
