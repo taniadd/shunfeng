@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/ZP-investor-notice.css">
     <link rel="stylesheet" href="../css/ZP-Common.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/ZP-Common.js"></script>
+    <script src="../js/swiper.min.js"></script>
 </head>
 
 <body>
@@ -302,7 +304,19 @@
         <!-- 头部结束 -->
         <!-- banner开始 -->
         <div class="banner">
-            <img src="../images/061211.jpg" alt="">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/061211.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/061211.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/061211.jpg" alt=""></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev" id="ccc"></div>
+                <div class="swiper-button-next" id="ccc"></div>
+            </div>
+        </div>
         </div>
         <!-- banner结束 -->
         <!-- 楼层区 -->
@@ -521,5 +535,25 @@
         <!-- 尾部结束 -->
     </div>
 </body>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        speed: 800,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        }
+    }) 
+</script>
 
 </html>
