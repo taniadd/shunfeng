@@ -31,7 +31,9 @@
         <!-- 主体部分开始 -->
         <div class="tabs_nava_fa">
             <ul>
-                <li><a href="/shunfeng/xkwe.html" class="a_1">公司介绍</a></li>
+
+               
+                <li><a href="/shunfeng/xkwe" class="a_1">公司介绍</a></li>
                 <li><a href="/shunfeng/xkprogress">发展历程</a></li>
                 <li><a href="/shunfeng/xkidea">品牌理念</a></li>
                 <li><a href="/shunfeng/xkculture">企业文化</a></li>
