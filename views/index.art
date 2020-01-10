@@ -64,7 +64,7 @@
                     <p>意见反馈</p>
                 </div>
                 <div class="warm_tips_tit">
-                    <a href="javascript::">如您对顺丰官网有任何建议和反馈，可留言给我们</a>
+                    <a href="/shunfeng/lxw_idea">如您对顺丰官网有任何建议和反馈，可留言给我们</a>
                 </div>
             </div>
 
@@ -81,15 +81,15 @@
                             <!-- 运货单查询 -->
                             <div class="bill_number">
                                 <div class="bill_search">
-                                    <input type="search" placeholder="您可以输运单号进行查询" />
-                                    <button class="search_icon"></button>
+                                    <input id="search_input1" type="search" placeholder="您可以输运单号进行查询" />
+                                    <button id="search_button1" class="search_icon"></button>
                                 </div>
                                 <!-- <div class="bill_search_hidden">
                                     <textarea type="search" placeholder="请输入需要查询的运单号" ></textarea>
                                     最多可查询20条，以逗号、空格或回车键隔开
                                    
                                 </div> -->
-                                <button class="search_bill_number">马上查单</button>
+                                <button id="search_button2" class="search_bill_number">马上查单</button>
                             </div>
                         </a>
                     </li>

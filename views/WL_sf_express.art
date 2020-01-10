@@ -9,6 +9,7 @@
     <link type="text/css" rel="stylesheet" href="../css/base.css">
     <link type="text/css" rel="stylesheet" href="../css/common.css">
     <link type="text/css" rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/FH-warehouse_service.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1587983_v7fe8bgq07n.css">
     <link rel="stylesheet" href="../css/WL_sf_express.css">
     <script src="../js/jquery.min.js"></script>
@@ -24,7 +25,7 @@
                 <img src="../images/sf.png">
                 <ul class="nav_l clearfix">
                     <li>
-                        <a href="javascript:;" class="current">首页</a>
+                        <a href="/index" class="current">首页</a>
                     </li>
                     <li>
                         <a href="javascript:;">物流</a>
@@ -59,11 +60,11 @@
                                             <li>
                                                 <h3>国际</h3>
                                             </li>
-                                            <li><a href="javascript:;">国际标快</a></li>
-                                            <li><a href="javascript:;">国际特惠</a></li>
-                                            <li><a href="javascript:;">国际小包</a></li>
-                                            <li><a href="javascript:;">国际重货</a></li>
-                                            <li><a href="javascript:;">国际电商专递</a></li>
+                                            <li><a href="/shunfeng/LG_International">国际标快</a></li>
+                                            <li><a href="/shunfeng/LG_Designed">国际特惠</a></li>
+                                            <li><a href="/shunfeng/LG_very_fast">国际小包</a></li>
+                                            <li><a href="/shunfeng/LG_quickly">国际重货</a></li>
+                                            <li><a href="/shunfeng/LG_seaport">国际电商专递</a></li>
                                             <li><a href="javascript:;">海购丰运</a></li>
                                             <li><a href="javascript:;">签收确认服务</a></li>
                                             <li><a href="javascript:;">海外仓</a></li>
@@ -117,7 +118,7 @@
                                                 <h3>食品服务</h3>
                                             </li>
                                             <li><a href="javascript:;">生鲜速配</a></li>
-                                            <li><a href="javascript:;">冷运速配</a></li>
+                                            <li><a href="/shunfeng/lxw_refrigerate">冷运速配</a></li>
                                             <li><a href="javascript:;">大闸蟹专递</a></li>
                                             <li><a href="javascript:;">冷运到店</a></li>
                                             <li><a href="javascript:;">顺丰冷运零担</a></li>
@@ -143,8 +144,8 @@
                                             <li>
                                                 <h3>仓储服务</h3>
                                             </li>
-                                            <li><a href=".../page/FH-warehouse_service.html">标准化仓储管理</a></li>
-                                            <li><a href=".../page/FH-Storage.html">仓储核心能力</a></li>
+                                            <li><a href="/ccfw">标准化仓储管理</a></li>
+                                            <li><a href="/hxnl">仓储核心能力</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -164,12 +165,12 @@
                     </li>
                     <li><a href="javascript:;">金融</a></li>
                     <li>
-                        <a href="javascript:;">成功案例</a>
+                        <a href="/shunfeng/LTsuccess">成功案例</a>
                         <ul class="nav_two">
-                            <li><a href="javascript:;">3C电子行业</a></li>
-                            <li><a href="javascript:;">医疗行业</a></li>
-                            <li><a href="javascript:;">生鲜行业</a></li>
-                            <li><a href="javascript:;">快消行业</a></li>
+                            <li><a href="/shunfeng/LTelectronic">3C电子行业</a></li>
+                            <li><a href="/shunfeng/LTmedical">医疗行业</a></li>
+                            <li><a href="/shunfeng/LTfresh">生鲜行业</a></li>
+                            <li><a href="/shunfeng/LTconsumer">快消行业</a></li>
                         </ul>
                     </li>
                     <li>
@@ -195,23 +196,23 @@
                     <li>
                         <a href="javascript:;">顺丰控股投资者关系</a>
                         <ul class="nav_two" style="width: 100%;">
-                            <li><a href="javascript:;">公司治理</a></li>
-                            <li><a href="javascript:;">公司公告</a></li>
-                            <li><a href="javascript:;">定期报告</a></li>
-                            <li><a href="javascript:;">投资者联络</a></li>
-                            <li><a href="javascript:;">投资者关系日历</a></li>
+                            <li><a href="/shunfeng/ZP-investor-govern">公司治理</a></li>
+                            <li><a href="/shunfeng/ZP-investor-notice">公司公告</a></li>
+                            <li><a href="/shunfeng/ZP-investor-report-finance">定期报告</a></li>
+                            <li><a href="/shunfeng/ZP-investor-contact">投资者联络</a></li>
+                            <li><a href="/shunfeng/ZP-investor-calendar-director">投资者关系日历</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="javascript:;">关于我们</a>
                         <ul class="nav_two">
-                            <li><a href="javascript:;">关于顺丰</a></li>
-                            <li><a href="javascript:;">新闻资讯</a></li>
+                            <li><a href="/shunfeng/xkwe">关于顺丰</a></li>
+                            <li><a href="/shunfeng/xkjournalism">新闻资讯</a></li>
                             <li><a href="javascript:;">服务公告</a></li>
                             <li><a href="javascript:;">推广专区</a></li>
-                            <li><a href="javascript:;">会员权益</a></li>
+                            <li><a href="/shunfeng/xkmember">会员权益</a></li>
                             <li><a href="javascript:;">人才招聘</a></li>
-                            <li><a href="javascript:;">集团采购</a></li>
+                            <li><a href="/shunfeng/xkrecruit">集团采购</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -431,7 +432,7 @@
                                 </a>
                             </li>
                             <li class="hot-problem-item fl">
-                                <a href="/shunfeng/xkmonthly" class="problem-click">
+                                <a href="/shunfeng/xkmember" class="problem-click">
                                     <div class="problem-title">月结客户权益介绍</div>
                                     <div class="problem-subtitle">按月度一次性结算快递...</div>
                                     <span class="shade-pic"></span>

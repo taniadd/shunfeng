@@ -398,4 +398,23 @@ window.addEventListener('load',function(){
     // 运单查询结束
  
 
+    // 运单号查询
+       //查询运单
+       $('#search_button1').on("click", function () {
+        var searchnum = $("#search_input1").val();
+        if (searchnum == '') {
+            location.href = '/shunfeng/WL_waybill'
+        } else {
+            location.href = "/shunfeng/WL_waybill?num=" + searchnum
+        }
+    })
+    $('#search_button2').on("click", function () {
+        var searchnum = $("#search_input1").val();
+        if (searchnum == '') {
+            location.href = '/shunfeng/WL_waybill'
+        } else {
+            location.href = "/shunfeng/WL_waybill?num=" + searchnum
+        }
+    })
+
 })
