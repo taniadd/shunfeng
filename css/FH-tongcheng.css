@@ -672,6 +672,14 @@ body {
     color: #fff;
 }
 
+.swiper-slide>img {
+    width: 100%;
+}
+
+.subject_banenr>img {
+    width: 100%;
+}
+
 .subject_banenr_h1 p {
     line-height: 22px;
     font-size: 16px;
