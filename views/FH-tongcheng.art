@@ -45,7 +45,7 @@
                         <p><img src="../images/banner-btn.svg" alt="">立即了解</p>
                     </div>
                 </div>
-                <div class="swiper-slide"><img src="../images/banner-02.jpg" alt="">
+                <div class="swiper-slide" style="width: 100% ;"><img src="../images/banner-02.jpg" alt="">
                     <div class="h3">
                         <h3>电商门店</h3>
                         <h3>一站式轻松管</h3>
