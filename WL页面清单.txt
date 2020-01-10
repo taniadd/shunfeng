@@ -1,5 +1,14 @@
-WLquick.html  服务支持-我要寄件.主页面
-WL_waybill.html 服务支持-运单追踪.主页面
-WL_sf_express.html 服务支持-服务支持.主页面
-WL_sf_express_price.html  服务支持-服务支持.分页面1运费时效
-WL_sf_express_range.html 服务支持-服务支持.分页面2服务范围
+WLquick.html  服务支持-我要寄件.主页面   路由/shunfeng/WL_quick
+WL_waybill.html 服务支持-运单追踪.主页面  路由/shunfeng/WL_waybill
+WL_sf_express.html 服务支持-服务支持.主页面   路由/shunfeng/WL_sf_express
+WL_sf_express_price.html  服务支持-服务支持.分页面1运费时效  路由/shunfeng/WL_sf_express_price
+WL_sf_express_range.html 服务支持-服务支持.分页面2服务范围  路由/shunfeng/WL_sf_express_range
+WL_sf_express_store.html 服务支持-服务支持.分页面3网点查询 路由/shunfeng/WL_sf_express_store
+WL_sf_express_accept.html 服务支持-服务支持.分页面4收寄标准  路由/shunfeng/WL_sf_express_accept
+WL_sf_express_exchange.html 服务支持-服务支持.分页面5汇率查询  路由/shunfeng/WL_sf_express_exchange
+WL_sf_express_agency.html 服务支持-服务支持.分页面6代收货款账单 路由/shunfeng/WL_sf_express_agency
+WL_sf_express_COD.html 服务支持-服务支持.分页面7代收货款对账  路由/shunfeng/WL_sf_express_COD
+WL_sf_express_formdownload.html 服务支持-服务支持.分页面8常用表格  路由/shunfeng/WL_sf_express_formdownload
+WL_sf_express_payment.html 服务支持-服务支持.分页面9理赔  路由/shunfeng/WL_sf_express_payment
+WL_sf_express_clearance.html 服务支持-服务支持.分页面10清关服务 路由/shunfeng/WL_sf_express_clearance
+WL_sf_express_lost.html 服务支持-服务支持.分页面11无着件公示  路由/shunfeng/WL_sf_express_lost
