@@ -33,7 +33,7 @@
 		<!-- banner结束 -->
 		<!-- LT_content 开始 -->
 		<div class="LT_content wrap clearfix">
-			<a href="javascript:;"> <img src="../images/link_icon_red.png" alt=""> 返回</a>
+			<a href="/shunfeng/LTfresh"> <img src="../images/link_icon_red.png" alt=""> 返回</a>
 			<div class="right clearfix">
 				<p>分享好友</p>
 				<ul class="right_ul clearfix">

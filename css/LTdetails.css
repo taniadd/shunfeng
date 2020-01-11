@@ -9,7 +9,7 @@
     right:60px;
     display: none;
 }
-.current{
+.currenttop{
     position: absolute;
     top: -60px;
 }
@@ -59,7 +59,7 @@
     margin-right: 18px;
     line-height: 76px;
 }
-h2{
+.LT_content h2{
     font-size: 41px;
     margin: 50px;
     font-weight: bold;

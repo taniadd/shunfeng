@@ -886,7 +886,7 @@
                                         <!-- 寄件人信息 -->
                                         <!-- 寄大件上的banner图 未补充 -->
                                         <div class="heavyCargo_sc">
-                                            <a href="">
+                                            <a href="javascript:;">
                                                 <img src="../images/heavyCargo_sc.png" alt="">
                                             </a>
                                         </div>

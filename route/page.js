@@ -32,7 +32,7 @@ router.get("/xkjournalism", (req, res) => {
 router.get("/xkmember", (req, res) => {
     res.render('xkmember.art')
 })
-router.get("/ xkprogress", (req, res) => {
+router.get("/xkprogress", (req, res) => {
     res.render('xkprogress.art')
 })
 router.get("/xkrecruit", (req, res) => {
@@ -44,7 +44,7 @@ router.get("/xkwe", (req, res) => {
     // 周鹏路由
     // ZP-investor-calendar-activity.art ZP-investor-calendar-director.art ZP-investor-calendar-shareholder.art
 router.get("/ZP-investor-calendar-activity", (req, res) => {
-    res.render(' ZP-investor-calendar-activity.art')
+    res.render('ZP-investor-calendar-activity.art')
 })
 router.get("/ZP-investor-calendar-director", (req, res) => {
     res.render('ZP-investor-calendar-director.art')
